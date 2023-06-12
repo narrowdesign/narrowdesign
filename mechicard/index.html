@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mechicard</title>
+  <style>
+    body {
+      background: #f6f9fc;
+      color: white;
+      font-family: Camphor, -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .card {
+      position: absolute;
+      transform: translate3d(-50%,-50%,0);
+      top: 50%;
+      left: 50%;
+    }
+    svg {
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    svg path,
+    svg circle,
+    svg g {
+      outline: 1px solid transparent;
+    }
+    svg path:not(:first-of-type):hover,
+    svg circle:hover,
+    svg g:hover {
+      outline: 1px solid white;
+    }
+    .controls {
+      position: absolute;
+      right: 1rem;
+      display: none;
+    }
+    .title {
+      position: absolute;
+      top: 0px;
+      left: 20px;
+      pointer-events: none;
+    }
+    h1 {
+      font-weight: 300;
+      font-size: 3rem;
+      line-height: 1;
+      user-select: none;
+      pointer-events: none;
+      margin-top: 10px;
+    }
+    h5 {
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 1px;
+      pointer-events: none;
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    Rows:
+    <select class="rows">
+      <option value="3">3</option>
+      <option value="4" selected="true">4</option>
+      <option value="5">5</option>
+    </select>
+    <br><br>
+    Columns:
+    <select class="cols" value="5">
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5" selected="true">5</option>
+    </select>
+  </div>
+  <div class="card">
+    <div class="title">
+      <h5>CLICK STUFF</h5>
+      <h1>Mechi<br>Card</h1>
+    </div>
+  </div>
+  <script>
+    // select a card color
+    let colors = [
+      ['#769fe8','#91BBF7','#607FDE','#4F6ECC'], // light blue
+      ['#E098DC','#FAE1F4','#CA87D4','#F6C9ED'], // pink
+      ['#43476D','#6e7c91','#32335A','#ACB7C3']  // dark blue
+    ]
+    // for each cell, pick a shape [triangle, square, circle], the more times a shape appears here
+    let shapes = [
+      {
+        name: "circle",
+        probability: Math.random()
+      },
+      {
+        name: "square",
+        probability: Math.random()
+      },
+      {
+        name: "triangle",
+        probability: Math.random()
+      },
+      {
+        name: "bars",
+        probability: Math.random()
+      },
+      {
+        name: "arc",
+        probability: Math.random()
+      },
+    ];
+    let shapeJar = [];
+
+    let xmlns = "http://www.w3.org/2000/svg";
+    let rows = document.querySelector('.rows').value;
+    let cols = document.querySelector('.cols').value;
+    let cardContainer = document.querySelector('.card');
+    let card;
+    let cellSize = 80;
+    let boxWidth = cols * cellSize;
+    let topPadding = 220;
+    let boxHeight = rows * cellSize + topPadding;
+    let cardColor;
+    let numBars;
+
+    let init = () => {
+      for (let i in shapes) {
+        let shape = shapes[i];
+        shape.probability = Math.random();
+      }
+
+      for (let i in shapes) {
+        let shape = shapes[i];
+        let marbles = Math.ceil(shape.probability * 1000);
+        for (var j = 0; j < marbles; j++) {
+          shapeJar.push(i);
+        }
+      }
+      if (card) {
+        cardContainer.removeChild(card);
+      }
+      card = document.createElementNS(xmlns, "svg");
+      rows = document.querySelector('.rows').value;
+      cols = document.querySelector('.cols').value;
+      numBars = Math.floor(Math.random() * 4) * 2 + 3;
+      cardColor = setColor();
+      card.setAttributeNS (null, "viewBox", "0 0 " + boxWidth + " " + boxHeight);
+      card.setAttributeNS (null, "width", boxWidth);
+      card.setAttributeNS (null, "height", boxHeight);
+
+      let background = document.createElementNS (xmlns, "path");
+      let coords = "M 0, 0 L " + boxWidth + ", 0 L " + boxWidth + ", " + boxHeight + " L 0, " + boxHeight + " Z";
+      background.setAttributeNS (null, "fill", cardColor[0]);
+      background.setAttributeNS (null, "d", coords);
+
+      card.appendChild(background);
+      background.addEventListener('click',function(){
+        init();
+      })
+
+      for (var row = 0; row < rows; row++) {
+        for (var col = 0; col < cols; col++) {
+          if (Math.round(Math.random())) { // fill or not randomly
+            drawSquare(col, row, 1);
+          }
+          drawShape(col, row);
+        }
+      }
+
+      let bigCol = Math.floor(Math.random() * cols) + .5;
+      let bigRow = Math.floor(Math.random() * rows) + .5;
+      drawSquare(bigCol - .5, bigRow - .5, 2)
+      drawCircle(bigCol, bigRow, 2);
+
+      cardContainer.appendChild(card);
+    }
+
+    document.querySelector('.rows').addEventListener('change',init)
+    document.querySelector('.cols').addEventListener('change',init)
+
+    let setColor = () => {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    randomShapeColor = () => {
+      return cardColor[Math.floor(Math.random() * cardColor.length)];
+    }
+
+    selectShape = () => {
+      let shapeJarIndex = Math.floor(Math.random() * shapeJar.length);
+      let shapeIndex = shapeJar[shapeJarIndex];
+      return shapes[shapeIndex];
+    }
+
+    let drawShape = (col, row) => {
+      let shape = selectShape();
+      if (shape.name === "circle") {
+        drawCircle(col, row, 1);
+        if (Math.round(Math.random())) {
+          drawCircle(col, row, .5)
+        }
+      } else if (shape.name === "square") {
+        drawSquare(col, row, .5);
+      } else if (shape.name === "triangle") {
+        drawTriangle(col, row, .5);
+      } else if (shape.name === "bars") {
+        drawBars(col, row, numBars);
+      } else if (shape.name === "arc") {
+        drawArc(col, row, 1);
+      } else {
+
+      }
+    }
+
+    let drawTriangle = (col, row) => {
+      let x1 = col * cellSize;
+      let y1 = row * cellSize + topPadding;
+      let x2 = x1 + cellSize;
+      let y2 = y1 + cellSize;
+      let x3 = x1;
+      let y3 = y2;
+      if (Math.round(Math.random())) {
+        x1 = col * cellSize;
+        y1 = row * cellSize + topPadding;
+        x2 = x1 + cellSize;
+        y2 = row * cellSize + topPadding;
+        x3 = col * cellSize;
+        y3 = row * cellSize + topPadding + cellSize;
+        console.log('alt')
+      }
+      let coords = "M " + x1 + ", " + y1;
+          coords += " L " + x2 + ", " + y2;
+          coords += " L " + x3 + ", " + y3;
+          coords += " Z";
+
+      let path = document.createElementNS (xmlns, "path");
+      path.setAttributeNS (null, 'd', coords);
+      path.setAttributeNS (null, 'fill', randomShapeColor());
+
+      let g = document.createElementNS (xmlns, "g");
+      g.appendChild(path)
+      card.appendChild (g);
+
+      path.style.transformOrigin = x1 + 'px ' + y1 + 'px';
+      path.style.transform = 'scale(.2)';
+      path.style.transition = (Math.random() + .2) + 's ease-out';
+      setTimeout(function(){
+        path.style.transform = 'scaleX(1)';
+      },10)
+
+      g.addEventListener('click',function(){
+        card.removeChild(g);
+        drawShape(col, row);
+      })
+    }
+
+    let drawSquare = (col, row, size=1) => {
+      let x = col * cellSize;
+      let y = row * cellSize + topPadding;
+      let shapeSize = cellSize;
+      shapeSize = cellSize * size;
+      if (size < 1) {
+
+        x += shapeSize/2;
+        y += shapeSize/2;
+      }
+      let x2 = x + shapeSize;
+      let y2 = y + shapeSize;
+      let coords = "M " + x + ", " + y;
+          coords += " L " + x + ", " + y2;
+          coords += " L " + x2 + ", " + y2;
+          coords += " L " + x2 + ", " + y;
+          coords += " Z";
+
+      let path = document.createElementNS (xmlns, "path");
+      path.setAttributeNS (null, 'd', coords);
+      path.setAttributeNS (null, 'fill', randomShapeColor());
+      
+      let g = document.createElementNS (xmlns, "g");
+      g.appendChild(path)
+      card.appendChild (g);
+
+      path.style.transformOrigin = x + 'px ' + y + 'px';
+      path.style.transform = 'scaleX(.2)';
+      path.style.transition = (Math.random() + .2) + 's ease-out';
+      setTimeout(function(){
+        path.style.transform = 'scaleX(1)';
+      },10)
+
+      g.addEventListener('click',function(){
+        card.removeChild(g);
+        drawShape(col, row);
+      })
+    }
+
+    let drawCircle = (col, row, size=1) => {
+      let circle = document.createElementNS (xmlns, "circle");
+      let cx = cellSize * col + cellSize / 2;
+      let cy = cellSize * row + cellSize / 2 + topPadding
+      circle.setAttributeNS (null, 'cx', cx);
+      circle.setAttributeNS (null, 'cy', cy);
+      circle.setAttributeNS (null, 'r', cellSize * size / 2);
+      circle.setAttributeNS (null, 'fill', randomShapeColor());
+      
+      let g = document.createElementNS (xmlns, "g");
+      g.appendChild(circle);
+      card.appendChild (g);
+
+      circle.style.transformOrigin = cx + 'px ' + cy + 'px';
+      circle.style.transform = 'scale(.2)';
+      circle.style.transition = (Math.random() + .2) + 's ease-out';
+      setTimeout(function(){
+        circle.style.transform = 'scale(1)';
+      },10)
+
+      g.addEventListener('click',function(){
+        card.removeChild(g);
+        drawShape(col, row);
+      })
+    }
+
+    let drawArc = (col, row, size=1) => {
+      let arc = document.createElementNS (xmlns, "path");
+
+      function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
+        var angleInRadians = ((angleInDegrees - 90) * Math.PI) / 180.0;
+
+        return {
+          x: centerX + (radius * Math.cos(angleInRadians)),
+          y: centerY + (radius * Math.sin(angleInRadians))
+        };
+      }
+
+      function describeArc(x, y, radius, startAngle, endAngle) {
+        var start = polarToCartesian(x, y, radius, endAngle);
+        var end = polarToCartesian(x, y, radius, startAngle);
+
+        var arcSweep = endAngle - startAngle <= 180 ? "0" : "1";
+
+        return [
+          "M", start.x, start.y,
+          "A", radius, radius, 0, arcSweep, 0, end.x, end.y,
+          "L", x, y,
+          "L", start.x, start.y
+        ].join(" ");
+      }
+      let startX = col * cellSize;
+      let startY = cellSize + row * cellSize + topPadding;
+      let startA = 0;
+      let endA = 90;
+      if (Math.round(Math.random())) {
+        startA = 90;
+        endA = 180;
+        startY -= cellSize;
+      } else if (Math.round(Math.random())) {
+        startA = 180;
+        endA = 270;
+        startY -= cellSize;
+        startX += cellSize;
+      } else if (Math.round(Math.random())) {
+        startA = 270;
+        endA = 360;
+        startX += cellSize;
+      }
+      arc.setAttributeNS (null, 'd', describeArc(startX, startY, cellSize, startA, endA));
+      arc.setAttributeNS (null, 'fill', randomShapeColor());
+
+      let g = document.createElementNS (xmlns, "g");
+      g.appendChild(arc);
+      card.appendChild (g);
+
+      arc.style.transformOrigin = startX + 'px ' + startY + 'px';
+      arc.style.transform = 'scale(.2)';
+      arc.style.transition = (Math.random() + .2) + 's ease-out';
+      setTimeout(function(){
+        arc.style.transform = 'scaleX(1)';
+      },10)
+
+      g.addEventListener('click',function(){
+        card.removeChild(g);
+        drawShape(col, row);
+      })
+    }
+
+    let drawBars = (col, row, num, size=1) => {
+      let barH = cellSize / num;
+      let x = col * cellSize;
+      let y = row * cellSize + topPadding;
+      let x2 = x + cellSize * size;
+      let y2 = y + barH;
+      let g = document.createElementNS (xmlns, "g");
+      let color = randomShapeColor();
+
+      drawBar = (i) => {
+        let top = barH * i * 2;
+        let coords = "M " + x + ", " + (top + y);
+            coords += " L " + x + ", " + (top + y2);
+            coords += " L " + x2 + ", " + (top + y2);
+            coords += " L " + x2 + ", " + (top + y);
+            coords += " Z";
+
+        let path = document.createElementNS (xmlns, "path");
+        path.setAttributeNS (null, 'd', coords);
+        path.setAttributeNS (null, 'fill', color);
+        g.appendChild (path);
+
+        path.style.transformOrigin = x + 'px ' + y + 'px';
+        path.style.transform = 'scaleX(.2)';
+        path.style.transition = (Math.random() + .2) + 's ease-out';
+        setTimeout(function(){
+          path.style.transform = 'scaleX(1)';
+        },10)
+      }
+
+      for (var i = 0; i < num / 2; i++) {
+        drawBar(i);
+      }
+
+      card.appendChild(g)
+
+      g.addEventListener('click',function(){
+        card.removeChild(g);
+        drawShape(col, row);
+      })
+    }
+
+    init();
+
+  </script>
+</body>
+</html>

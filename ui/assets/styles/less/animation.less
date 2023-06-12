@@ -1,0 +1,21 @@
+.svg-spiral{
+  stroke-dasharray: 135 137;
+  stroke-dashoffset: 136;
+}
+.start .svg-spiral {
+  animation: svg_spiral_draw 3000ms ease-out 0ms infinite;
+}
+@keyframes svg_spiral_draw {
+  0% {
+    stroke-dashoffset: 136;
+  }
+  33% {
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -136;
+  }
+}

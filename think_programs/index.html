@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      background: #191919;
+      color: white;
+      font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    h1 {
+      font-weight: 400;
+      position: fixed;
+      top: 1rem;
+      width: 100%;
+      text-align: center;
+    }
+    a {
+      color: tomato;
+    }
+    p {
+      position: fixed;
+      bottom: 1rem;
+      left: 0;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+    }
+    div {
+      position: absolute;
+      background: #191919;
+      display: flex;
+      align-items:center;
+      flex-wrap: wrap;
+      transform: translate3d(-50%,-50%,0);
+      left: 50%;
+      top: 50%;
+      min-width: 320px;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      display: inline-block;
+      opacity: 0;
+    }
+    img:first-of-type {
+        opacity: 1;
+        position: relative;
+    }
+  </style>
+</head>
+<body>
+  <h1><span class="num">01</span> / 82</h1>
+  <div>
+    <img src="moma_catalogue_2545_300198921_Page_01.jpg" alt="">
+  </div>
+  <p>Thanks to MoMA for <a href="https://www.moma.org/calendar/exhibitions/2545">archiving</a> this. But it’s sideways.</p>
+</body>
+ <script>
+    let total = 82;
+    let current = parseInt(document.location.hash.substr(1), 10) || 1;
+    let currentStr = document.location.hash.substr(1) || '01';
+
+    changeImage();
+
+    document.addEventListener('click', clickHandler)
+    document.addEventListener('mousemove', function(e){
+      if (e.pageX > window.innerWidth / 2) {
+        document.querySelector('body').style.cursor = 'e-resize';
+      }else {
+        document.querySelector('body').style.cursor = 'w-resize';
+      }
+    })
+    function clickHandler(e) {
+      if (e.pageX > window.innerWidth/2) {
+        current++;
+      } else {
+        current--;
+      }
+      if (current >= total) {
+        current = 1;
+      } else if (current <= 0) {
+        current = 82;
+      }
+      currentStr = current;
+      if (current < 10) {
+        currentStr = '0' + current;
+      }
+      changeImage();
+    }
+    function changeImage() {
+      document.querySelector('img').src = 'moma_catalogue_2545_300198921_Page_' + currentStr + '.jpg'
+      document.querySelector('h1 .num').innerHTML = currentStr;
+      window.history.pushState("", currentStr, `/think_programs/#${currentStr}`);
+    }
+  </script>
+</html>

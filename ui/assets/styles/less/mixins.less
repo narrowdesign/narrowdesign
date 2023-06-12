@@ -1,0 +1,184 @@
+.headline-font(@size)
+{
+  font-size: @size;
+  font-family: @headline-font;
+  font-weight: 700;
+}
+
+.body-font(@size)
+{
+  font-size: @size;
+}
+
+.transition(@duration:0s,@ease:linear,@prop:all,@delay:0s){
+
+  -webkit-transition-duration: @duration;
+  -moz-transition-duration: @duration;
+  -o-transition-duration: @duration;
+  -ms-transition-duration: @duration;
+  transition-duration: @duration;
+
+  -webkit-transition-delay: @delay;
+  -moz-transition-delay: @delay;
+  -o-transition-delay: @delay;
+  -ms-transition-delay: @delay;
+  transition-delay: @delay;
+
+  -webkit-transition-timing-function: @ease;
+  -moz-transition-timing-function: @ease;
+  -o-transition-timing-function: @ease;
+  -ms-transition-timing-function: @ease;
+  transition-transition-timing-function: @ease;
+
+  -webkit-transition-property: @prop;
+  -moz-transition-property: @prop;
+  -ms-transition-property: @prop;
+  transition-property: @prop;
+}
+
+.transform(@transform){
+  -webkit-transform: @transform;
+  -moz-transform: @transform;
+  -ms-transform: @transform;
+  -o-transform: @transform;
+  transform: @transform;
+  .hideBackface;
+}
+
+.transform-origin(@transformOrigin){
+  -webkit-transform-origin:@transformOrigin;
+  -moz-transform-origin:@transformOrigin;
+  -ms-transform-origin:@transformOrigin;
+  -o-transform-origin: @transformOrigin;
+  transform-origin: @transformOrigin;
+}
+
+.hideBackface{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rounded(@radius){
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.box-sizing{
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.centerY{
+  top: 50%;
+  .transform(translateY(-50%));
+}
+
+.centerX{
+  left: 50%;
+  .transform(translateX(-50%));
+}
+
+.centerXY{
+  left: 50%;
+  top: 50%;
+  .transform(translate3d(-50%, -50%, 0));
+}
+
+.fadeout(@time,@delay:0s){
+  -webkit-animation: fadeout @time linear @delay forwards;
+  animation: fadeout @time linear @delay forwards;
+}
+
+.fadein(@time,@delay:0s){
+  -webkit-animation: fadein @time ease-out @delay forwards;
+  animation: fadein @time ease-out @delay forwards;
+}
+
+.clearAnimation{
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+
+.revealLetter(@time,@delay:0s){
+  -webkit-animation: revealLetterBlur @time @easeOutBack @delay forwards;
+  -moz-animation: revealLetterBlur @time @easeOutBack @delay forwards;
+  animation: revealLetterBlur @time @easeOutBack @delay forwards;
+  @media (max-width: 800px){
+    -webkit-animation: revealLetter @time @easeOutBack @delay forwards;
+    -moz-animation: revealLetter @time @easeOutBack @delay forwards;
+    animation: revealLetter @time @easeOutBack @delay forwards;
+  }
+}
+
+.blink {
+  -webkit-animation: blink 3s infinite;
+  -moz-animation: blink 3s infinite;
+  animation: blink 3s infinite;
+}
+
+.draw-path {
+  -webkit-animation: drawPath 1s infinite;
+  -moz-animation: drawPath 1s infinite;
+  animation: drawPath 1s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: .2;
+  }
+  12%   {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .2;
+  }
+}
+
+@-moz-keyframes blink {
+    0% {
+      opacity: .2;
+    }
+    12%   {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: .2;
+    }
+    100% {
+      opacity: .2;
+    }
+}
+
+@keyframes blink {
+    0% {
+      opacity: .2;
+    }
+    12%   {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: .2;
+    }
+    100% {
+      opacity: .2;
+    }
+}

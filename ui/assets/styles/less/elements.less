@@ -1,0 +1,418 @@
+.col__lines {
+  display: none;
+}
+body:not(.is-firefox) {
+  transition-duration: .2s;
+}
+body:after {
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #f11b1b;
+  z-index: 400;
+  @media (min-width: 960px) {
+    transition: 1.5s ease-in 1s;
+  }
+}
+.js-n, .js-spiral-overlay {
+  transition: 2s linear .5s;
+  pointer-events: none;
+}
+body.is-in {
+  color: white;
+  &:after {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .js-n {
+    opacity: 0;
+    visibility: hidden;
+    filter: blur(20px);
+  }
+  .js-spiral-overlay {
+    opacity: 0;
+    visibility: hidden;
+    path,
+    rect {
+      stroke-width: 0;
+      transition: 2s;
+    }
+  }
+}
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .02em;
+  margin: 0;
+}
+h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .05rem;
+  margin: 0;
+}
+h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .93rem;
+  font-style: normal;
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: .067em;
+  margin: 0;
+  @media (min-width: 960px) {
+    font-size: 1.15rem;
+  }
+}
+h5 {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: .9rem;
+  line-height: 1.15;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .065em;
+  margin: 0;
+}
+p,
+blockquote {
+  padding-bottom: 1rem;
+  line-height: 1.8;
+}
+
+label {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+button {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: .05rem;
+  border: none;
+  outline: none;
+  transition: .3s;
+}
+button:hover {
+  color: black;
+  fill: black;
+  background: white;
+  opacity: 1;
+}
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+
+a { color: inherit;
+  text-decoration: none;
+  font-size: 1em;
+}
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0;}
+
+::-webkit-input-placeholder {
+  color: #000;
+  opacity: 0.2;
+}
+:-ms-input-placeholder {
+  color: #000;
+  opacity: 0.2;
+}
+::-moz-placeholder {
+  color: #000;
+  opacity: 0.2;
+}
+:-moz-placeholder {
+  color: #000;
+  opacity: 0.2;
+}
+
+.js-section {
+  overflow: hidden;
+  transform: translateX(100vw,0,0);
+}
+@media (min-width: 960px) {
+  body:not(.is-firefox) {
+    .js-section:not(.active) {
+      .js-view-icon {
+        transition: .3s ease-out;
+      }
+    }
+    .js-section:hover:not(.active) {
+      border-radius: 6%;
+      .js-view-icon {
+        border-radius: 40px;
+      }
+    }
+    .js-section {
+      will-change: background, border-radius;
+      transition: .3s background, .2s border-radius ease-out;
+    }
+  }
+}
+
+// .active .js-section-title {
+//   span {
+//     transition: .3s;
+//   }
+// }
+
+.js-section .js-project-cover {
+  width: 0px;
+  will-change: width;
+  transition: .3s ease-out;
+}
+body:not(.is-firefox) .js-section.active {
+  .js-view-icon {
+    @media (min-width: 960px) {
+      transition: .3s;
+      width: ~"calc(61.80339vw * .6180339 * .6180339 * .6180339 * .6180339 * .6180339)";
+    }
+  }
+  .js-project-cover {
+    img {
+      // transition:
+      // transition-delay: .3s;
+      // left: 0;
+    }
+  }
+}
+body.is-firefox {
+  .js-view-icon {
+    width: ~"calc(61.80339vw * .6180339 * .6180339 * .6180339 * .6180339 * .6180339)";
+  }
+}
+
+.js-section.active {
+  .js-view-text,
+  svg {
+    visibility: visible;
+  }
+  .js-view-icon:after {
+    display: none;
+  }
+  .js-arrow {
+    display: none;
+  }
+}
+
+.js-spiral {
+  // transition: .3s transform ease-out;
+  // will-change: transform;
+}
+.js-spiral-line {
+  background-image: url(../../images/pattern.png);
+  background-size: ~"calc(80px + 8vw)";
+}
+.js-scroll path {
+
+}
+.js-eye-lid {
+  transition: .2s;
+  transform-origin: 50%;
+}
+.js-project.active .js-project-cta:hover {
+  cursor: pointer;
+  .js-eye-lid {
+    transform: scaleX(1.5) scaleY(2) !important;
+  }
+  .js-project-cover {
+    visibility: visible;
+    width: ~"calc(61.80339vw * .6180339 * .6180339 * .6180339 * .6180339)";
+  }
+  .js-view-icon rect {
+    .blink;
+    &:nth-of-type(2) {
+      animation-delay: .2s;
+    }
+    &:nth-of-type(3) {
+      animation-delay: .4s;
+    }
+    &:nth-of-type(4) {
+      animation-delay: .6s;
+    }
+    &:nth-of-type(5) {
+      animation-delay: .8s;
+    }
+  }
+}
+.js-scroll rect {
+  .blink;
+  &:nth-of-type(1) {
+
+  }
+  &:nth-of-type(2) {
+    animation-delay: .2s;
+  }
+  &:nth-of-type(3) {
+    animation-delay: .4s;
+  }
+  &:nth-of-type(4) {
+    animation-delay: .6s;
+  }
+  &:nth-of-type(5) {
+    animation-delay: .8s;
+  }
+}
+
+.js-nav:hover {
+  opacity: 1;
+}
+
+.js-gallery {
+  .js-gallery-image {
+    transition: .6s ease-in;
+    img {
+      transition: .6s ease-in;
+    }
+    &:nth-of-type(1) {
+      img {
+        border-radius: 100% 0 0 0;
+      }
+    }
+    &:nth-of-type(2) {
+      transition-delay: .2s;
+      img {
+        // transition-delay: .1s;
+        border-radius: 0 100% 0 0;
+      }
+    }
+    &:nth-of-type(3) {
+      transition-delay: .4s;
+      img {
+        // transition-delay: .2s;
+        border-radius: 0 0 100% 0;
+      }
+    }
+    &:nth-of-type(4) {
+      transition-delay: .6s;
+      img {
+        // transition-delay: .3s;
+        border-radius: 0 0 0 75%;
+      }
+    }
+  }
+}
+.is-gallery {
+  cursor: none;
+  overflow: auto !important;
+  .js-gallery {
+    visibility: visible;
+    pointer-events: auto;
+    overflow: visible;
+    height: auto;
+    -webkit-overflow-scrolling: touch;
+    .js-gallery-image {
+      pointer-events: auto;
+      opacity: 1;
+      visibility: visible;
+      img {
+        transform: translate3d(0,0,0);
+        border-radius: 0;
+      }
+    }
+    .js-gallery-description-box {
+      cursor: auto !important;
+    }
+  }
+  .js-close-icon {
+    right: 0;
+    left: auto !important;
+  }
+}
+
+.is-spiraling {
+  .js-message {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.is-more-accessible {
+  overflow: visible !important;
+  .js-arrow-keys {
+    display: none;
+  }
+  .js-contact-icon {
+    width: ~"calc(61.80339vw * .6180339 * .6180339 )";
+    @media (min-width: 960px) {
+      width: ~"calc(61.80339vw * .6180339 * .6180339 * .6180339 * .618039 * .618039 )";
+    }
+    background: #0B0B0C;
+  }
+  .js-spiral-line {
+    display: none;
+  }
+  .js-section {
+    position: relative !important;
+    transform: translate3d(0,0,0) !important;
+    width: 100vw !important;
+    @media (max-width: 960px) {
+      height: 80vh !important;
+    }
+  }
+  .js-spiral {
+    position: relative !important;
+  }
+  * {
+    visibility: visible !important;
+  }
+  .js-gallery {
+    display: none !important;
+  }
+  .js-description {
+    color: #0B0B0C !important;
+    display: block !important;
+  }
+  .js-arrow {
+    display: none !important;
+  }
+  .js-dots {
+    display: none !important;
+  }
+  .js-project .js-project-cta {
+    display: none;
+  }
+  @media (max-width: 960px) {
+    .b-phi6 {
+      bottom: auto;
+      margin-top: ~"calc(61.80339vw * .6180339 * .6180339)";
+    }
+    .js-project .pos-a {
+      position: relative !important;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+}
+
+.js-phi {
+  /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}

@@ -1,0 +1,464 @@
+
+html {
+  overscroll-behavior-x: contain;
+  background: white;
+  font-family: 'system-ui';  
+  --base-font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: inline;
+}
+
+body {
+  --after-element-opacity: 0;
+  --background-color: hsla(360,100%,100%,1);
+  --color: hsla(360,100%,0%,1);
+  --background-linear-gradient: 0deg, var(--color) 0% 0%, var(--background-color) 100% 100%;
+  align-items: center;
+  background-color: var(--background-color);
+  background-image: '';
+  border-width: 0px;
+  border-style: solid;
+  color: var(--color);
+  display: grid;
+  flex-direction: column;
+  font-size: var(--base-font-size);
+  justify-content: center;
+  line-height: 1;
+  margin: 0px;
+  min-height: 100vh;
+  padding: 0px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.Search {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #ccc;
+  color: black;
+  background-color: #ffffffaa;
+  padding: 12px 16px;
+  pointer-events: none;
+  opacity: 0;
+  transition: 300ms opacity;
+  backdrop-filter: blur(20px);
+  box-shadow: 3px 3px 30px #00000033;
+  z-index: 10000000;
+}
+
+.isSearchOpen .Search {
+  opacity: 1; 
+  pointer-events: auto;
+}
+
+blockquote,
+button,
+canvas,
+.container,
+.div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.image,
+.svg,
+p,
+input,
+textarea,
+code {
+  --background-color: transparent;
+  --background-linear-gradient: 0deg, var(--color) 0% 0%, var(--background-color) 100% 100%;
+  --blur: 0px;
+  --box-shadow: var(--color) 0px 0px 0px 0px;
+  --color: inherit;
+  --text-shadow: var(--color) 0px 0px 0px;
+  --transform: translateX(0px) translateY(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+
+  align-self: stretch;
+  align-items: stretch;  
+  background-color: var(--background-color);
+  background-image: '';
+  border-width: 0px;
+  border-style: solid;
+  box-shadow: var(--box-shadow);
+  color: var(--color);
+  column-count: 1;
+  display: flex;
+  filter: blur(var(--blur));
+  flex-direction: column;
+  font-size: inherit;
+  font-weight: inherit;
+  grid-column-start: 1;
+  grid-column-end: 2;  
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  text-shadow: var(--text-shadow);
+  transform: var(--transform);
+  min-width: 1px;
+}
+
+.container *:focus {
+  outline: none;
+}
+
+.container {
+  --background-color: inherit;
+  align-self: center;
+  column-gap: 32px;
+  display: grid;
+  padding-top: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px; 
+  row-gap: 32px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  --color: var(--background-color);
+  --background-color: var(--color);
+  outline: none;
+}
+
+.Container__gridLines {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  z-index: 999;
+}
+
+.Container__gridLine {
+  position: absolute;
+  opacity: 0.1;
+  border-right: 1px solid var(--color);
+  border-left: 1px solid var(--color);   
+  border-bottom: 1px solid var(--color);
+  border-top: 1px solid var(--color);
+}
+
+/* APP STATES */
+
+.isVisualMode .Container__gridLine {
+  position: absolute;
+  opacity: 0.1;
+  background: var(--color);
+  border-right: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+}
+
+body:not(.isEditMode) .isSelected {
+  pointer-events: none;
+}
+
+body:not(.isEditMode) .isSelected * {
+  pointer-events: auto;
+}
+
+.isSelected:not(body)::after,
+.isMultiSelected:not(body)::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  background: var(--color);
+  animation: pulse 200ms forwards;
+}
+
+.isVisualMode .isSelected::before,
+.isVisualMode .isMultiSelected::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.isVisualMode .isSelected.activeProp--color:before,
+.isVisualMode .isSelected.activeProp--background-color:before{
+  color: transparent;
+  background-color: transparent;
+}
+
+.isVisualMode .isSelected.activeProp--font-size:before {
+  width: 2px;
+  border-left: 1px solid var(--color);
+  top: var(--padding-top);
+  height: var(--font-size);
+}
+
+.isVisualMode .isSelected.activeProp--line-height:before {
+  height: calc(var(--line-height) * var(--font-size));
+  width: 10px;
+  margin-left: -10px;
+  top: var(--padding-top);
+  border-right: 1px solid var(--color);
+  border-top: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+  background: transparent;
+}
+
+.isVisualMode .isSelected.activeProp--margin-top:before {
+  bottom: auto;
+  height: var(--margin-top);
+  margin-top: calc(var(--margin-top) * -1);
+  border-bottom: 1px solid var(--color); 
+  background: linear-gradient(transparent, var(--color));
+}
+
+.isVisualMode .isSelected.activeProp--margin-right:before {
+  left: auto;
+  right: calc(var(--margin-right) * -1);
+  width: var(--margin-right);
+  background: linear-gradient(90deg, var(--color), transparent);
+}
+
+.isVisualMode .isSelected.activeProp--margin-bottom:before {
+  top: auto;
+  height: var(--margin-bottom);
+  margin-bottom: calc(var(--margin-bottom) * -1);
+  background: linear-gradient(var(--color), transparent);
+  border-top: 1px solid var(--color); 
+}
+
+.isVisualMode .isSelected.activeProp--margin-left:before {
+  right: auto;
+  width: var(--margin-left);
+  margin-left: calc(var(--margin-left) * -1);
+  border-right: 1px solid var(--color);
+  background: linear-gradient(90deg, transparent, var(--color));
+}
+
+.isVisualMode .isSelected.activeProp--padding-top:before {
+  height: var(--padding-top);
+  bottom: auto;
+  background: linear-gradient(var(--color), transparent);
+}
+
+.isVisualMode .isSelected.activeProp--padding-right:before {
+  width: var(--padding-right);
+  left: auto;
+  background: linear-gradient(90deg, transparent, var(--color));
+}
+
+.isVisualMode .isSelected.activeProp--padding-bottom:before {
+  height: var(--padding-bottom);
+  top: auto;
+  background: linear-gradient(transparent, var(--color));
+}
+
+.isVisualMode .isSelected.activeProp--padding-left:before {
+  width: var(--padding-left);
+  right: auto;
+  background: linear-gradient(90deg, var(--color), transparent);
+}
+
+.isVisualMode .isSelected.activeProp--width:before {
+  border-right: 1px solid var(--color);
+  border-left: 1px solid var(--color);  
+}
+
+.isVisualMode .isSelected.activeProp--height:before {
+  border-top: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);  
+}
+
+.isVisualMode .isSelected.activeProp--border-radius:before {
+  background: transparent;
+}
+
+.isVisualMode .isSelected.activeProp--letter-spacing:before {
+  border-left: var(--letter-spacing) solid var(--color);
+}
+
+.isXrayMode {
+  --after-element-opacity: 0.08;
+}
+
+.isXrayMode .Container__gridLines,
+.isGridActive .Container__gridLines {
+  display: block;
+}
+
+.isEditMode,
+.isScrollMode,
+.isInactive,
+.isAnimating {
+  overflow: visible;
+}
+
+.StyleDisplay {
+  position: fixed;
+  font-size: 15px;
+  bottom: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px 12px 14px;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+  color: var(--background-color);
+  background: var(--color);
+  border-radius: 4px;
+  transition: transform 300ms, opacity 500ms, height 300ms;
+  opacity: 0.9;
+  z-index: 100000000000;
+}
+
+.StyleDisplay:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: -3px;
+  width: 7px;
+  height: 7px;
+  background: white;
+}
+
+.KeyDisplay {
+  position: absolute;
+  /* display: flex; */
+  display: none;
+  gap: 4px;
+  bottom: 20px;
+  transform: translateX(-50%);
+  left: calc(50%);
+  font-size: 20px;
+  color: var(--color);
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.StyleDisplay__value {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  display: none;
+}
+
+.StyleDisplay__element {
+  position: absolute;
+  left: 18px;
+  bottom: 4px;
+  font-size: 10px;
+  opacity: 0.5;
+  color: black;
+  display: none;
+}
+
+.StyleDisplay__channel {
+  display: none;
+}
+
+.StyleDisplay__value--isSelected {
+  border-bottom: 1px dotted;
+}
+
+.KeyDisplay__key {
+  transition: opacity 20ms;
+  border-radius: 4px;
+  padding: 16px 16px;
+  background: var(--background-color);
+  border: 1px solid var(--color);
+  opacity: 0;
+}
+
+.isKeyDisplayed .KeyDisplay__key {
+  opacity: 1;
+  animation: keypress 100ms forwards 100ms;
+}
+
+.isKeyDisplayed .KeyDisplay__key:last-of-type {
+  opacity: 1;
+  animation: keypress 100ms forwards 150ms;
+}
+
+.isChanging .StyleDisplay {
+  opacity: 1;
+}
+
+.isXrayMode *:not(.StyleDisplay):not(.StyleDisplay *):after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color, #ffffff);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: var(--after-element-opacity);
+  z-index: 1000000;
+}
+
+body.isXrayMode.isVisualMode *::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color, #ffffff);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0.04;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: var(--after-element-opacity);
+  }
+}
+
+@keyframes keypress {
+  0% {
+    transform: translateX(-50%) scale(1)
+  } 50% {
+    transform: translateX(-50%) scale(0.8);
+  } 100% {
+    transform: translateX(-50%) scale(1);
+  }
+}

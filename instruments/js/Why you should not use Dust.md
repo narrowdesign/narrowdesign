@@ -1,0 +1,12 @@
+Why you should not use Dust
+- hard to learn
+- have to know CSS
+- only works in Chrome
+- have to host sites yourself
+- no undo
+- breaks unexpectedly
+- prohibitively expensive
+- no tutorials
+- no support
+- no community
+- missing many basic features

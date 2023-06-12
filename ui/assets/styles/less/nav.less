@@ -1,0 +1,158 @@
+.js-signup__input ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255,255,255,.6);
+}
+.js-signup__input ::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255,255,255,.6);
+}
+.js-signup__input :-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255,255,255,.6);
+}
+.js-signup__input :-moz-placeholder { /* Firefox 18- */
+  color: rgba(255,255,255,.6);
+}
+
+.mc-field-group input[name="email"] {
+  border-radius: 0;
+  &.bam {
+    background: black !important;
+    color: white !important;
+    text-align: center;
+    padding-left: 5.5vw;
+  }
+  &.bam ~ .button {
+    background: black !important;
+    color: black !important;
+    pointer-events: none;
+  }
+  ~ .button {
+    border-radius: 0;
+  }
+}
+
+nav {
+  transition: .3s ease-out;
+  transform: translate3d(0,0,0);
+}
+
+@media (min-width: 960px) {
+  .js-signup__input {
+    min-width: ~"calc(267px - (70px - 4.16666vw))";
+  }
+}
+
+.js-nav--main .menu-item {
+  position: relative;
+}
+.js-nav--main .menu-item:after {
+  width: 0;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background-color: white;
+  transition: .3s;
+}
+.js-nav--community {
+  transform: translate3d(0,100%,0);
+  transition: .3s ease-out;
+}
+.js-nav--community.is-in {
+  visibility: visible;
+  transform: translate3d(0,0,0);
+}
+@media (min-width: 960px) {
+  .js-nav--community {
+    transform: none;
+  }
+  .js-nav--main .menu-item:hover:after {
+    width: ~"calc(1px + 100%)";
+  }
+}
+
+.js-signup__input:focus {
+  background: white;
+  color: #0b0b0b;
+}
+
+.js-signup__input:focus ~ .button {
+  background: black;
+  color: white;
+}
+
+.abyss {
+  background-image:url(../../images/abyss.png);
+  background-size: contain;
+}
+
+.js-nav__wrapper {
+  background-size: cover;
+  background-position: right top;
+  height: 0;
+  @media (min-width: 960px) {
+    transition: .3s ease-out;
+  }
+}
+
+.js-nav--fixed {
+  transition: .3s ease-out;
+  transform: translate3d(0,-100%,0);
+}
+.js-nav--fixed .logo {
+  transition: .3s ease-out;
+}
+.js-nav--fixed .avatar {
+  transition: .3s ease-out;
+  transform: translate3d(0,100px,0) scale(2);
+}
+.js-nav--fixed .back-to-top {
+  transition: .3s;
+}
+.js-nav--fixed.is-person .avatar {
+  transform: translate3d(0,0,0);
+}
+.is-scrolled .js-nav--fixed {
+  transition: .3s ease-out;
+  transform: translate3d(0,0,0);
+}
+
+.is-scrolled.is-scrolling-up .js-nav--fixed {
+  transform: translate3d(0,116px,0);
+}
+
+.is-scrolled.is-scrolling-up .js-nav__wrapper {
+  transition: 0s;
+  @media (min-width: 960px) {
+    height: 128px;
+    transition: .1s ease-out;
+  }
+}
+
+.is-scrolled.is-scrolling-up .js-nav--fixed .logo {
+  transform: translate3d(0,-90px,0);
+}
+
+.is-scrolled.is-scrolling-up .js-nav--fixed .back-to-top {
+  opacity: 1;
+}
+
+.is-scrolled .js-nav--main {
+  transform: translate3d(0,-7px,0);
+}
+
+@media (max-width: 960px) {
+  .is-scrolled .js-nav--main {
+    transform: translate3d(0,0,0);
+  }
+  .is-scrolled.is-scrolling-up .js-nav--main {
+    opacity: 1;
+  }
+  .is-scrolled.is-scrolling-up .js-nav--fixed {
+    transform: translate3d(0,64px,0);
+  }
+  .is-scrolled .js-nav__wrapper {
+    height: 65px;
+    transition: 0s ease-out;
+    transition-delay: .3s;
+  }
+}

@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+body:after {
+  background: #111;
+}
+canvas {
+  display: block;
+  margin: auto;
+}

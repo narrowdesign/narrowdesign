@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="svg2" sodipodi:docname="Fibonacci_spiral.svg" sodipodi:version="0.32" sodipodi:docbase="/Users/dicklyon/Desktop" inkscape:version="0.44" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:cc="http://web.resource.org/cc/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="188 91 987.7 611"
+	 enable-background="new 188 91 987.7 611" xml:space="preserve">
+<sodipodi:namedview  width="997.87px" height="620.99px" inkscape:current-layer="svg2" inkscape:window-y="22" inkscape:window-x="-4" inkscape:pageshadow="2" inkscape:window-width="1152" inkscape:window-height="808" inkscape:pageopacity="0.0" id="base" bordercolor="#666666" inkscape:zoom="0.25" pagecolor="#ffffff" inkscape:cx="702.55895" inkscape:cy="166.2208" gridtolerance="10.0" guidetolerance="10.0" borderopacity="1.0" objecttolerance="10.0">
+	</sodipodi:namedview>
+<path id="path2776_2_" sodipodi:start="3.1415927" sodipodi:end="4.712389" sodipodi:ry="281.75464" sodipodi:cx="337.94031" sodipodi:open="true" sodipodi:type="arc" sodipodi:rx="301.58487" sodipodi:cy="2354.0146" fill="none" stroke="#000000" stroke-width="9.016747e-02" d="
+	M902.7,532.7c0.3,0,0.6-0.3,0.6-0.6c0-0.6-0.4-1-1-1c-0.9,0-1.6,0.7-1.6,1.6l0,0c0,1.4,1.2,2.6,2.6,2.6l0,0c2.3,0,4.2-1.9,4.2-4.2
+	l0,0c0-3.8-3.1-6.8-6.8-6.8l0,0h0.1l0,0c-6.9,0-12.5,5.6-12.5,12.5l0-0.1c0,11.2,9.1,20.3,20.3,20.3l0,0h-0.1l0,0
+	c18.3,0,33.1-14.8,33.1-33.1l0,0.6c0-30.3-24.5-54.8-54.8-54.8l0,0l0.1,0l0,0c-48.3,0-87.5,39.2-87.5,87.5v0
+	c0,78.8,63.9,142.8,142.8,142.8l0,0l0,0c128.3,0,232.3-104,232.3-232.3l0,0l0,0c0-207.7-168.4-376.1-376.1-376.1l0,0l0.2,0l0,0
+	c-336.8,0-609.9,273.1-609.9,609.9"/>
+</svg>
