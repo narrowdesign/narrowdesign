@@ -7,10 +7,12 @@ class PageScript {
       document.body.classList.remove('isInitialized');
     }
     this.scrollActivatedEls = document.querySelectorAll('.jsScrollActivated');
-    this.scrollActivatedTops = this.scrollActivatedEls.map((el) => {
-      el.getBoundingClientRect().top;
-    })
-    document.addEventListener('scroll', this.handleScroll);
+    if (this.scrollActivatedEls.length > 0) {
+      this.scrollActivatedTops = this.scrollActivatedEls.map((el) => {
+        el.getBoundingClientRect().top;
+      })
+      document.addEventListener('scroll', this.handleScroll);
+    }
   }
 
   handleScroll = () => {

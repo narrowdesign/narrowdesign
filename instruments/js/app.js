@@ -781,9 +781,18 @@ function init() {
     }
   }
 
-  function addToRecording(val) {
-    if (val !== recording[recording.length - 1]) {
-      recording.push(val)
+  function addToRecording(newStep) {
+    const prevStep = recording[recording.length - 1];
+    let push = false;
+    if (prevStep) {
+      prevStep.forEach((val, i) => {
+        if (val !== newStep[i]) push = true;
+      })
+    } else {
+      push = true;
+    }
+    if (push) {
+      recording.push(newStep);
     }
   }
 
@@ -962,9 +971,9 @@ function init() {
       } else if (e.key === "Escape") {
         exitEditMode();
       }
-      if (userState.isRecording && userState.selectedElement) {
-        addToRecording(['type', elements.indexOf(userState.selectedElement), userState.selectedElement.innerText])
-      }
+      // if (userState.isRecording && userState.selectedElement) {
+      //   addToRecording(['type', elements.indexOf(userState.selectedElement), userState.selectedElement.innerText])
+      // }
       return;
     } 
 
@@ -1133,6 +1142,9 @@ function init() {
     if (!userState.isShiftKey) {
       bodyEl.classList.remove('App--isScrollMode');
       userState.isScrollMode = false;
+    }
+    if (userState.isRecording && userState.selectedElement && userState.isEditMode) {
+      addToRecording(['type', elements.indexOf(userState.selectedElement), userState.selectedElement.innerText])
     }
     redrawGrid();
   }
