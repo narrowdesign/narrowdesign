@@ -91,6 +91,20 @@ code {
   min-width: 1px;
 }
 
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.App--isInstrument iframe {
+  pointer-events: none;
+}
+
+.App--isAnimating iframe {
+  pointer-events: auto;
+}
+
 *:focus {
   outline: none;
 }

@@ -619,6 +619,7 @@ function init() {
     q: "blockquote",
     s: "section",
     t: "textarea",
+    v: "iframe",
     w: "div",
   };
 
@@ -725,7 +726,7 @@ function init() {
       const step = recording[i]
       const nextStep = recording[i + 1]
       if (step[0] === 'new') {
-        createNewElement(step[1], elements[step[2]])
+        createNewElement(step[1], elements[step[2]], null, step[3])
       } else if (step[0] === 'select') {
         if (step[1] !== -1) {
           setSelectedElement(elements[step[1]])
@@ -1144,7 +1145,7 @@ function init() {
       userState.isScrollMode = false;
     }
     if (userState.isRecording && userState.selectedElement && userState.isEditMode) {
-      addToRecording(['type', elements.indexOf(userState.selectedElement), userState.selectedElement.innerText])
+      addToRecording(['type', elements.indexOf(userState.selectedElement), userState.selectedElement.innerHTML])
     }
     redrawGrid();
   }
@@ -1796,7 +1797,7 @@ function init() {
     return newElement;
   }
 
-  function createNewElement(key, container = userState.activeContainer || bodyEl, text) {
+  function createNewElement(key, container = userState.activeContainer || bodyEl, text, src) {
     if (userState.isRecording) {
       addToRecording(['new', key, elements.indexOf(container)])
     }
@@ -1810,6 +1811,10 @@ function init() {
     if (key === "i") {
       setActiveProp('w');
       newElement.classList.add("image");
+      container.appendChild(newElement);      
+    } if (key === "v") {
+      setActiveProp('w');
+      newElement.classList.add("video");
       container.appendChild(newElement);      
     } else if (key === "d") {
       newElement.classList.add("div");
@@ -1852,7 +1857,9 @@ function init() {
     
     setSelectedElement(newElement)
     if (userState.selectedElement.classList.contains("image")) {
-      createNewImage()
+      createNewImage(src)
+    } else if (userState.selectedElement.classList.contains("video")) {
+      createNewVideo(src)
     }
     updateStyleDisplay();
     if (key !== "w") {
@@ -1871,17 +1878,34 @@ function init() {
     if (src) {
       imgElement.style.backgroundImage = `url(${src})`;
     } else {
-      console.log('fetch image')
-      fetch(`${'https://source.unsplash.com/random/1600xauto/?'}${searchTerm}`).then(
-        (response) => {
-          if (elements.includes(imgElement)) {            
-            const url = response.url;
-            imgElement.style.backgroundImage = `url(${url})`;
+      if (searchTerm.indexOf('https') !== -1) {
+        imgElement.style.backgroundImage = `url(${searchTerm})`;
+        recording[recording.length - 1].push(searchTerm)
+      } else {
+        fetch(`${'https://source.unsplash.com/random/1600xauto/?'}${searchTerm}`).then(
+          (response) => {
+            if (elements.includes(imgElement)) {            
+              const url = response.url;
+              imgElement.style.backgroundImage = `url(${url})`;
+              recording[recording.length - 2].push(url)
+            }
           }
-        }
-        ).catch(function() {
-          imgElement.style.backgroundImage = `url(${defaultImage})`;
-        });
+          ).catch(function() {
+            imgElement.style.backgroundImage = `url(${defaultImage})`;
+          });
+      }
+    }
+  }
+
+  function createNewVideo(src) {
+    console.log(src)
+    const searchTerm = userState.isAnimating ? src : prompt("Insert a link to a video");
+    const videoElement = userState.selectedElement;
+
+    if (searchTerm.indexOf('youtube') !== -1) {
+      const videoId = searchTerm.substring(searchTerm.indexOf("v=") + 2)
+      videoElement.src = `https://www.youtube.com/embed/${videoId}`
+      recording[recording.length - 2].push(searchTerm)
     }
   }
 
@@ -2177,6 +2201,7 @@ function init() {
     if (userState.selectedElement && 
          (userState.selectedElement.classList.contains('container') || 
           userState.selectedElement.classList.contains('image') ||
+          userState.selectedElement.classList.contains('video') ||
           userState.selectedElement.classList.contains('canvas') ||
           userState.selectedElement.classList.contains('div') ||
           userState.selectedElement === bodyEl
@@ -2209,6 +2234,7 @@ function init() {
     const editable = el !== bodyEl &&
                     !el.classList.contains('container') && 
                     !el.classList.contains('image') && 
+                    !el.classList.contains('video') && 
                     !el.classList.contains('div')
     return editable;
   }
