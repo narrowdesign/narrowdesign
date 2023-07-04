@@ -1,69 +1,4 @@
 
-/*
-PROBLEM
-
-** Need to be able to add a row and have the rows below shift down 1
-
-HTML mutated by Javascript during scroll or resize should not save
-
-Working on an item in isolation would be nice
-
-Duplicating an element using alt+arrow scrolls the page up/down
-
-Grid column widths can only be equal
-- allow different types of grid widths (equal, contents, templates)
-
-Can't see or click on a container with no padding
-- show something
-
-Can’t click an element that is behind another element
-- pick which hovered element you want to click
-
-Deleting sometimes removes wrong element from elements list but not dom (gone from tab/editable list)
-- reproduce and isolate
-
-hitting X does not remove unset prop
-- rather than setting to initial, delete the element prop
-
-delete is not undoable
-- store deleted element in memory
-- store deleted element dom location
-- store every keystroke for replay
-- store the whole dom state
-- insert element at previous location
-
-some enums are visible that are not possible (inline inside a grid or flex container)
-
-an object can get so small that it is impossible to see or click
-- add an arrow pointing at things below 4px width or height
-
-MISSING
-see/set class names
-linear/radial gradient
-
-PAIN
-- fluid scaling between screen sizes
-hard to tell what is selected
-
-SAVED
-remove pseudo elements
-remove state classes
-remove analytics
-
-WISHES
-infinite undo
-hover state
-visual feedback when a limit is reached
-resistance when the beginning or end of a list is reached (before looping)
-select multiple elements intelligently
-cut/copy/paste element
-cut/copy/paste style
-instance vs class editing
-3 letter props ptb
-suggest correct prop example: pw > padding? width? px?
-input field/text area/select (this might fall under too complex)
-*/
-
 const unitRegex = /vw$|vh$|vmax$|dvh$|dvw$|svh$|svw$|lvh$|lvw$|dvmin$|dvmax$|lvmin$|lvmax$|svmin$|svmax$|vmin$|px$|rem$|em$|%$/;
 const defaultImage = 'images/mountain.jpg';
 const LIST_SCROLL_PAUSE = 200;
@@ -222,6 +157,12 @@ function init() {
       axis: "all",
       initialValue: '0vw'
     },
+    bf: {
+      name: "--backdrop-filter-blur",
+      min: 0,
+      initialValue: "0vw",
+      isVariable: true
+    },
     bw: {
       name: "border-width",
       min: 0,
@@ -233,6 +174,11 @@ function init() {
       min: 0,
       initialValue: '0vw'
     },
+    dc: {
+      name: ["--border-color", "--border-color", "--border-color", "--border-color"],
+      initialValue: `var(--color)`,
+      isVariable: true    
+    },    
     bl: {
       name: "border-left-width",
       min: 0,
@@ -242,6 +188,16 @@ function init() {
       name: "border-right-width",
       min: 0,
       initialValue: '0vw'
+    },
+    bp: {
+      name: "background-repeat",
+      enumList: ["repeat", "no-repeat",],
+      initialValue: 'no-repeat'
+    },
+    bz: {
+      name: "background-size",
+      enumList: ["cover", "contain",],
+      initialValue: 'cover'
     },
     bt: {
       name: "border-top-width",
@@ -1186,7 +1142,7 @@ function init() {
       br.remove();
     })
     
-    setCurrentCursorPosition(leftText.length + pastedText.length)
+    setCurrentCaretPosition(leftText.length + pastedText.length)
   }
   
   function handleMouseDown(e) {
@@ -1260,7 +1216,7 @@ function init() {
    return range;
   };
   
-  function setCurrentCursorPosition(chars) {
+  function setCurrentCaretPosition(chars) {
     if (chars >= 0) {
       var selection = window.getSelection();
 
@@ -1457,9 +1413,6 @@ function init() {
     if (propName === "z-index" && (val === "auto")) {
       val = "0"
     }
-    if (propName === "filter") {
-      val = val.substring(val.indexOf("(") + 1, val.indexOf("p"));
-    }
     let newVal;
     if (propName === "--box-shadow" || propName === "--text-shadow") {
       newVal = getShadow(delta)
@@ -1467,7 +1420,7 @@ function init() {
     } else if (propName === "--background-linear-gradient") {
       newVal = getLinearGradient(delta)
       unit = '';
-    } else if (propName === "--color" || propName === "--background-color") {
+    } else if (propName === "--color" || propName === "--background-color" || propName === "--border-color") {
       newVal = getHSLA(delta);
       unit = '';
     } else if (propName === "--transform") {
@@ -1666,6 +1619,7 @@ function init() {
 
     if (
       propName === "--color" ||
+      propName === "--border-color" ||
       propName === "--background-color"
     ) {
       if (userState.activePropParamIndex === 0) {
@@ -1872,7 +1826,7 @@ function init() {
   }
 
   function createNewImage(src) {
-    const searchTerm = userState.isAnimating ? 'cool dog' : prompt("Insert an image of a/an");
+    const searchTerm = userState.isAnimating ? src : prompt("Insert an image of a/an");
     const imgElement = userState.selectedElement;
 
     if (src) {
@@ -1880,7 +1834,7 @@ function init() {
     } else {
       if (searchTerm.indexOf('https') !== -1) {
         imgElement.style.backgroundImage = `url(${searchTerm})`;
-        recording[recording.length - 1].push(searchTerm)
+        recording[recording.length - 2].push(searchTerm)
       } else {
         fetch(`${'https://source.unsplash.com/random/1600xauto/?'}${searchTerm}`).then(
           (response) => {
@@ -1898,7 +1852,6 @@ function init() {
   }
 
   function createNewVideo(src) {
-    console.log(src)
     const searchTerm = userState.isAnimating ? src : prompt("Insert a link to a video");
     const videoElement = userState.selectedElement;
 
@@ -1912,9 +1865,20 @@ function init() {
   function wrapElement(newElement) {
     if (userState.selectedElement === bodyEl) return;
     newElement.classList.add("container");
+    const sourceStyles = userState.selectedElement.style;
+
     userState.selectedElement.parentNode.insertBefore(newElement, userState.selectedElement);
     newElement.appendChild(userState.selectedElement);
-    const sourceStyles = userState.selectedElement.style;
+    if (userState.multiSelectedElementList.length > 0) {
+      // TODO if a parent of the selectedElement is also selected, the newElement (wrapper) should be inserted before the outermost parent
+      userState.multiSelectedElementList.forEach((el) => {
+        try {
+          newElement.appendChild(el)
+        } catch (error) {
+          
+        }
+      })
+    }
     
     // Keep the wrapper in the same grid position
     Array.from(sourceStyles).forEach((style) => {
