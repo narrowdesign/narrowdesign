@@ -200,7 +200,7 @@ button {
   display: none;
   left: 0;
   top: 0;
-  pointer-events: none;
+  pointer-events: none !important;
   z-index: 999;
 }
 
@@ -211,6 +211,7 @@ button {
   border-left: 1px solid var(--color);   
   border-bottom: 1px solid var(--color);
   border-top: 1px solid var(--color);
+  pointer-events: none !important;
 }
 
 /* APP STATES */

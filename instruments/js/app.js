@@ -1242,6 +1242,7 @@ function init() {
     userState.multiSelectedElementList = [];
     if (userState.isRecording) {
       // alert('recording element index is -1')
+      console.log(el, elements.indexOf(el))
       addToRecording(['select', elements.indexOf(el)])
     }
     if (userState.selectedElement) {
@@ -1256,7 +1257,7 @@ function init() {
     userState.selectedElement = el;
     document.querySelector(".AppElement--isSelected")?.classList.remove("AppElement--isSelected");
     el.classList.add("AppElement--isSelected");
-    el?.focus();   
+    el?.focus();
     userState.selectedElement.classList.add(
       `AppElement--${userState.activePropName}`
     );
