@@ -1879,7 +1879,7 @@ function init() {
             if (elements.includes(imgElement)) {            
               const url = response.url;
               imgElement.style.backgroundImage = `url(${url})`;
-              recording[recording.length - 2].push(url)
+              recording[recording.length - 5].push(url)
             }
           }
           ).catch(function() {
