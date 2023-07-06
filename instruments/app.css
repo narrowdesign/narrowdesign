@@ -376,7 +376,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 
 .AppStyleDisplay {
   position: absolute;
-  bottom: 2vh;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 15px 12px 14px;
@@ -478,6 +478,64 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   box-shadow: var(--app-shadow);
 }
 
+
+.AppStyleDisplay__inspectStyleContainer {
+  position: absolute;
+  text-align: left;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 39px;
+  padding: 4px;
+  border-radius: 16px;
+  z-index: 1;
+  opacity: 0;
+  transition: 200ms opacity;
+  background: var(--app-background-color);
+  box-shadow: var(--app-shadow);
+  max-width: 550px;
+}
+
+.AppStyleDisplay__inspectStyleList {
+  position: relative;
+  transition: 300ms transform ease-out;
+  padding: 0;
+}
+
+.AppStyleDisplay__inspectStyleProp {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 6px 24px;
+  display: flex;
+  line-height: 1.3;
+}
+
+.AppStyleDisplay__inspectStylePropKey {
+  color: red;
+  white-space: nowrap;
+}
+
+.AppStyleDisplay__inspectStylePropValue {
+  margin-left: 8px;
+}
+
+.AppStyleDisplay__inspectStyleProp::before {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  box-shadow: hsla(0,100%,9.8%,0.2) 0px 0px 0px 0px;
+  transition: box-shadow 300ms;
+}
+
+.AppStyleDisplay__inspectStyleProp--isActive::before {
+  box-shadow: var(--app-shadow);
+}
+
 .AppKeyDisplay {
   position: absolute;
   display: flex;
@@ -520,7 +578,15 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 }
 
 .AppStyleDisplay__channel {
-  display: none;
+  position: relative;
+  margin: auto;
+  top: -8px;
+  width: 100%;
+  padding: 16px 8px 10px;
+  text-align: center;
+  border-radius: 8px;
+  /* height: 100%; */
+  background: #efefef;
 }
 
 .AppStyleDisplay__value--isSelected {
@@ -539,6 +605,10 @@ body:not(.App--isInstrument) .AppDisplay {
   opacity: 1;
 }
 
+.App--isInspectStyleDisplayed .AppStyleDisplay__inspectStyleContainer {
+  opacity: 1;
+}
+
 .App--isKeyDisplayed .AppKeyDisplay {
   opacity: 1;
   animation: keypress 200ms forwards;
@@ -548,7 +618,7 @@ body:not(.App--isInstrument) .AppDisplay {
   opacity: 1;
 }
 
-.App--isXrayMode *:not(.AppStyleDisplay):not(.AppStyleDisplay__prop):not(.AppKeyDisplay):not(.AppScrollDisplay):not(.AppStyleDisplay__enumContainer):not(.AppStyleDisplay__enumList):not(.AppStyleDisplay__enum):not(.AppGridDisplay):after {
+.App--isXrayMode *:not([class^='App']):after {
   content: '';
   position: absolute;
   width: 100%;
@@ -563,7 +633,7 @@ body:not(.App--isInstrument) .AppDisplay {
   z-index: 1000000;
 }
 
-.App--isXrayMode.App--isVisualMode *:not(.AppStyleDisplay):not(.AppStyleDisplay__prop):not(.AppKeyDisplay):not(.AppScrollDisplay):not(.AppStyleDisplay__enumContainer):not(.AppStyleDisplay__enumList):not(.AppStyleDisplay__enum):not(.AppGridDisplay):after {
+.App--isXrayMode.App--isVisualMode *:not([class^='App']):after {
   content: '';
   position: absolute;
   width: 100%;

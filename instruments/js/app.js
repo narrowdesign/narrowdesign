@@ -15,6 +15,7 @@ const displayValueEl = document.querySelector(".AppStyleDisplay__value");
 const displayElementEl = document.querySelector(".AppStyleDisplay__element");
 const displayChannelEl = document.querySelector(".AppStyleDisplay__channel");
 const displayEnumListEl = document.querySelector(".AppStyleDisplay__enumList");
+const displayInspectStyleListEl = document.querySelector(".AppStyleDisplay__inspectStyleList");
 const keyDisplayEl = document.querySelector(".AppKeyDisplay");
 const scrollDisplayEl = document.querySelector('.AppScrollDisplay')
 const containerGridEl = document.querySelector(".AppGridDisplay");
@@ -40,6 +41,7 @@ function init() {
   if (!window.location.search.includes('instrument')) {
     bodyEl.classList.remove('App--isClassListMode');
     bodyEl.classList.remove('App--isEnumDisplayed');
+    bodyEl.classList.remove('App--isInspectStyleDisplayed');
     bodyEl.classList.remove('App--isInstrument');
     bodyEl.classList.remove('App--isKeyDisplayed')
     bodyEl.classList.remove('App--isScrolling');
@@ -618,7 +620,7 @@ function init() {
 
     keyTimeout: null,
     keyDisplayedTimeout: null,
-    enumDisplayedTimeout: null,
+    inspectStyleDisplayedTimeout: null,
     scrollTimeout: null,
     lastWheelTimestamp: 0,
     wheelRotation: 0,
@@ -962,8 +964,8 @@ function init() {
     // }
     
     if (!userState.firstKey) {
-      if (e.key === "i" || e.key === "e") {
-        enterEditMode();
+      if (e.key === "i") {
+        toggleInspectMode();
         return;
       } else if (e.key === "n") {
         userState.firstKey = "n";
@@ -1324,12 +1326,12 @@ function init() {
 
   function resetActivePropValue() {
     if (userState.activeProp.axis) {
-      setMultipleSideProps(userState.selectedElement, userState.activePropName, userState.activeProp.initialValue ? userState.activeProp.initialValue : userState.activeProp.enumList ? userState.activeProp.enumList[0] : `initial`, userState.activeProp.axis)
+      setMultipleSideProps(userState.selectedElement, userState.activePropName, "", userState.activeProp.axis)
     } else {
       setStyleProperty(
         userState.selectedElement,
         userState.activePropName,
-        userState.activeProp.initialValue ? userState.activeProp.initialValue : `initial`
+        ""
       );
     }
     updateStyleDisplay();
@@ -1382,6 +1384,7 @@ function init() {
   }
 
   function updateStyleProp(delta) {
+    const roundedDelta = delta.toFixed(5) / 1;
     const now = performance.now();
     const elapsed = now - userState.lastWheelTimestamp;
     registerViewChange();
@@ -1415,16 +1418,16 @@ function init() {
     }
     let newVal;
     if (propName === "--box-shadow" || propName === "--text-shadow") {
-      newVal = getShadow(delta)
+      newVal = getShadow(roundedDelta)
       unit = '';
     } else if (propName === "--background-linear-gradient") {
-      newVal = getLinearGradient(delta)
+      newVal = getLinearGradient(roundedDelta)
       unit = '';
     } else if (propName === "--color" || propName === "--background-color" || propName === "--border-color") {
-      newVal = getHSLA(delta);
+      newVal = getHSLA(roundedDelta);
       unit = '';
     } else if (propName === "--transform") {
-      newVal = getTransform(delta);
+      newVal = getTransform(roundedDelta);
       unit = '';
     } else {
       if (userState.activeProp.increment) {
@@ -1534,8 +1537,8 @@ function init() {
       return;
     }
     bodyEl.classList.add('App--isEnumDisplayed');
-    clearTimeout(userState.enumDisplayedTimeout);
-    userState.enumDisplayedTimeout = setTimeout(() => {
+    clearTimeout(userState.inspectStyleDisplayedTimeout);
+    userState.inspectStyleDisplayedTimeout = setTimeout(() => {
       bodyEl.classList.remove('App--isEnumDisplayed');
     }, 900)
     const newList = enumList[0] !== displayEnumListEl.firstChild?.innerText;
@@ -1564,6 +1567,35 @@ function init() {
       }
     })
   }
+  
+  function updateInspectStyleList() {
+    bodyEl.classList.add('App--isInspectStyleDisplayed');
+    displayInspectStyleListEl.innerHTML = '';
+    const styles = userState.selectedElement.getAttribute('style');
+    const styleArray = styles.split(";").filter(Boolean); // Remove empty strings
+
+    const sortedStyles = styleArray.sort((a, b) => {
+      const aKey = a.split(":")[0].trim();
+      const bKey = b.split(":")[0].trim();
+      
+      if (aKey < bKey) {
+        return -1;
+      }
+      
+      if (aKey > bKey) {
+        return 1;
+      }
+      
+      return 0;
+    });
+
+    sortedStyles.forEach((value) => {
+      const style = value.split(':');
+      if (style[0]) {
+        displayInspectStyleListEl.innerHTML += `<li class="AppStyleDisplay__inspectStyleProp"><span class="AppStyleDisplay__inspectStylePropKey">${style[0]}</span>: <span class="AppStyleDisplay__inspectStylePropValue">${style[1]}</span></li>`;
+      }
+    });
+  }
 
   function setStyleProperty(el, propName, newVal) {
     if (isNaN(newVal) && !newVal.match(/\d/) && userState.isAnimating) {
@@ -1591,7 +1623,9 @@ function init() {
 
   function updateStyleDisplay() {
     if (!userState.selectedElement) return;
-    const elTop = userState.selectedElement.getBoundingClientRect().top;
+    if (userState.isInspectMode) {
+      updateInspectStyleList()
+    }
     const propName = userState.activePropName;
     registerViewChange();
 
@@ -1623,46 +1657,48 @@ function init() {
       propName === "--background-color"
     ) {
       if (userState.activePropParamIndex === 0) {
-        displayChannelEl.innerText = `(hue)`;
+        displayChannelEl.innerText = `hue`;
       } else if (userState.activePropParamIndex === 1) {
-        displayChannelEl.innerText = `(saturation)`;
+        displayChannelEl.innerText = `saturation`;
       } else if (userState.activePropParamIndex === 2) {
-        displayChannelEl.innerText = `(level)`;
+        displayChannelEl.innerText = `level`;
       } else if (userState.activePropParamIndex === 3) {
-        displayChannelEl.innerText = `(alpha)`;
+        displayChannelEl.innerText = `alpha`;
       }
     } else if (
       propName === "--transform"
     ) {
       if (userState.activePropParamIndex === 0) {
-        displayChannelEl.innerText = `(translateX)`;
+        displayChannelEl.innerText = `perspective`;
       } else if (userState.activePropParamIndex === 1) {
-        displayChannelEl.innerText = `(translateY)`;
+        displayChannelEl.innerText = `translateX`;
       } else if (userState.activePropParamIndex === 2) {
-        displayChannelEl.innerText = `(rotateX)`;
+        displayChannelEl.innerText = `translateY`;
       } else if (userState.activePropParamIndex === 3) {
-        displayChannelEl.innerText = `(rotateY)`;
+        displayChannelEl.innerText = `rotateX`;
       } else if (userState.activePropParamIndex === 4) {
-        displayChannelEl.innerText = `(rotateZ)`;
+        displayChannelEl.innerText = `rotateY`;
       } else if (userState.activePropParamIndex === 5) {
-        displayChannelEl.innerText = `(scaleX)`;
+        displayChannelEl.innerText = `rotateZ`;
       } else if (userState.activePropParamIndex === 6) {
-        displayChannelEl.innerText = `(scaleY)`;
+        displayChannelEl.innerText = `scaleX`;
       } else if (userState.activePropParamIndex === 7) {
-        displayChannelEl.innerText = `(skewX)`;
+        displayChannelEl.innerText = `scaleY`;
       } else if (userState.activePropParamIndex === 8) {
-        displayChannelEl.innerText = `(skewY)`;
+        displayChannelEl.innerText = `skewX`;
+      } else if (userState.activePropParamIndex === 9) {
+        displayChannelEl.innerText = `skewY`;
       }
     } else if (propName === "--box-shadow" || propName === "--text-shadow") {
       if (userState.activePropParamIndex === 0) {
-        displayChannelEl.innerText = `(x)`;
+        displayChannelEl.innerText = `x`;
       } else if (userState.activePropParamIndex === 1) {
-        displayChannelEl.innerText = `(y)`;
+        displayChannelEl.innerText = `y`;
       } else if (userState.activePropParamIndex === 2) {
-        displayChannelEl.innerText = `(blur)`;
+        displayChannelEl.innerText = `blur`;
       }
     } else if (propName === "filter") {
-      displayChannelEl.innerText = `(blur)`;
+      displayChannelEl.innerText = `blur`;
     } else {
       displayChannelEl.innerText = ``;
     }
@@ -1728,13 +1764,14 @@ function init() {
     })
     container.appendChild(newElement);
     elements.splice(elements.length - 1, 0, newElement);
+    setSelectedElement(newElement);
     if (key === "ArrowDown") {
       setStyleProperty(newElement, "grid-row-start", rowStart + 1);
       setStyleProperty(newElement, "grid-row-end", rowEnd + 1);
       setActiveProp('rs')            
     } else if (key === "ArrowUp") {
       setStyleProperty(newElement, "grid-row-start", rowStart - 1);
-      setStyleProperty(newElement, "grid-row-end", rowStart);
+      setStyleProperty(newElement, "grid-row-end", rowEnd - 1);
       setActiveProp('rs')      
     } else if (key === "ArrowRight") {
       setStyleProperty(newElement, "grid-column-start", columnEnd);
@@ -1742,12 +1779,12 @@ function init() {
       setActiveProp('cs')      
     } else if (key === "ArrowLeft") {
       setStyleProperty(newElement, "grid-column-start", columnStart - 1);
-      setStyleProperty(newElement, "grid-column-end", columnStart);
+      setStyleProperty(newElement, "grid-column-end", columnEnd - 1);
       setActiveProp('cs')
     }
     updateStyleDisplay();
     redrawGrid();
-    setSelectedElement(newElement);
+
     return newElement;
   }
 
@@ -1986,10 +2023,10 @@ function init() {
       }
       colorProps[i] = newVal
     })
-    let h = colorProps[0] % 360;
-    let s = Math.max(Math.min(100, colorProps[1]), 0);
-    let l = Math.max(Math.min(100, colorProps[2]), 0);
-    let a = Math.max(Math.min(1, colorProps[3]), 0);
+    let h = (colorProps[0] % 360).toFixed(5) / 1;
+    let s = Math.max(Math.min(100, colorProps[1]), 0).toFixed(5) / 1;
+    let l = Math.max(Math.min(100, colorProps[2]), 0).toFixed(5) / 1;
+    let a = Math.max(Math.min(1, colorProps[3]), 0).toFixed(5) / 1;
     return `hsla(${h},${s}%,${l}%,${a})`;
   }
 
@@ -2013,7 +2050,7 @@ function init() {
     const lVal = (100 * (2 * l - s)) / 2;
     const sVal = 100 * (s ? (l <= 0.5 ? s / (2 * l - s) : s / (2 - (2 * l - s))) : 0);
     const hVal = 60 * h < 0 ? 60 * h + 360 : 60 * h
-    return `hsla(${hVal}deg, ${sVal}%, ${lVal}%, ${a})`
+    return `hsla(${hVal.toFixed(5) / 1}deg, ${sVal.toFixed(5) / 1}%, ${lVal.toFixed(5) / 1}%, ${a})`
   }
   
   function getLinearGradient(delta) {
@@ -2048,7 +2085,7 @@ function init() {
     // console.log(val)
     const unit = 'px';
     const props = val.split(" ");
-    let newVal = parseFloat(props[userState.activePropParamIndex + 1], 10) + delta;
+    let newVal = parseFloat(props[userState.activePropParamIndex + 1], 10).toFixed(5) / 1 + delta;
     if (userState.activePropParamIndex === 2) {
       newVal = Math.abs(newVal)
     }
@@ -2192,6 +2229,17 @@ function init() {
         userState.selectedElement.focus();
       }
     }, 100);
+  }
+  
+  function toggleInspectMode() {
+    registerViewChange();
+    bodyEl.classList.toggle("App--isInspectStyleDisplayed");
+    userState.isInspectMode = !userState.isInspectMode;
+    if (!userState.isInspectMode) {
+      updateStyleDisplay();
+    } else {
+      updateInspectStyleList();
+    }
   }
 
   function verifyEditable(el) {
