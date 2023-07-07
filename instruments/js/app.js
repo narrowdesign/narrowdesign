@@ -992,6 +992,14 @@ function init() {
       return;
     }
 
+    if (e.key === ']') {
+      moveElementDownInDom(userState.selectedElement)
+      return;
+    } else if (e.key === '[') {
+      moveElementUpInDom(userState.selectedElement)
+      return;
+    }
+
     userState.isActivePropParamIndexAlt = keyToShiftPropIndex.includes(e.key);
     userState.activePropParamIndex = keyToShiftPropIndex.indexOf(e.key);
     if (userState.isActivePropParamIndexAlt) { // ["!","@","#","$"] for color inside shadow
@@ -1815,6 +1823,7 @@ function init() {
     }
     updateStyleDisplay();
     redrawGrid();
+    moveAppToTopOfDom();
 
     return newElement;
   }
@@ -1890,6 +1899,7 @@ function init() {
       setSelectedElement(newElement)
       enterEditMode();
     }
+    moveAppToTopOfDom();
     redrawGrid();
   }
 
@@ -2295,6 +2305,27 @@ function init() {
   function completeViewChange() {
     bodyEl.classList.remove("App--isChanging");
   }
+
+  function moveElementUpInDom(element) {
+    const previousElement = element.previousElementSibling;
+    if (previousElement) {
+      element.parentNode.insertBefore(element, previousElement);
+    }
+    moveAppToTopOfDom();
+  }
+  
+  function moveElementDownInDom(element) {
+    const nextElement = element.nextElementSibling;
+    if (nextElement) {
+      element.parentNode.insertBefore(nextElement, element);
+    }
+    moveAppToTopOfDom();
+  }
+
+  function moveAppToTopOfDom() {
+    bodyEl.appendChild(appEl);
+  }
+  
 
   function clipValue(val) {
     let newVal = val;
