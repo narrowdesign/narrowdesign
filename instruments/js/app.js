@@ -542,7 +542,7 @@ function init() {
     },
     tr: {
       name: ["--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform"],
-      initialValue: `perspective(100vw) translateX(0vw) translateY(0vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg)`,
+      initialValue: `perspective(100vw) translateX(0vw) translateY(0vw) translateZ(0vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg)`,
       isVariable: true
     },
     w: {
@@ -992,9 +992,9 @@ function init() {
       return;
     }
 
-    userState.isSelectedPropParamIndexAlt = keyToShiftPropIndex.includes(e.key);
+    userState.isActivePropParamIndexAlt = keyToShiftPropIndex.includes(e.key);
     userState.activePropParamIndex = keyToShiftPropIndex.indexOf(e.key);
-    if (userState.isSelectedPropParamIndexAlt) { // ["!","@","#","$"] for color inside shadow
+    if (userState.isActivePropParamIndexAlt) { // ["!","@","#","$"] for color inside shadow
       return;
     } else if (parseInt(e.key) >= 1 && parseInt(e.key) <= 9) { // for props made of a list of values
       setActiveProp(userState.activeKey, parseInt(e.key));
@@ -1670,38 +1670,68 @@ function init() {
       propName === "--transform"
     ) {
       if (userState.activePropParamIndex === 0) {
-        displayChannelEl.innerText = `perspective`;
+        if (userState.isActivePropParamIndexAlt) {
+          displayChannelEl.innerText = `skewX`;
+        } else {
+          displayChannelEl.innerText = `perspective`;
+        }
       } else if (userState.activePropParamIndex === 1) {
-        displayChannelEl.innerText = `translateX`;
+        if (userState.isActivePropParamIndexAlt) {
+          displayChannelEl.innerText = `skewY`;
+        } else {
+          displayChannelEl.innerText = `translateX`;
+        }
       } else if (userState.activePropParamIndex === 2) {
         displayChannelEl.innerText = `translateY`;
       } else if (userState.activePropParamIndex === 3) {
-        displayChannelEl.innerText = `rotateX`;
+        displayChannelEl.innerText = `translateZ`;
       } else if (userState.activePropParamIndex === 4) {
-        displayChannelEl.innerText = `rotateY`;
+        displayChannelEl.innerText = `rotateX`;
       } else if (userState.activePropParamIndex === 5) {
-        displayChannelEl.innerText = `rotateZ`;
+        displayChannelEl.innerText = `rotateY`;
       } else if (userState.activePropParamIndex === 6) {
-        displayChannelEl.innerText = `scaleX`;
+        displayChannelEl.innerText = `rotateZ`;
       } else if (userState.activePropParamIndex === 7) {
-        displayChannelEl.innerText = `scaleY`;
+        displayChannelEl.innerText = `scaleX`;
       } else if (userState.activePropParamIndex === 8) {
-        displayChannelEl.innerText = `skewX`;
-      } else if (userState.activePropParamIndex === 9) {
-        displayChannelEl.innerText = `skewY`;
+        displayChannelEl.innerText = `scaleY`;
       }
     } else if (propName === "--box-shadow" || propName === "--text-shadow") {
       if (userState.activePropParamIndex === 0) {
-        displayChannelEl.innerText = `x`;
+        if (userState.isActivePropParamIndexAlt) {
+          displayChannelEl.innerText = `x`;
+        } else {
+          displayChannelEl.innerText = `hue`;
+        }
       } else if (userState.activePropParamIndex === 1) {
-        displayChannelEl.innerText = `y`;
+        if (userState.isActivePropParamIndexAlt) {
+          displayChannelEl.innerText = `y`;
+        } else {
+          displayChannelEl.innerText = `saturation`;
+        }
       } else if (userState.activePropParamIndex === 2) {
-        displayChannelEl.innerText = `blur`;
+        if (userState.isActivePropParamIndexAlt) {
+          displayChannelEl.innerText = `blur`;
+        } else {
+          displayChannelEl.innerText = `level`;
+        }
+      } else if (userState.activePropParamIndex === 3) {
+        if (userState.isActivePropParamIndexAlt) {
+          displayChannelEl.innerText = `spread`;
+        } else {
+          displayChannelEl.innerText = `alpha`;
+        }
       }
-    } else if (propName === "filter") {
+    } else if (propName === "filter" || propName === "backdrop-filter") {
       displayChannelEl.innerText = `blur`;
     } else {
       displayChannelEl.innerText = ``;
+    }
+
+    if (displayChannelEl.innerText === '') {
+      bodyEl.classList.remove('App--isPropChannelDisplayed')
+    } else {
+      bodyEl.classList.add('App--isPropChannelDisplayed')
     }
   }
   
@@ -2065,7 +2095,7 @@ function init() {
     const endIndex = val.lastIndexOf(")");
     let props = val.substring(startIndex, endIndex).split(",");
     console.log(userState.activePropParamIndex, userState.activePropParamIndex)
-    if (userState.isSelectedPropParamIndexAlt) {
+    if (userState.isActivePropParamIndexAlt) {
       // const color = getHSLA(delta);
       // props[1] = color || `var(--color)`;
     } else if (userState.activePropParamIndex === 0) {
@@ -2090,7 +2120,7 @@ function init() {
     if (userState.activePropParamIndex === 2) {
       newVal = Math.abs(newVal)
     }
-    if (userState.isSelectedPropParamIndexAlt) {
+    if (userState.isActivePropParamIndexAlt) {
       const color = getHSLA(delta);
       props[0] = color || `var(--color)`;
     } else {
@@ -2106,7 +2136,8 @@ function init() {
       .getPropertyValue(`${userState.activePropName}`)
       .trim()}`;
     const transformProps = transformVal.split(" ");
-    const activeProp = transformProps[userState.activePropParamIndex];
+    const index = userState.isActivePropParamIndexAlt ? userState.activePropParamIndex + 8 : userState.activePropParamIndex;
+    const activeProp = transformProps[index];
     const name = activeProp.substring(0, activeProp.indexOf('('))
     const propVal = activeProp.substring(activeProp.indexOf('(') + 1, activeProp.indexOf(')'));
     const unit = propVal.match(/\D{2,3}/g) || '';
@@ -2117,17 +2148,7 @@ function init() {
     if (userState.isShiftKey) {
       val = Math.round(val);
     }
-    if (userState.isShiftKey) {
-      // transformProps.forEach((prop, i) => {
-      //   const transformName = name.substring(0,name.length - 2);
-      //   if (prop.includes(transformName)) {
-      //     const transformName = activeProp.substring(0, activeProp.indexOf('('))
-      //     transformProps[i] = `${name}(${val}${unit})`;
-      //   }
-      // })
-    } else {
-      transformProps[userState.activePropParamIndex] = `${name}(${val}${unit})`;
-    }
+    transformProps[index] = `${name}(${val}${unit})`;
     let fullTransform = transformProps.join(" ");
     if (!fullTransform.includes('translate')) {
       fullTransform = userState.activeProp.initialValue;
@@ -2211,6 +2232,7 @@ function init() {
       displayPropEl.innerText = "Scroll mode";
       displayValueEl.innerText = "(Esc to exit)";
       displayChannelEl.innerText = "";
+      bodyEl.classList.remove('App--isPropChannelDisplayed')
       bodyEl.classList.add("App--isScrollMode");
       userState.isScrollMode = true;
       return;
