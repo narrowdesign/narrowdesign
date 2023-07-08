@@ -5,8 +5,11 @@ Why you should not use Dust
 - have to host sites yourself
 - no undo
 - breaks unexpectedly
-- prohibitively expensive
 - no tutorials
 - no support
 - no community
+- no sharing
+- no AI (none planned)
+- probably gets abandoned
 - missing many basic features
+- prohibitively expensive

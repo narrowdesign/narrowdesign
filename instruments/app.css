@@ -94,7 +94,7 @@ code {
   position: relative;
   text-shadow: var(--text-shadow);
   transform: var(--transform);
-  min-width: 1px;
+  min-width: 0px;
 }
 
 iframe {

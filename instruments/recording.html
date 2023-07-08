@@ -6,7 +6,8 @@
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" type="text/css" href="./fonts.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./app.css">
+    <link rel="stylesheet" type="text/css" href="./page.css">
     <link rel="stylesheet" href="./ebgaramond.woff2" type="text/css" crossorigin="true">
     <link rel="stylesheet" href="./fraunces.woff2" type="text/css" crossorigin="true">
     <link rel="stylesheet" href="./opensans.woff2" type="text/css" crossorigin="true">
@@ -39,10 +40,15 @@
       <div class="AppGridDisplay"></div>
     </section>
     <div class="AppDisplay">
+      <div class="AppStyleDisplay__inspectStyleContainer">
+        <ul class="AppStyleDisplay__inspectStyleList">
+          <li class="AppStyleDisplay__inspectStyleProp"></li>
+        </ul>
+      </div>
       <input type="text" class="AppDisplay__search" placeholder="Enter a value"/>
       <input type="text" class="AppDisplay__classList" placeholder="Enter space-separated class names."/>
       <div class="AppStyleDisplay">
-        <div class="AppStyleDisplay__element"></div>
+        <div class="AppStyleDisplay__element">Test</div>
         <div class="AppStyleDisplay__prop">font-size</div>
         <div class="AppStyleDisplay__value">18px</div>
         <span class="AppStyleDisplay__channel"></span>
@@ -56,9 +62,9 @@
         <div class="AppKeyDisplay__key"></div>
       </div>
       <div class="AppScrollDisplay"></div>
-      <script>let recording = [];</script>
-      <script src="./js/instrument.js"></script>
-      <script src="./js/script.js"></script>
+      <script src="./js/recordingMaybe.js"></script>
+      <script src="./js/app.js"></script>
+      <script src="./js/page.js"></script>
     </div>
   </body>
 </html>

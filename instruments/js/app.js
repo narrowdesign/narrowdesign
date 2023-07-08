@@ -793,10 +793,6 @@ function init() {
       bodyEl.classList.remove('App--isKeyDisplayed')
     }, 800)
   }
-
-  function hideKeyPressed() {
-    bodyEl.classList.remove('App--isKeyDisplayed')
-  }
   
   function enterSearchMode() {
     userState.isSearchMode = true;
@@ -847,7 +843,7 @@ function init() {
   }
 
   function handleWindowClick(e) {
-    if (userState.isEditMode) return;
+    if (userState.isEditMode && !e.target.contentEditable) return;
     if (userState.isShiftKey) {
       setMultiSelectedElement(e.target)
     } else {
@@ -929,6 +925,8 @@ function init() {
         addLineBreak(e)
       } else if (e.key === "Escape") {
         exitEditMode();
+      } else if (e.key === "Tab") {
+        handleTab(e)
       }
       // if (userState.isRecording && userState.selectedElement) {
       //   addToRecording(['type', elements.indexOf(userState.selectedElement), userState.selectedElement.innerText])
@@ -1243,14 +1241,19 @@ function init() {
   // State change functions
 
   function setSelectedElement(el) {
-    exitEditMode()
+    if (!el.contentEditable) {
+      exitEditMode()
+    }
     userState.multiSelectedElementList.forEach((el) => {
       el.classList.remove('AppElement--isMultiSelected')
     })
     userState.multiSelectedElementList = [];
+    if (elements.indexOf(el) === -1) {
+      alert('selected element index is -1')
+      console.log(el);
+      console.log(elements)
+    }
     if (userState.isRecording) {
-      // alert('recording element index is -1')
-      console.log(el, elements.indexOf(el))
       addToRecording(['select', elements.indexOf(el)])
     }
     if (userState.selectedElement) {
@@ -1280,6 +1283,11 @@ function init() {
   }
 
   function setMultiSelectedElement(el) {
+    if (elements.indexOf(el) === -1) {
+      alert('multi select index is -1')
+      console.log(el);
+      console.log(elements)
+    }
     if (userState.isRecording) {
       addToRecording(['multi-select', elements.indexOf(el)])
     }
@@ -1707,27 +1715,27 @@ function init() {
     } else if (propName === "--box-shadow" || propName === "--text-shadow") {
       if (userState.activePropParamIndex === 0) {
         if (userState.isActivePropParamIndexAlt) {
-          displayChannelEl.innerText = `x`;
-        } else {
           displayChannelEl.innerText = `hue`;
+        } else {
+          displayChannelEl.innerText = `x`;
         }
       } else if (userState.activePropParamIndex === 1) {
         if (userState.isActivePropParamIndexAlt) {
-          displayChannelEl.innerText = `y`;
-        } else {
           displayChannelEl.innerText = `saturation`;
+        } else {
+          displayChannelEl.innerText = `y`;
         }
       } else if (userState.activePropParamIndex === 2) {
         if (userState.isActivePropParamIndexAlt) {
-          displayChannelEl.innerText = `blur`;
-        } else {
           displayChannelEl.innerText = `level`;
+        } else {
+          displayChannelEl.innerText = `blur`;
         }
       } else if (userState.activePropParamIndex === 3) {
         if (userState.isActivePropParamIndexAlt) {
-          displayChannelEl.innerText = `spread`;
-        } else {
           displayChannelEl.innerText = `alpha`;
+        } else {
+          displayChannelEl.innerText = `spread`;
         }
       }
     } else if (propName === "filter" || propName === "backdrop-filter") {
@@ -1857,7 +1865,11 @@ function init() {
       userState.activeContainer = newElement;
       newElement.appendChild(containerGridEl.cloneNode(false));
     } else if (key === "w") {
-      wrapElement(newElement)
+      if (userState.selectedElement && userState.selectedElement !== bodyEl) {
+        wrapElement(newElement);
+      } else {
+        return;
+      }
     } else {
       if (container) {      
         container.appendChild(newElement);
@@ -1941,7 +1953,6 @@ function init() {
   }
 
   function wrapElement(newElement) {
-    if (userState.selectedElement === bodyEl) return;
     newElement.classList.add("container");
     const sourceStyles = userState.selectedElement.style;
 
@@ -1973,6 +1984,7 @@ function init() {
   }
   
   function deleteElement(el, deleteChildren) {
+    if (el === bodyEl) return;
     // TODO: move element to trache so it can be easily undone
     const index = elements.indexOf(el);
     if (userState.isRecording) {
@@ -1995,7 +2007,6 @@ function init() {
   }
 
   async function loadFonts() {
-    console.log('load fonts')
     userState.hasFontsLoaded = true;
     const textStyle = document.createElement("style");
     try {
@@ -2146,7 +2157,7 @@ function init() {
       .getPropertyValue(`${userState.activePropName}`)
       .trim()}`;
     const transformProps = transformVal.split(" ");
-    const index = userState.isActivePropParamIndexAlt ? userState.activePropParamIndex + 8 : userState.activePropParamIndex;
+    const index = userState.isActivePropParamIndexAlt ? userState.activePropParamIndex + 9 : userState.activePropParamIndex;
     const activeProp = transformProps[index];
     const name = activeProp.substring(0, activeProp.indexOf('('))
     const propVal = activeProp.substring(activeProp.indexOf('(') + 1, activeProp.indexOf(')'));
