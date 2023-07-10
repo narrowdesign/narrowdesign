@@ -150,7 +150,7 @@ function init() {
       initialValue: "auto"
     },
     bc: {
-      name: ["--background-color", "--background-color", "--background-color", "--background-color"],
+      name: ["--background", "--background", "--background", "--background"],
       initialValue: `hsla(360,100%,100%,0)`,
       isVariable: true
     },
@@ -161,7 +161,7 @@ function init() {
       initialValue: '0vw'
     },
     bf: {
-      name: "--backdrop-filter-blur",
+      name: "--backdrop-filter",
       min: 0,
       initialValue: "0vw",
       isVariable: true
@@ -270,7 +270,7 @@ function init() {
       ]
     },    
     fb: {
-      name: "--blur",
+      name: "--filter",
       min: 0,
       initialValue: "0vw",
       isVariable: true
@@ -1449,7 +1449,7 @@ function init() {
     } else if (propName === "--background-linear-gradient") {
       newVal = getLinearGradient(roundedDelta)
       unit = '';
-    } else if (propName === "--color" || propName === "--background-color" || propName === "--border-color") {
+    } else if (propName === "--color" || propName === "--background" || propName === "--border-color") {
       newVal = getHSLA(roundedDelta);
       unit = '';
     } else if (propName === "--transform") {
@@ -1642,7 +1642,7 @@ function init() {
         value: getComputedStyle(userState.selectedElement).getPropertyValue(propName)
       })
       el.style.setProperty(
-        `${propName}`,
+        propName,
         newVal
       );
 
@@ -1655,13 +1655,42 @@ function init() {
             value: getComputedStyle(multiEl).getPropertyValue(propName)
           })
           multiEl.style.setProperty(
-            `${propName}`,
+            propName,
             newVal
-          );  
+          );
         })
         updateUndoStack(undoable);
       } else {
         updateUndoStack(...undoable);
+      }
+
+      if (propName.substring(0, 2) === '--') {
+        if (newVal === "") {
+          
+        } else if (propName === '--backdrop-filter' || propName === '--filter') {
+          newVal = `blur(var(--backdrop-filter))`
+        } else if (propName === '--background') {
+          newVal = `var(--background-linear-gradient, var(--background))`
+        } else if (propName === '--border-color') {
+          newVal = `var(--border-color)`
+        } else if (propName === '--box-shadow') {
+          newVal = `var(--box-shadow)`
+        } else if (propName === '--text-shadow') {
+          newVal = `var(--text-shadow)`
+        } else if (propName === '--transform') {
+          newVal = `var(--transform)`
+        }
+        el.style.setProperty(
+          propName.substring(2),
+          newVal
+        );
+
+        userState.multiSelectedElementList.forEach((multiEl) => {
+          multiEl.style.setProperty(
+            propName.substring(2),
+            newVal
+          );
+        })
       }
     }
   }
@@ -1699,7 +1728,7 @@ function init() {
     if (
       propName === "--color" ||
       propName === "--border-color" ||
-      propName === "--background-color"
+      propName === "--background"
     ) {
       if (userState.activePropParamIndex === 0) {
         displayChannelEl.innerText = `hue`;

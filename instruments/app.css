@@ -19,11 +19,11 @@ body {
   overscroll-behavior-x: contain;
   overflow-x: hidden;
   --after-element-opacity: 0;
-  --background-color: hsla(360,100%,100%,1);
+  --background: hsla(360,100%,100%,1);
   --color: hsla(360,100%,0%,1);
   --border-color: hsla(360,100%,0%,1);
   align-items: center;
-  background: var(--background-linear-gradient, var(--background-color));
+  background: var(--background-linear-gradient, var(--background));
   background-image: '';
   border-color: var(--border-color);
   border-width: 0vw;
@@ -61,8 +61,8 @@ p,
 input,
 textarea,
 code {
-  --background-color: transparent;
-  --blur: 0vw;
+  --background: transparent;
+  --filter: 0vw;
   --backdrop-filter-blur: 0vw;
   --box-shadow: var(--color) 0vw 0vw 0vw 0vw;
   --color: inherit;
@@ -72,28 +72,29 @@ code {
 
   align-self: stretch;
   align-items: stretch;
-  backdrop-filter: blur(var(--backdrop-filter-blur));
-  background: var(--background-linear-gradient, var(--background-color));
+  /* backdrop-filter: blur(var(--backdrop-filter)); */
+  /* background: var(--background-linear-gradient, var(--background)); */
   background-image: '';
-  border-color: var(--border-color);
+  /* border-color: var(--border-color); */
   border-width: 0vw;
   border-style: solid;
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow); */
   color: var(--color);
   display: flex;
-  filter: blur(var(--blur));
+  /* filter: blur(var(--filter)); */
   flex-direction: column;
   font-size: inherit;
   font-weight: inherit;
-  grid-column-start: 1;
-  grid-column-end: 2;  
-  grid-row-start: 1;
-  grid-row-end: 2;
   margin: 0vw;
   padding: 0vw;
   position: relative;
-  text-shadow: var(--text-shadow);
-  transform: var(--transform);
+  /* text-shadow: var(--text-shadow); */
+  /* transform: var(--transform); */
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  transform-style: preserve-3d;
   min-width: 0px;
 }
 
@@ -116,7 +117,7 @@ iframe {
 }
 
 .container {
-  --background-color: transparent;
+  --background: transparent;
   align-self: center;
   column-gap: 2vw;
   display: grid;
@@ -138,8 +139,8 @@ iframe {
 }
 
 button {
-  --color: var(--background-color);
-  --background-color: var(--color);
+  --color: var(--background);
+  --background: var(--color);
   outline: none;
 }
 
