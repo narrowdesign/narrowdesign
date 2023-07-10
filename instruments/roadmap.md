@@ -13,7 +13,7 @@ Grid column widths can only be equal
 - allow different types of grid widths (equal, contents, templates)
 
 Can't see or click on a container with no padding
-- show something
+- show something indicating that there is a parent and give it a keyboard shortcut
 
 Can’t click an element that is behind another element
 - pick which hovered element you want to click

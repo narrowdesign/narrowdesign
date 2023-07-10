@@ -24,7 +24,7 @@ const classListEl = document.querySelector('.AppDisplay__classList')
 
 let userState;
 
-const elements = [
+let elements = [
   bodyEl,
   ...bodyEl.querySelectorAll('*')
 ];
@@ -53,6 +53,7 @@ function init() {
     bodyEl.classList.remove("App--isGridActive");
     bodyEl.classList.remove("App--isVisualMode");
     bodyEl.classList.remove("App--isXrayMode");
+    bodyEl.classList.remove("App--isInspectStyleDisplayed");
     return
   }
   window.onbeforeunload = function() {
@@ -616,7 +617,6 @@ function init() {
     isTypingDelay: false,
     isVisualMode: false,
     isXrayMode: false,
-    
 
     keyTimeout: null,
     keyDisplayedTimeout: null,
@@ -631,7 +631,7 @@ function init() {
     searchTimeout: null,
     styleDisplayTimeout: null,
     touchStartY: windowState.centerY,
-    undoOffset: 0,
+    undoStack: [],
   };
   
   // ADD EVENT LISTENERS
@@ -741,6 +741,7 @@ function init() {
   }
 
   function addToRecording(newStep) {
+    if (userState.isUndoing || userState.isRewinding) return;
     const prevStep = recording[recording.length - 1];
     let push = false;
     if (prevStep) {
@@ -893,6 +894,11 @@ function init() {
   }
 
   function handleKeyPress(e) {
+    if (e.key === "z" && e.metaKey) {
+      e.preventDefault();
+      undo(e);
+      return;
+    }
     if (e.metaKey) return;
     userState.isShiftKey = e.shiftKey;
     if (userState.isShiftKey) {
@@ -945,9 +951,6 @@ function init() {
       return;
     } else if (e.key === "Backspace") {
       deleteElement(userState.selectedElement, e.shiftKey);
-      return;
-    } else if (e.key === "z" && e.metaKey) {
-      undo(e);
       return;
     } else if (e.key === "Tab") {
       handleTab(e)
@@ -1110,7 +1113,13 @@ function init() {
     }
     if (userState.isRecording && userState.selectedElement && userState.isEditMode) {
       addToRecording(['type', elements.indexOf(userState.selectedElement), userState.selectedElement.innerHTML])
+      updateUndoStack({
+        type: 'type',
+        el: userState.selectedElement,
+        value: userState.selectedElement.innerHTML
+      })
     }
+
     redrawGrid();
   }
 
@@ -1615,6 +1624,9 @@ function init() {
   }
 
   function setStyleProperty(el, propName, newVal) {
+    if (userState.isRecording) {
+      addToRecording(['style', elements.indexOf(userState.selectedElement), propName, newVal])
+    }
     if (isNaN(newVal) && !newVal.match(/\d/) && userState.isAnimating) {
       userState.isListDelay = true;
       setTimeout(() => {
@@ -1622,19 +1634,35 @@ function init() {
       }, 100)
     }
     if (el === userState.selectedElement) {
-      userState.multiSelectedElementList.forEach((multiEl) => {
-        multiEl.style.setProperty(
-          `${propName}`,
-          newVal
-        );  
+      const undoable = [];
+      undoable.push({
+        type: 'style',
+        el: userState.selectedElement,
+        propName,
+        value: getComputedStyle(userState.selectedElement).getPropertyValue(propName)
       })
       el.style.setProperty(
         `${propName}`,
         newVal
       );
-    }
-    if (userState.isRecording) {
-      addToRecording(['style', elements.indexOf(userState.selectedElement), propName, newVal])
+
+      if (userState.multiSelectedElementList.length > 0) {
+        userState.multiSelectedElementList.forEach((multiEl) => {
+          undoable.push({
+            type: 'style',
+            el: multiEl,
+            propName,
+            value: getComputedStyle(multiEl).getPropertyValue(propName)
+          })
+          multiEl.style.setProperty(
+            `${propName}`,
+            newVal
+          );  
+        })
+        updateUndoStack(undoable);
+      } else {
+        updateUndoStack(...undoable);
+      }
     }
   }
 
@@ -1796,9 +1824,6 @@ function init() {
     if (element.classList.contains('container')) {
       container = element.parentNode;
     }
-    if (userState.isRecording) {
-      addToRecording(['duplicate', elements.indexOf(element),elements.indexOf(container),key])
-    }
     userState.firstKey = undefined;
     let rowStart = parseInt(getComputedStyle(element).getPropertyValue("grid-row-start"));
     let rowEnd = parseInt(getComputedStyle(element).getPropertyValue("grid-row-end"));
@@ -1829,6 +1854,13 @@ function init() {
       setStyleProperty(newElement, "grid-column-end", columnEnd - 1);
       setActiveProp('cs')
     }
+    if (userState.isRecording) {
+      addToRecording(['duplicate', elements.indexOf(element),elements.indexOf(container) - 1,key])
+    }
+    updateUndoStack({
+      type: 'new',
+      el: newElement,
+    })
     updateStyleDisplay();
     redrawGrid();
     moveAppToTopOfDom();
@@ -1837,13 +1869,11 @@ function init() {
   }
 
   function createNewElement(key, container = userState.activeContainer || bodyEl, text, src) {
-    if (userState.isRecording) {
-      addToRecording(['new', key, elements.indexOf(container)])
-    }
     userState.firstKey = undefined;
     if (!keyToNewElement.hasOwnProperty(key)) return;
     const newElementType = keyToNewElement[key.toLowerCase()];
     const newElement = document.createElement(newElementType);
+    let isWrapped;
     if (text) {
       newElement.innerText = text;
     }
@@ -1866,6 +1896,7 @@ function init() {
       newElement.appendChild(containerGridEl.cloneNode(false));
     } else if (key === "w") {
       if (userState.selectedElement && userState.selectedElement !== bodyEl) {
+        isWrapped = true;
         wrapElement(newElement);
       } else {
         return;
@@ -1911,6 +1942,15 @@ function init() {
       setSelectedElement(newElement)
       enterEditMode();
     }
+    if (userState.isRecording) {
+      addToRecording(['new', key, elements.indexOf(container)])
+    }
+    updateUndoStack({
+      type: 'new',
+      el: newElement,
+      container: container,
+      isWrapped: isWrapped,
+    })
     moveAppToTopOfDom();
     redrawGrid();
   }
@@ -1931,7 +1971,12 @@ function init() {
             if (elements.includes(imgElement)) {            
               const url = response.url;
               imgElement.style.backgroundImage = `url(${url})`;
-              recording[recording.length - 5].push(url)
+              for (let i = recording.length - 1; i >= 0; i--) {
+                if (recording[i][0] === 'new' && recording[i][1] === 'i') {
+                  recording[i].push(url);
+                  break;
+                }
+              }
             }
           }
           ).catch(function() {
@@ -1985,11 +2030,19 @@ function init() {
   
   function deleteElement(el, deleteChildren) {
     if (el === bodyEl) return;
-    // TODO: move element to trache so it can be easily undone
+
     const index = elements.indexOf(el);
     if (userState.isRecording) {
       addToRecording(['delete', index, deleteChildren]);
     }
+    updateUndoStack({
+      type: 'delete',
+      el: el,
+      index: index,
+      container: el.parentNode,
+      deleteChildren: deleteChildren,
+    })
+
     elements.splice(index, 1);
     const children = Array.from(el.children).filter((el) => !el.classList.contains('AppGridDisplay'));
     if (children.length === 0 || deleteChildren || confirm("Delete children?")) {
@@ -2352,32 +2405,84 @@ function init() {
     return newVal;
   }
 
+  function updateUndoStack(obj) {
+    if (userState.isUndoing) {
+      return;
+    }
+    userState.undoStack.push(obj);
+  }
+
   function undo() {
-    // rewind to previous keyframe
-    /*
-    1. go to previous recording index
-      if
-        new
-          delete
-        select
-          deselect
-        multi
-          deselect
-        style
-          if (previousStep[Type] === currentStep[Type] && previousStep[Type] - 1 === currentStep[Type])
-            repeat 1
-          else 
-            apply previousStep[Style]
-        type
-          apply previousStep[textValue]
-        delete
-          pull deleted element from trash and re-attach it to the dom where it was previously
-        duplicate
-          delete element
-    
-    */
-    animateRecording(recording.length - userState.undoOffset - 2, performance.now(), )
-    userState.undoOffset++;
+    if (userState.undoStack.length > 0) {
+      const prev = userState.undoStack.pop();
+      const next = userState.undoStack[userState.undoStack.length - 1]
+      userState.isUndoing = true;
+      if (prev.type === 'style') {
+        setStyleProperty(prev.el, prev.propName, prev.value);
+        setSelectedElement(prev.el);
+        if (next && prev.el === next.el && next.type === 'style' && next.propName === prev.propName) {
+          console.log(prev.propName)
+          undo();
+        }
+      } else if (prev.type === 'new') {
+        prev.el.remove();
+        elements = elements.filter((el) => el !== prev.el)
+        selectNextElement(-1);
+        if (prev.isWrapped) {
+          // should not delete child of wrapper
+          prev.container.remove();
+          elements = elements.filter((el) => el !== prev.container)
+        }
+        userState.undoStack.pop();
+        userState.undoStack.pop();
+      } else if (prev.type === 'delete') {
+        elements.push(prev.el);
+        if (prev.container) {
+          prev.container.appendChild(prev.el);
+        } else {
+          bodyEl.appendChild(prev.el);
+        }
+        setSelectedElement(prev.el);
+      } else if (prev.type === 'type') {
+        prev.el.innerText = prev.value;
+        setSelectedElement(prev.el);
+      } else {
+        alert('can’t undo that')
+        console.log(prev);
+        userState.isUndoing = false;
+        return;
+      }
+
+      updateStyleDisplay();
+      let i = recording.length - 1;
+      while (i >= 0) {
+        if (recording[i][0] === 'select' || recording[i][0] === 'multi-select' || (recording[i][0] === 'style' && recording[i][2] === prev.propName && elements[recording[i][1]] === prev.el)) {
+          recording.pop()
+        } else if (
+          (
+            ((recording[i][0] === 'new' || recording[i][0] === 'duplicate') && prev.type === 'new')
+          ) 
+        ) {
+          recording.pop()
+          recording.pop()
+          recording.pop()          
+          break;
+        } else if (
+          (
+            (recording[i][0] === 'delete' && prev.type === 'delete') ||
+            (recording[i][0] === 'type' && prev.type === 'type')
+          ) 
+        ) {
+          recording.pop()
+          break;
+        } else {
+          console.log('nothing')
+          break
+        }
+        i--;
+      }
+      userState.isUndoing = false;
+    }
   }
 
   function blendStyles(a, b, steps) {
