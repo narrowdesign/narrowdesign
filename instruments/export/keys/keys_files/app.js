@@ -1629,9 +1629,7 @@ function init() {
 
   function setStyleProperty(el, propName, newVal) {
     if (userState.isRecording) {
-      // if (!axis) {
-      //   addToRecording(['style', elements.indexOf(el), propName, getComputedStyle(userState.selectedElement).getPropertyValue(propName)])
-      // }
+      addToRecording(['style', elements.indexOf(el), propName, getComputedStyle(userState.selectedElement).getPropertyValue(propName)])
       addToRecording(['style', elements.indexOf(el), propName, newVal])
     }
     if (isNaN(newVal) && !newVal.match(/\d/) && userState.isAnimating) {
