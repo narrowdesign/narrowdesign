@@ -1873,7 +1873,7 @@ function init() {
       }
     })
     if (userState.isRecording) {
-      addToRecording(['duplicate', elements.indexOf(element),elements.indexOf(container) - 1,key])
+      addToRecording(['duplicate', elements.indexOf(element), elements.indexOf(container),key])
     }
     container.appendChild(newElement);
     elements.splice(elements.length - 1, 0, newElement);

@@ -71,31 +71,20 @@ code {
   --transform: perspective(100vw) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
 
   align-self: stretch;
-  align-items: stretch;
-  /* backdrop-filter: blur(var(--backdrop-filter)); */
-  /* background: var(--background-linear-gradient, var(--background)); */
   background-image: '';
-  /* border-color: var(--border-color); */
   border-width: 0vw;
   border-style: solid;
-  /* box-shadow: var(--box-shadow); */
   color: var(--color);
-  display: flex;
-  /* filter: blur(var(--filter)); */
-  flex-direction: column;
   font-size: inherit;
   font-weight: inherit;
   margin: 0vw;
   padding: 0vw;
   position: relative;
-  /* text-shadow: var(--text-shadow); */
-  /* transform: var(--transform); */
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
   transform-style: preserve-3d;
-  min-width: 0px;
 }
 
 iframe {
@@ -131,8 +120,6 @@ iframe {
 }
 
 .image {
-  width: 200px;
-  height: 200px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
