@@ -1,3 +1,7 @@
+// TODO: undoing wrap should not delete children
+// TODO: add redo
+// TODO: combind undo and recording
+// TODO: novel element traversal without clicking
 
 const unitRegex = /vw$|vh$|vmax$|dvh$|dvw$|svh$|svw$|lvh$|lvw$|dvmin$|dvmax$|lvmin$|lvmax$|svmin$|svmax$|vmin$|px$|rem$|em$|%$/;
 const defaultImage = 'images/mountain.jpg';
@@ -15,12 +19,14 @@ const displayValueEl = document.querySelector(".AppStyleDisplay__value");
 const displayElementEl = document.querySelector(".AppStyleDisplay__element");
 const displayChannelEl = document.querySelector(".AppStyleDisplay__channel");
 const displayEnumListEl = document.querySelector(".AppStyleDisplay__enumList");
+const displayElementsUnderCursorListEl = document.querySelector(".AppStyleDisplay__elementsUnderCursorList");
 const displayInspectStyleListEl = document.querySelector(".AppStyleDisplay__inspectStyleList");
 const keyDisplayEl = document.querySelector(".AppKeyDisplay");
 const scrollDisplayEl = document.querySelector('.AppScrollDisplay')
 const containerGridEl = document.querySelector(".AppGridDisplay");
 const searchEl = document.querySelector('.AppDisplay__search')
 const classListEl = document.querySelector('.AppDisplay__classList')
+const linkInputEl = document.querySelector('.AppDisplay__linkInput')
 
 let userState;
 
@@ -40,7 +46,9 @@ setTimeout(init, 200);
 function init() {
   if (!window.location.search.includes('instrument')) {
     bodyEl.classList.remove('App--isClassListMode');
+    bodyEl.classList.remove('App--isLinkInputMode');
     bodyEl.classList.remove('App--isEnumDisplayed');
+    bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
     bodyEl.classList.remove('App--isInspectStyleDisplayed');
     bodyEl.classList.remove('App--isInstrument');
     bodyEl.classList.remove('App--isKeyDisplayed')
@@ -609,6 +617,7 @@ function init() {
     isAltKey: false,
     isAnimating: false,
     isClassListMode: false,
+    isLinkInputMode: false,
     isDragging: false,
     isEditMode: false,
     isListDelay: false,
@@ -666,8 +675,7 @@ function init() {
     e.stopPropagation();
   })
 
-  searchEl.addEventListener('mousedown', handleMouseDown);
-  classListEl.addEventListener('mousedown', handleMouseDown);
+  window.addEventListener('mousedown', handleMouseDown);
 
   // RECORDING AND PLAYBACK FUNCTIONS
 
@@ -733,8 +741,9 @@ function init() {
       redrawGrid();
       stepIndex++;
     }
-    if (i < recording.length - 1 && userState.isAnimating) {    
+    if (stepIndex < recording.length - 1 && userState.isAnimating) {
       requestAnimationFrame(() => {
+        console.log(i, stepIndex)
         animateRecording(stepIndex, now)
       })  
     } else {
@@ -832,12 +841,36 @@ function init() {
       classListEl.value = classList;
     }, 10)
   }
-  
   function exitClassListMode() {
     userState.isClassListMode = false;
     classListEl.blur();
     userState.selectedElement.focus();
     bodyEl.classList.remove('App--isClassListMode');
+  }
+  
+  function enterLinkInputMode() {
+    userState.isLinkInputMode = true;
+    bodyEl.classList.add('App--isLinkInputMode');
+    clearTimeout(userState.linkTimeout)
+    userState.linkTimeout = setTimeout(() => {
+      linkInputEl.focus();
+      const container = userState.selectedElement.parentElement;
+      if (userState.selectedElement.tagName === 'A') {
+        const link = userState.selectedElement.href || '';
+        linkInputEl.value = link;
+      } else if (container) {
+        if (container.tagName !== 'A') {
+          const link = container.href || '';
+          linkInputEl.value = link;
+        }
+      }
+    }, 10)
+  }
+  function exitLinkInputMode() {
+    userState.isLinkInputMode = false;
+    linkInputEl.blur();
+    userState.selectedElement.focus();
+    bodyEl.classList.remove('App--isLinkInputMode');
   }
 
   // Event handler functions
@@ -847,10 +880,15 @@ function init() {
   }
 
   function handleWindowClick(e) {
+    e.preventDefault()
     if (userState.isEditMode && !e.target.contentEditable) return;
     if (userState.isShiftKey) {
       setMultiSelectedElement(e.target)
     } else {
+      const elementsUnderCursor = document.elementsFromPoint(e.clientX, e.clientY).filter(el => elements.includes(el));
+      console.log(elementsUnderCursor)
+      updateElementsUnderCursorList(elementsUnderCursor);
+
       setSelectedElement(e.target);
     }
   }
@@ -929,6 +967,13 @@ function init() {
         handleClassListEnterKeyPress();
       }
       return;
+    } else if (userState.isLinkInputMode) {
+      if (e.key === "Escape") {
+        handleLinkInputEscapeKeyPress();
+      } else if (e.key === "Enter") {
+        handleLinkInputEnterKeyPress();
+      }
+      return;
     } else if (userState.isEditMode) {
       if (e.key === "Enter") {
         addLineBreak(e)
@@ -960,6 +1005,9 @@ function init() {
       return;
     } else if (e.key === ".") {
       enterClassListMode();
+      return;
+    } else if (e.key === ":" || e.key === "/") {
+      enterLinkInputMode();
       return;
     } 
     // else if (e.key === "#") {
@@ -1060,6 +1108,55 @@ function init() {
     exitClassListMode();
   }
 
+  function handleLinkInputEscapeKeyPress() {
+    if (classListEl.value === "") {          
+      exitLinkInputMode();
+    } else {
+      linkInputEl.value = '';
+    }
+  }
+
+  function handleLinkInputEnterKeyPress() {
+    const container = userState.selectedElement.parentElement;
+    if (userState.selectedElement.tagName === 'A') {
+      userState.selectedElement.setAttribute('href', linkInputEl.value);
+
+      if (linkInputEl.value === '') {
+        userState.selectedElement.children.forEach(child => {
+          userState.selectedElement.insertBefore(child, userState.selectedElement);
+        })
+        userState.selectedElement.remove();
+      }
+      // TODO: add link on playback, add to undo stack, create new link element like others
+      addToRecording([
+        'link',
+        elements.indexOf(userState.selectedElement),
+        userState.selectedElement.getAttribute('href'),
+      ])
+    } else if (container) {
+      if (container.tagName !== 'A') {
+        const linkEl = document.createElement('a');
+        linkEl.setAttribute('href', linkInputEl.value);
+        linkEl.appendChild(userState.selectedElement);
+        container.appendChild(linkEl);
+        if (elements.indexOf(linkEl) === -1) {
+          elements.push(linkEl);
+        }
+      } else {
+        container.setAttribute('href', linkInputEl.value);
+      }
+    } else {
+      const linkEl = document.createElement('a');
+      linkEl.setAttribute('href', linkInputEl.value);
+      linkEl.appendChild(userState.selectedElement);
+      document.body.appendChild(linkEl);
+      if (elements.indexOf(linkEl) === -1) {
+        elements.push(linkEl);
+      }
+    }
+    exitLinkInputMode();
+  }
+
   function handleSearchEscapeKeyPress() {
     if (searchEl.value === "") {          
       exitSearchMode();
@@ -1144,7 +1241,7 @@ function init() {
 
   function handlePaste(e) {
     // cancel paste
-    if (userState.isSearchMode || userState.isClassListMode) return;
+    if (userState.isSearchMode || userState.isClassListMode || userState.isLinkInputMode) return;
     e.preventDefault();
 
     const pastedText = (e.originalEvent || e).clipboardData.getData('text/plain');
@@ -1169,7 +1266,7 @@ function init() {
     userState.isDragging = true;    
     userState.mouseStartX = e.pageX;
     userState.mouseStartY = e.pageY;
-    window.addEventListener('mouseup', handleMouseUp);    
+    window.addEventListener('mouseup', handleMouseUp); 
   }
   
   function handleMouseMove(e) {
@@ -1185,6 +1282,9 @@ function init() {
     userState.mouseY = e.pageY;
     userState.mouseStartX = e.pageX;
     userState.mouseStartY = e.pageY;
+    if (window.getSelection()) {
+      console.log(window.getSelection())
+    }
     window.removeEventListener('mouseup', handleMouseUp);    
   }
 
@@ -1593,6 +1693,44 @@ function init() {
         el.classList.add('AppStyleDisplay__enum--isActive')
       } else {
         el.classList.remove('AppStyleDisplay__enum--isActive')
+      }
+    })
+  }
+
+  function updateElementsUnderCursorList(elementsUnderCursorList) {
+    if (!elementsUnderCursorList) {
+      displayElementsUnderCursorListEl.innerHTML = '';
+      bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
+      return;
+    }
+    bodyEl.classList.add('App--isElementsUnderCursorListDisplayed');
+    clearTimeout(userState.inspectStyleDisplayedTimeout);
+    userState.inspectStyleDisplayedTimeout = setTimeout(() => {
+      bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
+    }, 900)
+    const newList = elementsUnderCursorList[0] !== displayElementsUnderCursorListEl.firstChild?.innerText;
+    let activeElementIndex = 0;
+    if (newList) {
+      displayElementsUnderCursorListEl.innerHTML = '';
+    }
+    let activeClass = '';
+    elementsUnderCursorList.forEach((element, i) => {
+      if (userState.selectedElement === element) {
+        activeClass="AppStyleDisplay__elementsUnderCursor--isActive"
+        displayElementsUnderCursorListEl.style.transform = `translateY(${i * -39}px)`
+        activeElementIndex = i;
+      } else {
+        activeClass = '';
+      }
+      if (newList) {
+        displayElementsUnderCursorListEl.innerHTML += `<li class="AppStyleDisplay__elementsUnderCursor ${activeClass}">${element.tagName}</li>`;
+      }
+    });
+    displayElementsUnderCursorListEl.querySelectorAll('.AppStyleDisplay__elementsUnderCursor').forEach((el, i) => {
+      if (i === activeElementIndex) {
+        el.classList.add('AppStyleDisplay__elementsUnderCursor--isActive')
+      } else {
+        el.classList.remove('AppStyleDisplay__elementsUnderCursor--isActive')
       }
     })
   }
@@ -2038,8 +2176,8 @@ function init() {
   function wrapElement(newElement) {
     newElement.classList.add("container");
     const sourceStyles = userState.selectedElement.style;
-
-    userState.selectedElement.parentNode.insertBefore(newElement, userState.selectedElement);
+    const container = userState.selectedElement.parentNode;
+    container.insertBefore(newElement, userState.selectedElement);
     newElement.appendChild(userState.selectedElement);
     if (userState.multiSelectedElementList.length > 0) {
       // TODO if a parent of the selectedElement is also selected, the newElement (wrapper) should be inserted before the outermost parent
@@ -2137,7 +2275,7 @@ function init() {
       `${userState.activePropName}`
     )}`.trim();
     if (colorVal === "transparent") {
-      colorVal = `${getComputedStyle(userState.selectedElement.parentNode).getPropertyValue(
+      colorVal = `${getComputedStyle(container).getPropertyValue(
         `${userState.activePropName}`
       )}`.trim()
       if (colorVal === "transparent") {

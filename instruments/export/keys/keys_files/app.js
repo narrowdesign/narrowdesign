@@ -1629,7 +1629,9 @@ function init() {
 
   function setStyleProperty(el, propName, newVal) {
     if (userState.isRecording) {
-      addToRecording(['style', elements.indexOf(el), propName, getComputedStyle(userState.selectedElement).getPropertyValue(propName)])
+      // if (!axis) {
+      //   addToRecording(['style', elements.indexOf(el), propName, getComputedStyle(userState.selectedElement).getPropertyValue(propName)])
+      // }
       addToRecording(['style', elements.indexOf(el), propName, newVal])
     }
     if (isNaN(newVal) && !newVal.match(/\d/) && userState.isAnimating) {
@@ -1871,7 +1873,7 @@ function init() {
       }
     })
     if (userState.isRecording) {
-      addToRecording(['duplicate', elements.indexOf(element),elements.indexOf(container) - 1,key])
+      addToRecording(['duplicate', elements.indexOf(element), elements.indexOf(container),key])
     }
     container.appendChild(newElement);
     elements.splice(elements.length - 1, 0, newElement);
