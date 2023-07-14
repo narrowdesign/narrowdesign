@@ -1,4 +1,5 @@
 const titleScreenContainerEl = document.querySelector('.titleScreen__container');
+const titleScreen2023El = document.querySelector('.titleScreen__title--2023');
 const titleScreenEls = document.querySelectorAll('.titleScreen');
 const titleLetterEls = document.querySelectorAll('.titleScreen__title span');
 const titleImageEl = document.querySelector('.titleScreen img');
@@ -26,12 +27,14 @@ titleImageEl.style.opacity = `1`;
 titleImageEl.style.transform = `scale(1)`;
 
 function handleScroll() {
-  titleScreenContainerEl.style.transform = `scale(${1 - window.scrollY * 0.0005})`;
-  titleScreenContainerEl.style.filter = `blur(${window.scrollY * 0.005}px)`;
-  whiteRabbitEl.style.filter = `blur(${6 - window.scrollY * 0.005}px)`;
-  whiteRabbitEl.style.transform = `scale(${1.5 - window.scrollY * 0.0005})`;
-  whiteRabbitLogoEl.style.transform = `scale(${1.8 - window.scrollY * 0.0007})`;
-  dominionXEl.style.filter = `blur(${6 - window.scrollY * 0.005}px)`;
-  dominionXEl.style.transform = `scale(${2.0 - window.scrollY * 0.0005})`;
-  dominionXLogoEl.style.transform = `scale(${2.3 - window.scrollY * 0.0007})`;
+  scaleScreen(titleScreenContainerEl, titleScreen2023El);
+  scaleScreen(whiteRabbitEl, whiteRabbitLogoEl);
+  scaleScreen(dominionXEl, dominionXLogoEl);
+}
+
+function scaleScreen(el, titleEl) {
+  const top = el.getBoundingClientRect().top;
+  const scale = 1 - (1 - (Math.cos(Math.max(-Math.PI, Math.min(Math.PI, top * -0.004))) + 1) / 2) * 0.1;
+  el.style.transform = `scale(${scale})`;
+  titleEl.style.transform = `scale(${scale + (1 - scale)})`;
 }

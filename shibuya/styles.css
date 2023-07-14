@@ -8,6 +8,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
 }
 
 .titleScreen {
@@ -25,6 +26,7 @@ body {
   opacity: 0;
   transition: opacity 100ms;
   letter-spacing: 0.15rem;
+  transform-origin: 50% 50%;
 }
 
 .titleScreen:nth-of-type(2) {
@@ -53,7 +55,7 @@ body {
   height: 100%;
   object-fit: cover;
   width: 100%;
-  transform-origin: 50% 0;
+  transform-origin: 50% 50%;
   transform: scale(2);
   filter: blur(8px);
   transition: filter 5s ease-in-out, transform 5s ease-in-out, opacity 2s;
@@ -65,7 +67,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  transform-origin: 50% 0;
+  transform-origin: 50% 50%;
   transform: scale(1.3);
 }
 
@@ -88,7 +90,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  transform-origin: 50% 0;
+  transform-origin: 50% 50%;
   transform: scale(1.3);
 }
 
