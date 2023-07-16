@@ -743,7 +743,6 @@ function init() {
     }
     if (stepIndex < recording.length - 1 && userState.isAnimating) {
       requestAnimationFrame(() => {
-        console.log(i, stepIndex)
         animateRecording(stepIndex, now)
       })  
     } else {
@@ -886,7 +885,6 @@ function init() {
       setMultiSelectedElement(e.target)
     } else {
       const elementsUnderCursor = document.elementsFromPoint(e.clientX, e.clientY).filter(el => elements.includes(el));
-      console.log(elementsUnderCursor)
       updateElementsUnderCursorList(elementsUnderCursor);
 
       setSelectedElement(e.target);
@@ -2275,7 +2273,7 @@ function init() {
       `${userState.activePropName}`
     )}`.trim();
     if (colorVal === "transparent") {
-      colorVal = `${getComputedStyle(container).getPropertyValue(
+      colorVal = `${getComputedStyle(userState.selectedElement.parentNode).getPropertyValue(
         `${userState.activePropName}`
       )}`.trim()
       if (colorVal === "transparent") {
@@ -2344,7 +2342,6 @@ function init() {
     const startIndex = val.indexOf("(") + 1;
     const endIndex = val.lastIndexOf(")");
     let props = val.substring(startIndex, endIndex).split(",");
-    console.log(userState.activePropParamIndex, userState.activePropParamIndex)
     if (userState.isActivePropParamIndexAlt) {
       // const color = getHSLA(delta);
       // props[1] = color || `var(--color)`;
@@ -2631,7 +2628,6 @@ function init() {
       updateStyleDisplay();
       let i = recording.length - 1;
       while (i >= 0) {
-        console.log(elements, recording[i][1])
         if (recording[i][0] === 'select' || recording[i][0] === 'multi-select' || (recording[i][0] === 'style' && recording[i][2] === prev.propName && elements[recording[i][1]] === prev.el)) {
           
           recording.pop()

@@ -34,7 +34,9 @@ function handleScroll() {
 
 function scaleScreen(el, titleEl) {
   const top = el.getBoundingClientRect().top;
-  const scale = 1 - (1 - (Math.cos(Math.max(-Math.PI, Math.min(Math.PI, top * -0.004))) + 1) / 2) * 0.1;
+  const progress = (Math.cos(Math.max(-Math.PI, Math.min(Math.PI, top * -0.004))) + 1) / 2; // from 1 to -1
+  const scale = 1 - (1 - progress) * 0.1;
   el.style.transform = `scale(${scale})`;
+  el.style.borderRadius = `${scale * 10}px`;
   titleEl.style.transform = `scale(${scale + (1 - scale)})`;
 }
