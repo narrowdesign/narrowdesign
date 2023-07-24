@@ -1,3 +1,4 @@
+// TODO: Children are not duplicated into elements array, only the container is
 // TODO: undoing wrap should not delete children
 // TODO: add redo
 // TODO: combind undo and recording
@@ -556,6 +557,11 @@ function init() {
       name: ["--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform"],
       initialValue: `perspective(100vw) translateX(0vw) translateY(0vw) translateZ(0vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg)`,
       isVariable: true
+    },
+    ty: {
+      name: "transform-style",
+      enumList: ["flat", "preserve-3d"],
+      dependency: "tr",
     },
     w: {
       name: "width",
@@ -2002,17 +2008,22 @@ function init() {
     let rowStart = parseInt(getComputedStyle(element).getPropertyValue("grid-row-start"));
     let rowEnd = parseInt(getComputedStyle(element).getPropertyValue("grid-row-end"));
     let columnStart = parseInt(getComputedStyle(element).getPropertyValue("grid-column-start"));
-    let columnEnd = parseInt(getComputedStyle(element).getPropertyValue("grid-column-end"));      
-    Array.from(newElement.children).forEach((child) => {
-      if (!child.classList.contains('AppGridDisplay__line') && !child.classList.contains('AppGridDisplay')) {
-        elements.splice(elements.length - 1, 0, child);
-      }
-    })
+    let columnEnd = parseInt(getComputedStyle(element).getPropertyValue("grid-column-end"));
+    // check all descendents of element recursively for elements and add them to elements array
+    
+    
+    
     if (userState.isRecording) {
       addToRecording(['duplicate', elements.indexOf(element), elements.indexOf(container),key])
     }
     container.appendChild(newElement);
-    elements.splice(elements.length - 1, 0, newElement);
+    elements.push(newElement);
+    newElement.querySelectorAll("*").forEach((el) => {
+      if (!el.classList.contains('AppGridDisplay__line') && !el.classList.contains('AppGridDisplay')) {
+        console.log(el)
+        elements.push(el);
+      }
+    });
     setSelectedElement(newElement);
     if (key === "ArrowDown") {
       setStyleProperty(newElement, "grid-row-start", rowStart + 1);
@@ -2095,7 +2106,7 @@ function init() {
         }
       })
     }
-    elements.splice(elements.length - 1, 0, newElement);
+    elements.push(newElement);
     // TODO Allow spaces in button
     // if (newElementType === "button") {
     //   const newSpan = document.createElement('div');

@@ -21,17 +21,13 @@ body {
   --background: hsla(360,100%,100%,1);
   --color: hsla(360,100%,0%,1);
   --border-color: hsla(360,100%,0%,1);
-  align-items: center;
   background: var(--background-linear-gradient, var(--background));
   background-image: '';
   border-color: var(--border-color);
   border-width: 0vw;
   border-style: solid;
   color: var(--color);
-  display: grid;
-  flex-direction: column;
   font-size: var(--base-font-size);
-  justify-content: center;
   line-height: 1;
   margin: 0vw;
   min-height: 100vh;
@@ -84,7 +80,6 @@ code {
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  transform-style: preserve-3d;
 }
 
 iframe {
