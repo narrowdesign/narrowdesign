@@ -524,7 +524,7 @@ function init() {
     pe: {
       name: "perspective",
       min: 0,
-      initialValue: "100vw"
+      initialValue: "none",
     }, 
     rg: {
       name: "row-gap",
@@ -555,7 +555,7 @@ function init() {
     },
     tr: {
       name: ["--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform", "--transform"],
-      initialValue: `perspective(100vw) translateX(0vw) translateY(0vw) translateZ(0vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg)`,
+      initialValue: `translateX(0vw) translateY(0vw) translateZ(0vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg)`,
       isVariable: true
     },
     ty: {
@@ -747,7 +747,7 @@ function init() {
       redrawGrid();
       stepIndex++;
     }
-    if (stepIndex < recording.length - 1 && userState.isAnimating) {
+    if (stepIndex < recording.length && userState.isAnimating) {
       requestAnimationFrame(() => {
         animateRecording(stepIndex, now)
       })  
@@ -1447,12 +1447,15 @@ function init() {
     if (elTop > windowState.height) {      
       window.scrollTo({
         top: elTop,
-        left: 0
+        left: 0,
+        smooth: true
       });
     } else if (elBottom < 0) {
+      // smooth scroll to bottom of element
       window.scrollTo({
         top: elBottom - el.getBoundingClientRect().height,
-        left: 0
+        left: 0,
+        smooth: true
       });
     }
   }
@@ -1545,9 +1548,11 @@ function init() {
     if (propName === "letter-spacing" && (val === "initial" || val === "normal")) {
       val = "0"
       unit = "vw"
-    }
-    if (propName === "z-index" && (val === "auto")) {
+    } else if (propName === "z-index" && (val === "auto")) {
       val = "0"
+    } else if (propName === "perspective" && (val === "none")) {
+      val = "100",
+      unit = "vw"
     }
     let newVal;
     if (propName === "--box-shadow" || propName === "--text-shadow") {
@@ -1702,41 +1707,41 @@ function init() {
   }
 
   function updateElementsUnderCursorList(elementsUnderCursorList) {
-    if (!elementsUnderCursorList) {
-      displayElementsUnderCursorListEl.innerHTML = '';
-      bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
-      return;
-    }
-    bodyEl.classList.add('App--isElementsUnderCursorListDisplayed');
-    clearTimeout(userState.inspectStyleDisplayedTimeout);
-    userState.inspectStyleDisplayedTimeout = setTimeout(() => {
-      bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
-    }, 900)
-    const newList = elementsUnderCursorList[0] !== displayElementsUnderCursorListEl.firstChild?.innerText;
-    let activeElementIndex = 0;
-    if (newList) {
-      displayElementsUnderCursorListEl.innerHTML = '';
-    }
-    let activeClass = '';
-    elementsUnderCursorList.forEach((element, i) => {
-      if (userState.selectedElement === element) {
-        activeClass="AppStyleDisplay__elementsUnderCursor--isActive"
-        displayElementsUnderCursorListEl.style.transform = `translateY(${i * -39}px)`
-        activeElementIndex = i;
-      } else {
-        activeClass = '';
-      }
-      if (newList) {
-        displayElementsUnderCursorListEl.innerHTML += `<li class="AppStyleDisplay__elementsUnderCursor ${activeClass}">${element.tagName}</li>`;
-      }
-    });
-    displayElementsUnderCursorListEl.querySelectorAll('.AppStyleDisplay__elementsUnderCursor').forEach((el, i) => {
-      if (i === activeElementIndex) {
-        el.classList.add('AppStyleDisplay__elementsUnderCursor--isActive')
-      } else {
-        el.classList.remove('AppStyleDisplay__elementsUnderCursor--isActive')
-      }
-    })
+    // if (!elementsUnderCursorList) {
+    //   displayElementsUnderCursorListEl.innerHTML = '';
+    //   bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
+    //   return;
+    // }
+    // bodyEl.classList.add('App--isElementsUnderCursorListDisplayed');
+    // clearTimeout(userState.inspectStyleDisplayedTimeout);
+    // userState.inspectStyleDisplayedTimeout = setTimeout(() => {
+    //   bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
+    // }, 900)
+    // const newList = elementsUnderCursorList[0] !== displayElementsUnderCursorListEl.firstChild?.innerText;
+    // let activeElementIndex = 0;
+    // if (newList) {
+    //   displayElementsUnderCursorListEl.innerHTML = '';
+    // }
+    // let activeClass = '';
+    // elementsUnderCursorList.forEach((element, i) => {
+    //   if (userState.selectedElement === element) {
+    //     activeClass="AppStyleDisplay__elementsUnderCursor--isActive"
+    //     displayElementsUnderCursorListEl.style.transform = `translateY(${i * -39}px)`
+    //     activeElementIndex = i;
+    //   } else {
+    //     activeClass = '';
+    //   }
+    //   if (newList) {
+    //     displayElementsUnderCursorListEl.innerHTML += `<li class="AppStyleDisplay__elementsUnderCursor ${activeClass}">${element.tagName}</li>`;
+    //   }
+    // });
+    // displayElementsUnderCursorListEl.querySelectorAll('.AppStyleDisplay__elementsUnderCursor').forEach((el, i) => {
+    //   if (i === activeElementIndex) {
+    //     el.classList.add('AppStyleDisplay__elementsUnderCursor--isActive')
+    //   } else {
+    //     el.classList.remove('AppStyleDisplay__elementsUnderCursor--isActive')
+    //   }
+    // })
   }
   
   function updateInspectStyleList() {
@@ -1895,30 +1900,26 @@ function init() {
     ) {
       if (userState.activePropParamIndex === 0) {
         if (userState.isActivePropParamIndexAlt) {
-          displayChannelEl.innerText = `skewX`;
-        } else {
-          displayChannelEl.innerText = `perspective`;
-        }
-      } else if (userState.activePropParamIndex === 1) {
-        if (userState.isActivePropParamIndexAlt) {
           displayChannelEl.innerText = `skewY`;
         } else {
           displayChannelEl.innerText = `translateX`;
         }
-      } else if (userState.activePropParamIndex === 2) {
+      } else if (userState.activePropParamIndex === 1) {
         displayChannelEl.innerText = `translateY`;
-      } else if (userState.activePropParamIndex === 3) {
+      } else if (userState.activePropParamIndex === 2) {
         displayChannelEl.innerText = `translateZ`;
-      } else if (userState.activePropParamIndex === 4) {
+      } else if (userState.activePropParamIndex === 3) {
         displayChannelEl.innerText = `rotateX`;
-      } else if (userState.activePropParamIndex === 5) {
+      } else if (userState.activePropParamIndex === 4) {
         displayChannelEl.innerText = `rotateY`;
-      } else if (userState.activePropParamIndex === 6) {
+      } else if (userState.activePropParamIndex === 5) {
         displayChannelEl.innerText = `rotateZ`;
-      } else if (userState.activePropParamIndex === 7) {
+      } else if (userState.activePropParamIndex === 6) {
         displayChannelEl.innerText = `scaleX`;
-      } else if (userState.activePropParamIndex === 8) {
+      } else if (userState.activePropParamIndex === 7) {
         displayChannelEl.innerText = `scaleY`;
+      } else if (userState.activePropParamIndex === 8) {
+        displayChannelEl.innerText = `skewX`;
       }
     } else if (propName === "--box-shadow" || propName === "--text-shadow") {
       if (userState.activePropParamIndex === 0) {
@@ -2106,14 +2107,17 @@ function init() {
         }
       })
     }
-    elements.push(newElement);
     // TODO Allow spaces in button
     // if (newElementType === "button") {
     //   const newSpan = document.createElement('div');
     //   newElement.appendChild(newSpan);
     //   elements.splice(elements.length - 1, 0, newSpan);      
     // }
-    
+      
+    if (userState.isRecording) {
+      addToRecording(['new', key, elements.indexOf(container)])
+    }
+    elements.push(newElement);
     setSelectedElement(newElement)
     if (userState.selectedElement.classList.contains("image")) {
       createNewImage(src)
@@ -2126,9 +2130,6 @@ function init() {
       setStyleProperty(newElement, "grid-row-end", lastRow + 1);
       setSelectedElement(newElement)
       enterEditMode();
-    }
-    if (userState.isRecording) {
-      addToRecording(['new', key, elements.indexOf(container)])
     }
     updateUndoStack({
       type: 'new',
@@ -2405,6 +2406,9 @@ function init() {
     let val = Math.round((parseFloat(propVal, 100) + delta) * 100) / 100;
     if (userState.isShiftKey) {
       val = Math.round(val);
+    }
+    if (name === "perspective") {
+      val = Math.max(1, val);
     }
     transformProps[index] = `${name}(${val}${unit})`;
     let fullTransform = transformProps.join(" ");

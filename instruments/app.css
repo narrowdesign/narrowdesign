@@ -7,6 +7,7 @@ html {
   font-family: 'system-ui';  
   -webkit-font-smoothing: antialiased;
   --base-font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -64,7 +65,7 @@ code {
   --color: inherit;
   --border-color: var(--color);
   --text-shadow: var(--color) 0vw 0vw 0vw;
-  --transform: perspective(100vw) translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  --transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
 
   align-self: stretch;
   background-image: '';
@@ -231,7 +232,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   bottom: 0;
   pointer-events: none;
   opacity: 0.4;
-  background: var(--color);
+  background: radial-gradient(circle at 50% -50%, #0ff, transparent 70%), radial-gradient(circle at -50% 100%, #ff0, transparent 70%), radial-gradient(circle at 150% 100%, #f0f, transparent 70%);
   animation: pulse 300ms forwards;
 }
 
@@ -699,6 +700,7 @@ body:not(.App--isInstrument) .AppDisplay {
   }
   100%
   {
+    background-position: 100% 100%, 100% -100%, -100% -100%;
     opacity: var(--after-element-opacity);
   }
 }
