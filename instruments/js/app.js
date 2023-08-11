@@ -708,6 +708,10 @@ function init() {
         };
       } else if (step[0] === 'multi-select') {
         setMultiSelectedElement(elements[step[1]])
+      } else if (step[0] === 'move-up') {
+        moveElementUpInDom(elements[step[1]])
+      } else if (step[0] === 'move-down') {
+        moveElementDownInDom(elements[step[1]])
       } else if (step[0] === 'style') {
         exitEditMode();
         const propName = step[2]
@@ -947,6 +951,8 @@ function init() {
     if (e.metaKey) return;
     userState.isShiftKey = e.shiftKey;
     if (userState.isShiftKey) {
+      // bodyEl.classList.add("App--isXrayMode");
+      // bodyEl.classList.add("App--isInspectMode");
       bodyEl.classList.add('App--isScrollMode');
       userState.isScrollMode = true;
     }
@@ -2562,16 +2568,22 @@ function init() {
     const previousElement = element.previousElementSibling;
     if (previousElement) {
       element.parentNode.insertBefore(element, previousElement);
+      if (userState.isRecording) {
+        addToRecording(['move-up', elements.indexOf(element)])
+      }
+      moveAppToTopOfDom();
     }
-    moveAppToTopOfDom();
   }
   
   function moveElementDownInDom(element) {
     const nextElement = element.nextElementSibling;
     if (nextElement) {
       element.parentNode.insertBefore(nextElement, element);
+      if (userState.isRecording) {
+        addToRecording(['move-down', elements.indexOf(element)])
+      }
+      moveAppToTopOfDom();
     }
-    moveAppToTopOfDom();
   }
 
   function moveAppToTopOfDom() {

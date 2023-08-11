@@ -1,42 +1,43 @@
-const titleScreenContainerEl = document.querySelector('.titleScreen__container');
-const titleScreen2023El = document.querySelector('.titleScreen__title--2023');
-const titleScreenEls = document.querySelectorAll('.titleScreen');
-const titleLetterEls = document.querySelectorAll('.titleScreen__title span');
-const titleImageEl = document.querySelector('.titleScreen img');
-const whiteRabbitEl = document.querySelector('.whiteRabbit');
-const whiteRabbitLogoEl = document.querySelector('.whiteRabbit__logo');
-const dominionXEl = document.querySelector('.dominionX');
-const dominionXLogoEl = document.querySelector('.dominionX__logo');
+const scene = document.querySelector('.scene')
+const container = document.querySelector('.container')
+const bgEl = document.querySelector('.bg')
+const leftEl = document.querySelector('.left')
+const centerEl = document.querySelector('.center')
+const rightEl = document.querySelector('.right')
+window.addEventListener('mousemove', handleMouseMove)
+document.body.addEventListener('wheel', handleScroll)
 
-window.addEventListener('scroll', handleScroll);
+function handleMouseMove(e) {
+  const x = e.pageX
+  const y = e.pageY
+  const width = window.innerWidth
+  const height = window.innerHeight
 
-titleScreenEls.forEach((el,i) => {
-  const time = i < 3 ? i * 2 : i * 2 + 5;
-  el.style.opacity = 1;
-  el.style.transitionDelay = `${time}s`;
-});
+  const xPercent = x / width
+  const yPercent = y / height
 
-titleLetterEls.forEach((el,i) => {
-  el.style.transitionDelay = `${i * 0.03 + 4}s`;
-  el.style.opacity = 1;
-})
+  const xDeg = (xPercent * 360 - 180) * -0.01
+  const yDeg = (yPercent * 360 - 180) * -0.005
 
-titleImageEl.style.transitionDelay = `4.5s`;
-titleImageEl.style.filter = `blur(0)`;
-titleImageEl.style.opacity = `1`;
-titleImageEl.style.transform = `scale(1)`;
-
-function handleScroll() {
-  scaleScreen(titleScreenContainerEl, titleScreen2023El);
-  scaleScreen(whiteRabbitEl, whiteRabbitLogoEl);
-  scaleScreen(dominionXEl, dominionXLogoEl);
+  
+  scene.style.transform = `rotateX(${-yDeg}deg) rotateY(${xDeg}deg)`
 }
 
-function scaleScreen(el, titleEl) {
-  const top = el.getBoundingClientRect().top;
-  const progress = (Math.cos(Math.max(-Math.PI, Math.min(Math.PI, top * -0.004))) + 1) / 2; // from 1 to -1
-  const scale = 1 - (1 - progress) * 0.1;
-  el.style.transform = `scale(${scale})`;
-  el.style.borderRadius = `${scale * 10}px`;
-  titleEl.style.transform = `scale(${scale + (1 - scale)})`;
+function handleScroll(e) {
+  const delta = e.deltaY
+  progress += delta
+  const total = 1000;
+  const percent = progress / total
+  const pan = percent * window.innerHeight * 2
+  progress = Math.max(0, Math.min(total, progress))
+  bgEl.style.transform = `scale(4) translate3d(0, ${Math.min(0, -pan * 0.05)}px, -3000px)`
+  leftEl.style.transform = `scale(1.1) translate3d(0, ${Math.max(0, pan * 0.1)}px, ${Math.max(0, pan * 0.9)}px)`
+  centerEl.style.transform = `scale(1.5) translate3d(0, ${Math.max(0, pan * 0.15)}px, ${Math.max(0, pan * 0.7) - 600}px)`
+  rightEl.style.transform = `scale(1.1) translate3d(0, ${Math.max(0, pan * 0.1)}px, ${Math.max(0, pan * 0.9)}px)`
+}
+
+let progress = 0;
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
 }

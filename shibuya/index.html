@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shibuya</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <section class="titleScreen__container">
-    <div class="titleScreen"><h3 class="titleScreen__title">SHIBUYA PRESENTS</h3></div>
-    <div class="titleScreen"><h3 class="titleScreen__title">by MACIEJ KUCIARA & PPLPLEASR</h3></div>
-    <div class="titleScreen">
-      <h3 class="titleScreen__title titleScreen__title--2023">
-      <span>I</span><span>n</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>y</span><span>e</span><span>a</span><span>r</span><span> </span><span>2</span><span>0</span><span>2</span><span>3</span><span>,</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>b</span><span>l</span><span>o</span><span>c</span><span>k</span><span>c</span><span>h</span><span>a</span><span>i</span><span>n</span><span> </span><span>i</span><span>s</span><span> </span><span>o</span><span>v</span><span>e</span><span>r</span><span>r</span><span>u</span><span>n</span><span> </span><span>w</span><span>i</span><span>t</span><span>h</span><span> </span><span>e</span><span>m</span><span>p</span><span>t</span><span>y</span><span> </span><span>p</span><span>r</span><span>o</span><span>m</span><span>i</span><span>s</span><span>e</span><span>s</span><span> </span><span>a</span><span>n</span><span>d</span><span> </span><span>u</span><span>n</span><span>i</span><span>n</span><span>s</span><span>p</span><span>i</span><span>r</span><span>e</span><span>d</span><span> </span><span>c</span><span>o</span><span>n</span><span>t</span><span>e</span><span>n</span><span>t</span><span>.</span>
-      <br><br>
-      <span>W</span><span>h</span><span>i</span><span>l</span><span>e</span><span> </span><span>t</span><span>h</span><span>e</span><span> </span><span>m</span><span>a</span><span>s</span><span>s</span><span>e</span><span>s</span><span> </span><span>p</span><span>i</span><span>v</span><span>o</span><span>t</span><span> </span><span>t</span><span>o</span><span> </span><span>A</span><span>I</span><span>,</span><span> </span><span>o</span><span>n</span><span>e</span><span> </span><span>g</span><span>r</span><span>o</span><span>u</span><span>p</span><span> </span><span>s</span><span>e</span><span>e</span><span>s</span><span> </span><span>a</span><span> </span><span>h</span><span>o</span><span>p</span><span>e</span><span>f</span><span>u</span><span>l</span><span> </span><span>f</span><span>u</span><span>t</span><span>u</span><span>r</span><span>e</span><span> </span><span>a</span><span>n</span><span>d</span><span> </span><span>r</span><span>a</span><span>c</span><span>e</span><span>s</span><span> </span><span>t</span><span>o</span><span>w</span><span>a</span><span>r</span><span>d</span><span> </span><span>i</span><span>t</span><span>.</span>
-      </h3>
-      <img src="images/shibuyacrossing.jpg" alt="shibuya crossing">
-    </div>
-  </section>
-  <section class="whiteRabbit">
-    <img class="whiteRabbit__background" src="images/whiteRabbit.jpg" alt="White Rabbit">
-    <img class="whiteRabbit__logo" src="images/whiteRabbitLogo.png" alt="White Rabbit Logo">
-  </section>
-  <section class="dominionX">
-    <img class="dominionX__background" src="images/dominionX.jpg" alt="White Rabbit">
-    <img class="dominionX__logo" src="images/dominionXLogo.webp" alt="White Rabbit Logo">
-  </section>
-</body>
-<script src="scripts.js"></script>
+	<head>
+		<title>Shibuya</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<div class="container">
+      <div class="scene">
+        <div class="bg">
+          <img src="images/bg.jpg">
+        </div>
+        <div class="center">
+          <img src="images/center.png">
+          <div class="videoContainer">
+            <video src="https://storage.googleapis.com/shibuya-white-rabbit/white_rabbit_show_page_hero.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+        <div class="left">
+          <img src="images/left.png">
+          <div class="videoContainer">
+            <video src="images/lee.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+        <div class="right">
+          <img src="images/right.png">
+          <div class="videoContainer">
+            <video src="https://storage.googleapis.com/shibuya-white-rabbit/dominionx_show_page_hero.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+      </div>
+	</body>
+	<script src="./scripts.js"></script>
 </html>
