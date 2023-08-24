@@ -7,6 +7,10 @@ const rightEl = document.querySelector('.right')
 window.addEventListener('mousemove', handleMouseMove)
 document.body.addEventListener('wheel', handleScroll)
 
+centerEl.addEventListener('click', () => {
+  document.body.classList.toggle('isWhiteRabbit')
+})
+
 function handleMouseMove(e) {
   const x = e.pageX
   const y = e.pageY
@@ -24,16 +28,16 @@ function handleMouseMove(e) {
 }
 
 function handleScroll(e) {
-  const delta = e.deltaY
-  progress += delta
-  const total = 1000;
-  const percent = progress / total
-  const pan = percent * window.innerHeight * 2
-  progress = Math.max(0, Math.min(total, progress))
-  bgEl.style.transform = `scale(4) translate3d(0, ${Math.min(0, -pan * 0.05)}px, -3000px)`
-  leftEl.style.transform = `scale(1.1) translate3d(0, ${Math.max(0, pan * 0.1)}px, ${Math.max(0, pan * 0.9)}px)`
-  centerEl.style.transform = `scale(1.5) translate3d(0, ${Math.max(0, pan * 0.15)}px, ${Math.max(0, pan * 0.7) - 600}px)`
-  rightEl.style.transform = `scale(1.1) translate3d(0, ${Math.max(0, pan * 0.1)}px, ${Math.max(0, pan * 0.9)}px)`
+  // const delta = e.deltaY
+  // progress += delta
+  // const total = 1000;
+  // const percent = progress / total
+  // const pan = percent * window.innerHeight * 2
+  // progress = Math.max(0, Math.min(total, progress))
+  // bgEl.style.transform = `scale(4) translate3d(0, ${Math.min(0, -pan * 0.05)}px, -3000px)`
+  // leftEl.style.transform = `scale(1.1) translate3d(0, ${Math.max(0, pan * 0.1)}px, ${Math.max(0, pan * 0.9)}px)`
+  // centerEl.style.transform = `scale(1.5) translate3d(0, ${Math.max(0, pan * 0.15)}px, ${Math.max(0, pan * 0.7) - 600}px)`
+  // rightEl.style.transform = `scale(1.1) translate3d(0, ${Math.max(0, pan * 0.1)}px, ${Math.max(0, pan * 0.9)}px)`
 }
 
 let progress = 0;
