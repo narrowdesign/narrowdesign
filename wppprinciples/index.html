@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WPP Team Principles</title>
+  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="icon" href="./favicon.png">
+
+  <script src="./principles/js/three.min.js"></script>
+  <script src="./principles/js/simplex-noise.min.js"></script>
+  <script src="./principles/js/CopyShader.js"></script>
+  <script src="./principles/js/EffectComposer.js"></script>
+  <script src="./principles/js/ShaderPass.js"></script>
+  <script src="./principles/js/RenderPass.js"></script>
+
+  <script id="vertexShader" type="x-shader/x-vertex">
+    varying vec2 vUv;
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix 
+        * modelViewMatrix 
+        * vec4( position, 1.0 );
+    }
+  </script>
+  
+  <script id="fragmentShader" type="x-shader/x-fragment">
+    uniform float amount;
+    uniform sampler2D tDiffuse;
+    varying vec2 vUv;
+  
+    float random( vec2 p )
+    {
+      vec2 K1 = vec2(
+        23.14069263277926, // e^pi (Gelfond's constant)
+        2.665144142690225 // 2^sqrt(2) (Gelfondâ€“Schneider constant)
+      );
+      return fract( cos( dot(p,K1) ) * 12345.6789 );
+    }
+  
+    void main() {
+      
+      vec4 color = texture2D( tDiffuse, vUv );
+      vec2 uvRandom = vUv;
+      uvRandom.y *= random(vec2(uvRandom.y,amount*10.));
+      color.rgb += random(uvRandom)*0.2-.1;
+      gl_FragColor = vec4( color  );
+    }
+  </script>
+
+  <link href="./principles/css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="principles"><span>P</span><span>r</span><span>i</span><span>n</span><span>c</span><span>i</span><span>p</span><span>l</span><span>e</span><span>s</span></div>
+  <div class="cover">
+    <div id="loader"></div>
+  </div>
+  <section>
+    <div class="principle">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/teams/wpp">by the Web Presence & Platform team</a></div>
+      <div class="principle__title u_tac">Team<br>Principles</div>
+      <div class="cursor">
+        <svg class="cursor--play" width="22" height="28" viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0V28L22 14L0 0Z" />
+        </svg>
+        <svg class="cursor--pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.71 27.49"><path d="M.65,27.25H8.22V.75H.65ZM15.78.75v26.5h7.57V.75Z" transform="translate(-0.15 -0.25)" /></svg>
+      </div>
+      <div class="principle__diagonal principle__diagonal--short">
+        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100 0 0 100"></path></svg>
+      </div>
+      <div class="principle__body">
+        <p>These principles were developed during quarantine in the fall of 2020—when Stripe was a ~3000 person company—by the 10 members of the Web Presence and Platform team. At the time of their initial creation, we were a manager, 2 visual designers, and 7 engineers. The following are not rules. They may be useful guides. Some are intentionally counterintuitive. We reasoned that if they were obvious, if they could be arrived at instinctively, they wouldn’t be memorable and we wouldn’t have needed to write them down. What we hope is that they’ll enrich our language, make our window of time together at Stripe more enjoyable, and contribute to improving everything we make together in that time. They should change with us in quantity and quality. They should be discarded as they lose their usefulness.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="principle" id="amurray">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/amurray">by @amurray</a></div>
+      <div class="u_horizontal u_grid_1_1 u_bdb">
+        <div>
+          <div class="principle__number">01</div>
+          <div class="principle__body">
+            <p>We are responsible for thoughtfully bringing the Stripe brand to life on the web. The systems we operate in service of this brand are complex and continuously evolving. Before improvements can be made confidently, attention must be paid to the context both within and surrounding these systems. Urgency without focus will lead us in the wrong direction. In order to deeply understand existing conditions and how we can improve them, we can optimize for time to observe and time to think. If we resist the rush to make change before we are clear-eyed about who our efforts will impact, we’ll improve the odds of an outcome they’ll appreciate and in the process, create systems our future selves will thank us for.</p>
+          </div>
+        </div>
+        <div class="principle__related">
+          <div class="principle__relatedLabel">Stripe OP category</div>
+          <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 100 100"></path></svg></div>
+          <div class="principle__relatedTitle u_tar">Mindset</div>
+        </div>
+      </div>
+      <div class="u_tac">
+        <div class="principle__priority">Prioritize focus over urgency</div>
+        <div class="principle__title u_mb1">Don’t just do something, stand there</div>
+        <div class="principle__pattern">
+          <div class="principle__canvas"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="jkosoy">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/jkosoy">by @jkosoy</a></div>
+      <div class="u_horizontal u_grid_2_1">
+        <div>
+          <div class="principle__pattern u_bdb u_square">
+            <div class="principle__canvas"></div>
+          </div>
+          <div class="principle__title">Take care of each other</div>
+          <div class="principle__priority">Prioritize support over empathy</div>
+        </div>
+        <div>
+          <div class="principle__related u_tac u_mb1">
+            <div class="principle__relatedTitle">Prioritization</div>
+            <div class="principle__relatedLabel">Stripe OP category</div>
+          </div>
+          <div class="principle__number--small">02</div>
+          <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100 0 0 100"></path></svg></div>
+          <div class="principle__body">
+            <p>Relationships first. Always. Caring about every detail of our work and being a pleasure to work with are not mutually exclusive. If we are as committed to treating each other with care as we are to making every web experience special, our team culture will be as admired as our work. We won’t always work together. Some project will be this group’s last. By recognizing this, we can seize every opportunity to support each other, elevate each others work, and create opportunities for each other. The amount we enjoy our window of time together at Stripe and the measure of our collective impact will depend in large part on how consistently we show up for each other.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="micaela">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/micaela">by @micaela</a></div>
+      <div class="u_horizontal u_grid_1_2 u_bdb">
+        <div>
+          <div class="principle__number--small">03</div>
+          <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 100 100"></path></svg></div>
+        </div>
+        <div class="u_tar u_between">
+          <div class="principle__related">
+            <div class="principle__relatedLabel">Stripe OP category</div>
+            <div class="principle__relatedTitle">Collaboration</div>
+          </div>
+          <div class="principle__body">
+            <p>We are surrounded by teammates full of agency. Vulnerability in this environment can be such a challenge that problem solving in isolation might seem like the preferred path. Before taking action alone, leverage the expertise of collaborators. Enlisting help early and often is a mutually beneficial step. It provides opportunities to connect others with our work. There is world-class talent on this team and we’re eager to put it to use! The right contribution at the right moment can mean the difference between meeting the requirements of a project and elevating both the ambitions of a teammate and the brand.</p>
+          </div>
+        </div>
+      </div>
+      <div class="u_horizontal u_grid_2_1">
+        <div class="principle__pattern">
+          <div class="principle__canvas"></div>
+        </div>
+        <div class="u_tac">
+          <div class="principle__title">You are not on an island</div>
+          <div class="principle__priority">Prioritize collaboration over&nbsp;heroics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="thomasd">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/thomasd">by @thomasd</a></div>
+      <div class="u_horizontal u_grid_1_2">
+        <div>
+          <div class="principle__number--small">04</div>
+          <div class="principle__body u_bdb u_tac">
+            <p>While every project lists a different set of contributors, the only name we send into the world together is “Stripe.” Creating Stripe’s websites means we are directly shaping the Stripe brand. Everything we make has some effect on the strength of that brand and on every person, internally and externally, who relies on it. By paying constant attention to the system we are operating within and being thoughtful about the impact of each step, the imprint this team leaves on Stripe will be more than a list of names.</p>
+          </div>
+          <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100 0 0 100"></path></svg></div>
+          <div class="principle__related">
+            <div class="principle__relatedTitle">Mindset</div>
+            <div class="principle__relatedLabel">Stripe OP category</div>
+          </div>
+        </div>
+        <div class="u_tar u_between">
+          <div class="principle__pattern u_mb1">
+            <div class="principle__canvas"></div>
+          </div>
+          <div class="principle__priority">Prioritize brand over credit</div>
+          <div class="principle__title">All our names are on this work</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="jonnie">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/jonnie">by @jonnie</a></div>
+      <div class="principle__pattern u_mb1">
+        <div class="principle__canvas"></div>
+      </div>
+      <div class="principle__priority">Prioritize complete over done</div>
+      <div class="principle__title">Be a good ancestor</div>
+      <div class="u_horizontal u_grid_1_2 u_bdt">
+        <div>
+          <div class="principle__number--small">05</div>
+          <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 100 100"></path></svg></div>
+        </div>
+        <div class="u_between">
+          <div class="principle__related u_tar">
+            <div class="principle__relatedTitle">Contribution</div>
+            <div class="principle__relatedLabel">Stripe OP category</div>
+          </div>
+          <div class="principle__body">
+            <p>The right step is the one leading toward future systems we’d want to inherit. Within those future systems our work builds trust among users, attracts world-class talent, and drives the web forward. We can’t know exactly what a future teammate will need but we know they won’t want to clean up our mess. We should prioritize difficult steps our future selves and teammates will thank us for taking. By taking time to understand the present context, agreeing on the future we hope to create, and facing the forces working against us, we can relieve the pressure of pretending to be prophets. The things we code, design, and write today, not what we intend to do later, will determine our impact on the brand, those who come after us, and the web.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="myles">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author">
+        <a href="https://home.corp.stripe.com/people/lindsayb">
+          <!-- by @myles -->
+          by @lindsayb
+        </a>
+      </div>
+      <div class="u_horizontal u_grid_2_1">
+        <div class="u_between">
+          <div class="principle__title u_tar">
+            <!-- Let context dictate form -->
+            Redefine Vulnerability</div>
+          <div class="principle__related">
+            <div class="principle__relatedLabel">Stripe OP category</div>
+            <div class="principle__relatedTitle">Mindset</div>
+          </div>
+        </div>
+        <div>
+          <div class="principle__priority">
+            <!-- Prioritize direct over general -->
+            Prioritize trust over caution
+          </div>
+          <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100 0 0 100"></path></svg></div>
+          <div class="principle__number--small">06</div>
+        </div>
+      </div>
+      <div class="u_bdt">
+        <div class="principle__pattern u_mb1">
+          <div class="principle__canvas"></div>
+        </div>
+        <div class="principle__body u_tac">
+          <!-- <p>Without context a solution is not good, simple, intuitive, creative … or any other adjective. Only when the surrounding context is considered can form be evaluated for fit to such criteria. A solution that deals with a problem directly based on what is known is preferable to a more reusable solution based on assumptions. No matter how long we ponder it, we can’t know what we’ll need tomorrow. If we are guided by assumptions we will build things we never need, or worse, things we will later need to undo and redo. Our goal is to create unexpected moments, not predict them.</p> -->
+          <p>When a teammate makes the not-so-obvious, obvious, we learn. When they display dedication to improving the experience of our customers, we are inspired. But it‘s through getting uncomfortable, through struggling out in the open, that we thrive. If we fear failure, it can scare us away from our most ambitious ideas. If we give failure a seat at the table, it can illuminate opportunities to innovate, uncover new possibilities, and strengthen the bond we build as a team. The strength of that bond will determine whether we just get by, or thrive together. By redefining vulnerability, we can ensure that bond remains&nbsp;ironclad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="tatiana">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/tatiana">by @tatiana</a></div>
+      <div class="u_horizontal u_grid_1_1">
+        <div>
+          <div class="principle__pattern u_mb1 u_portrait">
+            <div class="principle__canvas"></div>
+          </div>
+          <div class="principle__number">07</div>
+          <div class="principle__body">
+            <p>Mountains are climbed one step at a time and the terrain of each slope determines the direction of the best next step. It’s not always up. The same is true of every project. We consider the quality of each step in the creation process and the potential impact it will have on the the user, the team, and the brand. To ensure each step lands successfully, we take the time to zoom in and zoom out, to try things and to abandon them in favor of a better path until we are confident in which next step is best.</p>
+          </div>
+        </div>
+        <div class="u_between">
+          <div class="u_bdb">
+            <div class="principle__related u_tac">
+              <div class="principle__relatedLabel">Stripe OP category</div>
+              <div class="principle__relatedTitle">Prioritization</div>
+            </div>
+            <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M100 0 0 100"></path></svg></div>
+          </div>
+          <div class="u_between">
+            <div class="principle__priority">Prioritize steps over peaks</div>
+            <div class="principle__title u_tar">Get all your steps</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="zanemiller">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/zanemiller">by @zanemiller</a></div>
+      <div class="u_horizontal u_grid_2_1 u_bdb">
+        <div>
+          <div class="principle__related u_tac">
+            <div class="principle__relatedLabel">Stripe OP category</div>
+            <div class="principle__relatedTitle">Results</div>
+          </div>
+          <div class="principle__diagonal principle__diagonal--short"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 0 100 100"></path></svg></div>
+          <div class="principle__number">08</div>
+        </div>
+        <div>
+          <div class="principle__body u_tac">
+            <p>Endless theorizing about solutions and the pitfalls of those solutions paralyzes progress. A thing that exists, even in a blurry form, can be improved more meaningfully than the idea of a thing. Once it can be observed in its context, a solution can be evaluated and shaped to fit. If it leads in a direction we don’t wish to go, we can turn back without fear of abandoning a precious theory. When assumptions are cleared away we can turn our attention to identifying opportunities to deliver unexpected improvements.</p>
+          </div>
+        </div>
+      </div>
+      <div class="u_tac">
+        <div class="principle__priority">Prioritize proof over theory</div>
+        <div class="principle__title">Prototypes kill assumptions</div>
+        <div class="principle__pattern u_mb1">
+          <div class="principle__canvas"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="nick">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/nick">by @nick</a></div>
+      <div class="u_horizontal u_grid_1_1">
+        <div>
+          <div class="principle__pattern u_mb1 u_portrait">
+            <div class="principle__canvas"></div>
+          </div>
+          <div class="principle__body">
+            <p>What is expected is forgotten. Whether it’s something removed or something extra, what stands out is what is remembered. Principles are unnecessary. Team traditions are unnecessary. Konami codes are unnecessary. We do these things for enjoyment and for each other. It’s fine if nobody else notices, but we know from experience that people <i>do</i> notice the unnecessary things. The unnecessary things inspire people to join our team and use our product. They are evidence to anyone considering Stripe that behind our products is a human being who puts an uncommon level of effort into the things they make. Only by going to lengths nobody else would can we elevate Stripe on the web and in the&nbsp;world.</p>
+          </div>
+        </div>
+        <div>
+          <div class="principle__related u_bdb">
+            <div class="principle__relatedLabel u_tar">Stripe OP category</div>
+            <div class="principle__diagonal"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 100 0"></path></svg></div>
+            <div class="principle__relatedTitle">Contribution</div>
+          </div>
+          <div class="u_tac">
+            <div class="principle__number">09</div>
+            <div class="principle__title">Do something unnecessary</div>
+            <div class="principle__priority">Prioritize memorable over polished</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="principle" id="alexn">
+      <div class="principle__progress">
+        <div class="principle__progressInner"></div>
+        <div class="principle__progressTitle"></div>
+      </div>
+      <div class="principle__author"><a href="https://home.corp.stripe.com/people/alexn">by @alexn</a></div>
+      <div class="u_horizontal u_grid_2_1 u_bdb">
+        <div class="u_tar">
+          <div class="principle__title u_mb1">Elevate our brand</div>
+          <div class="principle__priority">Prioritize progress over predictability</div>
+        </div>
+        <div>
+          <div class="principle__number--small">10</div>
+          <div class="principle__diagonal principle__diagonal--short"><svg viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0 100 100 0"></path></svg></div>
+          <div class="principle__related u_tac">
+            <div class="principle__relatedTitle">Results</div>
+            <div class="principle__relatedLabel">Stripe OP category</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="principle__body u_tar u_mb1">
+        <p>For many, Stripe’s website <i>is</i> our brand. Stripe users and industry onlookers don’t all come to our website for information, they come for inspiration because they trust the Stripe brand and aspire to what it represents. This high esteem places high expectations on everything we produce. To remain “venturesome” as Patrick put it, requires continuously exceeding those expectations. The futures of our customers, fellow Stripes, and each individual on this team depend on the Stripe brand remaining strong. To elevate it means delivering systems and experiences of a quality no reasonable person would expect from&nbsp;us.</p>
+      </div>
+      <div class="principle__pattern u_mb1">
+        <div class="principle__canvas"></div>
+      </div>
+    </div>
+  </section>
+  <section class="end-card">
+    <div class="end-card__container">
+      <p>This site will continue to evolve and new principles will be added as our team grows. Get in touch with <a href="https://home.corp.stripe.com/people/nick">@nick</a> if you have thoughts on principles or you’re interested in creating a set for your team. ♥️ <a href="https://home.corp.stripe.com/teams/wpp">WPP</a></p>
+    </div>
+  </section>
+  <div class="cropmarks">
+    <svg width="1638" height="40" viewBox="0 0 1638 40" xmlns="http://www.w3.org/2000/svg">
+      <rect y="39" width="40" height="1"/>
+      <rect x="39" y="40" width="40" height="1" transform="rotate(-90 39 40)"/>
+      <rect width="40" height="1" transform="matrix(-1 0 0 1 1638 39)"/>
+      <rect width="40" height="1" transform="matrix(0 -1 -1 0 1599 40)"/>
+    </svg>
+  </div>
+  <div class="cropmarks cropmarks--bottom">
+    <svg width="1638" height="40" viewBox="0 0 1638 40" xmlns="http://www.w3.org/2000/svg">
+      <rect y="39" width="40" height="1"/>
+      <rect x="39" y="40" width="40" height="1" transform="rotate(-90 39 40)"/>
+      <rect width="40" height="1" transform="matrix(-1 0 0 1 1638 39)"/>
+      <rect width="40" height="1" transform="matrix(0 -1 -1 0 1599 40)"/>
+    </svg>
+  </div>
+  <audio src="./principles/audio/audio.mp3" >
+    
+  </audio>
+  <script src="./principles/js/script.js"></script>
+</body>
+</html>

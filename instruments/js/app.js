@@ -50,7 +50,6 @@ function init() {
     bodyEl.classList.remove('App--isLinkInputMode');
     bodyEl.classList.remove('App--isEnumDisplayed');
     bodyEl.classList.remove('App--isElementsUnderCursorListDisplayed');
-    bodyEl.classList.remove('App--isInspectStyleDisplayed');
     bodyEl.classList.remove('App--isInstrument');
     bodyEl.classList.remove('App--isKeyDisplayed')
     bodyEl.classList.remove('App--isScrolling');
@@ -951,8 +950,10 @@ function init() {
     if (e.metaKey) return;
     userState.isShiftKey = e.shiftKey;
     if (userState.isShiftKey) {
-      // bodyEl.classList.add("App--isXrayMode");
-      // bodyEl.classList.add("App--isInspectMode");
+      bodyEl.classList.add("App--isXrayMode");
+      if (!userState.isInspectMode) {
+        toggleInspectMode();
+      }
       bodyEl.classList.add('App--isScrollMode');
       userState.isScrollMode = true;
     }
@@ -1028,6 +1029,7 @@ function init() {
     if (!userState.firstKey) {
       if (e.key === "i") {
         toggleInspectMode();
+        console.log('i')
         return;
       } else if (e.key === "n") {
         userState.firstKey = "n";
@@ -1216,6 +1218,9 @@ function init() {
 
   function handleKeyUp(e) {
     userState.isShiftKey = e.shiftKey;
+    if (!userState.isShiftKey && userState.isInspectMode) {
+      toggleInspectMode();
+    }
     userState.isAltKey = e.altKey;
     if (!userState.isShiftKey) {
       bodyEl.classList.remove('App--isScrollMode');
@@ -1292,9 +1297,6 @@ function init() {
     userState.mouseY = e.pageY;
     userState.mouseStartX = e.pageX;
     userState.mouseStartY = e.pageY;
-    if (window.getSelection()) {
-      console.log(window.getSelection())
-    }
     window.removeEventListener('mouseup', handleMouseUp);    
   }
 
@@ -2523,6 +2525,7 @@ function init() {
   }
   
   function toggleInspectMode() {
+    console.log('toggleInspectMode')
     registerViewChange();
     bodyEl.classList.toggle("App--isInspectStyleDisplayed");
     userState.isInspectMode = !userState.isInspectMode;
