@@ -1,0 +1,346 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          2197           2197        Scene 1
+    2             2           2199          2
+    3          9426          11625          3
+    4            44          11669          4
+    5            44          11713          5
+    6            44          11757          6
+    7            44          11801          7
+    8            44          11845          8
+    9            44          11889          9
+   10            44          11933          10
+   11            44          11977          11
+   12            44          12021          12
+   13            44          12065          13
+   14            44          12109          14
+   15            44          12153          15
+   16            44          12197          16
+   17          3115          15312          17
+   18            44          15356          18
+   19            44          15400          19
+   20          2046          17446          20
+   21            59          17505          21
+   22           145          17650          22
+   23          1633          19283          23
+   24            86          19369          24
+   25            86          19455          25
+   26          2083          21538          26
+   27           158          21696          27
+   28           167          21863          28
+   29         22327          44190          29
+   30          2835          47025          30
+   31          2666          49691          31
+   32          2306          51997          32
+   33          2221          54218          33
+   34          2642          56860          34
+   35          2166          59026          35
+   36          2731          61757          36
+   37          2565          64322          37
+   38           351          64673          38
+   39           297          64970          39
+   40            86          65056          40
+   41           379          65435          41
+   42            74          65509          42
+   43            74          65583          43
+   44          1345          66928          44
+   45            83          67011          45
+   46            69          67080          46
+   47           206          67286          47
+   48            54          67340          48
+   49             2          67342          49
+   50           623          67965          50
+   51            32          67997          51
+   52            32          68029          52
+   53            32          68061          53
+   54            32          68093          54
+   55            32          68125          55
+   56            32          68157          56
+   57            32          68189          57
+   58            32          68221          58
+   59            32          68253          59
+   60            32          68285          60
+   61            32          68317          61
+   62            32          68349          62
+   63            32          68381          63
+   64            32          68413          64
+   65          1659          70072          65
+   66            23          70095          66
+   67            23          70118          67
+   68            13          70131          68
+   69             2          70133          69
+   70             2          70135          70
+   71             2          70137          71
+   72             2          70139          72
+   73             2          70141          73
+   74             2          70143          74
+   75             2          70145          75
+   76           107          70252          76
+   77            39          70291          77
+   78            39          70330          78
+   79            17          70347          79
+   80             2          70349          80
+   81             2          70351          81
+   82             2          70353          82
+   83             2          70355          83
+   84             2          70357          84
+   85             2          70359          85
+   86             2          70361          86
+   87             2          70363          87
+   88             2          70365          88
+   89            18          70383          89
+   90            97          70480          90
+   91            34          70514          91
+   92            22          70536          92
+   93            13          70549          93
+   94             2          70551          94
+   95             2          70553          95
+   96             2          70555          96
+   97             2          70557          97
+   98             2          70559          98
+   99             2          70561          99
+  100             2          70563          100
+  101             2          70565          101
+  102             2          70567          102
+  103             2          70569          103
+  104           577          71146          104
+  105            34          71180          105
+  106            34          71214          106
+  107            34          71248          107
+  108            22          71270          108
+  109            13          71283          109
+  110             2          71285          110
+  111             2          71287          111
+  112             2          71289          112
+  113             2          71291          113
+  114             2          71293          114
+  115             2          71295          115
+  116             2          71297          116
+  117             2          71299          117
+  118             2          71301          118
+  119             2          71303          119
+  120             2          71305          120
+  121             2          71307          121
+  122             2          71309          122
+  123             2          71311          123
+  124            18          71329          124
+  125            18          71347          125
+  126           572          71919          126
+  127            48          71967          127
+  128            44          72011          128
+  129           635          72646          129
+  130            41          72687          130
+  131            44          72731          131
+  132            44          72775          132
+  133            42          72817          133
+  134           148          72965          134
+  135            23          72988          135
+  136            23          73011          136
+  137            23          73034          137
+  138            13          73047          138
+  139             2          73049          139
+  140             2          73051          140
+  141             2          73053          141
+  142             2          73055          142
+  143             2          73057          143
+  144             2          73059          144
+  145             2          73061          145
+  146             2          73063          146
+  147             2          73065          147
+  148             2          73067          148
+  149             2          73069          149
+  150             2          73071          150
+  151           911          73982          151
+  152            34          74016          152
+  153            34          74050          153
+  154            34          74084          154
+  155            17          74101          155
+  156             2          74103          156
+  157             2          74105          157
+  158             2          74107          158
+  159             2          74109          159
+  160             2          74111          160
+  161             2          74113          161
+  162             2          74115          162
+  163             2          74117          163
+  164             2          74119          164
+  165           118          74237          165
+  166            34          74271          166
+  167            34          74305          167
+  168            34          74339          168
+  169            17          74356          169
+  170             2          74358          170
+  171             2          74360          171
+  172             2          74362          172
+  173             2          74364          173
+  174             2          74366          174
+  175             2          74368          175
+  176             2          74370          176
+  177             2          74372          177
+  178             2          74374          178
+  179             2          74376          179
+  180             2          74378          180
+  181            23          74401          181
+  182            23          74424          182
+  183            23          74447          183
+  184             6          74453          184
+  185            32          74485          185
+  186            32          74517          186
+  187            32          74549          187
+  188            32          74581          188
+  189            32          74613          189
+  190            32          74645          190
+  191            32          74677          191
+  192            32          74709          192
+  193            32          74741          193
+  194            32          74773          194
+  195            32          74805          195
+  196            32          74837          196
+  197            32          74869          197
+  198            32          74901          198
+  199            45          74946          199
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                         456             0
+
+Embedded Objects               1226             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+matrix image                      0             0
+matrix movie                      0             0
+matrix                            0             0
+matrix_button                     0             0
+black                             0             0
+logo                              0           347
+pic 7 color                       0             0
+pic 8 over                        0             0
+REGISTER BUTTON MOVIE             0             0
+REGISTER button                   0            86
+pic 8                             0             0
+pic 7                             0             0
+INTERVIEWS BUTTON                36            96
+interviews button movie           0             0
+black mask                       40             0
+REPRESENTATIVE OF UNICEF          0             0
+THIS JULY                         0             0
+THE AFRICAN NATION                0            98
+HES' TRAVELING TO                 0            91
+LAURENCE IS ZAMBIA BOUND          0           100
+LATEST NEWS                       0            95
+LATEST NEWS BUTTON               73            47
+BACK BUTTON                      70             0
+NEXT BUTTON                      72             0
+BACK                              0            42
+NEXT                              0            42
+INSIDER LINK PULSE                0             0
+backlot link                      0             0
+INSIDER LINK                     70            52
+CHECK OUT FOR MORE INFO           0           197
+ONCE IN THE LIFE                  0            59
+DIRECTORIAL DEBUT                 0            61
+LAURENCE FISHBURNES               0            66
+COMING THIS FALL                  0            67
+screen outline                   83             0
+orange screen                    78             0
+GRETY8                            0             0
+GREY7                             0             0
+GREY6                             0             0
+GREY5                             0             0
+GREY3                             0             0
+GREY 2                            0             0
+GREY                              0             0
+GREY STRIPE                      59             0
+(CONT) STRIPE MOVIE             250             0
+LAURENCE FISHBURNE                0           161
+LAURENCE FISHBURNE 2              0             0
+LAURENCE FISHBURNE 3           1979             0
+blue line thin 2                 33             0
+blue line thin                   33             0
+pieces 1.2                      123             0
+sharp black                       0             0
+pieces 1.1                      169             0
+gradient_blue                     0             0
+gradient f_l                      0             0
+loader                           94           119
+bar                              40             0
+button pulse movie                0             0
+circle                            0             0
+left side                         0             0
+right side                        0             0
+black circle                      0             0
+line                              0             0
+more button movie                 0             0
+arrow                            70             0
+BIO BUTTON                       44            68
+pic 1                             0             0
+BIO BUTTON MOVIE                  0             0
+pic 1 color                       0             0
+EMAIL BUTTON                     59            78
+pic 2                             0             0
+EMAIL BUTTON MOVIE                0             0
+pic 2 color                       0             0
+FILMOGRAPHY BUTTON               36            72
+pic 3                             0             0
+FILMOGRAPHY BUTTON MOVIE          0             0
+pic 3 color                       0             0
+PHOTOS BUTTON                    45            82
+pic 4                             0             0
+PHOTOS BUTTON MOVIE               0             0
+pic 4 color                       0             0
+INSIDER BUTTON                    0            86
+pic 5                             0             0
+INSIDER BUTTON MOVIE              0             0
+pic 5 color                       0             0
+LINKS BUTTON                      0           116
+pic 6                             0             0
+LINKS BUTTON MOVIE                0             0
+pic 6 color                       0             0
+
+Bitmap                     Compressed  Original    Compression
+-----------------------    ----------  ----------  ------------
+register_photo_over.gif          921        1344   Lossless
+register_photo.gif               651        1344   Lossless
+bio photo color                  718        1000   Lossless
+bio photo                        518        1000   Lossless
+pic_2_color.jpg                  835        1360   Lossless
+pic_2.jpg                        856        1360   Lossless
+pic_3_color.jpg                  674        1000   Lossless
+pic_3.jpg                        690        1000   Lossless
+pic_4_color.jpg                  802        1160   Lossless
+pic_4.jpg                        801        1160   Lossless
+pic_5_color.jpg                  976        1520   Lossless
+pic_5.jpg                       1027        1520   Lossless
+pic_6_color.jpg                  903        1480   Lossless
+pic_6.jpg                        942        1480   Lossless
+pic 7 color                     1045        1800   Lossless
+pic 7                           1070        1800   Lossless
+matrix_challenge.gif            1632        5192   Lossless
+gradient_f_l.jpg               11502      135600   JPEG Quality=65
+sharp_black_blue_f.jpg          1151      135600   Lossless
+gradient_blue_l.jpg              965      135600   Lossless
+sharp_black.jpg                 9013      541200   JPEG Quality=50
+
+Event sounds: 11KHz Mono 16 kbps MP3
+
+Sound Name                 Bytes       Format
+-----------------------    --------    --------
+laur_fish_but_dwn.wav        1367        11KHz Mono 16 kbps MP3
+laur_fish_but_ovr.wav        2199        11KHz Mono 16 kbps MP3
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+AriaL Bold                    800         ADEHINORSTUW
+Arial Narrow Bold Italic      498         .CEFHILNOT
+Arial Narrow Bold            1520         !"'.ABCDEFGHIJKLMNOPRSTUVX
+Arial CE Bold                 568         AELNSTW
+Arial Narrow                  294        IKLNS
+Arial                         455        ACELNRU
+Arial MT Bold                1423        BCDEFGILMNOPRSTUVW
+Arial Black                   384        .eist
+Arial MT                      665        bcelmo
+Arial Bold                   1487         '-ABCDEFGHIJKLMNOPRSTUWZ

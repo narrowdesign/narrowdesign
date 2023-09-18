@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Laurence Fishburne's Official Site</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<!-- Netscape Flash Detection -->
+<script language="JavaScript">
+      FlashMode = 0;
+      if (navigator.appName == "Netscape" && navigator.plugins) {
+         numPlugins = navigator.plugins.length;
+         if (numPlugins > 0) 
+          {
+            
+            for (i = 0; i < numPlugins; i++)
+            {
+               plugin = navigator.plugins[i];
+if (plugin.description.indexOf("Flash 4") != -1)               {
+                  numTypes = plugin.length;
+                  for (j = 0; j < numTypes; j++) 
+                  {
+                     mimetype = plugin[j];
+                     
+                     if (mimetype)
+                     {     
+                        if (mimetype.enabledPlugin && (mimetype.suffixes.indexOf("swf") != -1))
+                           FlashMode = 1;
+                        // Mac wierdness
+                        if (navigator.mimeTypes["application/x-shockwave-flash"] == null)
+                           FlashMode = 0;
+                     }
+                  }
+               }
+            }
+         }                        
+      }
+if (FlashMode == 1)
+{
+window.location.href="index_f.htm";
+ }
+ if (FlashMode == 0) {
+window.location.href="index_h.html";
+ }
+</script>
+
+<!-- Microsoft Internet Explorer Flash Detection -->
+<!-- start VBSCRIPT PLUGIN DETECTION-->
+<SCRIPT LANGUAGE=VBScript>
+	on error resume next
+	dim Flashmode
+	dim strPage 
+	FlashMode = False
+	FlashMode = IsObject(CreateObject("ShockwaveFlash.ShockwaveFlash.4"))
+	If FlashMode = True Then
+		strPage = "index_f.htm"
+	Else
+		strPage = "index_h.htm"
+	End If
+	window.navigate(strPage)
+</SCRIPT>
+<!-- end VBSCRIPT PLUGIN DETECTION -->
+
+
+
+<body bgcolor=#0F1012 leftmargin="0" topmargin="0">
+<!-- BEGIN WEBSIDESTORY CODE v5 -->
+<!-- COPYRIGHT 1998-1999 WEBSIDESTORY, INC. ALL RIGHTS RESERVED.  U.S.PATENT PENDING. -->
+<IMG SRC="http://hg1.hitbox.com/HG?hc=w125&l=y&hb=DM591006DDMBDXEN3&cd=1&n=Laurence+Fishburne+index+sniffer" HEIGHT=1 WIDTH=1 BORDER=0>
+<!-- END WEBSIDESTORY CODE  -->
+</div>
+</body>
+</html>
+

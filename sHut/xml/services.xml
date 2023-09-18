@@ -1,0 +1,4 @@
+<services>
+	<service id="FaceSunglassRating"><![CDATA[http://localhost:8080/redesign/jsp/stubs/FaceSunglassRating.jsp]]></service>
+	<service id="StyleFileGetCurated"><![CDATA[http://localhost:8080/redesign/jsp/stubs/StyleFileGetCurated.jsp?styleFileId=]]></service>
+</services>

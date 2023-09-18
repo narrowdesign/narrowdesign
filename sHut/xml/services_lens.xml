@@ -1,0 +1,9 @@
+<services>
+	<service id="SearchFacets"><![CDATA[http://stage.lenscrafters.com/webapp/wcs/stores/servlet/sgh/jsp/stubs/SearchFacets.jsp]]></service>
+	<service id="GetBrandsList"><![CDATA[http://stage.lenscrafters.com/webapp/wcs/stores/servlet/sgh/jsp/stubs/WWCM.jsp?content=brandList]]></service>
+	<service id="GetBrandInformation"><![CDATA[http://stage.lenscrafters.com/webapp/wcs/stores/servlet/sgh/jsp/stubs/WWCM.jsp?brandId=]]></service>
+	<service id="ProductSearch"><![CDATA[http://stage.lenscrafters.com/webapp/wcs/stores/servlet/sgh/jsp/stubs/ProductSearch.jsp?brandId=1]]></service>
+	<service id="ProductDetail"><![CDATA[http://stage.lenscrafters.com/webapp/wcs/stores/servlet/sgh/jsp/stubs/ProductDetail.jsp?sku=]]></service>
+	<service id="StyleFileGetList"><![CDATA[http://stage.lenscrafters.com/webapp/wcs/stores/servlet/sgh/jsp/stubs/StyleFileGetList.jsp?cmd=sf]]></service>
+	<service id="StyleFileGetCurated"><![CDATA[http://stage.lenscrafters.com/webapp/wcs/stores/servlet/sgh/jsp/stubs/StyleFileGetCurated.jsp?styleFileId=]]></service>	
+</services>

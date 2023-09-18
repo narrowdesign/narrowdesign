@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<lensesLifestyleInfo>
+	<landingTitle><![CDATA[lenses for your active lifestyle]]></landingTitle>
+	<landingText><![CDATA[Discover the right sunglass lens for your lifestyle. Select an activity to find a tint that will improve your depth perception and color recognition by striking the perfect balance of light transmission, reflection and absorption.]]></landingText>
+	<imagesUrl><![CDATA[images/lenseslifestyle/]]></imagesUrl>
+	<colorSwatchesUrl><![CDATA[images/lenseslifestyle/colorswatch/]]></colorSwatchesUrl>
+	<productsUrl><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/]]></productsUrl>
+	<styleFileUrl><![CDATA[TriggerStyleFile]]></styleFileUrl>
+	<pdpUrl><![CDATA[TriggerPDP]]></pdpUrl>
+	<asfUrl><![CDATA[TriggerAddToStyleFile]]></asfUrl>
+	<activities>
+		<activity>
+			<id><![CDATA[driving]]></id>
+			<title><![CDATA[driving]]></title>
+			<imageX><![CDATA[-360]]></imageX>
+			<images>
+				<image>
+					<imgPath><![CDATA[driving.jpg]]></imgPath>
+				</image>
+			</images>
+			<sku><![CDATA[749241]]></sku>
+			<skuTitle><![CDATA[Bolle Sizzle MAIN]]></skuTitle>
+			<!--<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>-->
+			<colors>
+				<color>
+					<title><![CDATA[blue]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_blue.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bollé Sizzle]]></skuTitle>
+					<!--<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>-->
+					<description><![CDATA[Ideal for bright conditions. Increases contrast by filtering out yellow light to enhance clarity.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[brown]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_brown.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle COLOR]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Great in varying light conditions. Sharpens visual acuity and enhances depth perception.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[grey]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_grey.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Best for medium light conditions. Allows for truer color perception on the road.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[yellow]]></title>
+					<activityPhoto><![CDATA[2]]></activityPhoto>
+					<swatchImg><![CDATA[fr_yellow.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Good for overcast and low light conditions. Increases contrast in otherwise similar-looking objects.]]></description>
+					<lensTech><![CDATA[0]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[amber]]></title>
+					<activityPhoto><![CDATA[2]]></activityPhoto>
+					<swatchImg><![CDATA[fr_amber.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Good for overcast and low light conditions. Increases contrast in otherwise similar-looking objects.]]></description>
+					<lensTech><![CDATA[0]]></lensTech>					
+				</color>
+			</colors>
+			<lensTechs>
+				<lensTech>
+					<id><![CDATA[polarized]]></id>
+					<title><![CDATA[polarized]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[BOLLE SIZZLE TECH]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Polarized sunglass lenses are strongly recommended for driving as flashes of light (from sun or reflections) can be temporarily blinding. While dark lenses can reduce the perception of glare, a polarized lens is the only way to truly block it.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+					</links>			
+				</lensTech>
+				<lensTech>
+					<id><![CDATA[uv]]></id>
+					<title><![CDATA[uv protection]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Oakley Razor]]></skuTitle>
+					<!--<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>-->			
+					<description><![CDATA[UV Reduces eye fatigue from glare and other reflected light, over a long day out on the links, and lets you see the ball better.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=ultraviolet]]></url>
+						</link>
+						<link>
+							<title><![CDATA[More on the effects of UV and other types of light]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=tos]]></url>
+						</link>
+					</links>			
+				</lensTech>
+			</lensTechs>
+		</activity>
+		<activity>
+			<id><![CDATA[watersports]]></id>
+			<title><![CDATA[fishing, beach & water sports]]></title>
+			<imageX><![CDATA[-190]]></imageX>
+			<images>
+				<image>
+					<imgPath><![CDATA[watersports.jpg]]></imgPath>
+				</image>
+			</images>
+			<sku><![CDATA[749241]]></sku>
+			<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+			<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+			<colors>
+				<color>
+					<title><![CDATA[grey]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_grey.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[A comfortable tint. Allows objects near water to be seen in their most natural state without distorting colors.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+			</colors>
+			<lensTechs>
+				<lensTech>
+					<id><![CDATA[polarized]]></id>
+					<title><![CDATA[polarized]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[BOLLE SIZZLE]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Reduces the dazzling flashes and bright glares that can reflect from water. While dark sunglass lenses can reduce the perception of glare, a polarized lens is the only way to truly block it.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+					</links>			
+				</lensTech>
+				<lensTech>
+					<id><![CDATA[photochromic]]></id>
+					<title><![CDATA[photochromic]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Oakley Razor]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[UV Reduces eye fatigue from glare and other reflected light, over a long day out on the links, and lets you see the ball better.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=photochromic]]></url>
+						</link>
+					</links>			
+				</lensTech>
+			</lensTechs>
+		</activity>
+		<activity>
+			<id><![CDATA[running]]></id>
+			<title><![CDATA[running & Hiking]]></title>
+			<imageX><![CDATA[-280]]></imageX>
+			<images>
+				<image>
+					<imgPath><![CDATA[running.jpg]]></imgPath>
+				</image>
+			</images>
+			<sku><![CDATA[749241]]></sku>
+			<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+			<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+			<colors>
+				<color>
+					<title><![CDATA[brown]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_brown.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Complimentary to running or hiking during bright sunny conditions.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[amber]]></title>
+					<activityPhoto><![CDATA[2]]></activityPhoto>
+					<swatchImg><![CDATA[fr_amber.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Best for keeping visual acuity as light increases or decreases over the day and into dusk.]]></description>
+					<lensTech><![CDATA[0]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[yellow]]></title>
+					<activityPhoto><![CDATA[2]]></activityPhoto>
+					<swatchImg><![CDATA[fr_yellow.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Best for increasing contrast between similar looking objects as light increases or diminishes over the day and into dusk. ]]></description>
+					<lensTech><![CDATA[0]]></lensTech>
+				</color>
+			</colors>
+			<lensTechs>
+				<lensTech>
+					<id><![CDATA[polarized]]></id>
+					<title><![CDATA[polarized]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[BOLLE SIZZLE]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Fights glare and reduces the eyestrain and fatigue it can cause.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+					</links>			
+				</lensTech>
+				<lensTech>
+					<id><![CDATA[uv]]></id>
+					<title><![CDATA[uv protection]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Oakley Razor]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Being outside exposes you to harmful UV light, which can lead to vision problems. A premium sunglass lens with UV protection is your best defense.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+						<link>
+							<title><![CDATA[More on the effects of UV and other types of light]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=tos]]></url>
+						</link>
+					</links>			
+				</lensTech>
+			</lensTechs>
+		</activity>
+		<activity>
+			<id><![CDATA[golf]]></id>
+			<title><![CDATA[golf]]></title>
+			<imageX><![CDATA[-140]]></imageX>
+			<images>
+				<image>
+					<imgPath><![CDATA[golf.jpg]]></imgPath>
+				</image>
+			</images>
+			<sku><![CDATA[749241]]></sku>
+			<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+			<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+			<colors>
+				<color>
+					<title><![CDATA[violet]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_violet.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Absorbs green light providing better tracking of a white ball against the green of the grass.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[brown]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_brown.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Ideal for bright sunny days and slightly overcast conditions. Provides better discrimination while viewing the ball in the air and on the course.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+			</colors>
+			<lensTechs>
+				<lensTech>
+					<id><![CDATA[polarized]]></id>
+					<title><![CDATA[polarized]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[BOLLE SIZZLE]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Reduces eye fatigue from glare and other reflected light, over a long day out on the links, and lets you see the ball better.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+					</links>			
+				</lensTech>
+				<lensTech>
+					<id><![CDATA[uv]]></id>
+					<title><![CDATA[uv protection]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Oakley Razor]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[If you do a lot of driving, riding or simply spend a lot of time outdoors, protecting your eyes from harmful UV rays is essential. A premium sunglass lens with UV protection is your best defense.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=ultraviolet]]></url>
+						</link>
+						<link>
+							<title><![CDATA[More on the effects of UV and other types of light]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=tos]]></url>
+						</link>
+					</links>			
+				</lensTech>
+			</lensTechs>
+		</activity>
+		<activity>
+			<id><![CDATA[snow]]></id>
+			<title><![CDATA[snow sports]]></title>
+			<imageX><![CDATA[-285]]></imageX>
+			<images>
+				<image>
+					<imgPath><![CDATA[snow.jpg]]></imgPath>
+				</image>
+			</images>
+			<sku><![CDATA[749241]]></sku>
+			<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+			<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+			<colors>
+				<color>
+					<title><![CDATA[amber]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_amber.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Best in low light conditions. Offers good contrast from blue sky and as bright glaring light hits snowy landscapes.]]></description>
+					<lensTech><![CDATA[0]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[yellow]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_yellow.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Offers good contrast from blue sky and as bright glaring light hits the snowy landscapes.]]></description>
+					<lensTech><![CDATA[0]]></lensTech>
+				</color>
+			</colors>
+			<lensTechs>
+				<lensTech>
+					<id><![CDATA[polarized]]></id>
+					<title><![CDATA[polarized]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[BOLLE SIZZLE]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[The white of snow reflects much of the light that hit it, making being out on the slopes like getting twice the sun exposure, increasing glare and the potential for eye fatigue or strain.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+						<link>
+							<title><![CDATA[More on the effects of UV and other types of light]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=tos]]></url>
+						</link>
+					</links>			
+				</lensTech>
+				<lensTech>
+					<id><![CDATA[photochromic]]></id>
+					<title><![CDATA[photochromic]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Oakley Razor]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[On snow the need for premium UV protection is even greater with all the extra reflected light. A premium sunglass lens with UV protection is your best defense.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=photochromic]]></url>
+						</link>
+						<link>
+							<title><![CDATA[More on the effects of UV and other types of light]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=tos]]></url>
+						</link>
+					</links>			
+				</lensTech>
+			</lensTechs>
+		</activity>
+		<activity>
+			<id><![CDATA[field]]></id>
+			<title><![CDATA[field sports]]></title>
+			<imageX><![CDATA[-238]]></imageX>
+			<images>
+				<image>
+					<imgPath><![CDATA[field.jpg]]></imgPath>
+				</image>
+			</images>
+			<sku><![CDATA[749241]]></sku>
+			<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+			<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+			<colors>
+				<color>
+					<title><![CDATA[brown]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_brown.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Ideal for bright sunny days and slightly overcast conditions. Better distinguishes the ball in the blue of the sky as well as on the green of the field.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+			</colors>
+			<lensTechs>
+				<lensTech>
+					<id><![CDATA[polarized]]></id>
+					<title><![CDATA[polarized]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[BOLLE SIZZLE]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Reduces the glare that can temporarily blind or distract from the action. While dark sunglass lenses can reduce the perception of glare, a polarized lens is the only way to truly block it.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+					</links>
+				</lensTech>
+				<lensTech>
+					<id><![CDATA[ar]]></id>
+					<title><![CDATA[anti reflective]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Oakley Razor]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Reduces distracting reflections off the backside of the sunglass lens that can pull your attention off the ball and hurt your game.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=antireflective]]></url>
+						</link>
+					</links>			
+				</lensTech>
+			</lensTechs>
+		</activity>
+		<activity>
+			<id><![CDATA[cycling]]></id>
+			<title><![CDATA[cycling]]></title>
+			<imageX><![CDATA[-290]]></imageX>
+			<images>
+				<image>
+					<imgPath><![CDATA[cycling.jpg]]></imgPath>
+				</image>
+			</images>
+			<sku><![CDATA[749241]]></sku>
+			<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+			<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+			<colors>
+				<color>
+					<title><![CDATA[blue]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_blue.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Improves contrast in bright light, by reducing yellow light giving enhanced visual clarity.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[brown]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_brown.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Best all around lens tint, hat enhances depth perception and visual acuity in a wide range of light conditions.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[grey]]></title>
+					<activityPhoto><![CDATA[1]]></activityPhoto>
+					<swatchImg><![CDATA[fr_grey.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Great in medium light conditions, enhancing color perception.]]></description>
+					<lensTech><![CDATA[1]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[yellow]]></title>
+					<activityPhoto><![CDATA[2]]></activityPhoto>
+					<swatchImg><![CDATA[fr_yellow.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Filters blue light, creating enhanced contrast in low light conditions between objects that would normally be hard to distinguish.]]></description>
+					<lensTech><![CDATA[0]]></lensTech>
+				</color>
+				<color>
+					<title><![CDATA[amber]]></title>
+					<activityPhoto><![CDATA[2]]></activityPhoto>
+					<swatchImg><![CDATA[fr_amber.png]]></swatchImg>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Bolle Sizzle]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Filters blue light, creating enhanced contrast in low light conditions between objects that would normally be hard to distinguish.]]></description>
+					<lensTech><![CDATA[0]]></lensTech>
+				</color>
+			</colors>
+			<lensTechs>
+				<lensTech>
+					<id><![CDATA[polarized]]></id>
+					<title><![CDATA[polarized]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[BOLLE SIZZLE]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[Polarized lenses are highly recommended to reduce the effects of sudden light intensity changes and reflections, which are common on the road. While dark lenses can reduce the perception of glare, a polarized lens is the only way to truly block it.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=polarized]]></url>
+						</link>
+					</links>			
+				</lensTech>
+				<lensTech>
+					<id><![CDATA[uv]]></id>
+					<title><![CDATA[uv protection]]></title>
+					<sku><![CDATA[749241]]></sku>
+					<skuTitle><![CDATA[Oakley Razor]]></skuTitle>
+					<skuImage><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/749241_shad_qt?$pngalpha$&wid=240]]></skuImage>
+					<description><![CDATA[If you do a lot of driving, riding or are just outside a lot, protecting your eyes from harmful UV rays is essential. A good sunglass lens with UV protection is your best defense.]]></description>
+					<links>
+						<link>
+							<title><![CDATA[See how it works]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=ultraviolet]]></url>
+						</link>
+						<link>
+							<title><![CDATA[More on the effects of UV and other types of light]]></title>
+							<url><![CDATA[lightmanagement.jsp?page=tos]]></url>
+						</link>
+					</links>			
+				</lensTech>
+			</lensTechs>
+		</activity>
+	</activities>
+	<performanceLinks>
+		<link>
+			<id><![CDATA[1]]></id>
+			<title><![CDATA[LENSES FOR YOUR LIFESTYLE]]></title>
+			<url><![CDATA[lenseslifestyle.jsp]]></url>
+		</link>
+		<link>
+			<id><![CDATA[2]]></id>
+			<title><![CDATA[LIGHT MANAGEMENT]]></title>
+			<url><![CDATA[lightmanagement.jsp?page=lensTech]]></url>
+		</link>
+		<link>
+			<id><![CDATA[3]]></id>
+			<title><![CDATA[THE ANATOMY OF SUNGLASSES]]></title>
+			<url><![CDATA[anatomy.jsp]]></url>
+		</link>
+	</performanceLinks>
+</lensesLifestyleInfo>

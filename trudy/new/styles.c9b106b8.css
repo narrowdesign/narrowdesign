@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.video {
+  position: absolute;
+  left: -5%;
+  top: 0;
+  width: 110%;
+  height: 110%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.video__overlay {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #0000, #000 50%);
+  z-index: -1;
+}
+
+/*# sourceMappingURL=/styles.c9b106b8.css.map */

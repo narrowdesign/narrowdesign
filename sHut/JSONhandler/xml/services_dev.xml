@@ -1,0 +1,8 @@
+<services>
+	<service id="GetBrandsList"><![CDATA[http://sgh-dev/redesign/jsp/stubs/WWCM.jsp?content=brandList]]></service>
+	<service id="GetBrandInformation"><![CDATA[http://sgh-dev/redesign/jsp/stubs/WWCM.jsp?brandId=]]></service>
+	<service id="ProductSearch"><![CDATA[http://sgh-dev/redesign/jsp/stubs/ProductSearch.jsp?brandId=1]]></service>
+	<service id="ProductDetail"><![CDATA[http://sgh-dev/redesign/jsp/stubs/ProductDetail.jsp?sku=]]></service>
+	<service id="StyleFileGetList"><![CDATA[http://sgh-dev/redesign/jsp/stubs/StyleFileGetList.jsp?cmd=sf]]></service>
+	<service id="StyleFileGetCurated"><![CDATA[http://localhost:8080/redesign/jsp/stubs/StyleFileGetCurated.jsp?styleFileId=]]></service>
+</services>

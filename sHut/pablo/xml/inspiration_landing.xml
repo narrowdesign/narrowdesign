@@ -1,0 +1,28 @@
+<inspiration>
+	<PATHS>
+		<imgUrl><![CDATA[http://testvipd1.scene7.com/is/image/LuxotticaRetail/]]></imgUrl>
+		<pdpUrl><![CDATA[TriggerPDP]]></pdpUrl>
+	</PATHS>
+	
+	<panelAttributes panelShowcase='1' panelOpenWidth='750'/>
+	
+	<panel id="0" textX='430' textY='220' txtColor="666666" featuredTrayX='312' featuredTrayY='380' imgStartX='0' closePanelX='0'>
+		<title>style wheel</title>
+		<description>Can't find the sunglasses for you? <br/>Put a new spin on your search <br/>with the Sunglasshut.com Style Wheel.</description>
+		<featured blah='peepee'>
+			<asset sku="BV_749241" view='_shad_qt?$pngalpha$&wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?$pngalpha$&wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?$pngalpha$&wid=100'></asset>	
+		</featured>			
+	</panel>
+	
+	<panel id="1" textX='80' textY='295' txtColor="ffffff" featuredTrayX='80' featuredTrayY='400' imgStartX='195' closePanelX='210'>
+		<title>find your style</title>
+		<description>8 real people. 8 pairs of premium sunglasses. <br/>See what the right pair of sunglasses can do for you.</description>
+		<featured>
+			<asset sku="BV_749241" view='_shad_qt?$pngalpha$&wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?$pngalpha$&wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?$pngalpha$&wid=100'></asset>	
+		</featured>			
+	</panel>
+</inspiration>

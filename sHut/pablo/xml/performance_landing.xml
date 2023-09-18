@@ -1,0 +1,31 @@
+<performance>
+	<PATHS>
+		<imgUrl><![CDATA[http://testvipd1.scene7.com/is/image/LuxotticaRetail/]]></imgUrl>
+		<pdpUrl><![CDATA[TriggerPDP]]></pdpUrl>
+	</PATHS>
+	<featured>
+			<asset sku="BV_749241" view='_shad_qt?wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?wid=100'></asset>	
+			<asset sku="BV_749241" view='_shad_qt?wid=100'></asset>	
+		</featured>			
+		
+	<panelAttributes panelShowcase='1' panelOpenWidth='714'/>
+	
+	<panel id="0" textX='133' textY='320' txtColor="ffffff" imgStartX='0' closePanelX='0'>
+		<title>LIGHT MANAGEMENT</title>
+		<description>Understand the full spectrum. Discover the effects of light on your eyes and how to protect them with the right sunglass len technology.</description>
+	</panel>
+	
+	<panel id="1" textX='112' textY='320' txtColor="ffffff" imgStartX='100' closePanelX='0'>
+		<title>LENSES FOR YOUR LIFESTYLE</title>
+		<description>Make more than a fashion statement. The right sunglass lens tint can alter perception, benefit your health and help you see better by enhancing depth perception and color recognition. Match your optics to your environment. Find a lens tint that compliments your favorite activity.</description>
+	</panel>
+	
+	<panel id="2" textX='50' textY='311' txtColor="ffffff" imgStartX='230' closePanelX='0'>
+		<title>THE ANATOMY OF PREMIUM SUNGLASSES</title>
+		<description>Let structure redefine style. Find the perfect fit with a new <br/>understanding of the form & function of high quality sunglasses.</description>
+	</panel>
+	
+</performance>

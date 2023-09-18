@@ -1,0 +1,116 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ui/assets/styles/css/style.css">
+  </head>
+
+<!-- RAMS -->
+  <body style="height: 4000px;">
+    <div class="Header">
+      <h3><span><a href="index.html">The Components</a></span></h3>
+      <div class="Shuffle"><img src="ui/assets/images/shuffle.svg" alt=""></div>
+      <select name="system" id="System-input" style="display: none">
+        <option value="Rams">Dieter Rams</option>
+        <option value="Vignelli">The Vignellis</option>
+        <option value="Bass">Saul Bass</option>
+        <option value="Brockmann">Josef Müller-Brockmann</option>
+  <!--       <option value="Escher">MC Escher</option> -->
+      </select>
+    </div>
+    <div class="System">
+      <section class="Section Section--components-1 Section--nav title-size-xxsmall">
+        <div class="Component Nav--list-row">
+          <div class="Group Group--links">
+            <div class="Icon"><a href="#menu">☰</a></div>
+            <div class="Link">
+              <h1><a href="#team">Team</a></h1>
+            </div>
+            <div class="Link">
+              <h1><a href="#design">Design</a></h1>
+            </div>
+            <div class="Link">
+              <h1><a href="#culture">Culture</a></h1>
+            </div>
+            <div class="Link">
+              <h1><a href="#technology">Technology</a></h1>
+            </div>
+            <div class="Link">
+              <h1><a href="#thoughts">Thoughts</a></h1>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      var touchStartY;
+      var touchMoved;
+      var scrollTop;
+      var oldScrollTop;
+      var _winW;
+      var _winH;
+      var Nav = document.querySelector('.Section--nav');
+      var NavContainer = document.querySelector('.Nav--list-row');
+      var NavIcon = NavContainer.querySelector('.Icon a');
+      var _navW = NavContainer.querySelector('.Link:last-of-type').getBoundingClientRect().right;
+
+      NavIcon.addEventListener('click',navClickHandler);
+      window.addEventListener('touchmove',scrollDirectionHandler)
+      Nav.addEventListener('wheel',navScrollHandler);
+      window.addEventListener('wheel',scrollDirectionHandler);
+      window.addEventListener('mousemove',mousemoveHandler);
+      window.addEventListener('resize',resizeHandler);
+      resizeHandler()
+      function navScrollHandler(e) {
+        e.stopPropagation();
+      }
+      function navClickHandler() {
+        if(NavIcon.textContent == "☰"){
+          NavIcon.textContent = "✕";
+          NavContainer.classList.add('Active');
+        }
+        else if(NavIcon.textContent == "✕") {
+          NavIcon.textContent = "☰";
+          NavContainer.classList.remove('Active');
+          NavContainer.scrollTop = 0;
+        }
+      }
+      function scrollDirectionHandler(e) {
+        oldScrollTop = scrollTop;
+        scrollTop = document.body.scrollTop;
+        if(scrollTop > oldScrollTop && !Nav.classList.contains('Hidden')) {
+          Nav.classList.add('Hidden');
+        }else if(scrollTop < oldScrollTop && Nav.classList.contains('Hidden')){
+          Nav.classList.remove('Hidden');
+        }
+      }
+      function mousemoveHandler(e) {
+        if(e.pageY - document.body.scrollTop < 100 && Nav.classList.contains('Hidden')){
+          Nav.classList.remove('Hidden');
+        }
+      }
+      function resizeHandler () { // Set the size of images and preload them
+        _winW = window.innerWidth;
+        _winH = window.innerHeight;
+
+        if(_winW > 1000){
+          smallScreen = false;
+        }else{
+          smallScreen = true;
+        }
+        if(_navW+150 > _winW) {
+          NavContainer.classList.add('nav-overflow')
+        }else{
+          NavContainer.classList.remove('nav-overflow')
+        }
+      }
+    </script>
+    <script src="ui/assets/scripts/class-lists.js"></script>
+    <script>
+      var mySiteClasses = []
+      var mySectionClasses = ['section-bg-color','text-align'] // title-size-xxsmall
+    </script>
+    <script src="ui/assets/scripts/shuffle.js"></script>
+  </body>
+</html>

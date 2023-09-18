@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>VIV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="stylesheet" type="text/css" href="ui/assets/styles/css/main.css">
+  
+  <script type='application/javascript' src='ui/assets/scripts/fastclick.js'></script>
+
+  <script type='application/javascript' src='ui/assets/scripts/remove-hover.js'></script>
+
+</head>
+<body>
+  <div class="app is-home">
+          
+<!-- DIALOGUE -->
+    <div class="viv-area">
+      <div class="uber">
+        <img src="ui/assets/images/uber.svg" alt="" width="30">
+        <span>...</span>
+      </div>
+    
+      <div class="extensions">
+        <div class="extension-bar">
+          <div class="extension-item">
+            <span class="extension-text">Order a coffee</span>
+          </div>
+          <div class="extension-item">
+            <span class="extension-text">Edit destination</span>
+          </div>
+        </div>
+      </div>
+      <h2 class="viv-text"></h2>
+      <h6 class="suggestions">Scroll for suggested commands</h6>
+
+      <div class="more-suggestions">
+        <div class="more-categories">
+          <div class="more-categories-item left">
+            <span class="menu-arrow">Concerts in San Francisco</span>
+          </div>
+          <div class="more-categories-item right">
+            
+            <span class="menu-arrow">Time in Paris?</span>
+          </div>
+          <div class="more-categories-item right">       
+            <span class="more-categories-item-text">Find a healthy breakfast close by</span>
+          </div>
+          <div class="more-categories-item left">
+            <span class="menu-arrow">Order me a juice with Kale</span>
+          </div>
+          <div class="more-categories-item left">
+            <span class="menu-arrow">Order an UberX to work</span>
+          </div>
+          <div class="more-categories-item right">
+            <span class="menu-arrow">Are there any delays on the trains this morning </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div class="icon viv-icon"><img src="ui/assets/images/viv.svg"></div>
+
+    <div class="you-area">
+      <h6 class="you-placeholder">Touch and hold<br>in this area to speak</h6>
+      <h6 class="you-start">Start talkin’</h6>
+      <!-- <h2 class="you-text" contenteditable="true"></h2> -->
+      <h2 class="you-text"></h2>
+    </div>
+
+    <div class="clear">
+      <div class="arrows"><img src="ui/assets/images/swipe.svg" alt=""></div>
+      <h5>Swipe to cancel</h5>
+    </div>
+
+<!-- BRANDS -->
+    <div class="brands">
+      <div class="close-button"><img src="ui/assets/images/arrow.svg"></div>
+      <div class="brand-details"></div>
+    </div>
+
+<!-- RESULTS -->
+    <div class="swipe">
+      <h5>Swipe to see<br>more results</h5>
+      <div class="arrows"><img src="ui/assets/images/swipe.svg" alt=""></div>
+    </div>
+    <div class="results-double results">
+      <div class="result-set">
+        <div class="result left-result is-visible">
+          <h5 class="category">Restaurant</h5>
+          <h6><b>Panciuto</b></h6>
+          <h6>292 Reviews * * * *</h6>
+          <h6>Italian/Southern</h6>
+          <button>Book a table</button>
+          <a>Show more restaurants</a>
+        </div>
+        <div class="result right-result is-visible">
+          <h5 class="category">Concert</h5>
+          <h6><b>Ben Howard</b></h6>
+          <h6>$35</h6>
+          <h6>The Green Room</h6>
+          <button>Buy Tickets</button>
+          <a>Show more Concerts</a>
+        </div>
+      </div>
+      <div class="result-set">
+        <div class="result left-result">
+          <h5 class="category">Movie</h5>
+          <h6><b>Mad Max</b></h6>
+          <h6>* * * *</h6>
+          <h6>AMC Southpoint</h6>
+          <button>Buy Tickets</button>
+          <a>Show more movies</a>
+        </div>
+        <div class="result right-result">
+          <h5 class="category">Winery</h5>
+          <h6><b>Muscadine</b></h6>
+          <h6>$$$</h6>
+          <h6>Climax, NC</h6>
+          <button>Book a tasting</button>
+          <a>Show more wineries</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="result-single results">
+      <div class="result-full">
+        <div class="result is-visible">
+          <div class="left">
+            <h6 class="category">Restaurant</h6>
+            <h5><b>Panciuto</b></h5>
+            <h6>Italian/Southern</h6>
+            <h6>.4mi</h6>
+            $$$  
+          </div>
+          <div class="right">
+            <h6>Friday, Aug 21</h6>
+            <h6>72º</h6>
+          </div>
+          <button>BOOK <span>6:00PM</span></button>
+          <div class="info">
+            <div class="nav">
+              <div class="nav-item call">919.732.6261</div>
+              <div class="nav-item reviews">292 Reviews</div>
+              <div class="nav-item hours">Hours</div>
+              <div class="nav-item menu">Menu</div>
+            </div>
+            <div class="map">
+              <img src="ui/assets/images/map.png" alt="">
+            </div>
+            <p>
+              Our small farm and garden sourced suppers have been winning over diners since 2006. The menu is planned weekly, but changes nightly based on availability of the foods being grown in our own ‘backyard’. Cooking exclusively within this framework, connecting bellies to farms, dinner at Panciuto is both distinctly Italian and familiarly Southern.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="result-full">
+        <div class="result is-visible">
+          <div class="left">
+            <h6 class="category">Restaurant</h6>
+            <h5>Rue Cler</h5>
+            <h6>French</h6>
+            <h6>1mi</h6>
+            $$$  
+          </div>
+          <div class="right">
+            <h6>Friday, Aug 21</h6>
+            <h6>72º</h6>
+          </div>
+          <button>BOOK <span>6:30PM</span></button>
+          <div class="info">
+            <div class="nav">
+              <div class="nav-item call">919.732.6261</div>
+              <div class="nav-item reviews">292 Reviews</div>
+              <div class="nav-item hours">Hours</div>
+              <div class="nav-item menu">Menu</div>
+            </div>
+            <div class="map">
+              <img src="ui/assets/images/map.png" alt="">
+            </div>
+            <p>
+              Our small farm and garden sourced suppers have been winning over diners since 2006. The menu is planned weekly, but changes nightly based on availability of the foods being grown in our own ‘backyard’. Cooking exclusively within this framework, connecting bellies to farms, dinner at Panciuto is both distinctly Italian and familiarly Southern.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="result-full juju">
+        <div class="result is-visible">
+          <div class="left">
+            <h6 class="category">Restaurant</h6>
+            <h5>Juju</h5>
+            <h6>Thai</h6>
+            <h6>.8mi</h6>
+            $$  
+          </div>
+          <div class="right">
+            <h4>Confirmed!</h4>
+            <h6>Friday, Aug 21</h6>
+            <h6>72º</h6>
+          </div>
+          <button>BOOK <span>6:30PM</span></button>
+          <div class="info">
+            <div class="nav">
+              <div class="nav-item call">919.732.6261</div>
+              <div class="nav-item reviews">292 Reviews</div>
+              <div class="nav-item hours">Hours</div>
+              <div class="nav-item menu">Menu</div>
+            </div>
+            <div class="map">
+              <img src="ui/assets/images/map.png" alt="">
+            </div>
+            <p>
+              Our small farm and garden sourced suppers have been winning over diners since 2006. The menu is planned weekly, but changes nightly based on availability of the foods being grown in our own ‘backyard’. Cooking exclusively within this framework, connecting bellies to farms, dinner at Panciuto is both distinctly Italian and familiarly Southern.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="result-full payment">
+        <div class="result is-visible">
+          <h5>Reserve with:</h5>
+          <button class="visa-button">Visa Ending in 5050</button>
+          <h5>or</h5>
+          <button class="add-card-button">ADD A CARD</button>
+          <div class="add-card">
+            <input type='text' placeholder="1234 4567 8910">
+            <button>SCAN YOUR CARD</button>
+            <h6>This payment method will only be charged when you confirm a payment</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- SHOWCASE -->
+
+<!-- ACCOUNT -->
+
+
+    
+<!-- FOOTER -->
+    <div class="footer">
+      <h6 class="tap">Tap to Type</h6>
+      <div class="avatar"><img src="ui/assets/images/avatar.svg"></div>
+    </div>
+
+<!-- UTILS -->
+    <div class="tooltip"></div>
+    <div class="cursor"></div>
+  </div>
+  <script src="ui/assets/scripts/jquery.js"></script>
+  <script src="ui/assets/scripts/typed.js"></script>
+  <script src="ui/screens/Main.js"></script>
+</body>
+</html>

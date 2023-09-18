@@ -1,0 +1,19 @@
+<inspired_nav>
+	<title><![CDATA[more inspiration]]></title>
+	<modules>
+		<module>
+			 <id><![CDATA[stw]]></id>
+			<preview><![CDATA[images/inpiredMenu/stylewheel/stylewheel_preview.jpg]]></preview>
+			<url><![CDATA[stylewheel.jsp]]></url>
+			<display><![CDATA[stylewheel]]></display>
+			<description><![CDATA[DESCRIPTION GOES HERE]]></description>
+		</module>
+		<module>
+			 <id><![CDATA[fys]]></id>
+			<preview><![CDATA[images/inpiredMenu/findyourstyle/findyourstyle_preview.jpg]]></preview>
+			<url><![CDATA[findyourstyle.jsp]]></url>
+			<display><![CDATA[findyourstyle]]></display>
+			<description><![CDATA[DESCRIPTION GOES HERE]]></description>
+		</module>
+	</modules>
+</inspired_nav>

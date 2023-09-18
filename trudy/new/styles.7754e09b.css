@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box}body{overflow:hidden}.video{left:-5%;width:110%;height:110%;object-fit:cover}.video,.video__overlay{position:absolute;top:0;z-index:-1}.video__overlay{content:"";right:0;width:100%;height:100%;background:linear-gradient(90deg,transparent,#000 50%)}
+/*# sourceMappingURL=/styles.7754e09b.css.map */

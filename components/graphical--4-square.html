@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ui/assets/styles/css/style.css">
+  </head>
+
+<!-- RAMS -->
+  <body>
+    <div class="Header">
+      <h3><span><a href="index.html">The Components</a></span></h3>
+      <div class="Shuffle"><img src="ui/assets/images/shuffle.svg" alt=""></div>
+      <select name="system" id="System-input">
+        <option value="Rams">Dieter Rams</option>
+        <option value="Vignelli">The Vignellis</option>
+        <option value="Bass">Saul Bass</option>
+        <option value="Brockmann">Josef Müller-Brockmann</option>
+  <!--       <option value="Escher">MC Escher</option> -->
+      </select>
+    </div>
+    <div class="System">
+      <section class="Section Section--components-1 square-4 flex-wrap section-flex-row group-justify-start">
+        <div class="Component">
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="ui/assets/scripts/fixtures.js"></script>
+    <script src="ui/assets/scripts/class-lists.js"></script>
+    <script>
+      // var system_classes = [section_h_padding, section_v_padding]
+      var mySectionClasses = ['title-size', 'text-align', 'component-h-padding', 'component-v-padding', 'group-align', 'section-bg-color'] // flex-row, justify start
+    </script>
+    <script src="ui/assets/scripts/shuffle.js"></script>
+    <script src="ui/assets/scripts/scroll.js"></script>
+  </body>
+</html>

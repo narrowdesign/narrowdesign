@@ -1,0 +1,8 @@
+<a href="/redesign/web/footer/connected.jsp">Stay Connected</a>
+<a href="/redesign/web/footer/about.jsp">About Us</a>
+<a href="/redesign/web/footer/cust_service.jsp">Customer Service</a>
+<a href="/redesign/web/footer/legal.jsp">Legal</a>
+<div id="locality">
+	<a href="#" class="on">United States</a>
+	<a href="#">Canada</a>
+</div>

@@ -1,0 +1,19 @@
+<h1><a href="index.html"><img src="/redesign/web/images/logo.gif" border="0" title="sunglass hut" alt="sunglass hut"/></a></h1>
+
+<div id="utilities">
+	<a href="#" onclick="javascript:p.hide()">Register</a>
+	<a href="#">Login</a>
+	<a href="#">Stores</a>
+	<a href="#">Stylefile</a>
+</div>
+<ul id="mainnav">
+	<li><a href="/redesign/web/product.jsp" title="sunglasses" id="nav_sunglasses">Sunglasses</a></li>
+	<li><a href="#" title="brands" id="nav_brands">Brands</a></li>
+	<li><a href="stylewheel/index.html" title="be inspired" id="nav_inspired">Be Inspired</a></li>
+	<li><a href="#" title="performance" id="nav_performance">Performance</a></li>
+	<li><a href="#" title="gift cards" id="nav_gift">Gift Cards</a></li>
+</ul>
+<form method="post" action="">
+	<input value="search products"/>
+	<input type="submit" class="submit" value="GO"/>
+</form>

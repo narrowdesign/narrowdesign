@@ -1,0 +1,200 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1          6312           6312        main scene
+    2             2           6314          2
+    3         21195          27509          3
+    4            44          27553          4
+    5            44          27597          5
+    6            44          27641          6
+    7             2          27643          7
+    8             2          27645          8
+    9             2          27647          9
+   10             2          27649          10
+   11             2          27651          11
+   12             2          27653          12
+   13             2          27655          13
+   14             2          27657          14
+   15             2          27659          15
+   16             2          27661          16
+   17             2          27663          17
+   18             2          27665          18
+   19             2          27667          19
+   20             2          27669          20
+   21             2          27671          21
+   22             2          27673          22
+   23             2          27675          23
+   24             2          27677          24
+   25             2          27679          25
+   26             2          27681          26
+   27             2          27683          27
+   28             2          27685          28
+   29             2          27687          29
+   30             2          27689          30
+   31             2          27691          31
+   32         54832          82523          32
+   33            32          82555          33
+   34            32          82587          34
+   35            32          82619          35
+   36            32          82651          36
+   37            32          82683          37
+   38            35          82718          38
+   39            11          82729          39
+   40            12          82741          40
+   41            12          82753          41
+   42            12          82765          42
+   43            20          82785          43
+   44            12          82797          44
+   45            12          82809          45
+   46            12          82821          46
+   47            20          82841          47
+   48            12          82853          48
+   49            12          82865          49
+   50           180          83045          50
+   51            52          83097          51
+   52            43          83140          52
+   53            43          83183          53
+   54        109961         193144          54
+   55         10459         203603          55
+   56           673         204276          56
+   57           184         204460          57
+   58           188         204648          58
+   59           172         204820          59
+   60          1664         206484          60
+   61           554         207038          61
+   62            12         207050          62
+   63            12         207062          63
+   64            12         207074          64
+   65            34         207108          65
+   66            83         207191          66
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+main scene                      327             0
+
+Embedded Objects                181             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+sound button                     37             0
+sound off - on movie            100             0
+here pulse                        0             0
+line movie                        0             0
+to learn more movie               0             0
+insword fish                      0             0
+back arrow pulse movie            0             0
+back button                       0             0
+back                              0             0
+what's next movie                 0             0
+due out in 2001                   0             0
+travoltas back                    0             0
+battlefield                       0             0
+here movie                        0             0
+here button                       0             0
+here                              0             0
+this years blah...                0             0
+coming may 12                     0             0
+battlefield pic                   0             0
+whats next button2                0             0
+whats next2                       0             0
+bar                               0             0
+loader                          390           117
+more button movie                 0             0
+more button                       0             0
+arrow                             0             0
+bad guy pic                       0             0
+dad pic                           0             0
+inside track line                40             0
+coming soon movie                 0             0
+inside track button              55             0
+white inside track symbol         0            50
+battlefield button               39             0
+battlefield banner               55             0
+home                              0            37
+register mov                      0             0
+register button                  37             0
+register symbol                   0            88
+the offical website               0           132
+send email mov                    0             0
+send email button                 0             0
+send email symbol                 0            96
+whats nex mov                     0             0
+web links mov                     0             0
+multimedia mov                    0             0
+interview mov                     0             0
+downloads mov                     0             0
+career mov                        0             0
+bio mov                           0             0
+back lot mov                      0             0
+whats next button                 0             0
+downloads button                  0             0
+web links button                  0             0
+back lot button                   0             0
+multimedia button                 0             0
+career button                     0             0
+interviews button                 0             0
+bio button                        0             0
+whats next sym                    0            50
+downloads sym                     0            46
+web links                         0            46
+awards sym                        0             0
+bacl lot sym                      0            44
+multimedia symbol                 0            48
+carrer sym                        0            41
+interviews sym                    0            48
+biography sym                     0            46
+hook                             49             0
+new top bar                     321             0
+new travolta back                 0             0
+nava                            808             0
+j mov                             0             0
+j                                92             0
+o mov                             0             0
+o                                 0            32
+h movie                           0             0
+h                                 0            32
+number change movie               0           713
+symbol-thick lines               70             0
+line white                       33             0
+lines                            53             0
+john eyes movie                   0             0
+travolta logo                     0             0
+john eyes                         0             0
+off button                       95             0
+button pulse movie                0             0
+side 1                           38             0
+side 2                           56             0
+side 3                           38             0
+side 4                           40             0
+ shade                           71             0
+on button                         0             0
+
+Bitmap                     Compressed  Original    Compression
+-----------------------    ----------  ----------  ------------
+new_hook                        1132       13440   JPEG Quality=90
+new_travolta_topbar             7420      133772   JPEG Quality=80
+home_ban2.jpg                  11373      100776   JPEG Quality=90
+new_travolta_top               12781      197400   JPEG Quality=80
+new_travolta_nava_back         12542      129456   JPEG Quality=90
+new_johns_eyes                  6314      313500   JPEG Quality=50
+new_travolta_back              12366      514328   JPEG Quality=90
+
+Event sounds: 22KHz Stereo 64 kbps MP3
+
+Sound Name                 Bytes       Format
+-----------------------    --------    --------
+but over 1                   6463        22KHz Stereo 64 kbps MP3
+but_dwn_jt_bat_erth         83631        22KHz Stereo 64 kbps MP3
+but_ovr_6                    6671        22KHz Stereo 64 kbps MP3
+but_ovr_4_jt                17487        22KHz Stereo 64 kbps MP3
+but_ovr_5                    5007        22KHz Stereo 64 kbps MP3
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Arial MT Bold                 237        ho
+Courier New Bold             2989         '-abcdefghiklmnoprstuvwxy
+Courier New CE Bold          2459         -ADEGILNOPSTWcgimnos
+Arial Bold                     20        
+Compstyle Bold               1946         0123456789defhjsty

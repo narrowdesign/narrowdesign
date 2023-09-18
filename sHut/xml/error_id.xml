@@ -1,0 +1,5 @@
+<error_id>
+	<errors>
+		<error id="item_add_duplicate" >item already added</error>
+	</errors>
+</error_id>

@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+// LESS CSS
+
+.transition(@duration,@ease:@linear,@prop:all,@delay:0){
+  -webkit-transition: @prop @duration @delay @ease;
+  -moz-transition: @prop @duration @delay @ease;
+  -o-transition: @prop @duration @delay @ease;
+  -ms-transition: @prop @duration @delay @ease;
+  transition: @prop @duration @delay @ease;
+
+  -moz-transition-duration: @duration;
+  -moz-transition-property:@prop;
+  -moz-transition-delay:@delay;
+}
+.rounded(@radius){
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+.shadow{
+  -moz-box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+}
+.box-sizing{
+  -o-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.opacity(@alpha){
+  opacity: @alpha;
+  -moz-opacity: @alpha;
+  filter:alpha(opacity=@alpha);
+}
+.headline-font(@size){
+  font-size: @size;
+  font-family: @sans-serif;
+  line-height:1em;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.body-font(@size){
+  font-size: @size;
+  font-family: '@serif';
+  text-transform: none;
+  line-height:1.8em;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+@sans-serif:'proxima-nova',Helvetica, Arial, sans-serif;
+@serif:'utopia-std-display',Georgia, Times, serif;
+
+@easeIn: cubic-bezier(0.825, 0.000, 1.000, 0.640);
+@easeInOut: cubic-bezier(0.665, 0.000, 0.430, 1);
+@easeOut: cubic-bezier(0.200, 0.470, 0.435, 0.970);
+@linear: cubic-bezier(0.250, 0.250, 0.750, 0.750);
+
+@bgColor:#121315;
+@darkColor:#494547;
+@darkColor50:rgba(6, 6, 6, .50);
+@lightColor:#c3feb4;
+@lightColor10:rgba(181, 255, 210, .10);
+@orange:#ff8800;
+@borderColor:#494547;
+
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+
+html { font-size: 100%; background:@bgColor url('../img/bg.png'); -webkit-font-smoothing:antialiased;-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; text-rendering:optimizeLegibility}
+html, button, input, select, textarea { font-family: sans-serif; color: @darkColor; }
+body { overflow-y: scroll; margin: 0; height:100%; font-size: 1em; line-height: 1.4; .body-font(13px);
+}
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    background:@darkColor;
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px @lightColor10; 
+}
+
+/* ===== Primary Styles ========================================================
+   Author: Nick Jones
+   ========================================================================== */
+#holder{
+  position:relative;
+  display:block;
+  width:100%;
+  height:700px;
+  .box-sizing;
+  overflow:hidden;
+  .transition(1s,@easeInOut);
+}
+h1{
+  .headline-font(8em);
+  letter-spacing: .06em;
+  color:@lightColor;
+  top:0px;
+}
+h2{
+  .headline-font(3em);
+  color:@lightColor;
+  font-weight: normal;
+  line-height: 1.2em;
+  top:0px;
+}
+h3{
+  .headline-font(2em);
+  top:0px;
+}
+#text{
+  position:absolute;
+  left:6%;
+  bottom:6%;
+}
+footer{
+
+}
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+// retina display
+@media only screen and (-webkit-min-device-pixel-ratio: 2){
+    h1{
+    font-size: 6em;
+   }
+
+}

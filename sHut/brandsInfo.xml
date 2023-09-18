@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<photoDelay>1000</photoDelay>
+<images>
+    <landingPhoto>
+        <image>lnd_prada.jpg</image>
+        <sequence>0</sequence>
+    </landingPhoto>
+    <landingPhoto>
+        <image>lnd_ralphlauren.jpg</image>
+        <sequence>1</sequence>
+    </landingPhoto>
+</images>

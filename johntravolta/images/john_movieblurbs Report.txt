@@ -1,0 +1,81 @@
+Movie Report
+------------
+
+Frame #    Frame Bytes    Total Bytes    Page
+-------    -----------    -----------    ---------------
+    1           141            141        Scene 1
+    2             2            143          2
+    3             2            145          3
+    4             2            147          4
+    5         54636          54783          5
+    6            12          54795          6
+    7            12          54807          7
+    8            20          54827          8
+
+Page                       Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+Scene 1                          95             0
+
+Embedded Objects                122             0
+
+Symbol                     Shape Bytes    Text Bytes
+-----------------------    -----------    ----------
+on-off sound swordfish button       37             0
+on-off sound battlefield button        0             0
+pop up blurb movie                0           842
+bad guy pic                       0             0
+battlefield pic                   0             0
+dad pic                           0             0
+john eyes                         0             0
+symbol-thick lines               70             0
+lines                            53             0
+line white                       33             0
+line movie                        0             0
+coming may 12                     0             0
+battlefield                       0             0
+travoltas back                    0            78
+insword fish                      0             0
+due out in 2001                   0            66
+this years blah...                0             0
+to learn more movie               0           257
+whats next button2                0             0
+whats next2                       0            61
+what's next movie                 0             0
+here button                       0             0
+here pulse                        0             0
+here                              0             0
+here movie                        0             0
+back button                       0             0
+arrow                            70             0
+back                              0            37
+back arrow pulse movie            0             0
+more button                      37            38
+more button movie                 0            38
+sound button                      0             0
+sound on-offbattlefield           0             0
+sound on-offswordfish           100             0
+on button                         0             0
+button pulse movie                0             0
+side 1                           38             0
+side 2                           56             0
+side 3                           38             0
+side 4                           40             0
+ shade                           71             0
+off button                       95             0
+
+Bitmap                     Compressed  Original    Compression
+-----------------------    ----------  ----------  ------------
+dad_pic.jpg                     7203      400148   JPEG Quality=30
+bad_guy_pic.jpg                10717      398412   JPEG Quality=30
+
+Event sounds: 11KHz Stereo 16 kbps MP3
+
+Sound Name                 Bytes       Format
+-----------------------    --------    --------
+but ovr 3                    5735        11KHz Mono 16 kbps MP3
+but_ovr_4_jt                 4591        11KHz Mono 16 kbps MP3
+but over 1                   1887        11KHz Mono 16 kbps MP3
+
+Font Name                  Bytes       Characters
+-----------------------    --------    -----------
+Courier New Bold             5392         !$,-.0126ACDHIJNSTUWabcdefghijklmnoprstuvwxy’“”

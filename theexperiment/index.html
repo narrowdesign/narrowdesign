@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>The Experiment - A little out there</title>
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="ui/assets/styles/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="https://theexperiment.io/ui/assets/images/nj1.jpg" />
+    <meta property="og:description" content="The Experiment makes products, prototypes and websites for people worldwide from our base in Duke Forest, Durham, NC" />
+    <meta property="og:url" content="https://theexperiment.io" />
+    <meta property="og:title" content="The Experiment — Design and Prototype and Code" />
+    <script src="ui/assets/scripts/jquery-2.1.1.min.js"></script>
+    <script src="ui/assets/scripts/mousewheel.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-7453942-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body class="bg-black ov-h">
+    <div class="js-overlay pos-f t-a-r z-500">
+      <svg class="js-n pos-f l-phi6 t-phi5 w-phi5 ms-w-phi7" x="0px" y="0px"
+         viewBox="0 0 96.632 39.985" enable-background="new 0 0 96.632 39.985" xml:space="preserve">
+      <rect fill="#fff" y="31.988" width="96.632" height="7.997"/>
+      <rect fill="#fff" x="72.641" y="15.994" width="23.991" height="7.997"/>
+      <rect fill="#fff" x="72.641" width="23.991" height="7.997"/>
+      </svg>
+    </div>
+    <!-- <div class="js-message pos-f fx-c l-phi6 b-phi7 f-w-700 z-10">
+      <div class="d-f">
+        <a href="https://codepen.io/narrowdesign/full/JNqMeb" target="_blank" class="d-ib f-s-s ms-f-s-xs bd-b m-r-phi9">Spirograph Codepen</a><br>
+        <a href="https://codepen.io/narrowdesign/full/JNVyJb/" target="_blank" class="d-ib f-s-s ms-f-s-xs bd-b">Layout Codepen</a>
+      </div>
+      <div class="f-s-xxxxl ms-f-s-xxxl po-e-n m-l--05">Hello.</div>
+      <div class="d-f a-i-end">
+        <a class="d-ib bd-b f-s-s ms-f-s-xs m-r-phi9" href="mailto:hello@theexperiment.io?subject=So, I was on your site and...">hello@theexperiment.io</a><br>
+        <a href="https://twitter.com/narrowd" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @narrowd</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div> -->
+    <div class="js-dots d-ib pos-f r-phi6 ms-r-a ms-l-phi9 t-phi5 ms-t-phi6 h-phi2 ms-h-phi4 fx-c j-c-between m-r-025 z-200">
+      <div class="pos-r d-n ms-d-ib rot-90 w-80px t-o-tl l-05rem t-a-l f-s-xxxs m-b-1"><span class="js-current">1</span> / <span class="js-total">7</span></div>
+      <div class="js-dot w-0 h-0 ol ol-w-1 circle bg-white op-30"></div>
+    </div>
+    <canvas id="canvas" class="pos-f t-0 l-0 d-n"></canvas>
+    <div class="js-close-icon pos-f t-0 l-fs w-2rem ms-w-3rem h-2rem ms-h-3rem m-r-phi6 m-t-phi6 ms-m-r-0 ms-m-t-0 z-500">
+      <svg class="w-100p h-100p" x="0px" y="0px"
+         viewBox="0 0 40.729 40.729" enable-background="new 0 0 40.729 40.729" xml:space="preserve">
+      <circle class="js-close-bg" cx="20.365" cy="20.365" r="20.365"/>
+      <polygon class="js-close-lines" fill="#FFFFFF" points="28.465,13.325 27.404,12.264 20.365,19.304 13.325,12.264 12.264,13.325 19.304,20.365
+        12.264,27.405 13.325,28.465 20.365,21.425 27.404,28.465 28.465,27.405 21.425,20.365 "/>
+      </svg>
+
+    </div>
+    <div class="js-spiral pos-f t-0 l-0 fs z-20">
+      <div class="js-section pos-a bg-black white">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+            <svg fill="#fff" class="w-phi5 ms-w-phi7" x="0px" y="0px"
+               viewBox="0 0 96.632 39.985" enable-background="new 0 0 96.632 39.985" xml:space="preserve">
+            <rect fill="#fff" y="31.988" width="96.632" height="7.997"/>
+            <rect fill="#fff" x="72.641" y="15.994" width="23.991" height="7.997"/>
+            <rect fill="#fff" x="72.641" width="23.991" height="7.997"/>
+            </svg>
+            <div class="w-phi2 m-r-1 ms-m-r-0 ms-w-phi3 bd-c-red l-h-m t-a-r">
+              <div class="t-a-l ms-f-s-body f-s-xxs"><span class="f-w-700 red">WARNING: </span> <br class="d-b ms-d-n">Do not proceed if you suffer from vertigo or find experimental interfaces offensive. <a href="#" class="js-skip bd-b"><span class="js-accessible">More</span> accessible version.</a>
+              </div>
+            </div>
+        </div>
+        <div class="pos-a b-0 ms-b-phi3 ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <h1 class="js-section-title ms-h-phi5 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <span class="js-section-title-word m-b-phi9 w-s-nw d-ib">Welcome</span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw d-ib">to The</span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw d-ib">Experiment.</span>
+          </h1>
+          <div class="js-scroll f-s-xs w-phi3 ms-w-phi5 h-phi2 ms-h-phi4 p-t-phi5 ms-p-t-0 t-a-c cur-p">
+            <svg class="w-phi5 ms-w-phi6" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               viewBox="-1 -1 108.7533 108.7533" enable-background="new 0 0 103.7533 103.7533" xml:space="preserve">
+              <circle fill="none" stroke="#F11B1B" stroke-width="3" stroke-miterlimit="10" cx="51.8767" cy="51.8767" r="51.5973"/>
+              <circle fill="none" stroke="#F11B1B" stroke-width="3" stroke-miterlimit="10" cx="51.8767" cy="32.1683" r="31.8888"/>
+              <circle fill="none" stroke="#F11B1B" stroke-width="3" stroke-miterlimit="10" cx="64.0571" cy="32.1683" r="19.7083"/>
+              <circle fill="none" stroke="#F11B1B" stroke-width="3" stroke-miterlimit="10" cx="64.0571" cy="39.6963" r="12.1804"/>
+              <circle fill="none" stroke="#F11B1B" stroke-width="3" stroke-miterlimit="10" cx="59.4046" cy="39.6963" r="7.5279"/>
+              <circle fill="none" stroke="#F11B1B" stroke-width="3" stroke-miterlimit="10" cx="59.4046" cy="36.8208" r="4.6525"/>
+            </svg>
+            <div class="p-t-phi9 f-s-s ms-f-s-xs f-w-700 red">Scroll</div>
+          </div>
+        </div>
+      </div>
+      <header role="banner" class="js-section pos-a bg-white black">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="w-phi5 ms-w-phi7 m-b-3" x="0px" y="0px"
+             viewBox="0 0 96.632 39.985" enable-background="new 0 0 96.632 39.985" xml:space="preserve">
+          <rect fill="#000" y="31.988" width="96.632" height="7.997"/>
+          <rect fill="#000" x="72.641" y="15.994" width="23.991" height="7.997"/>
+          <rect fill="#000" x="72.641" width="23.991" height="7.997"/>
+          </svg>
+
+          <h2 class="w-phi1 ms-w-phi3 bd-c-red l-h-m t-a-r">
+            <p class="t-a-l f-s-body p-r-2 ms-p-r-0 m-t-0 p-t-0">For around ten years we’ve been building products, prototypes and websites together. We serve clients worldwide from Duke Forest in Durham, NC. We are Trevor O’Brien and Nick Jones and when we need them, specialist friends who include some of the best designers, developers and motion artists in the world. <br><a href="mailto:hello@theexperiment.io?subject=So, I was on your site and..." target="_blank" class="bd-b red">We are available for the right project</a>.
+            </p>
+          </h2>
+        </div>
+        <div class="pos-a b-0 ms-b-phi3 ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <h1 class="js-section-title ms-h-phi5 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <span class="js-section-title-word m-b-phi9 w-s-nw d-ib">The</span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw d-ib">Experiment</span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw d-ib"> </span>
+          </h1>
+          <a href="mailto:hello@theexperiment.io?subject=So, I was on your site and...&body=So, I was on your site and..." target="_blank" class="white bg-red js-contact-icon js-view-icon vis-h op-0 rounded-3 ms-w-0 ov-h">
+            <div class="f-s-xs w-phi3 ms-w-phi6 h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c">
+              <svg  class="w-phi5 ms-w-phi8 h-phi5 ms-h-phi8" x="0px" y="0px"
+                 viewBox="0 0 36.504 34.423" enable-background="new 0 0 36.504 34.423" xml:space="preserve">
+              <path fill="none" stroke="#fff" stroke-width="1.5" stroke-miterlimit="10" d="M7.401,32.453v-8.251H1.8
+                c-0.578,0-1.05-0.473-1.05-1.05V1.8c0-0.578,0.473-1.05,1.05-1.05h32.904c0.578,0,1.05,0.473,1.05,1.05v21.352
+                c0,0.578-0.473,1.05-1.05,1.05H14.752L7.401,32.453z"/>
+              <circle class="blink" style="animation-delay: .6s" fill="#fff" cx="24.903" cy="12.301" r="1.363"/>
+              <circle class="blink" style="animation-delay: .3s" fill="#fff" cx="18.677" cy="12.301" r="1.363"/>
+              <circle class="blink" fill="#fff" cx="12.45" cy="12.301" r="1.363"/>
+              </svg>
+
+              <div class="pos-r p-t-phi5 ms-p-t-phi8 f-s-s ms-f-s-xs f-w-700">Contact</div>
+            </div>
+          </a>
+        </div>
+      </header>
+      <div class="js-section js-project pos-a bg-got color-got" data-project="got">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi5 ms-w-phi6" x="0px" y="0px" viewBox="223.837 362.094 161.526 66.601" enable-background="new 223.837 362.094 161.526 66.601" xml:space="preserve">
+            <polygon fill="#000" points="253.31,387.356 241.827,387.356 241.827,362.783 223.837,362.783 223.837,427.929 241.827,427.929
+              241.827,403.815 253.31,403.815 253.31,427.929 271.3,427.929 271.3,362.783 253.31,362.783  "/>
+            <path fill="#000" d="M352.063,362.094c-13.462,0-25.075,8.034-30.319,19.556c0.05-0.705,0.081-1.437,0.081-2.217
+              c0-13.933-14.162-16.65-19.138-16.65h-27.559v65.146h28.707c0,0,17.224,0.766,17.224-19.138c0-0.476-0.016-0.932-0.042-1.376
+              c4.832,12.436,16.922,21.279,31.046,21.279c18.362,0,33.3-14.939,33.3-33.3C385.363,377.032,370.424,362.094,352.063,362.094z
+               M300.772,412.618h-9.569v-9.952h9.569c0,0,3.828,0,3.828,4.593C304.6,412.236,300.772,412.618,300.772,412.618z M300.772,388.504
+              h-9.569v-9.837h9.569c0,0,3.828-0.038,3.828,4.67S300.772,388.504,300.772,388.504z M312.255,394.743
+              c2.317-0.421,4.977-1.629,6.905-4.49c-0.261,1.676-0.398,3.392-0.398,5.14c0,1.779,0.144,3.524,0.414,5.227
+              C315.963,394.967,309.977,395.171,312.255,394.743z M352.063,411.853c-9.075,0-16.459-7.384-16.459-16.459
+              c0-9.076,7.384-16.459,16.459-16.459s16.459,7.383,16.459,16.459C368.521,404.469,361.138,411.853,352.063,411.853z"/>
+            <circle fill="#000" cx="352.063" cy="395.394" r="13.397"/>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">While the White Walkers were breaching The Wall, we were working with Elastic (creators of the <a href="https://www.youtube.com/watch?v=s7L2PVdrb_8" target="_blank" class="bd-b">opening title sequence</a>) to design and prototype a web app for the show. HBO wanted to create a hub for fans to collect, showcase and upvote the best GoT content on the web. The fan curated “Compendium” was then pruned, printed and bound in very limited quantity, wax-sealed and sent to a few lucky fans. We didn’t get&nbsp;one…
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <h1 class="js-section-title ms-h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <span class="js-section-title-word m-b-phi9 w-s-nw">Game</span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw">of</span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw">Thrones</span>
+          </h1>
+          <div class="js-project-cta d-f">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/gotThumb.jpg" alt="Game of Thrones Thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">View</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-section js-project pos-a bg-viv color-viv" data-project="viv">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi5 ms-w-phi6" x="0px" y="0px" viewBox="223.837 362.094 161.526 66.601" enable-background="new 223.837 362.094 161.526 66.601" xml:space="preserve">
+            <polygon fill="#000" points="253.31,387.356 241.827,387.356 241.827,362.783 223.837,362.783 223.837,427.929 241.827,427.929
+              241.827,403.815 253.31,403.815 253.31,427.929 271.3,427.929 271.3,362.783 253.31,362.783  "/>
+            <path fill="#000" d="M352.063,362.094c-13.462,0-25.075,8.034-30.319,19.556c0.05-0.705,0.081-1.437,0.081-2.217
+              c0-13.933-14.162-16.65-19.138-16.65h-27.559v65.146h28.707c0,0,17.224,0.766,17.224-19.138c0-0.476-0.016-0.932-0.042-1.376
+              c4.832,12.436,16.922,21.279,31.046,21.279c18.362,0,33.3-14.939,33.3-33.3C385.363,377.032,370.424,362.094,352.063,362.094z
+               M300.772,412.618h-9.569v-9.952h9.569c0,0,3.828,0,3.828,4.593C304.6,412.236,300.772,412.618,300.772,412.618z M300.772,388.504
+              h-9.569v-9.837h9.569c0,0,3.828-0.038,3.828,4.67S300.772,388.504,300.772,388.504z M312.255,394.743
+              c2.317-0.421,4.977-1.629,6.905-4.49c-0.261,1.676-0.398,3.392-0.398,5.14c0,1.779,0.144,3.524,0.414,5.227
+              C315.963,394.967,309.977,395.171,312.255,394.743z M352.063,411.853c-9.075,0-16.459-7.384-16.459-16.459
+              c0-9.076,7.384-16.459,16.459-16.459s16.459,7.383,16.459,16.459C368.521,404.469,361.138,411.853,352.063,411.853z"/>
+            <circle fill="#000" cx="352.063" cy="395.394" r="13.397"/>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">When the creators of Siri sold it to Apple, they weren’t done. Two years later, they were ready to unleash their new A.I. “VIV” on the world. But VIV needed slick interface. They hired us to help them create one. These early prototypes helped establish the visual language and interaction models for the A.I. that dominated the conversation at TechCrunch Disrupt 2016 and was quickly gobbled up by Samsung. Exciting things are ahead for VIV.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="pos-a f-w-500 t--3rem ms-t--5rem l-0 d-ib f-s-s m-t-phi9 bd-b"><a href="http://www.viv.ai/" target="_blank">Visit VIV</a></div>
+          <h1 class="js-section-title ms-h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <span class="js-section-title-word m-b-phi9 w-s-nw">VIV</span>
+          </h1>
+          <div class="js-project-cta d-f">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/vivThumb.jpg" alt="Viv Thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">View</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-section js-project pos-a bg-cash black" data-project="fltv">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi5 ms-w-phi7" x="0px" y="0px" viewBox="0 0 85.296 85.296" enable-background="new 0 0 85.296 85.296" xml:space="preserve">
+            <g>
+              <path fill="#FFFFFF" d="M27.102,33.397c0,0.792-0.36,1.152-1.152,1.152h-3.096v5.903h2.915c0.792,0,1.152,0.36,1.152,1.152V43.8
+                c0,0.792-0.36,1.151-1.152,1.151h-2.915v9.143c0,0.791-0.359,1.151-1.151,1.151h-2.736c-0.792,0-1.151-0.36-1.151-1.151V31.201
+                c0-0.792,0.359-1.151,1.151-1.151h6.983c0.792,0,1.152,0.359,1.152,1.151V33.397z"/>
+              <path fill="#FFFFFF" d="M39.882,54.094c0,0.791-0.359,1.151-1.151,1.151h-6.479c-0.792,0-1.151-0.36-1.151-1.151V31.201
+                c0-0.792,0.359-1.151,1.151-1.151h2.736c0.792,0,1.151,0.359,1.151,1.151v19.545h2.592c0.792,0,1.151,0.359,1.151,1.151V54.094z"/>
+              <path fill="#FFFFFF" d="M52.554,33.397c0,0.792-0.36,1.152-1.152,1.152h-2.015v19.545c0,0.791-0.36,1.151-1.152,1.151h-2.735
+                c-0.792,0-1.151-0.36-1.151-1.151V34.549h-2.016c-0.792,0-1.151-0.36-1.151-1.152v-2.196c0-0.792,0.359-1.151,1.151-1.151h9.07
+                c0.792,0,1.152,0.359,1.152,1.151V33.397z"/>
+              <path fill="#FFFFFF" d="M65.657,54.237c-0.108,0.72-0.432,1.008-1.152,1.008h-4.607c-0.72,0-1.043-0.288-1.151-1.008l-3.059-22.892
+                c-0.108-0.9,0.251-1.296,1.151-1.296h2.736c0.756,0,1.079,0.287,1.151,1.043l1.692,16.81l1.692-16.81
+                c0.072-0.756,0.396-1.043,1.151-1.043h2.304c0.9,0,1.26,0.396,1.152,1.296L65.657,54.237z"/>
+              <path fill="#FFFFFF" d="M76.796,6c1.381,0,2.5,1.119,2.5,2.5v68.296c0,1.381-1.119,2.5-2.5,2.5H8.5c-1.381,0-2.5-1.119-2.5-2.5V8.5
+                C6,7.119,7.119,6,8.5,6H76.796 M76.796,0H8.5C3.813,0,0,3.813,0,8.5v68.296c0,4.687,3.813,8.5,8.5,8.5h68.296
+                c4.687,0,8.5-3.813,8.5-8.5V8.5C85.296,3.813,81.482,0,76.796,0L76.796,0z"/>
+            </g>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              In Jan. 2017, we reached out to four people we admire about finding an excuse to do a project together. <a href="http://twitter.com/dannpetty" target="_blank" class="bd-b">Dann</a> quickly replied, “Check your email.” Turned out he’d been designing a site for his upcoming documentary “Freelanced” and was ready to take on a partner to turn his vision into a website (he was producing, writing, shooting, editing...doing everything). Dann handled design, we did interaction and development. The site
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title pos-r h-phi5 w-phi3 d-f fx-c j-c-between">
+            <div class="pos-a f-w-500 t--3rem ms-t--5rem l-0 d-ib f-s-s m-t-phi9 bd-b"><a href="http://freelance.tv" target="_blank">Visit</a></div>
+            <h1 class="js-section-title-word m-b-phi9 w-s-nw f-s-xxxl ms-f-s-xl f-w-700">Freelance.tv</h1>
+            <div class="pos-r ms-pos-a f-s-s b-0">Design by <a href="http://twitter.com/dannpetty" target="_blank" class="bd-b">Dann Petty</a></div>
+          </div>
+          <div class="js-project-cta d-f">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/fltvThumb.jpg" alt="Freelance.tv thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">View</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-section js-project pos-a bg-prometheus color-prometheus" data-project="prometheus">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi4 ms-w-phi5" x="0px" y="0px" viewBox="0 0 648.6174 223.4355" enable-background="new 0 0 648.6174 223.4355" xml:space="preserve">
+            <g>
+              <path fill="#FFFFFF" d="M0.409,6.1582c-1.2754-2.8633,0.5313-5.1846,4.0362-5.1846h159.7016c3.5049,0,7.3799,2.3213,8.6558,5.1846
+                l18.8623,42.3447c1.2749,2.8633-0.5313,5.1855-4.0366,5.1855H27.9266c-3.5044,0-7.3799-2.3222-8.6553-5.1855L0.409,6.1582z"/>
+              <path fill="#FFFFFF" d="M29.2064,64.125c-1.2754-2.8633,0.5312-5.1856,4.0361-5.1856h159.7017c3.5049,0,7.3804,2.3223,8.6558,5.1856
+                l18.8623,42.3447c1.2749,2.8633-0.5313,5.1855-4.0367,5.1855H56.724c-3.5044,0-7.3794-2.3222-8.6553-5.1855L29.2064,64.125z"/>
+              <path fill="#FFFFFF" d="M57.808,122.2832c-1.2754-2.8633,0.5312-5.1846,4.0361-5.1846h159.7017
+                c3.5048,0,7.3798,2.3213,8.6557,5.1846l18.8618,42.3447c1.2754,2.8642-0.5312,5.1855-4.0361,5.1855H85.3255
+                c-3.5044,0-7.3798-2.3213-8.6552-5.1855L57.808,122.2832z"/>
+              <path fill="#FFFFFF" d="M648.2084,5.1855C649.4837,2.3222,647.6771,0,644.1732,0H484.4701c-3.5039,0-7.3789,2.3222-8.6543,5.1855
+                l-18.8633,42.3447c-1.2754,2.8633,0.5312,5.1846,4.0371,5.1846h159.7012c3.5058,0,7.3808-2.3213,8.6562-5.1846L648.2084,5.1855z"/>
+              <path fill="#FFFFFF" d="M619.4115,63.1523c1.2754-2.8633-0.5313-5.1846-4.0352-5.1846H455.6732
+                c-3.5039,0-7.3789,2.3213-8.6543,5.1846l-18.8633,42.3447c-1.2754,2.8633,0.5313,5.1856,4.0371,5.1856h159.7012
+                c3.5039,0,7.3789-2.3223,8.6562-5.1856L619.4115,63.1523z"/>
+              <path fill="#FFFFFF" d="M590.8099,121.3105c1.2754-2.8633-0.5312-5.1855-4.0351-5.1855H427.0716
+                c-3.5039,0-7.3789,2.3222-8.6543,5.1855l-18.8632,42.3447c-1.2754,2.8643,0.5312,5.1856,4.0371,5.1856h159.7011
+                c3.5039,0,7.3789-2.3213,8.6563-5.1856L590.8099,121.3105z"/>
+              <path fill="#FFFFFF" d="M196.7796,0.9082h109.7095c0,0,4.7217-0.5186,8.6123,6.2246c3.8897,6.7431-0.7783,13.7461-0.7783,13.7461
+                L263.618,122.6787c0,0-3.2129,8.1689-11.5947,8.1689c-7.4395,0-11.3594-8.2988-11.3594-8.2988L188.7391,20.6191
+                c0,0-4.6728-6.7422-1.8926-13.875C189.8294-0.9073,196.7796,0.9082,196.7796,0.9082z"/>
+              <path fill="#FFFFFF" d="M342.2806,1.2968h109.711c0,0,4.7207-0.5185,8.6113,6.2256c3.8906,6.7432-0.7793,13.7451-0.7793,13.7451
+                l-50.7051,101.7998c0,0-3.2129,8.169-11.5937,8.169c-7.4395,0-11.3594-8.2988-11.3594-8.2988L334.2416,21.0087
+                c0,0-4.6739-6.7431-1.8926-13.8759C335.3314-0.5186,342.2806,1.2968,342.2806,1.2968z"/>
+              <path fill="#FFFFFF" d="M379.3626,169.5634H269.6522c0,0-4.7217,0.5186-8.6113-6.2246c-3.8907-6.7431,0.7773-13.7461,0.7773-13.7461
+                l50.7051-101.7998c0,0,3.2139-8.1689,11.5947-8.1689c7.44,0,11.3599,8.2988,11.3599,8.2988l51.9238,101.9297
+                c0,0,4.6738,6.7422,1.8926,13.875C386.3119,171.3789,379.3626,169.5634,379.3626,169.5634z"/>
+              <path fill="#FFFFFF" d="M90.243,185.165h4.0156l10.5816,33.0947l10.373-33.0947h5.2701l10.247,33.251l10.7075-33.251h4.0152
+                l-12.0459,37.8525h-5.2696l-10.289-33.2519l-10.2896,33.2519h-5.27L90.243,185.165z"/>
+              <path fill="#FFFFFF" d="M149.0086,185.165h29.7378v4.1826h-25.6391v12.0772h24.6357v4.1826h-24.6357v13.2275h25.8066v4.1826
+                h-29.9053V185.165z"/>
+              <path fill="#FFFFFF" d="M198.5306,207.0185l-17.3579-21.8535h5.521l13.8862,17.5664l13.8863-17.5664h5.521l-17.358,21.8535v15.999
+                h-4.0986V207.0185z"/>
+              <path fill="#FFFFFF" d="M224.0443,185.165h4.0991v33.6699h23.5059v4.1826h-27.605V185.165z"/>
+              <path fill="#FFFFFF" d="M269.9276,185.165h5.1025l17.9854,37.8525h-4.6426l-3.7646-8h-24.2588l-3.7647,8h-4.6426L269.9276,185.165z
+                 M272.4793,189.3476l-10.164,21.4873h20.3271L272.4793,189.3476z"/>
+              <path fill="#FFFFFF" d="M296.6961,185.165h6.1065l27.73,33.251v-33.251h4.0996v37.8525h-6.1074l-27.73-33.2519v33.2519h-4.0987
+                V185.165z"/>
+              <path fill="#FFFFFF" d="M341.4505,185.165h24.4668c10.1641,0,12.9239,3.9736,12.9239,18.9258
+                c0,13.9072-2.7598,18.9267-13.0489,18.9267h-24.3418V185.165z M374.7435,202.2607c0-10.9268-2.7187-12.9131-7.7383-12.9131h-21.457
+                v29.4873h20.7871c4.9785,0,8.4082-1.3594,8.4082-12.7051V202.2607z"/>
+              <path fill="#FFFFFF" d="M404.0209,198.915c0-9.5674,2.5937-14.1689,10.791-14.1689h15.6855c7.4453,0,9.4942,4.3398,9.4942,9.4111
+                v3.2412h-3.5977v-1.7256c0-6.4297-3.1777-6.7441-6.9434-6.7441h-14.2207c-3.9316,0-7.1093,1.4638-7.1093,8.0517v14.2207
+                c0,6.5879,3.1777,8.0518,7.1093,8.0518h14.3477c5.5195,0,7.1094-1.4639,7.1094-6.5879v-2.3525h3.8476v2.5615
+                c0,6.8496-1.7558,10.5615-10.2461,10.5615h-15.4765c-8.1973,0-10.791-4.6006-10.791-14.1689V198.915z"/>
+              <path fill="#FFFFFF" d="M445.638,198.915c0-9.5674,2.5938-14.1689,10.7911-14.1689h17.4414c8.1972,0,10.791,4.6015,10.791,14.1689
+                v10.3516c0,9.5683-2.5938,14.1689-10.791,14.1689h-17.4414c-8.1973,0-10.7911-4.6006-10.7911-14.1689V198.915z M480.5638,196.9804
+                c0-6.5879-3.1797-8.0517-7.1113-8.0517H456.847c-3.9316,0-7.1094,1.4638-7.1094,8.0517v14.2207
+                c0,6.5879,3.1778,8.0518,7.1094,8.0518h16.6055c3.9316,0,7.1113-1.4639,7.1113-8.0518V196.9804z"/>
+              <path fill="#FFFFFF" d="M490.9349,185.165h24.2188c8.7402,0,10.1212,3.6074,10.1212,10.7178v3.084
+                c0,5.333-2.4258,6.7968-5.5625,7.163v0.1045c4.1816,0.9414,5.1855,3.6602,5.1855,7.1104v9.6728h-3.8477v-8.3134
+                c0-5.9082-2.3007-6.6397-6.0234-6.6397h-19.9922v14.9531h-4.0996V185.165z M514.6927,203.8818
+                c4.5587,0,6.4824-1.5166,6.4824-5.4902v-3.4502c0-4.2344-1.4628-5.5938-7.4863-5.5938h-18.6543v14.5342H514.6927z"/>
+              <path fill="#FFFFFF" d="M531.7592,185.165h24.9277c5.5195,0,8.6583,1.4639,8.6583,10.2998c0,8.417-0.545,12.6514-9.4532,12.6514
+                h-20.0351v14.9013h-4.0977V185.165z M561.2455,194.9414c0-4.4961-1.9648-5.5938-5.5215-5.5938h-19.8672v14.586h20.2031
+                c3.2617,0,5.1855-1.4639,5.1855-5.3848V194.9414z"/>
+            </g>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              Our first A.I. project. You get hired to do the sort of work you’ve done and early on, Nick was doing film sites and personal sites for actors. When <a href="http://ignitioncreative.com/" target="_blank" class="bd-b">Ignition</a> was working on the campaign for Ridley Scott’s Prometheus, they hired him to design a site for Michael Fassbender’s synthetic character, David. It wasn’t REAL A.I. but it’s this project that led to work with <a href="http://viv.ai/" target="_blank" class="bd-b">VIV</a> (Siri founders’ next thing) and The Grid. It definitely led to a pre-occupation with <a href="http://design-systems.github.io/components" class="bd-b" target="_blank">applying A.I.</a> to design&nbsp;problems.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title pos-r h-phi5 w-phi3 d-f fx-c j-c-between">
+            <div class="pos-a f-w-500 t--3rem ms-t--5rem l-0 d-ib f-s-s m-t-phi9 bd-b"><a href="https://www.weylandindustries.com/" target="_blank">Visit</a></div>
+            <h1 class="f-s-xxxl ms-f-s-xl f-w-700 d-f fx-c">
+              <span class="js-section-title-word m-b-phi9 w-s-nw">Prometheus</span>
+              <span class="js-section-title-word m-b-phi9 w-s-nw">Weyland</span>
+              <span class="js-section-title-word m-b-phi9 w-s-nw">Corp</span>
+            </h1>
+          </div>
+          <div class="js-project-cta d-f">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/prometheusThumb.jpg" alt="Prometheus Thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">View</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-section js-project pos-a bg-nfc color-nfc" data-project="nfc">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi4 ms-w-phi6" x="0px" y="0px" viewBox="0 0 111.127 35.8765" enable-background="new 0 0 111.127 35.8765" xml:space="preserve">
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M37.7168,35.2046
+                V17.7022V0.6719h0.086l17.4199,14.4575l17.418-14.4575h0.0332v34.5327H37.7168z"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="80.7471" y1="0.7759" x2="94.2862" y2="27.3492"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="80.7471" y1="35.107" x2="100.1719" y2="12.127"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="29.6836" y1="0.6807" x2="5.4991" y2="31.8423"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="12.6934" y1="22.5738" x2="0.6719" y2="0.6807"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="72.6739" y1="35.2046" x2="47.4434" y2="15.1558"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="20.3282" y1="27.6284" x2="29.6836" y2="0.6807"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="12.6934" y1="22.5738" x2="0.6719" y2="14.6133"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="29.6836" y1="0.6807" x2="0.6719" y2="14.6133"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="47.4434" y1="15.1558" x2="37.7168" y2="35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="37.7168" y1="23.7222" x2="47.4434" y2="15.1558"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="47.4434" y1="15.1558" x2="37.7168" y2="0.6719"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="90.7149" y1="29.4058" x2="110.4551" y2="18.0401"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="90.7149" y1="29.4058" x2="80.7471" y2="35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="110.0254" y1="17.8858" x2="80.7471" y2="0.7759"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M80.7471,0.7759
+                h11.5332c11.2783,0,18.1748,7.312,18.1748,17.167v0.0972c0,9.852-6.8965,17.1645-18.1748,17.1645H80.7471V0.7759z"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M72.7246,35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="37.7168" y1="23.7222" x2="72.7246" y2="35.2046"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M29.6836,0.6807
+                H0.6719v18.3525c0,10.7535,5.9434,16.0542,14.5059,16.0542c8.664,0,14.5058-5.3525,14.5058-16.0542V0.6807z"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="28.9346" y1="25.0816" x2="5.4991" y2="31.8423"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="62.5821" y1="9.0181" x2="72.6739" y2="35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="25.6953" y1="31.1792" x2="20.3282" y2="27.6284"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M72.7246,35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="80.7471" y1="19.1055" x2="100.1719" y2="12.127"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="100.1719" y1="12.127" x2="100.7481" y2="2.4307"/>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" points="
+                72.6739,0.6719 55.1953,29.4644 55.1953,15.1294  "/>
+            </g>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              All the stadiums and libraries are named after brands, rich people, dead people or rich dead people. Nothing in homeless shelters is named after anybody. We set out to change that. Naming rights to the toilet ($200), all the beds ($250/ea), the spoons ($10/ea), the playground slide ($750)... were put up for sale on the site. As of this writing, people who’ve probably never so much as driven by the shelter in Durham, NC, have spent $86k to put their name on everyday items that you and I take for granted every&nbsp;day.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <h1 class="js-section-title pos-r h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <span class="pos-a f-w-500 t--3rem ms-t--5rem l-0 d-ib f-s-s m-t-phi9 bd-b"><a href="http://namesforchange.org" target="_blank">Visit</a></span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw">Names for</span>
+            <span class="js-section-title-word m-b-phi9 w-s-nw">Change</span>
+            <div class="pos-r ms-pos-a f-s-s b-0">Done at <a href="http://mckinney.com" target="_blank" class="bd-b">McKinney</a></div>
+          </h1>
+          <div class="js-project-cta d-f">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/nfcThumb.jpg" alt="Names for Change Thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">View</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-section js-project pos-a bg-baldwin color-baldwin" data-project="baldwin">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi5 ms-w-phi7" id="Layer_1" x="0px" y="0px" viewBox="0 0 415.3829 230" enable-background="new 0 0 415.3829 230" xml:space="preserve">
+            <path fill="#FFFFFF" d="M153.8959,108.4937c18.9515-14.5268,21.5-53,6-73c-16.6109-21.4334-40-25.25-64.25-25.25s-56.25,0-56.25,0
+              v51.7761c0,0,51.0314,0,61.9791,0s13.5751,4.817,13.5751,11.8234s-3.5032,11.6045-14.6699,11.6045c-11.1666,0-60.8843,0-60.8843,0
+              v34.8134H0v104.7462c0,0,71.3959,0,95.6459,0s51.7249-5.1476,69.25-29.9437C179.5411,174.3424,185.4528,130.3329,153.8959,108.4937z
+               M53.3959,134.2613h43.5c20.4717,0,24.6665,8.3213,24.6665,20.8154c0,6.7227-3.1182,18-24,18H53.3959V134.2613z M153.4628,186.9839
+              c-11.584,16.3896-29.9556,24.0234-57.8169,24.0234h-81.646v-76.7461h25.396v52.8157c0,0,34.1667,0,58.1667,0c28,0,38-17,38-32
+              c0-22.6667-13.1667-34.8159-38.6667-34.8159c-14.2918,0-31.6234,0-43.5,0V99.4478h46.8843c13.8599,0,28.6699-6.7261,28.6699-25.6045
+              c0-16.1699-10.3086-25.8237-27.5752-25.8237h-47.979V24.2437h42.25c22.7007,0,40.4321,3.3716,53.1841,19.8262
+              c5.6431,7.2812,8.2905,19.7021,6.7446,31.6431c-1.2466,9.6309-5.0564,17.0727-10.1958,21.6694c0,0-4.8359,5.0118-18.5519,13.0067
+              c18.1168,6.528,31.5395,15.7698,35.1617,35.3341C164.9549,161.744,159.559,178.3589,153.4628,186.9839z"/>
+            <path fill="#FFFFFF" d="M250.487,195.0636c17.5251,24.7961,45,29.9437,69.25,29.9437s95.6459,0,95.6459,0V120.2611h-39.3959V85.4477
+              c0,0-49.7177,0-60.8843,0c-11.1666,0-14.6699-4.598-14.6699-11.6045s2.6274-11.8234,13.5751-11.8234s61.9791,0,61.9791,0V10.2437
+              c0,0-32,0-56.25,0s-47.6391,3.8166-64.25,25.25c-15.5,20-12.9515,58.4732,6,73
+              C229.9301,130.3329,235.8418,174.3424,250.487,195.0636z M361.9869,173.0767h-44.1665c-20.8818,0-24-11.2773-24-18
+              c0-12.4941,4.1948-20.8154,24.6665-20.8154h43.5V173.0767z M253.3942,145.7232c3.6222-19.5643,17.0449-28.8062,35.1617-35.3341
+              c-13.716-7.9949-18.5519-13.0067-18.5519-13.0067c-5.1394-4.5967-8.9492-12.0386-10.1958-21.6694
+              c-1.5459-11.9409,1.1016-24.3618,6.7446-31.6431c12.752-16.4546,30.4834-19.8262,53.1841-19.8262h42.25v23.7759h-47.979
+              c-17.2666,0-27.5752,9.6538-27.5752,25.8237c0,18.8784,14.8101,25.6045,28.6699,25.6045h46.8843v20.8133
+              c-11.8766,0-29.2082,0-43.5,0c-25.5,0-38.6667,12.1492-38.6667,34.8159c0,15,10,32,38,32c24,0,58.1667,0,58.1667,0v-52.8157h25.396
+              v76.7461h-81.646c-27.8613,0-46.2329-7.6338-57.8169-24.0234C255.8239,178.3589,250.428,161.744,253.3942,145.7232z"/>
+            <rect x="200.6914" y="0" fill="#FFFFFF" width="14" height="230"/>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              These are painfully cool people. Not in a superficial Instagrammy way. More like, “I’m too busy building a motorcycle/brand/brewery to bother w/ Instagram.” The revolving door of ad agencies means at orientation, new recruits get awkward headshots in the closet/photo studio. These fresh faces replace those who found better gigs or lost usefulness. The vibe I got from Baldwin& was so different, I decided to focus on it for their new site. <a href="http://workbyremedy.com" target="_blank" class="bd-b">Remedy</a> followed each B&mate around the neighborhood and I sifted frame-by-frame through the footage for one image capturing the character of each. The goal is a site all 30ish of them are proud&nbsp;of.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title pos-r h-phi5 w-phi3 d-f fx-c j-c-between">
+            <div class="pos-a t--3rem ms-t--5rem l-0 d-ib f-s-s m-t-phi9">Launching Soon</div>
+            <h1 class="js-section-title-word m-b-phi9 w-s-nw f-s-xxxl ms-f-s-xl f-w-700">Baldwin&</h1>
+          </div>
+          <div class="js-project-cta d-f po-e-n">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/baldwinThumb.jpg" alt="Baldwin& Thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">Soon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-section js-project pos-a bg-grid color-grid white" data-project="grid">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi6 h-phi6 ms-w-phi8"
+            x="0px" y="0px"
+            viewBox="0 0 48.445 48.445" enable-background="new 0 0 48.445 48.445" xml:space="preserve">
+            <polygon fill="#fff" points="48.445,2.55 48.445,0 0,0 0,48.445 48.445,48.445 48.445,11.474 11.474,11.474 11.474,36.971
+            36.971,36.971 36.971,22.948 22.948,22.948 22.948,25.498 34.422,25.498 34.422,34.422 14.024,34.422 14.024,14.024 45.896,14.024
+            45.896,45.896 2.55,45.896 2.55,2.55 "/>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              In my lifetime, I’ll design fewer than a thousand websites. Each layout will take anywhere from a few hours to a few days. In the not too distant future, an A.I., taught to make the decisions I might have made when designing a website, will <a href="http://design-systems.github.io/components" target="_blank" class="bd-b">generate more layouts</a> in one second than I could in a thousand lifetimes. In the beginning they won’t be very good, but neither was I. That A.I. is what I worked on for two years w/ The&nbsp;Grid.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title pos-r h-phi5 w-phi3 d-f fx-c j-c-between">
+            <div class="pos-a f-w-500 t--3rem ms-t--5rem l-0 d-ib f-s-s m-t-phi9 bd-b"><a href="http://design-systems.github.io/basics" target="_blank">Visit</a></div>
+            <h1 class="js-section-title-word m-b-phi9 w-s-nw f-s-xxxl ms-f-s-xl f-w-700">The Grid</h1>
+          </div>
+          <div class="js-project-cta d-f">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/gridThumb.jpg" alt="The Grid Thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">View</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="js-section js-project pos-a bg-spent color-spent" data-project="spent">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="js-client-logo w-phi4 ms-w-phi6" x="0px" y="0px" viewBox="0 0 111.127 35.8765" enable-background="new 0 0 111.127 35.8765" xml:space="preserve">
+            <g>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M37.7168,35.2046
+                V17.7022V0.6719h0.086l17.4199,14.4575l17.418-14.4575h0.0332v34.5327H37.7168z"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="80.7471" y1="0.7759" x2="94.2862" y2="27.3492"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="80.7471" y1="35.107" x2="100.1719" y2="12.127"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="29.6836" y1="0.6807" x2="5.4991" y2="31.8423"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="12.6934" y1="22.5738" x2="0.6719" y2="0.6807"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="72.6739" y1="35.2046" x2="47.4434" y2="15.1558"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="20.3282" y1="27.6284" x2="29.6836" y2="0.6807"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="12.6934" y1="22.5738" x2="0.6719" y2="14.6133"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="29.6836" y1="0.6807" x2="0.6719" y2="14.6133"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="47.4434" y1="15.1558" x2="37.7168" y2="35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="37.7168" y1="23.7222" x2="47.4434" y2="15.1558"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="47.4434" y1="15.1558" x2="37.7168" y2="0.6719"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="90.7149" y1="29.4058" x2="110.4551" y2="18.0401"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="90.7149" y1="29.4058" x2="80.7471" y2="35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="110.0254" y1="17.8858" x2="80.7471" y2="0.7759"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M80.7471,0.7759
+                h11.5332c11.2783,0,18.1748,7.312,18.1748,17.167v0.0972c0,9.852-6.8965,17.1645-18.1748,17.1645H80.7471V0.7759z"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M72.7246,35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="37.7168" y1="23.7222" x2="72.7246" y2="35.2046"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M29.6836,0.6807
+                H0.6719v18.3525c0,10.7535,5.9434,16.0542,14.5059,16.0542c8.664,0,14.5058-5.3525,14.5058-16.0542V0.6807z"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="28.9346" y1="25.0816" x2="5.4991" y2="31.8423"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="62.5821" y1="9.0181" x2="72.6739" y2="35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="25.6953" y1="31.1792" x2="20.3282" y2="27.6284"/>
+              <path fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" d="M72.7246,35.2046"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="80.7471" y1="19.1055" x2="100.1719" y2="12.127"/>
+                <line fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" x1="100.1719" y1="12.127" x2="100.7481" y2="2.4307"/>
+              <polyline fill="none" stroke="#FFFFFF" stroke-width="1.3438" stroke-linejoin="round" stroke-miterlimit="10" points="
+                72.6739,0.6719 55.1953,29.4644 55.1953,15.1294  "/>
+            </g>
+          </svg>
+          <div class="w-phi1 ms-w-phi3 white l-h-m t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              “We’re making a game about homelessness” is not what I expected to hear when I started working at an ad agency. “We need you to get more kids to smoke our brand” or “I know the product sucks, make them want it!” maybe, but not a game about homelessness. The game we made at <a href="http://mckinney.com" target="_blank" class="bd-b">McKinney</a> is now part of the curriculum at hundreds of schools in the US, has been played 6 million+ times and won a Webby. You should <a href="http://playspent.org/html/" target="_blank" class="bd-b">play it</a>. It’ll make you feel terrible. There’s very little chance I’ll ever love a project more than this one. But I’m open to being&nbsp;wrong.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title pos-r h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <div class="pos-a f-w-500 t--3rem ms-t--5rem l-0 d-ib f-s-s m-t-phi9 bd-b"><a href="http://www.playspent.org/" target="_blank">Visit</a></div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">Spent</div>
+            <div class="pos-r ms-pos-a f-s-s b-0">Done at <a href="http://mckinney.com" target="_blank" class="bd-b">McKinney</a></div>
+          </div>
+          <div class="js-project-cta d-f">
+            <div class="js-project-cover pos-r w-0 h-phi5 ov-h vis-h">
+              <img src="ui/assets/images/projects/spentThumb.jpg" alt="Spent Thumb" class="pos-a d-n ms-d-b l-0 t-0 w-phi3 ms-w-phi5">
+            </div>
+            <div class="js-view-icon vis-h op-0 pos-r f-s-xs w-phi3 ms-w-phi7 ov-h h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c rounded-3">
+              <svg class="vis-h w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 33.656 33.656" enable-background="new 0 0 33.656 33.656" xml:space="preserve">
+                <circle class="js-eye-ball" fill="#FFFFFF" cx="16.828" cy="16.828" r="16.828"/>
+                <circle class="js-eye-retina" fill="#DC5141" cx="16.828" cy="16.828" r="9.003"/>
+                <circle class="js-eye-pupil" fill="#3A3C43" cx="16.828" cy="16.828" r="5.892"/>
+                <circle class="js-eye-highlight" fill="#FFFFFF" cx="21.342" cy="12.952" r="3.383"/>
+                <g class="js-eye-lid" fill="red">
+                  <g>
+                    <path d="M16.828,26.39C8.911,26.39,4.989,17.25,0,16.76v16.896h33.656V16.76
+                      C28.667,17.25,24.745,26.39,16.828,26.39z"/>
+                  </g>
+                  <g>
+                    <path d="M16.828,7.266c-7.917,0-11.839,9.139-16.828,9.63V0h33.656v16.896
+                      C28.667,16.406,24.745,7.266,16.828,7.266z"/>
+                  </g>
+                </g>
+              </svg>
+
+              <div class="js-arrow pos-a l-0 t-0 d-f j-c-center a-i-center w-100p h-100p">
+                <svg class="h-phi4 ms-h-phi6" x="0px" y="0px" viewBox="0 0 14.987 52.163" enable-background="new 0 0 14.987 52.163" xml:space="preserve">
+                  <line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" x1="7.493" y1="52.163" x2="7.493" y2="1.414"/>
+                  <polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-miterlimit="10" points="14.28,8.2 7.493,1.414 0.707,8.2 "/>
+                </svg>
+              </div>
+              <div class="vis-h js-view-text p-t-phi9 f-s-s ms-f-s-xs f-w-700">View</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="js ol-section pos-a bg-gold black">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <div class="w-phi6 m-b-3 f-s-xxxl ms-f-s-xl">
+            Φ
+          </div>
+          <div class="w-phi1 ms-w-phi3 t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              In 2012, I set my desktop wallpaper to an image of the golden spiral. Its perfect proportions have been celebrated and eye-rolled for centuries. I just liked it as a layout grid. This website’s layout has been bouncing around in my head for years but took until April 2017 for the idea to solidify. Then a month figuring out how to code it, tighten up the typography and add the fun parts.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title ms-h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <div class="js-section-title-word m-b-phi9 w-s-nw">The</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">golden</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">what?</div>
+          </div>
+          <a href="https://en.wikipedia.org/wiki/Golden_spiral" target="_blank" class="f-s-xs bg-black w-phi3 ms-w-phi6 h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c cur-p">
+            <svg class="w-phi5 ms-w-phi8 start" x="0px" y="0px" viewBox="0 0 37 59.25" enable-background="new 0 0 37 59.25" xml:space="preserve">
+              <rect class="" x="0.5" y="0.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="36" height="36"/>
+              <rect class="" x="14.2508" y="36.5008" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="22.2492" height="22.2492"/>
+              <rect class="" x="0.5002" y="44.9993" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="13.7507" height="13.7507"/>
+              <rect class="" x="0.5" y="36.5" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="8.4983" height="8.4983"/>
+              <rect class="" x="8.9983" y="36.5008" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="5.2522" height="5.2522"/>
+              <path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M0.5,0.5c19.8823,0,36,16.1177,36,36
+                c0,12.2887-9.9613,22.25-22.2492,22.25c-7.5943,0-13.7507-6.1564-13.7507-13.7507L0.5,44.9983C0.5,40.3048,4.3048,36.5,8.9983,36.5
+                c2.9007,0.0008,5.2522,2.3523,5.2522,5.253" class="svg-spiral"></path>
+            </svg>
+            <div class="p-t-phi9 f-s-s ms-f-s-xs f-w-700 white">Learn</div>
+          </a>
+        </div>
+      </div> -->
+      <!-- <div class="js ol-section pos-a bg-orange black">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="w-phi6 m-b-3" x="0px" y="0px" viewBox="0 0 206.0284 130.8335" enable-background="new 0 0 206.0284 130.8335" xml:space="preserve">
+            <path fill="#010101" d="M203.8853,11.1924c0.4126-0.0342,0.7617-0.3193,0.8774-0.7168l1.2256-4.2031
+            c0.0884-0.3022,0.0288-0.6279-0.1602-0.8799c-0.1885-0.252-0.4849-0.3999-0.7998-0.3999H172.979
+            c-0.4663,0-0.8706,0.3223-0.9746,0.7764l-0.9805,4.2773c-0.0635,0.2773-0.0063,0.5684,0.1577,0.8008
+            c0.1641,0.2319,0.4194,0.3833,0.7017,0.416c5.6851,0.6597,8.3633,1.5317,8.3633,6.6592c0,1.7827-0.3013,3.8931-0.8975,6.2798
+            l-11.1357,45.9512L144.2603,5.6445c-0.1455-0.3916-0.5195-0.6519-0.9375-0.6519h-10.1855c-7.2212,0-12.3076-0.9287-18.2026-2.0054
+            C107.269,1.5869,98.5811,0,82.5703,0C60.0469,0,48.2622,15.6494,48.2622,31.1084c0,13.4951,11.5278,24.0664,26.2441,24.0664
+            c10.8247,0,19.9697-6.9761,19.9697-15.2334c0-3.1304-1.8774-6.7856-7.1689-6.7856c-4.4868,0-6.8726,2.5093-9.3994,5.166
+            l-0.2026,0.2134c-2.4561,2.5903-4.835,4.7349-9.0879,4.7349c-6.4746,0-10.4971-5.6904-10.4971-14.8506
+            c0-11.311,12.4863-20.8667,27.2666-20.8667c33.541,0,33.541,11.8423,33.541,16.8989c0,10.3062-12.7153,46.71-25.731,65.7998
+            c-14.1865,20.7612-34.2866,33.1562-53.7681,33.1562c-20.8701,0-30.2119-14.2095-30.2119-28.2915
+            c0-11.2949,6.5059-23.2993,18.5625-23.2993c7.0962,0,10.7949,4.0898,14.373,8.0464c3.165,3.4985,6.1538,6.8032,11.231,6.8032
+            c3.4644,0,8.9609-2.5366,8.9609-9.3442c0-3.5103-2.6045-7.6748-6.7979-10.8691c-4.7788-3.6406-11.0029-5.6455-17.5249-5.6455
+            C15.6348,60.8076,0,75.5474,0,96.6523c0,17.0137,12.3501,34.1812,39.9414,34.1812c32.9858,0,51.7437-22.0645,62.9829-38.6602
+            c11.4517-16.8638,23.5093-49.9248,25.3477-65.1616l0.6401-0.1274l29.3271,77.3154c0.1475,0.3887,0.5195,0.6455,0.9351,0.6455
+            h11.1938c0.4624,0,0.8647-0.3174,0.9727-0.7671l19.147-80.0088C193.1479,13.0474,196.1069,11.8379,203.8853,11.1924z" />
+          </svg>
+          <div class="w-phi1 ms-w-phi3 t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              I share these links a lot. As advice for starting out, inspiration for struggling friends or just because:
+              <br>
+              <a href="https://vimeo.com/85040589" class="d-ib m-t-1"><span class="bd-b">The Gap</span></a>
+              <br><span class="f-s-xxxs">2 min video</span>
+              <br>
+              <a href="https://frankchimero.com/archive/2010/advice/" class="d-ib m-t-1"><span class="bd-b">What Advice Would You Give a Design Student </span></a>
+              <br>
+              <span class="f-s-xxxs">3 min read</span>
+              <br>
+              <a href="https://www.amazon.com/Essentialism-Disciplined-Pursuit-Greg-McKeown/dp/0804137382" class="d-ib m-t-1"><span class="bd-b">Essentialism — The Disciplined Pursuit of Less </span></a>
+              <br>
+              <span class="f-s-xxxs">Book</span>
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title ms-h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <div class="js-section-title-word m-b-phi9 w-s-nw">The</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">struggle</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">is real…</div>
+          </div>
+          <a href="mailto:hello@theexperiment.io?subject=Advice&body=I need/have some advice from/for you..." target="_blank" class="white js-contact-icon js-view-icon vis-h op-0 rounded-3 ms-w-0 ov-h">
+            <div class="f-s-xs w-phi3 ms-w-phi6 h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c">
+              <svg  class="w-phi5 ms-w-phi8 h-phi5 ms-h-phi8" x="0px" y="0px"
+                 viewBox="0 0 36.504 34.423" enable-background="new 0 0 36.504 34.423" xml:space="preserve">
+              <path fill="none" stroke="#F1EEF3" stroke-width="1.5" stroke-miterlimit="10" d="M7.401,32.453v-8.251H1.8
+                c-0.578,0-1.05-0.473-1.05-1.05V1.8c0-0.578,0.473-1.05,1.05-1.05h32.904c0.578,0,1.05,0.473,1.05,1.05v21.352
+                c0,0.578-0.473,1.05-1.05,1.05H14.752L7.401,32.453z"/>
+              <circle fill="#F5E9EC" cx="24.903" cy="12.301" r="1.363"/>
+              <circle fill="#F5E9EC" cx="18.677" cy="12.301" r="1.363"/>
+              <circle fill="#F5E9EC" cx="12.45" cy="12.301" r="1.363"/>
+              </svg>
+
+              <div class="pos-r p-t-phi5 ms-p-t-phi8 f-s-s ms-f-s-xs f-w-700">Advice</div>
+            </div>
+          </a>
+        </div>
+      </div> -->
+      <!-- <div class="js ol-section pos-a bg-white black">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="w-phi6 m-b-3" x="0px" y="0px" viewBox="0 0 206.0284 130.8335" enable-background="new 0 0 206.0284 130.8335" xml:space="preserve">
+            <path fill="#010101" d="M203.8853,11.1924c0.4126-0.0342,0.7617-0.3193,0.8774-0.7168l1.2256-4.2031
+            c0.0884-0.3022,0.0288-0.6279-0.1602-0.8799c-0.1885-0.252-0.4849-0.3999-0.7998-0.3999H172.979
+            c-0.4663,0-0.8706,0.3223-0.9746,0.7764l-0.9805,4.2773c-0.0635,0.2773-0.0063,0.5684,0.1577,0.8008
+            c0.1641,0.2319,0.4194,0.3833,0.7017,0.416c5.6851,0.6597,8.3633,1.5317,8.3633,6.6592c0,1.7827-0.3013,3.8931-0.8975,6.2798
+            l-11.1357,45.9512L144.2603,5.6445c-0.1455-0.3916-0.5195-0.6519-0.9375-0.6519h-10.1855c-7.2212,0-12.3076-0.9287-18.2026-2.0054
+            C107.269,1.5869,98.5811,0,82.5703,0C60.0469,0,48.2622,15.6494,48.2622,31.1084c0,13.4951,11.5278,24.0664,26.2441,24.0664
+            c10.8247,0,19.9697-6.9761,19.9697-15.2334c0-3.1304-1.8774-6.7856-7.1689-6.7856c-4.4868,0-6.8726,2.5093-9.3994,5.166
+            l-0.2026,0.2134c-2.4561,2.5903-4.835,4.7349-9.0879,4.7349c-6.4746,0-10.4971-5.6904-10.4971-14.8506
+            c0-11.311,12.4863-20.8667,27.2666-20.8667c33.541,0,33.541,11.8423,33.541,16.8989c0,10.3062-12.7153,46.71-25.731,65.7998
+            c-14.1865,20.7612-34.2866,33.1562-53.7681,33.1562c-20.8701,0-30.2119-14.2095-30.2119-28.2915
+            c0-11.2949,6.5059-23.2993,18.5625-23.2993c7.0962,0,10.7949,4.0898,14.373,8.0464c3.165,3.4985,6.1538,6.8032,11.231,6.8032
+            c3.4644,0,8.9609-2.5366,8.9609-9.3442c0-3.5103-2.6045-7.6748-6.7979-10.8691c-4.7788-3.6406-11.0029-5.6455-17.5249-5.6455
+            C15.6348,60.8076,0,75.5474,0,96.6523c0,17.0137,12.3501,34.1812,39.9414,34.1812c32.9858,0,51.7437-22.0645,62.9829-38.6602
+            c11.4517-16.8638,23.5093-49.9248,25.3477-65.1616l0.6401-0.1274l29.3271,77.3154c0.1475,0.3887,0.5195,0.6455,0.9351,0.6455
+            h11.1938c0.4624,0,0.8647-0.3174,0.9727-0.7671l19.147-80.0088C193.1479,13.0474,196.1069,11.8379,203.8853,11.1924z" />
+          </svg>
+          <div class="w-phi1 ms-w-phi3 t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title ms-h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <div class="js-section-title-word m-b-phi9 w-s-nw">Teaching</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">designers</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">code?</div>
+          </div>
+          <a href="mailto:hello@theexperiment.io?subject=Teaching?&body=I was on your site and saw something about teaching visual designers to code? I'm interested...you fill in this part." target="_blank" class="white js-contact-icon js-view-icon vis-h op-0 rounded-3 ms-w-0 ov-h">
+            <div class="f-s-xs w-phi3 ms-w-phi6 h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c">
+              <svg  class="w-phi5 ms-w-phi8 h-phi5 ms-h-phi8" x="0px" y="0px"
+                 viewBox="0 0 36.504 34.423" enable-background="new 0 0 36.504 34.423" xml:space="preserve">
+              <path fill="none" stroke="#F1EEF3" stroke-width="1.5" stroke-miterlimit="10" d="M7.401,32.453v-8.251H1.8
+                c-0.578,0-1.05-0.473-1.05-1.05V1.8c0-0.578,0.473-1.05,1.05-1.05h32.904c0.578,0,1.05,0.473,1.05,1.05v21.352
+                c0,0.578-0.473,1.05-1.05,1.05H14.752L7.401,32.453z"/>
+              <circle fill="#F5E9EC" cx="24.903" cy="12.301" r="1.363"/>
+              <circle fill="#F5E9EC" cx="18.677" cy="12.301" r="1.363"/>
+              <circle fill="#F5E9EC" cx="12.45" cy="12.301" r="1.363"/>
+              </svg>
+
+              <div class="pos-r p-t-phi5 ms-p-t-phi8 f-s-s ms-f-s-xs f-w-700">Inquire</div>
+            </div>
+          </a>
+        </div>
+      </div> -->
+      <!-- <div class="js ol-section js-project pos-a bg-grid white">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="w-phi5 ms-w-phi7 m-b-3" x="0px" y="0px" viewBox="0 0 206.0284 130.8335" enable-background="new 0 0 206.0284 130.8335" xml:space="preserve">
+            <path fill="#fff" d="M203.8853,11.1924c0.4126-0.0342,0.7617-0.3193,0.8774-0.7168l1.2256-4.2031
+            c0.0884-0.3022,0.0288-0.6279-0.1602-0.8799c-0.1885-0.252-0.4849-0.3999-0.7998-0.3999H172.979
+            c-0.4663,0-0.8706,0.3223-0.9746,0.7764l-0.9805,4.2773c-0.0635,0.2773-0.0063,0.5684,0.1577,0.8008
+            c0.1641,0.2319,0.4194,0.3833,0.7017,0.416c5.6851,0.6597,8.3633,1.5317,8.3633,6.6592c0,1.7827-0.3013,3.8931-0.8975,6.2798
+            l-11.1357,45.9512L144.2603,5.6445c-0.1455-0.3916-0.5195-0.6519-0.9375-0.6519h-10.1855c-7.2212,0-12.3076-0.9287-18.2026-2.0054
+            C107.269,1.5869,98.5811,0,82.5703,0C60.0469,0,48.2622,15.6494,48.2622,31.1084c0,13.4951,11.5278,24.0664,26.2441,24.0664
+            c10.8247,0,19.9697-6.9761,19.9697-15.2334c0-3.1304-1.8774-6.7856-7.1689-6.7856c-4.4868,0-6.8726,2.5093-9.3994,5.166
+            l-0.2026,0.2134c-2.4561,2.5903-4.835,4.7349-9.0879,4.7349c-6.4746,0-10.4971-5.6904-10.4971-14.8506
+            c0-11.311,12.4863-20.8667,27.2666-20.8667c33.541,0,33.541,11.8423,33.541,16.8989c0,10.3062-12.7153,46.71-25.731,65.7998
+            c-14.1865,20.7612-34.2866,33.1562-53.7681,33.1562c-20.8701,0-30.2119-14.2095-30.2119-28.2915
+            c0-11.2949,6.5059-23.2993,18.5625-23.2993c7.0962,0,10.7949,4.0898,14.373,8.0464c3.165,3.4985,6.1538,6.8032,11.231,6.8032
+            c3.4644,0,8.9609-2.5366,8.9609-9.3442c0-3.5103-2.6045-7.6748-6.7979-10.8691c-4.7788-3.6406-11.0029-5.6455-17.5249-5.6455
+            C15.6348,60.8076,0,75.5474,0,96.6523c0,17.0137,12.3501,34.1812,39.9414,34.1812c32.9858,0,51.7437-22.0645,62.9829-38.6602
+            c11.4517-16.8638,23.5093-49.9248,25.3477-65.1616l0.6401-0.1274l29.3271,77.3154c0.1475,0.3887,0.5195,0.6455,0.9351,0.6455
+            h11.1938c0.4624,0,0.8647-0.3174,0.9727-0.7671l19.147-80.0088C193.1479,13.0474,196.1069,11.8379,203.8853,11.1924z" />
+          </svg>
+          <div class="w-100p ms-w-phi2 t-a-r fx-c a-i-end">
+            <h2 class="w-phi1 ms-w-phi3 bd-c-red l-h-m t-a-r">
+              <p class="t-a-l f-s-body p-r-2 ms-p-r-0 m-t-0 p-t-0">
+                Newsletters are distracting you from important things. I suggest you <a href="https://www.unroll.me/" target="_blank" class="bd-b">bulk usubscribe</a> from all of them. <span class="red f-w-700">DO NOT</span> sign up for this one. If you can’t resist, I’ll send you a monthly reminder to unsubscribe from this and all other newsletters and maybe a link to something I found valuable. But you shouldn’t waste your&nbsp;time.
+              </p>
+            </h2>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title pos-r h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <div class="js-section-title-word m-b-phi9 w-s-nw">One</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">More</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">Thing?</div>
+          </div>
+          <div class="pos-r f-s-s ms-f-s-xs w-phi1 ms-w-phi3 ov-h h-phi2 ms-h-phi5">
+
+            <div id="mc_embed_signup" class="w-100p">
+              <form action="//narrowdesign.us1.list-manage.com/subscribe/post?u=2edc6cfbe6d3ea51eb6a14030&amp;id=268d9c662b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="w-100p validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll" class="w-100p">
+
+                  <div class="mc-field-group d-b m-b-05">
+                    <input type="email" value="" name="EMAIL" class="required email w-100p purple bg-white p-h-1 h-2rem" id="mce-EMAIL" placeholder="Email Hole">
+                  </div>
+                  <div id="mce-responses" class="clear pos-a">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true" class="">
+                    <input type="text" name="b_2edc6cfbe6d3ea51eb6a14030_268d9c662b" tabindex="-1" value="" class="" placeholder="EMAIL HOLE">
+                  </div>
+                  <div class="d-b w-100p">
+                    <input type="submit" value="Join Unsubscribe" name="subscribe" id="mc-embedded-subscribe" class="button p-h-1 bg-red white h-2rem rounded-3 f-w-700">
+                  </div>
+                </div>
+              </form>
+            </div>
+
+          </div>
+        </div>
+      </div> -->
+      <div class="js-section pos-a bg-white black">
+        <div class="js-arc pos-a t-0 l-0 w-200p h-200p circle po-e-n bd bd-w-3"></div>
+        <div class="d-f a-i-start j-c-between m-t-phi4 ms-m-t-phi5 m-l-phi6 m-r-phi6">
+          <svg class="w-phi5 ms-w-phi7 m-b-3" x="0px" y="0px" viewBox="0 0 206.0284 130.8335" enable-background="new 0 0 206.0284 130.8335" xml:space="preserve">
+            <path fill="#010101" d="M203.8853,11.1924c0.4126-0.0342,0.7617-0.3193,0.8774-0.7168l1.2256-4.2031
+            c0.0884-0.3022,0.0288-0.6279-0.1602-0.8799c-0.1885-0.252-0.4849-0.3999-0.7998-0.3999H172.979
+            c-0.4663,0-0.8706,0.3223-0.9746,0.7764l-0.9805,4.2773c-0.0635,0.2773-0.0063,0.5684,0.1577,0.8008
+            c0.1641,0.2319,0.4194,0.3833,0.7017,0.416c5.6851,0.6597,8.3633,1.5317,8.3633,6.6592c0,1.7827-0.3013,3.8931-0.8975,6.2798
+            l-11.1357,45.9512L144.2603,5.6445c-0.1455-0.3916-0.5195-0.6519-0.9375-0.6519h-10.1855c-7.2212,0-12.3076-0.9287-18.2026-2.0054
+            C107.269,1.5869,98.5811,0,82.5703,0C60.0469,0,48.2622,15.6494,48.2622,31.1084c0,13.4951,11.5278,24.0664,26.2441,24.0664
+            c10.8247,0,19.9697-6.9761,19.9697-15.2334c0-3.1304-1.8774-6.7856-7.1689-6.7856c-4.4868,0-6.8726,2.5093-9.3994,5.166
+            l-0.2026,0.2134c-2.4561,2.5903-4.835,4.7349-9.0879,4.7349c-6.4746,0-10.4971-5.6904-10.4971-14.8506
+            c0-11.311,12.4863-20.8667,27.2666-20.8667c33.541,0,33.541,11.8423,33.541,16.8989c0,10.3062-12.7153,46.71-25.731,65.7998
+            c-14.1865,20.7612-34.2866,33.1562-53.7681,33.1562c-20.8701,0-30.2119-14.2095-30.2119-28.2915
+            c0-11.2949,6.5059-23.2993,18.5625-23.2993c7.0962,0,10.7949,4.0898,14.373,8.0464c3.165,3.4985,6.1538,6.8032,11.231,6.8032
+            c3.4644,0,8.9609-2.5366,8.9609-9.3442c0-3.5103-2.6045-7.6748-6.7979-10.8691c-4.7788-3.6406-11.0029-5.6455-17.5249-5.6455
+            C15.6348,60.8076,0,75.5474,0,96.6523c0,17.0137,12.3501,34.1812,39.9414,34.1812c32.9858,0,51.7437-22.0645,62.9829-38.6602
+            c11.4517-16.8638,23.5093-49.9248,25.3477-65.1616l0.6401-0.1274l29.3271,77.3154c0.1475,0.3887,0.5195,0.6455,0.9351,0.6455
+            h11.1938c0.4624,0,0.8647-0.3174,0.9727-0.7671l19.147-80.0088C193.1479,13.0474,196.1069,11.8379,203.8853,11.1924z" />
+          </svg>
+          <div class="w-phi1 ms-w-phi3 t-a-r">
+            <div class="js-description d-n ms-d-b t-a-l f-s-body">
+              Get in touch if you’d like to chat. We handle most prototyping and website projects ourselves and when we need to grow to handle something larger, we collaborate with a tight knit team of elite operatives known simply as The Network.
+            </div>
+          </div>
+        </div>
+        <div class="pos-a b-phi6 ms-b-a ms-t-phi2 l-0 w-100p d-f a-i-end j-c-between ms-p-b-phi6 p-l-phi6 p-r-phi5">
+          <div class="js-section-title ms-h-phi5 w-phi3 d-f fx-c j-c-between f-s-xxxl ms-f-s-xl f-w-700">
+            <div class="js-section-title-word m-b-phi9 w-s-nw">Get</div>
+            <div class="js-section-title-word js-available-adj m-b-phi9 w-s-nw">in</div>
+            <div class="js-section-title-word m-b-phi9 w-s-nw">Touch.</div>
+          </div>
+          <a href="mailto:hello@theexperiment.io?subject=Availability&body=I was on your site and was wondering if you're available for..." target="_blank" class="white js-view-icon vis-h op-0 js-contact-icon rounded-3 ms-w-0 ov-h">
+            <div class="f-s-xs w-phi3 ms-w-phi6 h-phi2 ms-h-phi5 p-t-phi5 ms-p-t-phi8 t-a-c">
+              <svg  class="w-phi5 ms-w-phi8 h-phi5 ms-h-phi8" x="0px" y="0px"
+                 viewBox="0 0 36.504 34.423" enable-background="new 0 0 36.504 34.423" xml:space="preserve">
+              <path fill="none" stroke="#F1EEF3" stroke-width="1.5" stroke-miterlimit="10" d="M7.401,32.453v-8.251H1.8
+                c-0.578,0-1.05-0.473-1.05-1.05V1.8c0-0.578,0.473-1.05,1.05-1.05h32.904c0.578,0,1.05,0.473,1.05,1.05v21.352
+                c0,0.578-0.473,1.05-1.05,1.05H14.752L7.401,32.453z"/>
+              <circle class="blink" style="animation-delay: .6s" fill="#F5E9EC" cx="24.903" cy="12.301" r="1.363"/>
+              <circle class="blink" style="animation-delay: .3s" fill="#F5E9EC" cx="18.677" cy="12.301" r="1.363"/>
+              <circle class="blink" fill="#F5E9EC" cx="12.45" cy="12.301" r="1.363"/>
+              </svg>
+
+              <div class="pos-r p-t-phi5 ms-p-t-phi8 f-s-s ms-f-s-xs f-w-700">Contact</div>
+            </div>
+          </a>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="js-gallery pos-a t-0 l-0 ms-h-phi1 w-fs z-300 po-e-n white ov-v vis-h">
+      <div class="js-gallery-image pos-r ms-pos-a l-0 t-0 w-fs h-100vw ms-w-phi1 ms-h-phi1 vis-h op-0 ov-h">
+        <img src="http://theexperiment.io/ui/assets/images/nj1.jpg" class="pos-r d-b w-100p h-100p" alt="project gallery image1">
+      </div>
+      <div class="js-gallery-image pos-r ms-pos-a l-0 ms-l-phi1 ms-t-0 w-fs h-100vw ms-w-phi2 ms-h-phi2 vis-h op-0 ov-h">
+        <img src="ui/assets/images/projects/got2.jpg" class="pos-r d-b w-100p h-100p" alt="project gallery image">
+      </div>
+      <div class="js-gallery-image pos-r ms-pos-a l-0 ms-l-phi1 w-fs h-100vw ms-t-phi2 ms-w-phi3 ms-h-phi3 ms-m-l-phi4 vis-h op-0 ov-h">
+        <img src="ui/assets/images/projects/got3.jpg" class="pos-r d-b w-100p h-100p" alt="project gallery image2">
+      </div>
+      <div class="js-gallery-image pos-r ms-pos-a l-0 ms-l-phi1 w-fs h-100vw ms-t-phi2 ms-w-phi4 ms-h-phi3 vis-h op-0 ov-h">
+        <img src="ui/assets/images/projects/got4.jpg" class="pos-r d-b w-100p h-100p" alt="project gallery image3">
+      </div>
+      <div class="js-gallery-description-box pos-r ms-d-f j-c-between pos-r ms-t-phi1 p-t-phi4 p-phi5 bg-white black">
+        <div class="js-gallery-title pos-r d-f fx-c f-s-xxxl ms-f-s-xl f-w-700 m-b-phi5 ms-m-r-2">
+          Loading Project Title...
+        </div>
+        <div class="js-gallery-description max-w-720px w-100p pos-r f-s-m">
+          Loading project description...
+        </div>
+        <a href="mailto:hello@theexperiment.io?subject=So, I was on your site and...&body=Had a question about a project" class="a-s-s"><div class="js-ask m-t-2 ms-m-t-05 ms-m-l-2 f-w-700 d-ib p-h-1o5 p-v-1 rounded-3">Ask me about it.</div></a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="ui/assets/scripts/script.js?test=1"></script>
+    <script type="text/javascript" src="ui/assets/scripts/spiral.js?test=1"></script>
+  </body>
+</html>

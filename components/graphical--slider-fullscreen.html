@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ui/assets/styles/css/style.css">
+  </head>
+
+<!-- RAMS -->
+  <body>
+    <div class="Header">
+      <h3><span><a href="index.html">The Components</a></span></h3>
+      <div class="Shuffle"><img src="ui/assets/images/shuffle.svg" alt=""></div>
+      <select name="system" id="System-input">
+        <option value="Rams">Dieter Rams</option>
+        <option value="Vignelli">The Vignellis</option>
+        <option value="Bass">Saul Bass</option>
+        <option value="Brockmann">Josef Müller-Brockmann</option>
+  <!--       <option value="Escher">MC Escher</option> -->
+      </select>
+    </div>
+    <div class="System">
+      <section class="Section Section--components-1 graphical--fullscreen graphical--slider inline-block overflow-x section-height-fullscreen title-size-small group-justify-start">
+        <div class="arrow-right">&gt;</div>
+        <div class="arrow-left disabled">&lt;</div>
+        <div class="dots"></div>
+        <div class="Component">
+          <div class="Group Group--graphical current">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+            <div class="Attribution">
+              <h5><span class="Author">Dieter Rams via Vitsœ</span></h5>
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+            <div class="Headline">
+              <h1><span>This is a headline</span></h1>
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+          <div class="Group Group--graphical">
+            <div class="Image">
+              <img src="ui/assets/images/Rams.jpg">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="ui/assets/scripts/fixtures.js"></script>
+    <script src="ui/assets/scripts/class-lists.js"></script>
+    <script>
+      var mySiteClasses = []
+      var mySectionClasses = ['text-align', 'group-align', 'section-bg-color'] // section-height-fullscreen', 'title-size-small justify-start
+
+      var currentImage = 0;
+      var Images = document.querySelectorAll('.Group--graphical');
+      var ArrowRight = document.querySelector('.arrow-right');
+      var ArrowLeft = document.querySelector('.arrow-left');
+      var Dots;
+      createDots();
+      ArrowRight.addEventListener('click',function(){
+        nextImage();
+      })
+      ArrowLeft.addEventListener('click',function(){
+        prevImage();
+      })
+      function createDots() {
+        for (var i=0;i<Images.length;i++){
+          var dot = document.createElement('li');
+          if(i==0){
+            dot.className = "dot current";
+          }else{
+            dot.className = "dot";
+          }
+          document.querySelector('.dots').appendChild(dot);
+        }
+        Dots = document.querySelectorAll('.dot');
+      }
+      function nextImage() {
+        if(currentImage < Images.length-1){
+          Images[currentImage].classList.add('past')
+          Images[currentImage].classList.remove('current')
+          Dots[currentImage].classList.remove('current')
+          currentImage++;
+          Images[currentImage].classList.add('current')
+          Dots[currentImage].classList.add('current')
+          ArrowLeft.classList.remove('disabled');
+        }
+        if(currentImage == Images.length-1){
+          ArrowRight.classList.add('disabled');
+        }
+      }
+      function prevImage() {
+        if(currentImage > 0){
+          Images[currentImage].classList.remove('current')
+          Dots[currentImage].classList.remove('current')
+          currentImage--;
+          Images[currentImage].classList.remove('past')
+          Images[currentImage].classList.add('current')
+          Dots[currentImage].classList.add('current')
+          ArrowRight.classList.remove('disabled');
+        }
+        if(currentImage == 0){
+          ArrowLeft.classList.add('disabled');
+          ArrowLeft.classList.add('disabled');
+        }
+      }
+    </script>
+    <script src="ui/assets/scripts/shuffle.js"></script>
+    <script src="ui/assets/scripts/scroll.js"></script>
+  </body>
+</html>

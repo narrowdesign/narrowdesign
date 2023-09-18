@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  background: white;
+  overflow: hidden;
+}
+
+h1 {
+  position: absolute;
+  left: 320px;
+  top: 197px;
+  font-size: 82px;
+  font-family: sans-serif;
+  letter-spacing: -0.3rem;
+  line-height: 1.1;
+  width: 620px;
+  color: #0a2540;
+}
+
+h1:last-of-type {
+  opacity: 0.3;
+  mix-blend-mode: color-burn;
+}
+
+canvas,
+.layer,
+.layer::before,
+.layer::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 1400px 1128px;
+}
+
+canvas {
+  mix-blend-mode: hard-light;
+}
+
+.layer.below {
+  background-image: url(img/layer0.png);
+}
+.layer.top {
+  background-image: url(img/layer1.png);
+}
+.layer.overlay::before {
+  background-image: url(img/layer2.png);
+  opacity: 0.05;
+}
+.layer.overlay::after {
+  background-image: url(img/layer2.png);
+  mix-blend-mode: overlay;
+  opacity: 1;
+}

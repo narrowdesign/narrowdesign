@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<findYourStyleInfo>
+	<photoDelay><![CDATA[3000]]></photoDelay>
+	<imagesUrl><![CDATA[images/findyourstyle/modelImages/]]></imagesUrl>
+	<productsUrl><![CDATA[http://s7d3.scene7.com/is/image/LuxotticaRetail/]]></productsUrl>
+	<privacyUrl><![CDATA[http://www.sunglasshut.com/privacy.html]]></privacyUrl>
+	<styleFileUrl><![CDATA[TriggerStyleFile]]></styleFileUrl>
+	<friendUrl><![CDATA[http://stage.sunglasshut.com/webapp/wcs/stores/servlet/sgh/templates/email_STF_findyourstyle.jsp]]></friendUrl>
+	<pdpUrl><![CDATA[TriggerPDP]]></pdpUrl>
+	<asfUrl><![CDATA[TriggerAddToStyleFile]]></asfUrl>
+	<images>
+		<loadingPhoto>
+			<image><![CDATA[images/findyourstyle/loadingImages/ld_1.jpg]]></image>
+			<sequence><![CDATA[0]]></sequence>
+			<xPos><![CDATA[550]]></xPos>
+		</loadingPhoto>
+		<loadingPhoto>
+			<image><![CDATA[images/findyourstyle/loadingImages/ld_2.jpg]]></image>
+			<sequence><![CDATA[1]]></sequence>
+			<xPos><![CDATA[535]]></xPos>
+		</loadingPhoto>
+		<loadingPhoto>
+			<image><![CDATA[images/findyourstyle/loadingImages/ld_3.jpg]]></image>
+			<sequence><![CDATA[2]]></sequence>
+			<xPos><![CDATA[470]]></xPos>
+		</loadingPhoto>
+		<loadingPhoto>
+			<image><![CDATA[images/findyourstyle/loadingImages/ld_4.jpg]]></image>
+			<sequence><![CDATA[3]]></sequence>
+			<xPos><![CDATA[467]]></xPos>
+		</loadingPhoto>
+	</images>
+	<models>
+		<model>
+			<id><![CDATA[1]]></id>
+			<key><![CDATA[011]]></key>
+			<favorite><![CDATA[3]]></favorite>
+			<nombre><![CDATA[sabine]]></nombre>
+			<curatedBlurb><![CDATA[These really work well for Sabine. The lenses are big enough to reduce the perceived height of her face, while the curves across the tops of the lenses create contour and add visual interest against the lines of her more oblong face.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[You have to love Aviators, everybody looks good in Aviators.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[Not in love with these, they would look better on a bigger face, I think.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[Now, I am a movie star hiding from paparazzi.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[These are great! They make me feel glamorous and important.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[These make me feel glam, and a bit VIP, but are a bit to wide feeling to be perfect.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[Fun, sort of an edgy Material Girl.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[Very sporty. Not me exactly, if I played tennis these would be perfect.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[They are so elegant, and the same time secretive, like a mafia heiress.]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+		<model>
+			<id><![CDATA[2]]></id>
+			<key><![CDATA[012]]></key>
+			<favorite><![CDATA[7]]></favorite>
+			<nombre><![CDATA[grellan]]></nombre>
+			<curatedBlurb><![CDATA[These work well for Grellan. The lenses sit perfect over the orbit of the eyes, the sleek, rimless look compliments his business style, and the horizontal ovals contrast the vertical oval of his face shape.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[These are really classic, but really, in too. They have a natural ease, like you didn't have try to hard to be cool.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[You can't really go wrong with Wayfarers. These are perfect after-hours, out on the town.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[These feel good on my face, but overall they are a bit too fashion-forward, too flashy for my tastes.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[I like the fit and shape, but with the logo and the color they come off too feminine for me.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[I'm not normally a huge fan of big temples, but these are professional and sleek, very board of directors.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[These are a walk on the wild-side, though I'm not a fan of white frames with my skin color.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[Not too flashy, with an understated style and a natural fit. These are me to a T.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[Like the feel of these, but they come across too blingy for me, not my style.]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+		<model>
+			<id><![CDATA[3]]></id>
+			<key><![CDATA[013]]></key>
+			<favorite><![CDATA[8]]></favorite>
+			<nombre><![CDATA[jamala]]></nombre>
+			<curatedBlurb><![CDATA[Jamala makes a splash! The white accents contrast her skin, while the black frames compliment her hair. The soft rectangles of the frames create a visual differentiation with the curves of her face, giving it a longer narrower appearance.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[These are definitely my style, and fit my face perfectly. Retro, but not too much. Cool.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[A little too Risky Business for my look, but still cool.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[These are so high-end. Glamorous, definitely glamorous.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[These are pure perfection! The fit, the style, the color. For me, perfection.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[Now, we're upscale, with a hint of flair. Sleek city style.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[Very trendy, but I have a more round face and these come off a bit Max Headroom-ish on me.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[Very cool, and all bad ass. Don't mess with me in these.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[Sleek and funky! Love the curves with the white accents.]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+		<model>
+			<id><![CDATA[4]]></id>
+			<key><![CDATA[014]]></key>
+			<favorite><![CDATA[2]]></favorite>
+			<nombre><![CDATA[jeremy]]></nombre>
+			<curatedBlurb><![CDATA[What a great look for Jeremy! The whole package just works, from the the playful interaction with his hair, to the edges of the rims which are just slightly wider than his  oblong face. He should never take these off.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[These brought me straight back to the 70's, State Trooper style, right where I belong.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[Ray-Bans. These are dark-club-checking-people-out shades, no doubt.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[Soho fashionista, for sure.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[These rock the casaba! Very comfortable, great lenses.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[These are so dark and mysterious, but not really my style.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[Very sleek. These make me feel like flying down a mountain out west.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[Lightweight and slim, cold and sharp. CIA.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[I love the way these fit. They're like spider-style, totally stunglasses.]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+		<model>
+			<id><![CDATA[5]]></id>
+			<key><![CDATA[015]]></key>
+			<favorite><![CDATA[6]]></favorite>
+			<nombre><![CDATA[mark]]></nombre>
+			<curatedBlurb><![CDATA[Mark is ready for action! The wide cure of wraps work well for his square face, masking the width of his nose and depth of his eyes. With the sport overtones and white color, they're like a mini-face lift giving a more youthful look.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[These make me feel like a fighter pilot, crossed with a Mixed Martial Arts bad ass. Very cool.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[I feel like I'm on mission from God. Man, I loved that movie!]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[I feel like Miami; all tan lines and house music.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[These are not me, a little too much bling.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[These make me feel like my name should be Luciano Vincenzo Giovanni Miselli. The world's fastest motorcyclist.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[Now, I am rave-ready!]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[Like I just found myself in a very bright white room downloading kung-fu moves into my brain.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[These make me feel ten years younger, and ready to hit the clubs!]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+		<model>
+			<id><![CDATA[6]]></id>
+			<key><![CDATA[016]]></key>
+			<favorite><![CDATA[4]]></favorite>
+			<nombre><![CDATA[julia]]></nombre>
+			<curatedBlurb><![CDATA[Julia is simply stunning. Frames that are slightly wider than her cheeks, beautifully compliment her oval face (lucky girl!). Further, the rounded corners and descending angles pull attention down away from her forehead.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[I should be jumping on the back of a motorcycle and ridding into the sunset.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[Now I'm an indie rocker, with a too cool retro flair.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[These would be the shades to keep me from being blinded by all the flashes at my Cannes premiere!]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[In these, I feel like once you meet me, you'll never forget me.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[People are going to think I am rich, like I should be sailing away on my yacht.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[As long as I'm wearing my Oakleys, the summer will never end.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[With these on, I'm an Italian movie star with an accent, all sultry and smoldering.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[I feel like saying hi to the hot guy across the room, with these on I know he's been looking.]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+		<model>
+			<id><![CDATA[7]]></id>
+			<key><![CDATA[017]]></key>
+			<favorite><![CDATA[5]]></favorite>
+			<nombre><![CDATA[joe]]></nombre>
+			<curatedBlurb><![CDATA[These are great on Joe. The heavier temples interrupt the length of his face, the double bridge diminishes his longer nose, and the silver accents coordinate with his get-used-to-it-grey-is-in hair.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[Never tried Aviators before, but I think the shape really works for me, like Maverick in Top Gun.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[Who doesn't love Wayfarers? It's just a classic look.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[Not my usual style, but these fit well. With the right outfit, I think I could pull these off.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[This pair is a little wide, a little bulky for my face shape, and I'm not a big logo kind of guy.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[Man, these look good on me! I love the shape of the frames, the temples, everything!]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[I wouldn't have thought these would work for me, but I like the bold shock value look.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[Love the "Neo" shades. All I need is the long black coat.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[I like these, though they are a little too rounded on the top to go well with my face.]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+		<model>
+			<id><![CDATA[8]]></id>
+			<key><![CDATA[018]]></key>
+			<favorite><![CDATA[1]]></favorite>
+			<nombre><![CDATA[shannon]]></nombre>
+			<curatedBlurb><![CDATA[Shannon is an impact player in Aviators! The curves of the lenses are a good contrast to her triangular face. The narrower width pulls attention inward away from the angle of her jaw line.]]></curatedBlurb>
+			<styles>
+				<style>
+					<id><![CDATA[1]]></id>
+					<personalBlurb><![CDATA[These make me feel sexy and assertive. Could be a dangerous combination.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[2]]></id>
+					<personalBlurb><![CDATA[Love these! Very convertible-with-the-top-down.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[3]]></id>
+					<personalBlurb><![CDATA[These are playful and fun, I feel very glamorous.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[4]]></id>
+					<personalBlurb><![CDATA[These are totally elegant and sophisticated, with a touch of business.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[5]]></id>
+					<personalBlurb><![CDATA[Functional, and sleek, I like the look, but fit is not right for me. The lenses are too tall.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[6]]></id>
+					<personalBlurb><![CDATA[These are tough, young and funky, but they still make me feel pretty.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[7]]></id>
+					<personalBlurb><![CDATA[In these are smooth, modern and effortless, like a power broker.]]></personalBlurb>
+				</style>
+				<style>
+					<id><![CDATA[8]]></id>
+					<personalBlurb><![CDATA[These are so Hollywood-sleek, fun and sassy!]]></personalBlurb>
+				</style>
+			</styles>
+		</model>
+	</models>
+	<styles>
+		<style>
+			<id><![CDATA[1]]></id>
+			<nombre><![CDATA[Aviator]]></nombre>
+			<sku><![CDATA[505286]]></sku>
+			<overDescription><![CDATA[Authentic, classic, timeless. The Ray-Ban Aviator accept no substitutes.]]></overDescription>
+			<fullDescription><![CDATA[You’re certain to make an impression in an authentic Ray-Ban Aviator. With its double-bridged, barely-there gold metal frame and green glass lens this is high styling at its best. This timeless classic has been reinvented with contemporary urban appeal.]]></fullDescription>
+			<similarStyles>
+				<similar>
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[203020]]></sku>
+					<nombre><![CDATA[Style 9]]></nombre>
+					<description><![CDATA[This description has 65 characters in it. Will it all fit?]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[455003]]></sku>
+					<nombre><![CDATA[Style 10]]></nombre>
+					<description><![CDATA[This description has 87 characters in it. Will it all fit? Or can there be more?]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[696145]]></sku>
+					<nombre><![CDATA[Style 11]]></nombre>
+					<description><![CDATA[Similar style three description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[537996]]></sku>
+					<nombre><![CDATA[Style 12]]></nombre>
+					<description><![CDATA[Similar style four description.]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+		<style>
+			<id><![CDATA[2]]></id>
+			<nombre><![CDATA[Wayfarer]]></nombre>
+			<sku><![CDATA[429793]]></sku>
+			<overDescription><![CDATA[What's next: The Ray-Ban Wayfarer, reinvented for the 21st century.]]></overDescription>
+			<fullDescription><![CDATA[No need to worry about finding your new look. Simply reinvent it. The Ray-Ban Wayfarer stays true to its classic heritage, yet has effortlessly evolved to meet today's fashion demands. The high-tech design, features black frames, green lenses, and Ray-Ban's signature logo on the temple. Fall in love with the Wayfarer all over again.]]></fullDescription>
+			<similarStyles>	
+				<similar>
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[455466]]></sku>
+					<nombre><![CDATA[Style 13]]></nombre>
+					<description><![CDATA[This description has 65 characters in it. Will it all fit?]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[505121]]></sku>
+					<nombre><![CDATA[Style 14]]></nombre>
+					<description><![CDATA[This description has 87 characters in it. Will it all fit? Or can there be more?]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[525721]]></sku>
+					<nombre><![CDATA[Style 15]]></nombre>
+					<description><![CDATA[This description has 65 characters in it. Will it all fit?]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[506938]]></sku>
+					<nombre><![CDATA[Style 16]]></nombre>
+					<description><![CDATA[This description has 87 characters in it. Will it all fit? Or can there be more?]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+		<style>
+			<id><![CDATA[3]]></id>
+			<nombre><![CDATA[Versace]]></nombre>
+			<sku><![CDATA[646989]]></sku>
+			<overDescription><![CDATA[Versace fuses excitement and luxury blend into an essential fashion.]]></overDescription>
+			<fullDescription><![CDATA[Brown is the new black in this fashionable pair from Versace . The chic and sporty combination features a brown metal frame and a curved gradient lens shield. With its oversized logo streaming across the arm, the wide plastic temples this pair decadently showcasesVersace’s confidence and class.]]></fullDescription>
+			<similarStyles>			
+				<similar>
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[647021]]></sku>
+					<nombre><![CDATA[Style 17]]></nombre>
+					<description><![CDATA[Similar style one description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[749500]]></sku>
+					<nombre><![CDATA[Style 18]]></nombre>
+					<description><![CDATA[Similar style two description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[657993]]></sku>
+					<nombre><![CDATA[Style 19]]></nombre>
+					<description><![CDATA[Similar style three description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[537911]]></sku>
+					<nombre><![CDATA[Style 20]]></nombre>
+					<description><![CDATA[Similar style four description.]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+		<style>
+			<id><![CDATA[4]]></id>
+			<nombre><![CDATA[Versace]]></nombre>
+			<sku><![CDATA[647056]]></sku>
+			<overDescription><![CDATA[Distinctively elegant perfect for seekers of the limelight, by Versace.]]></overDescription>
+			<fullDescription><![CDATA[You'll turn heads in this stunning, best-selling sunglass by Versace. Tortoise brown plastic frames and brown gradient lenses set the stage for the gold medusa coin logo on the temple. A mix of sensuality, elegance and Versace's legendary glamour harmoniously align to reflect impeccable taste.]]></fullDescription>
+			<similarStyles>
+				<similar>
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[647076]]></sku>
+					<nombre><![CDATA[Style 21]]></nombre>
+					<description><![CDATA[Similar style one description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[647017]]></sku>
+					<nombre><![CDATA[Style 22]]></nombre>
+					<description><![CDATA[Similar style two description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[537943]]></sku>
+					<nombre><![CDATA[Style 23]]></nombre>
+					<description><![CDATA[Similar style three description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[749586]]></sku>
+					<nombre><![CDATA[Style 24]]></nombre>
+					<description><![CDATA[Similar style four description.]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+		<style>
+			<id><![CDATA[5]]></id>
+			<nombre><![CDATA[Prada]]></nombre>
+			<sku><![CDATA[481511]]></sku>
+			<overDescription><![CDATA[Redefine trendsetter with an unequalled style from Prada.]]></overDescription>
+			<fullDescription><![CDATA[Prada pulls out all the stops for these trendsetting sunglasses. This updated aviator is a masterpiece of creativity and innovation. A double-bridged silver metal frame is balanced with a heavier triangular temple, with sleek snakeskin and bearing the Prada logo. It’s time to unleash your inner trendsetter.]]></fullDescription>
+			<similarStyles>
+				<similar>	
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[216574]]></sku>
+					<nombre><![CDATA[Style 25]]></nombre>
+					<description><![CDATA[Similar style one description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[481505]]></sku>
+					<nombre><![CDATA[Style 26]]></nombre>
+					<description><![CDATA[Similar style two description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[511618]]></sku>
+					<nombre><![CDATA[Style 27]]></nombre>
+					<description><![CDATA[Similar style three description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[203563]]></sku>
+					<nombre><![CDATA[Style 28]]></nombre>
+					<description><![CDATA[Similar style four description.]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+		<style>
+			<id><![CDATA[6]]></id>
+			<nombre><![CDATA[Oakley]]></nombre>
+			<sku><![CDATA[429793]]></sku>
+			<overDescription><![CDATA[Oakley: Harness the storm that rages across the face of fashion.]]></overDescription>
+			<fullDescription><![CDATA[Never lose your cool in this white-hot look from Oakley. The white plastic frame and black iridium lens wrap is a sporty approach to this season’s cool new design, also highlighted in our Style Wheel. Always innovative and forever iconic, Oakley is takes sports performance optics to a higher level.]]></fullDescription>
+			<similarStyles>
+				<similar>
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[212650]]></sku>
+					<nombre><![CDATA[Style 29]]></nombre>
+					<description><![CDATA[Similar style one description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[429968]]></sku>
+					<nombre><![CDATA[Style 30]]></nombre>
+					<description><![CDATA[Similar style two description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[429976]]></sku>
+					<nombre><![CDATA[Style 31]]></nombre>
+					<description><![CDATA[Similar style three description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[711067]]></sku>
+					<nombre><![CDATA[Style 32]]></nombre>
+					<description><![CDATA[Similar style four description.]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+		<style>
+			<id><![CDATA[7]]></id>
+			<nombre><![CDATA[Revo]]></nombre>
+			<sku><![CDATA[525009]]></sku>
+			<overDescription><![CDATA[Keep your cool, in racy lines from Revo backed up with NASA tech.]]></overDescription>
+			<fullDescription><![CDATA[When you need performance, nothing delivers like Revo. Racy lines, a matte black frame, flex hinge and gradient, polarized grey glass lens are the perfect elements for an all-purpose high-tech sunglass. Designed for the cutting-edge innovator who is a leader,not a follower.]]></fullDescription>
+			<similarStyles>
+				<similar>
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[481333]]></sku>
+					<nombre><![CDATA[Style 33]]></nombre>
+					<description><![CDATA[Similar style one description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[511409]]></sku>
+					<nombre><![CDATA[Style 34]]></nombre>
+					<description><![CDATA[Similar style two description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[511064]]></sku>
+					<nombre><![CDATA[Style 35]]></nombre>
+					<description><![CDATA[Similar style three description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[165520]]></sku>
+					<nombre><![CDATA[Style 36]]></nombre>
+					<description><![CDATA[Similar style four description.]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+		<style>
+			<id><![CDATA[8]]></id>
+			<nombre><![CDATA[D&G]]></nombre>
+			<sku><![CDATA[203200]]></sku>
+			<overDescription><![CDATA[Playful and alluring from D&G, a look that will get looks.]]></overDescription>
+			<fullDescription><![CDATA[Aficionados of the D&G style demand all the attention, and this playful pair can do all the talking. D&G shows off its extraordinary attention detail: the oversized D&G logo fills the entire arm and the overlaid plastic strip of black on white gives the frame distinctive contrast. Make a statement without saying a word.]]></fullDescription>
+			<similarStyles>
+				<similar>
+					<id><![CDATA[1]]></id>
+					<sku><![CDATA[203019]]></sku>
+					<nombre><![CDATA[Style 37]]></nombre>
+					<description><![CDATA[Similar style one description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[2]]></id>
+					<sku><![CDATA[657615]]></sku>
+					<nombre><![CDATA[Style 38]]></nombre>
+					<description><![CDATA[Similar style two description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[3]]></id>
+					<sku><![CDATA[696111]]></sku>
+					<nombre><![CDATA[Style 39]]></nombre>
+					<description><![CDATA[Similar style three description.]]></description>					
+				</similar>
+				<similar>
+					<id><![CDATA[4]]></id>
+					<sku><![CDATA[498687]]></sku>
+					<nombre><![CDATA[Style 40]]></nombre>
+					<description><![CDATA[Similar style four description.]]></description>					
+				</similar>
+			</similarStyles>
+		</style>
+	</styles>	
+</findYourStyleInfo>

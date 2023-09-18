@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<photoDelay>3000</photoDelay>
+<images>
+    <loadingPhoto>
+        <image>ld_1.jpg</image>
+        <sequence>0</sequence>
+        <xPos>550</xPos>
+    </loadingPhoto>
+    <loadingPhoto>
+        <image>ld_2.jpg</image>
+        <sequence>1</sequence>
+        <xPos>505</xPos>
+    </loadingPhoto>
+    <loadingPhoto>
+        <image>ld_3.jpg</image>
+        <sequence>2</sequence>
+        <xPos>470</xPos>
+    </loadingPhoto>
+    <loadingPhoto>
+        <image>ld_4.jpg</image>
+        <sequence>3</sequence>
+        <xPos>417</xPos>
+    </loadingPhoto>
+</images>

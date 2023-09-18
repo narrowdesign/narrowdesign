@@ -1,0 +1,45 @@
+<stylewheel>
+	<PATHS>
+		<styleImg url="http://sgh-dev/redesign/web/productImages/"/>
+	</PATHS>
+	<step id="0" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_0.png" myStyle='Bold' mySku='1'>
+		<rollTitle><![CDATA[bold]]></rollTitle>
+	</step>
+	<step id="1" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_1.png" myStyle='Professional' mySku='2'>
+		<rollTitle><![CDATA[professional]]></rollTitle>
+	</step>
+	<step id="2" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_2.png" myStyle='Glamorous' mySku='3'>
+		<rollTitle><![CDATA[glamorous]]></rollTitle>
+	</step>
+	<step id="3" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_3.png" myStyle='Smooth' mySku='4'>
+		<rollTitle><![CDATA[smooth]]></rollTitle>
+	</step>
+	<step id="4" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_4.png" myStyle='Classy' mySku='5'>
+		<rollTitle><![CDATA[classy]]></rollTitle>
+	</step>
+	<step id="5" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_5.png" myStyle='Urban' mySku='6'>
+		<rollTitle><![CDATA[urban]]></rollTitle>
+	</step>
+	<step id="6" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_6.png" myStyle='Sporty' mySku='7'>
+		<rollTitle><![CDATA[sporty]]></rollTitle>
+	</step>
+	<step id="7" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_7.png" myStyle='Tough' mySku='8'>
+		<rollTitle><![CDATA[tough]]></rollTitle>
+	</step>
+	<step id="8" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_8.png" myStyle='Sophisticated' mySku='9'>
+		<rollTitle><![CDATA[sophisticated]]></rollTitle>
+	</step>
+	<step id="9" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_9.png" myStyle='Sassy' mySku='10'>
+		<rollTitle><![CDATA[sassy]]></rollTitle>
+	</step>
+	<step id="10" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_10.png" myStyle='Savvy' mySku='11'>
+		<rollTitle><![CDATA[savvy]]></rollTitle>
+	</step>
+	<step id="11" imgPath="http://sgh-dev/redesign/web/latest/images/glassesWheel/gla_fr_11.png" myStyle='Sexy' mySku='12'>
+		<rollTitle><![CDATA[sexy]]></rollTitle>
+	</step>
+</stylewheel>
+
+
+
+

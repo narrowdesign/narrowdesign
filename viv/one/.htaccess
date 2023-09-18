@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Halt!"
+AuthUserFile /home/w9zjfcezsaz2/public_html/viv/one/.htpasswd
+Require valid-user

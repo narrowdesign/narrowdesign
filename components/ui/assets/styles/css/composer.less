@@ -1,0 +1,1685 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-size: 16px;
+  color: #271325;
+  background: #FFF0BA;
+}
+*, *:before, *:after{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  // outline: 1px solid #645244;
+}
+.show-outline *, .show-outline *:before, .show-outline *:after {
+  outline: 1px solid rgba(9,186,178,.1);
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+a:hover{
+  opacity: .7;
+  transition: .2s;
+}
+
+h1 {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  transition: .6s ease-out;
+  font-weight: 700;
+  line-height: 1.25;
+}
+h4 {
+  line-height: 1.5;
+}
+h5 {
+  font-weight: 500;
+}
+p {
+  line-height: 1.4;
+  margin: 1em 0;
+  font-size: 1.1rem;
+  text-align: left;
+}
+p:first-of-type {
+  margin: 0 0 1em;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 12px 28px;
+  text-transform: uppercase;
+  background: #271325;
+  color: #FFF0BA;
+  border-radius: 3px;
+  letter-spacing: .1rem;
+  margin: 2rem 0 1.5rem;
+  font-weight: 900;
+  font-size: .8rem;
+}
+.Cover,
+.Image {
+  overflow: hidden;
+  // transition: .6s ease-out;
+}
+
+.Cover img,
+.Image img,
+.Cover iframe,
+.Image iframe {
+  position: relative;
+  width: 100%;
+  display: block;
+  transition: .6s ease-out;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #271325;
+  color: #FFF0BA;
+  padding: 30px 4vw 10px;
+  height: 70px;
+  z-index: 40;
+}
+
+.Header select {
+  position: relative;
+  float: right;
+  top: -4px;
+  background: none;
+  color: #FFF0BA;
+  width: 140px;
+  font-size: 1.1rem;
+  color: #FFF0BA;
+  border-color: #FFF0BA;
+}
+
+.Header h3 {
+  font-size: 1.06em;
+}
+
+.Header .Shuffle {
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  cursor: pointer;
+}
+.Header .Shuffle img{
+  width: 30px;
+}
+.Header .Shuffle:hover img{
+  opacity: .5;
+  transform: skew(360deg);
+  transition: .2s;
+}
+.Header .Shuffle:active img{
+  opacity: 1;
+}
+
+.Header h3 {
+  float: left;
+}
+
+.Headline {
+  margin: 1em 0 1em 0;
+}
+
+.Healine:first-of-type {
+  margin: 0em 0 1em 0;
+}
+
+.Headline:first-of-type {
+  margin-top: 0;
+}
+
+.Headline h1 {
+
+}
+
+.Headline h1::first-line {
+  // line-height: 0;
+}
+
+.Attribution .Author {
+
+}
+
+.Attribution .Source {
+
+}
+
+.Attribution {
+  margin: 1em 0 1em 0;
+}
+
+.Attribution:first-of-type {
+  margin: 0em 0 1em 0;
+}
+
+.Attribution:only-of-type {
+  margin: 0;
+}
+
+.Group{
+  padding: 0rem 1vw 1rem;
+  transition: .6s ease-out;
+  max-width: 960px;
+  position: relative;
+  display: block;
+}
+
+.Group--graphical {
+  width: 100%;
+}
+
+.Group--graphical .Image {
+  max-height: 90vh;
+}
+
+.Group:not(.Group--graphical), {
+  z-index: 10;
+}
+
+.Group--links a{
+  text-decoration: none;
+}
+.Group--links {
+  width: 100% !important;
+  max-width: none;
+}
+.Group--links .Link {
+  flex: 1;
+  display: block;
+  font-weight: 200;
+  // font-size: 5em;
+  transition: .3s ease-out;
+}
+
+.Component {
+  flex-wrap: wrap;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.Section {
+  width: 100%;
+  padding: 4vw;
+  position: relative;
+  display: block;
+  align-items: stretch;
+  transition: .6s ease-out;
+}
+
+
+
+/* Nav
+**************************/
+
+
+.Section--nav{
+  transition: .3s ease-out;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #93806F;
+  padding: 0 !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.Section--nav .Component {
+  margin: 0;
+  padding: 0;
+}
+.Section--nav.Hidden {
+  transition: .3s ease-in;
+  transform: translate3d(0,-100%,0);
+}
+.Section--nav .Site-title {
+  position: absolute;
+  left: 9.2vw;
+  top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+}
+.Section--nav .Class-list {
+  display: none;
+}
+
+
+/* Nav List
+**************************/
+
+.Nav--list-row{
+  transition: .4s ease-out;
+  height: 62px;
+  overflow: hidden;
+  padding: 1rem 0 0;
+  width: 100%;
+}
+.Section.text-align-left .Nav--list-row .Group--links .Icon{
+  margin-left: 4vw;
+}
+.Section.text-align-center .Nav--list-row .Group--links .Icon{
+  left: 50%;
+  transform: translate3d(-50%,0,0);
+}
+.Section.text-align-right .Nav--list-row .Group--links .Icon{
+  margin-right: 4vw;
+  right: 0;
+}
+.Nav--list-row .Group--links .Link{
+  opacity: 1;
+  margin: .25rem 2rem 0;
+  transform: rotateX(20deg);
+  display: inline-block;
+  // transform-origin: 0 50%;
+}
+
+.Nav--list-row .Group--links .Icon {
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  opacity: 0;
+  font-size: 1.25em;
+  top: 0px;
+}
+
+.Nav--list-row .Group--links {
+  white-space: nowrap;
+}
+
+.Nav--list-row.Active .Group--links .Link {
+  opacity: 1 !important;
+  transform: translate3d(0,.5em,0);
+}
+
+.Nav--list-row.Active.nav-overflow {
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.Nav--list-row.nav-overflow .Group--links .Icon {
+  opacity: 1;
+}
+
+.Nav--list-row.nav-overflow {
+
+}
+
+.Nav--list-row.nav-overflow .Group--links .Link{
+  display: block;
+  margin: 0 4vw 1rem;
+  opacity: 0;
+}
+.Nav--list-row:not(.nav-overflow) .Group--links h1 {
+  font-size: 1rem;
+}
+
+.Nav--list-row.nav-overflow .Group--links{
+  padding: 3em 0 100px 0;
+}
+
+/* Nav Hamburger
+**************************/
+
+.Nav--hamburger{
+  transition: .4s ease-out;
+  height: 62px;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+.Section.text-align-left .Nav--hamburger .Group--links .Icon{
+  margin-left: 4vw;
+}
+.Section.text-align-center .Nav--hamburger .Group--links .Icon{
+  left: 50%;
+  transform: translate3d(-50%,0,0);
+}
+.Section.text-align-right .Nav--hamburger .Group--links .Icon{
+  margin-right: 4vw;
+  right: 0;
+}
+.Nav--hamburger .Group--links .Link{
+  opacity: 0;
+  margin: 0 4vw 1rem;
+  transform: rotateX(20deg);
+  // transform-origin: 0 50%;
+}
+.Nav--hamburger .Group--links .Icon {
+  opacity: 1;
+  position: absolute;
+  text-align: center;
+  z-index: 2;
+  font-size: 1.25em;
+  top: 16px;
+}
+
+.Nav--hamburger .Group--links {
+  padding: 3em 0 100px 0;
+}
+
+.Nav--hamburger.Active .Group--links .Link {
+  opacity: 1;
+  transform: translate3d(0,.5em,0);
+}
+
+.Nav--hamburger.Active {
+  height: 100vh;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Section Footer
+**************************/
+
+.Section--footer {
+  // position: fixed;
+  bottom: 0;
+  border-top: 1px solid #93806F;
+  // padding: 4vw;
+}
+
+.Section--footer .Group {
+  margin: 0 2vw 0 0;
+  padding: 0 !important;
+}
+.Section--footer .Component {
+  flex: 1;
+}
+.Section--footer:not(.Section--components-2) .Component:first-of-type {
+  flex: 2;
+  padding-right: 4vw;
+}
+.Section--footer.Section--components-2 .Component:last-of-type {
+  flex: 3;
+  padding-right: 4vw;
+}
+.Section--footer:not(.Section--components-2) .Component:not(:last-of-type):after {
+  content: "";
+  z-index: 11;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-right: 1px solid;
+  opacity: .2;
+}
+.Section--footer .Link {
+  margin: 0 0 1rem;
+}
+.Section--footer .Link a{
+  font-weight: 200;
+}
+
+
+/* Section Height
+**************************/
+
+.section-height-fullscreen {
+  width: 100vw;
+}
+
+.Section--components-1.section-height-fullscreen:not(.wo-bgcover),
+.Section--components-2.section-height-fullscreen:not(.wo-bgcover),
+.Section--components-3.section-height-fullscreen:not(.wo-bgcover) {
+  // width: 100vw;
+  // height: 80vh;
+  // max-height: 800px;
+  min-height: 80vh;
+  // overflow: hidden;
+}
+
+/* Text Alignment
+**************************/
+
+.text-align-left {
+  text-align: left;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-right:not(.align-end) .Component{
+  text-align: right;
+}
+.text-align-justify {
+  text-align: justify;
+}
+
+
+/* Component Alignment
+**************************/
+
+.justify-start .Component{
+  justify-content: flex-start;
+}
+.justify-center .Component{
+  justify-content: center;
+}
+.justify-end .Component{
+  justify-content: flex-end;
+}
+.justify-between .Component{
+  justify-content: space-between;
+}
+.justify-around .Component{
+  justify-content: space-around;
+}
+
+.align-start .Component{
+  align-items: flex-start;
+}
+.align-center .Component{
+  align-items: center;
+}
+.align-end .Component{
+  align-items: flex-end;
+}
+.align-stretch .Component{
+  align-items: stretch;
+}
+.align-baseline .Component{
+  align-items: baseline;
+}
+
+/* Section background image
+**************************/
+
+.wo-bgcover .Bg,
+.Section:not(.Section--components-1).and-bgcover .Bg {
+  display: none;
+}
+.w-bgcover .Bg{
+  display: block;
+}
+
+.wo-bgcover .Group--graphical {
+  display: block;
+}
+.w-bgcover .Group--graphical{
+  display: none;
+}
+.w-bgcover:not(.Section--article) .Group,
+.and-bgcover:not(.Section--article) .Group {
+  padding: 2rem 1.5rem;
+}
+.w-bgcover .Group,
+.and-bgcover .Group:not(.Group--graphical){
+  background: #FFF0BA;
+  // width: auto;
+  min-width: auto;
+  opacity: .9;
+}
+
+.Section--components-1.w-bgcover,
+.Section--components-1.and-bgcover {
+  min-height: 400px;
+  padding: 0 !important;
+}
+.Section--components-1.w-bgcover .Component,
+.Section--components-2.w-bgcover .Component,
+.Section--components-3.w-bgcover .Component,
+.Section--components-1.and-bgcover .Component,
+.Section--components-2.and-bgcover .Component {
+  padding: 4vw !important;
+}
+.Section--components-3.and-bgcover .Component,
+.Section--components-4.w-bgcover .Component,
+.Section--components-5.w-bgcover .Component,
+.Section--components-6.w-bgcover .Component   {
+  padding: 2vw !important;
+}
+
+.Section--components-1.and-bgcover .Bg {
+  width: 100% !important;
+  height: 100% !important;
+  left: 0 !important;
+  transform: translate3d(0,0,0) !important;
+}
+.Section--components-1.and-bgcover .Bg .Cover {
+  opacity: .1 !important;
+}
+.Section--components-1.and-bgcover .Bg .Cover img,
+.Section--components-1.and-bgcover .Bg .Cover iframe {
+  object-fit: cover !important;
+  // -webkit-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  top: -9px;
+}
+
+.Bg {
+  position: absolute;
+  padding: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .6s ease-out;
+}
+.Bg .Cover{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.Bg .Cover img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Section background image padding
+***********************************/
+
+.bgcover-padding-none.Section--components-1:not(.bgcover-size-third):not(.bgcover-size-quarter) .Bg{
+  padding: 0 !important;
+}
+.bgcover-padding-xsmall.Section--components-1:not(.bgcover-size-third):not(.bgcover-size-quarter) .Bg{
+  padding: .5vw !important;
+}
+.bgcover-padding-small.Section--components-1:not(.bgcover-size-third):not(.bgcover-size-quarter) .Bg{
+  padding: 1vw !important;
+}
+.bgcover-padding-medium.Section--components-1:not(.bgcover-size-third):not(.bgcover-size-quarter) .Bg{
+  padding: 2vw !important;
+}
+.bgcover-padding-large.Section--components-1:not(.bgcover-size-third):not(.bgcover-size-quarter) .Bg{
+  padding: 3vw !important;
+}
+
+/* Section background image size
+*********************************/
+
+.bgcover-size-full .Bg {
+  width: 100%;
+  height: 100%;
+}
+.Section--components-1.bgcover-size-half .Bg,
+.Section--components-2.bgcover-size-half .Bg,
+.Section--components-3.bgcover-size-half .Bg {
+  width: 50%;
+  height: 100%;
+}
+.Section--components-1.bgcover-size-third .Bg,
+.Section--components-2.bgcover-size-third .Bg,
+.Section--components-3.bgcover-size-third .Bg {
+  width: 33.333%;
+  height: 100%;
+}
+.Section--components-1.bgcover-size-quarter .Bg,
+.Section--components-2.bgcover-size-quarter .Bg{
+  width: 25%;
+  height: 100%;
+}
+
+.bgcover-fit-cover .Bg img {
+  object-fit: cover;
+  object-position: 60% 50%;
+}
+.bgcover-fit-contain .Bg img {
+  object-fit: contain;
+}
+.bgcover-align-top .Bg {
+  top: 0;
+  bottom: auto;
+}
+.bgcover-align-center .Bg {
+  top: 50%;
+  transform: translate3d(0,-50%,0);
+}
+.bgcover-align-bottom .Bg {
+  top: auto;
+  bottom: 0;
+}
+.bgcover-align-stretch .Bg {
+  top: 0;
+  bottom: 0;
+  height: 100% !important;
+}
+
+.bgcover-justify-left .Bg {
+  left: 0;
+}
+.bgcover-justify-center .Bg {
+  right: auto;
+  left: 50%;
+  transform: translate3d(-50%,0,0);
+}
+.bgcover-justify-right .Bg {
+  right: 0;
+  left: auto;
+}
+.bgcover-justify-stretch .Bg {
+  right: 0;
+  left: 0;
+  width: 100% !important;
+}
+
+.bgcover-justify-center.bgcover-align-center .Bg {
+  transform: translate3d(-50%,-50%,0);
+}
+
+
+
+/* Section background color
+**************************/
+
+.bg-color-light {
+  background: #FFF0BA;
+  color: #271325;
+}
+.bg-color-light .Bg .Cover{
+  opacity: .3;
+}
+.bg-color-light .Group{
+  background: transparent !important;
+}
+.bg-color-dark {
+  background: #36222F;
+  color: #FFF0BA;
+}
+.bg-color-dark .Bg .Cover{
+  opacity: .3;
+}
+.bg-color-dark .Group{
+  background: transparent !important;
+}
+.bg-color-neutral {
+  background: #93806F;
+  color: #FFF0BA;
+}
+.bg-color-neutral .Bg .Cover{
+  opacity: .3;
+}
+.bg-color-neutral .Group{
+  background: transparent !important;
+}
+.bg-color-pattern{
+  background: url(../../images/pattern.jpg);
+  color: #271325;
+}
+.bg-color-pattern .Bg .Cover{
+  opacity: .3;
+}
+.bg-color-pattern .Group{
+  background: transparent !important;
+}
+.bg-color-none {
+  background: #FFF0BA;
+  color: #271325;
+}
+.bg-color-none .Group{
+  background: #FFF0BA;
+}
+
+.bg-color-dark button{
+  background: #FFF0BA;
+  color: #271325;
+}
+
+/* Articles
+***********************************/
+
+.Section--article p {
+  font-size: 1.2rem;
+  font-family: 'Georgia', 'Times', '_serif';
+  line-height: 1.618;
+  margin-top: 2em;
+}
+
+.Section--article p:first-child:first-letter {
+  float: left;
+  font-size: 6.85rem;
+  line-height: 5rem;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-left: 0px;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  font-weight: 700;
+  margin-left: -8px;
+  position: relative;
+}
+.Section--article p.Dropcap--3:first-child:first-letter {
+  font-size: 6.85rem;
+}
+
+.Section--article p.Dropcap--4:first-child:first-letter {
+  font-size: 9.5rem;
+  line-height: 6rem;
+  padding-top: 11px;
+}
+
+.Section--article .Bg{
+  top: 0;
+}
+.Section--article .Cover img,
+.Section--article .Image img
+{
+  object-fit: cover;
+  max-height: 80vh;
+}
+
+.Section--article .Group--Column .Image img {
+  margin-top: .9em;
+}
+
+.Section--article .Cover,
+.Section--article .Image
+{
+  width: auto;
+}
+
+.Section--article p blockquote {
+  font-size: 1.8rem;
+  font-style: italic;
+  padding-left: 2rem;
+  line-height: 1.3;
+  border-left: 8px solid;
+  text-align: left;
+  font-weight: 700;
+  margin-bottom: 2em;
+}
+
+.Section--article.w-bgcover .Component {
+  padding-top: 35vh !important;
+}
+
+.Section--article.w-bgcover .Component {
+  padding-top: 35vh !important;
+}
+
+.Section--article.w-bgcover .Group,
+.Section--article.and-bgcover .Group{
+  padding-top: 1rem;
+}
+.Section--article.and-bgcover .Component{
+  padding-top: 20vh !important;
+}
+
+
+/* RAMS DESIGN SYSTEM
+**************************/
+
+.Rams {
+
+}
+.Rams .Headline span,
+.Rams .Attribution span{
+  -webkit-box-decoration-break: clone;
+}
+.Rams .Headline {
+  padding: 0;
+}
+
+.Jones .Headline:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  border-top: 8px solid;
+  border-right: 8px solid;
+  border-left: 8px solid;
+  left: 0;
+  top: -40px;
+}
+.Jones .Headline:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  border-bottom: 8px solid;
+  border-right: 8px solid;
+  border-left: 8px solid;
+  left: 0;
+  bottom: -40px;
+}
+
+
+/* BASS DESIGN SYSTEM */
+.Bass {
+
+}
+.Bass section {
+
+}
+.Bass .Group {
+  background: transparent !important;
+}
+.Bass .Section--components-5.w-bgcover .Component .Group,
+.Bass .Section--components-6.w-bgcover .Component .Group {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.Bass .Headline span,
+.Bass .Attribution span,
+.Bass .Section--article p blockquote span{
+  padding: .2rem .4rem;
+  -webkit-box-decoration-break: clone;
+  line-height: 1.4;
+  background: #271325 !important;
+  color: #FFF0BA;
+}
+.Bass .Section--article p blockquote{
+  border: none;
+  padding: 0;
+}
+.Bass .Section--article p blockquote:before{
+  content: "“";
+  position: absolute;
+  left: -.6rem;
+  font-size: 4em;
+  margin-top: -4rem;
+  font-weight: 200;
+}
+.Bass .Attribution {
+  color: #FFF0BA;
+}
+.Bass .Headline {
+
+}
+
+.Bass .bg-color-dark .Headline span,
+.Bass .bg-color-dark .Attribution span,
+.Bass .bg-color-dark.Section--article p blockquote span,
+.Bass .bg-color-neutral .Headline span,
+.Bass .bg-color-neutral .Attribution span,
+.Bass .bg-color-neutral.Section--article p blockquote span{
+  background: #FFF0BA;
+  color: #271325;
+}
+.Bass .w-bgcover.bg-color-none .Paragraph {
+  background: #FFF0BA;
+  padding: 1.5vw !important;
+}
+.Bass p {
+  padding: 0 !important;
+}
+
+@media screen and (min-width: 960px) {
+  .Bass .Section--article p blockquote:before{
+    left: -60px;
+    font-size: 5em;
+    margin-top: -36px;
+  }
+}
+
+
+
+
+/* VIGNELLI DESIGN SYSTEM
+**************************/
+
+.Vignelli section {
+
+}
+
+.Vignelli section {
+
+}
+.Vignelli .flex-col .Group:last-of-type:not(.Group--graphical) div:last-of-type,
+.Vignelli .flex-row:not(.Section--components-1) .Group:last-of-type:not(.Group--graphical) div:last-of-type {
+  border-bottom: calc(4px + .5vh) solid;
+}
+.Vignelli .flex-row.Section--components-1 .Group:not(.Group--graphical) div:last-of-type {
+  border-bottom: calc(4px + .5vh) solid;
+}
+
+.Vignelli .Headline,
+.Vignelli .Paragraph,
+.Vignelli .Attribution,
+.Vignelli .Section--article p blockquote {
+  border: none;
+  border-top: calc(4px + .5vh) solid;
+  padding: 1rem 0 1.5rem;
+}
+
+.Vignelli .flex-row.align-end .Attribution:only-of-type,
+.Vignelli .flex-row-reverse.align-end .Attribution:only-of-type {
+  border-top: none;
+  border-bottom: calc(4px + .5vh) solid;
+}
+
+
+/* Brockmann DESIGN SYSTEM
+**************************/
+
+.Brockmann section {
+
+}
+
+.Brockmann section {
+
+}
+
+.Brockmann .wo-bgcover .Component:not(:last-of-type):after,
+.Brockmann .and-bgcover .Component:not(:last-of-type):after {
+  content: "";
+  z-index: 11;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  border-right: 1px solid;
+  opacity: .2;
+}
+
+.Brockmann .Headline span{
+  border-bottom: .125em solid;
+  line-height: 1.5;
+  padding: 0;
+}
+
+.Brockmann .Attribution span{
+  border-bottom: .125em solid;
+  padding: 0;
+}
+
+/* MISC
+**************************************/
+
+.inline-block .Group{
+  display: inline-block;
+}
+.overflow-x {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.overflow-x .Component * {
+  white-space: normal;
+}
+
+/* COMPONENTS
+********************/
+.graphical--slider .dots,
+.graphical--slider .arrow-left,
+.graphical--slider .arrow-right{
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+
+  .Bg .Cover {
+    max-height: 80vh;
+  }
+  .w-bgcover:not(.Section--article) .Group,
+  .and-bgcover:not(.Section--article) .Group {
+    padding: 2rem 2vw;
+  }
+
+  .Section--article p blockquote {
+    padding-left: 4rem;
+  }
+
+  .Section--footer .Link {
+    margin: 0 3vw 1.5rem;
+  }
+
+  /* Section Desktop Resets
+  **************************/
+
+  .Section--components-1 p,
+  .Section--components-2 p,
+  .Section--components-3 p {
+    text-align: justify;
+  }
+  .Section:not(.Section--components-1) .Component .Bg {
+    padding: 8px 4px 8px 4px;
+  }
+  .Section.w-bgcover {
+    padding: 0 4px;
+  }
+  .Section--components-1 .Group {
+    width: 50%;
+  }
+  .Section--components-1.w-bgcover .Group {
+    max-width: 66.666%;
+  }
+  .Section--components-1:not(.Section--article).flex-row .Group,
+  .Section--components-1:not(.Section--article).flex-row-reverse .Group {
+    flex: 1 1 33.333%;
+  }
+  .Section:not(.Section--components-1):not(.Section--components-2) .Component .Group {
+    padding: 0 1vw 1vw;
+    width: 100%;
+  }
+  .Section--components-3.w-bgcover.bg-color-none .Component .Group,
+  .Section--components-4.w-bgcover.bg-color-none .Component .Group {
+    padding: 2vw;
+  }
+  .Section--components-5.w-bgcover.bg-color-none .Component .Group,
+  .Section--components-6.w-bgcover.bg-color-none .Component .Group {
+    padding: 1vw;
+  }
+  .Section:not(.Section--components-1).flex-row .Component {
+    flex-flow: column;
+  }
+  .Section:not(.Section--components-1).flex-row-reverse .Component {
+    flex-flow: column-reverse;
+  }
+  .Section .Component {
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+  }
+  .Section {
+    padding: 0;
+    display: flex;
+  }
+
+  // .Section:not(.Section--components-1) .Component:last-of-type .Bg  {
+  //   padding-right: 8px;
+  // }
+
+
+  /* Section w/Multiple Components Width
+  **************************************/
+
+  .Section.Section--components-2 .Component  {
+    width: 50%;
+  }
+  .Section.Section--components-3 .Component  {
+    width: 33.333%;
+  }
+  .Section.Section--components-4 .Component  {
+    width: 25%;
+  }
+  .Section.Section--components-5 .Component  {
+    width: 20%;
+  }
+  .Section.Section--components-6 .Component  {
+    width: 16.6666%;
+  }
+
+  /* Component Padding
+  **************************/
+
+  .Section.component-h-padding-none .Component{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .Section.component-h-padding-xxsmall .Component{
+    padding-left: .25vw;
+    padding-right: .25vw;
+  }
+  .Section.component-h-padding-xsmall .Component{
+    padding-left: .5vw;
+    padding-right: .5vw;
+  }
+  .Section.component-h-padding-small .Component{
+    padding-left: .75vw;
+    padding-right: .75vw;
+  }
+  .Section.component-h-padding-medium .Component{
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  .Section.component-h-padding-large .Component{
+    padding-left: 1.25vw;
+    padding-right: 1.25vw;
+  }
+  .Section.component-h-padding-xlarge .Component{
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+  }
+
+  .Section.component-v-padding-none .Component{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .Section.component-v-padding-xsmall .Component{
+    padding-top: .25vw;
+    padding-bottom: .25vw;
+  }
+  .Section.component-v-padding-small .Component{
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+  }
+  .Section.component-v-padding-medium .Component{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+  }
+  .Section.component-v-padding-large .Component{
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+  }
+  .Section.component-v-padding-xlarge .Component{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+
+  /* Component Flexboxing
+  **************************/
+
+  .flex-row .Component{
+    display: flex;
+    flex-flow: row;
+  }
+
+  .flex-row-reverse .Component{
+    display: flex;
+    flex-flow: row-reverse wrap;
+  }
+  .flex-col-reverse .Component{
+    display: flex;
+    flex-flow: column-reverse;
+  }
+
+  .flex-col .Component{
+    display: flex;
+    flex-flow: column;
+  }
+
+  .flex-wrap .Component{
+    flex-wrap: wrap;
+  }
+
+  .flex-nowrap .Component{
+    flex-wrap: nowrap;
+  }
+
+  /* Title Sizing
+  **************************/
+
+  .Section.Section--components-3 h1  {
+    font-size: 1.75rem;
+  }
+  .Section.Section--components-4 h1  {
+    font-size: 1.5rem !important;
+  }
+  .Section.Section--components-5 h1  {
+    font-size: 1.25rem !important;
+  }
+  .Section.Section--components-6 h1  {
+    font-size: 1rem !important;
+  }
+
+  .Section.title-size-xxsmall h1,
+  .Section.title-size-xxsmall h1{
+    font-size: 1rem;
+  }
+  .Section.title-size-xsmall h1{
+    font-size: 1.25rem;
+  }
+  .Section.title-size-small h1{
+    font-size: 1.5rem;
+  }
+  .Section.title-size-medium h1{
+    font-size: 2rem;
+  }
+
+  .Section.Section--components-1.title-size-large h1,
+  .Section.Section--components-2.flex-col.title-size-large h1{
+    font-size: 3rem;
+  }
+  .Section.Section--components-1.title-size-xlarge:not(.flex-row):not(.flex-row-reverse) h1 {
+    font-size: 5rem;
+    line-height: 1.25 !important;
+  }
+  .Section.Section--components-1.title-size-xxlarge:not(.flex-row):not(.flex-row-reverse) h1,{
+    font-size: 8rem;
+    line-height: 1.25 !important;
+  }
+  // .Section.Section--components-1.title-size-xlarge .Group--textual,
+  // .Section.Section--components-1.title-size-xxlarge .Group--textual {
+  //   max-width: 960px !important;
+  // }
+
+
+  /* Section Padding
+  **************************/
+  .section-h-padding-none .Section{
+    padding: 2vw;
+  }
+  .section-h-padding-xxsmall .Section{
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .section-h-padding-xsmall .Section{
+    padding-left: 4vw;
+    padding-right: 4vw;
+  }
+  .section-h-padding-small .Section{
+    padding-left: 6vw;
+    padding-right: 6vw;
+  }
+  .section-h-padding-medium .Section{
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  .section-h-padding-large .Section{
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+  .section-h-padding-xlarge .Section{
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  .section-v-padding-none .Section{
+    padding: 2vw;
+  }
+  .section-v-padding-xsmall .Section{
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+  }
+  .section-v-padding-small .Section{
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+  .section-v-padding-medium .Section{
+    padding-top: 4vw;
+    padding-bottom: 4vw;
+  }
+  .section-v-padding-large .Section{
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+  }
+  .section-v-padding-xlarge .Section{
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+  }
+
+  .section-h-padding-none .Section--components-1.groups-2{
+    padding: 0;
+  }
+  .section-h-padding-none .Section--components-1.groups-2 .Component{
+    padding: 0;
+  }
+  .section-h-padding-none .Section--components-1.groups-2 .Component .Group--graphical{
+    padding: 0;
+  }
+  .section-h-padding-none .Section--components-1.groups-2 .Component .Group:not(.Group--graphical){
+    padding: 4vw 8vw;
+  }
+
+  /* COMPONENT SPECIFIC
+  **********************/
+
+  /* Square 4
+  **********************/
+
+  .Section.Section--components-1.square-4 {
+    padding: 10vh 20vw;
+  }
+  .Section.Section--components-1.square-4 .Group--graphical{
+    flex: 1 1 50%;
+    padding: 1vw;
+  }
+  .Section.Section--components-1.square-4 .Group--graphical:nth-child(-n+2){
+    align-self: flex-end;
+  }
+  .Section.Section--components-1.square-4 .Group--graphical:nth-child(n+3){
+    align-self: flex-start;
+  }
+
+  /* graphical-column--hanging
+  **********************/
+
+  .Section.Section--components-1.graphical-column--hanging {
+    display: block;
+    padding: 4vw;
+  }
+  .Section.Section--components-1.graphical-column--hanging .Group{
+    display: inline-block;
+    left: 25%
+  }
+  .Section.Section--components-1.graphical-column--hanging .Component{
+    text-align: left;
+  }
+  .Section.Section--components-1.graphical-column--hanging .Group--column{
+    width: 24%;
+    vertical-align:top;
+  }
+
+  /* column-graphical--hanging
+  **********************/
+
+  .Section.Section--components-1.column-graphical--hanging {
+    display: block;
+    // padding: 4vw;
+  }
+  .Section.Section--components-1.column-graphical--hanging .Group{
+    // left: 25%
+  }
+  .Section.Section--components-1.column-graphical--hanging .Component{
+    text-align: left;
+  }
+  .Section.Section--components-1.column-graphical--hanging .Group--graphical{
+    width: 20%;
+    vertical-align:top;
+  }
+  .Section.Section--components-1.column-graphical--hanging .Group--column{
+    width: 33.333%;
+    vertical-align:top;
+    left: 13.333%;
+  }
+  .Section.Section--components-1.column-graphical--hanging .Group--meta{
+    width: 20%;
+    vertical-align:top;
+    left: 26%;
+    text-align: right;
+  }
+
+
+  /* graphical--cols
+  **********************/
+
+
+
+  .Section.Section--components-1.graphical--cols {
+    display: block;
+  }
+  .Section.Section--components-1.graphical--cols .Component{
+    display: block;
+    column-count: 3;
+    column-width: 33.333%;
+    column-gap: 0;
+    column-fill: balance;
+  }
+  .Section.Section--components-1.graphical--cols .Group{
+    display: inline-block;
+    width: 100%;
+    padding: 2vw 1vw 0;
+  }
+  .Section.Section--components-1.graphical--cols .Group--graphical .Image{
+    overflow: visible;
+  }
+
+  .Section.Section--components-1.graphical--2col .Component{
+    column-count: 2;
+    column-width: 50%;
+  }
+  .Section.Section--components-1.graphical--4col .Component{
+    column-count: 4;
+    column-width: 25%;
+  }
+
+
+  /* textual 3col
+  **********************/
+
+  .Section.Section--components-1.col-3 {
+    display: block;
+  }
+  .Section.Section--components-1.col-3 .Group--textual{
+    display: block;
+    column-count: 3;
+    column-width: 33.333%;
+    column-gap: 3vw;
+    column-fill: balance;
+  }
+  .Section.Section--components-1.col-3 .Group{
+    width: 100%;
+    padding: 2vw 1vw 0;
+    margin: auto;
+    max-width: 1280px;
+    // max-width: none;
+  }
+  .Section.Section--components-1.col-3 .Group--meta{
+    position: relative;
+    width: 100%;
+    // text-align: left;
+  }
+
+  /* textual 2col
+  **********************/
+
+  .Section.Section--components-1.col-2 {
+    display: block;
+  }
+  .Section.Section--components-1.col-2 .Group--textual{
+    display: block;
+    column-count: 2;
+    column-width: 33.333%;
+    column-gap: 4vw;
+    column-fill: balance;
+  }
+  .Section.Section--components-1.col-2 .Group{
+    width: 100%;
+    padding: 2vw 1vw 0;
+    margin: auto;
+    // max-width: none;
+  }
+  .Section.Section--components-1.col-2 .Group--meta{
+    position: relative;
+    width: 100%;
+    // text-align: left;
+  }
+
+
+  /* Image Slider
+  **********************/
+
+  .graphical--slider .Component{
+    min-height: 500px;
+  }
+  .graphical--slider .dots{
+    position: absolute;
+    bottom: 4.5vh;
+    left: 50%;
+    transform: translate3d(-50%,0,0);
+    z-index: 10;
+    display: block;
+  }
+  .graphical--slider .dots li{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background: #271325;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 10px;
+    opacity: .2;
+  }
+  .graphical--slider.bg-color-dark .dots li,
+  .graphical--slider.bg-color-neutral .dots li{
+    background: #FFF0BA;
+  }
+  .graphical--slider .dots li.current{
+    opacity: 1;
+  }
+  .graphical--slider .arrow-left,
+  .graphical--slider .arrow-right {
+    position: absolute;
+    display: block;
+    left: 4vw;
+    top: 45%;
+    border: 2px solid;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    padding-right: 1px;
+    font-size: .8rem;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .2s ease-out;
+    z-index: 10;
+  }
+  .graphical--slider .arrow-left:hover,
+  .graphical--slider .arrow-right:hover {
+    background: inherit;
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  .graphical--slider .arrow-left.disabled,
+  .graphical--slider .arrow-right.disabled {
+    opacity: .3;
+    pointer-events: none;
+  }
+  .graphical--slider .arrow-right {
+    right: 4vw;
+    left: auto;
+    padding-right: 0;
+    padding-left: 1px;
+  }
+
+  .graphical--slider .Group--graphical {
+    position: absolute;
+    left: 50%;
+    transform: translate3d(-30%,-50%,0);
+    opacity: 0;
+    width: 100%;
+    top: 50%;
+    max-height: 80vh;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  .graphical--slider .Group--graphical .Image {
+    height: 100%;
+  }
+  .graphical--slider .Group--graphical img {
+    max-height: 60vh;
+    width: auto;
+    max-width: 100%;
+    margin: auto;
+  }
+  .graphical--slider .Group--graphical.current{
+    transform: translate3d(-50%,-50%,0);
+    transition-delay: .3s;
+    opacity: 1;
+  }
+  .graphical--slider .Group--graphical.past{
+    transform: translate3d(-70%,-50%,0);
+  }
+
+  .graphical--slider .Group--graphical .Headline {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding: 1rem 2rem;
+    max-width: 960px;
+    background: #FFF0BA;
+    opacity: 0;
+    transition: .8s ease-out;
+    transform: translateX(-200px);
+  }
+  .graphical--slider.bg-color-dark .Group--graphical .Headline,
+  .graphical--slider.bg-color-neutral .Group--graphical .Headline {
+    background: #271325;
+  }
+  .graphical--slider .Group--graphical.current .Headline {
+    opacity: 1;
+    transition-delay: 0s;
+    transform: translateX(0);
+  }
+  .graphical--slider .Group--graphical.past .Headline{
+    transform: translateX(0);
+  }
+
+
+  /* Image Slider Bottom Left UI
+  **********************/
+
+  .graphical--slider-bottom-ui .dots{
+    bottom: auto;
+    top: 2.1rem;
+  }
+  .graphical--slider-bottom-ui .arrow-left,
+  .graphical--slider-bottom-ui .arrow-right {
+    top: auto;
+    bottom: 3.5vh;
+    left: 50%;
+    margin-left: -47px;
+  }
+  .graphical--slider-bottom-ui .arrow-right {
+    margin-left: 17px;
+  }
+
+  /* Image Slider Top UI
+  **********************/
+
+  .graphical--slider-top-ui .arrow-left,
+  .graphical--slider-top-ui .arrow-right {
+    left: 50%;
+    top: 4.5vh;
+    margin-left: -47px;
+  }
+  .graphical--slider-top-ui .arrow-right {
+    margin-left: 17px;
+  }
+
+  /* Image Slider Fullscreen
+  **********************/
+  .graphical--fullscreen .Component {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .graphical--fullscreen,
+  .graphical--fullscreen .Component,
+  .graphical--fullscreen .Component .Group--graphical,
+  .graphical--fullscreen .Component .Group--graphical .Image,
+  .graphical--fullscreen .Component .Group--graphical .Image img {
+    min-width: 100vw;
+    min-height: calc(100vh - 70px);
+    max-width: none;
+    height: auto;
+    max-height: none;
+    padding: 0;
+    margin: 0;
+  }
+  .graphical--slider.graphical--fullscreen .Component .Group--graphical,
+  .graphical--fullscreen .Component .Group--graphical .Image,
+  .graphical--fullscreen .Component .Group--graphical .Image img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .graphical--slider.graphical--fullscreen .Group--graphical .Headline {
+    bottom: 10vh;
+  }
+  .graphical--fullscreen .dots {
+    background: inherit;
+    padding: .2rem .7rem .7rem;
+    bottom: 1rem;
+    border-radius: 40px;
+  }
+  .graphical--fullscreen .arrow-left,
+  .graphical--fullscreen .arrow-right {
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    background: inherit;
+    // border-color: transparent;
+    color: inherit;
+    opacity: .8;
+  }
+
+  /* Article-graphical--hanging
+  **********************/
+
+  .Section.Section--components-1.article-graphical--hanging {
+    display: block;
+    // padding: 4vw;
+  }
+  .Section.Section--components-1.article-graphical--hanging .Group{
+    // left: 25%
+  }
+  .Section.Section--components-1.article-graphical--hanging .Component{
+    text-align: left;
+  }
+  .Section.Section--components-1.article-graphical--hanging .Group--graphical{
+    width: 20%;
+    left: 3vw;
+    position: fixed;
+    vertical-align:top;
+  }
+  .Section.Section--components-1.article-graphical--hanging .Group--column{
+    // width: 33.333%;
+    vertical-align:top;
+    display: inline-block;
+    left: 25%;
+  }
+  .Section.Section--components-1.article-graphical--hanging .Group--meta{
+    position: fixed;
+    width: 20%;
+    right: 3vw;
+    text-align: right;
+    display: inline-block;
+  }
+}

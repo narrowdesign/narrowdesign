@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<brandsInfo>
+	<photoDelay><![CDATA[3000]]></photoDelay>
+	<randomLanding><![CDATA[1]]></randomLanding>
+	<images>
+		<landingPhoto>
+			<image><![CDATA[http://localhost:8080/redesign/web/latest/images/brands/landing/lnd_prada.jpg]]></image>
+			<sequence><![CDATA[0]]></sequence>
+		</landingPhoto>
+		<landingPhoto>
+			<image><![CDATA[http://localhost:8080/redesign/web/latest/images/brands/landing/lnd_ralphlauren.jpg]]></image>
+			<sequence><![CDATA[1]]></sequence>
+		</landingPhoto>
+		<landingPhoto>
+			<image><![CDATA[http://localhost:8080/redesign/web/latest/images/brands/landing/lnd_vogue.jpg]]></image>
+			<sequence><![CDATA[2]]></sequence>
+		</landingPhoto>
+		<landingPhoto>
+			<image><![CDATA[http://localhost:8080/redesign/web/latest/images/brands/landing/lnd_nike.jpg]]></image>
+			<sequence><![CDATA[3]]></sequence>
+		</landingPhoto>
+		<landingPhoto>
+			<image><![CDATA[http://localhost:8080/redesign/web/latest/images/brands/landing/lnd_akny.jpg]]></image>
+			<sequence><![CDATA[4]]></sequence>
+		</landingPhoto>
+		<landingPhoto>
+			<image><![CDATA[http://localhost:8080/redesign/web/latest/images/brands/landing/lnd_ralphlauren.jpg]]></image>
+			<sequence><![CDATA[5]]></sequence>
+		</landingPhoto>
+	</images>
+	<styleFileUrl><![CDATA[TriggerStyleFile]]></styleFileUrl>
+	<storeLocatorUrl><![CDATA[http://localhost:8080/redesign/web/latest/stores.jsp?brandId=]]></storeLocatorUrl>
+	<catalogUrl><![CDATA[http://localhost:8080/redesign/web/latest/catalog.jsp?brandId=]]></catalogUrl>
+</brandsInfo>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CatVideos rootPath="SensoryZoneFLVs/">
+	<HomeVideos directory="home/">
+		<video fileName="SZ_HOME_001.flv" x="0" y="156" />
+		<video fileName="SZ_HOME_002.flv" x="0" y="156" />
+		<video fileName="SZ_HOME_003.flv" x="0" y="156" />
+		<video fileName="SZ_HOME_004.flv" x="0" y="156" />
+		<video fileName="SZ_HOME_005.flv" x="0" y="156" />
+		<video fileName="SZ_HOME_006.flv" x="0" y="156" />
+	</HomeVideos>
+	<InteriorVideos>
+		<ActiveVids directory="intActive/">
+			<video fileName="SZ_Interior_Active_001.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_002.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_003.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_004.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_005.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_006.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_007.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_008.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_009.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_010.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_011.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_012.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_013.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_014.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_015.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_016.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_017.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_018.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_019.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_020.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_021.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_022.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_023.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Active_024.flv" x="0" y="156" />
+		</ActiveVids>
+		<IdleVids directory="intIdle/">
+			<video fileName="SZ_Interior_Idle.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Idle2.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Idle3.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Idle4.flv" x="0" y="156" />
+			<video fileName="SZ_Interior_Idle5.flv" x="0" y="156" />
+		</IdleVids>
+	</InteriorVideos>
+</CatVideos>
