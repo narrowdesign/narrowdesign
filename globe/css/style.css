@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(#133962, #0A2846);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+  color: white;
+}
+
+.Globe {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin: auto;
+  width: 100vh;
+  height: 100vh;
+  cursor: grab;
+}
+
+.Region__list {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-gap: 20px;
+}
+
+.Region__btn {
+  padding: 12px 30px 24px;
+  background: #1E3859;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid #1E3859;
+  transition: 0.2s background;
+  font-size: 1.3rem;
+  opacity: 0;
+  animation: fade-in 1s forwards;
+}
+
+.Region__btn:hover,
+.Region__btn--isActive {
+  border: 2px solid;
+}
+
+.Region__btn:first-of-type {
+  color: #7777F7;
+  animation-delay: 0.2s;
+}
+
+.Region__btn:nth-of-type(2) {
+  color: #67E1E2;
+  animation-delay: 0.4s;
+}
+
+.Region__btn:nth-of-type(3) {
+  color: #EE7B77;
+  animation-delay: 0.6s;
+}
+
+.Region__btn:nth-of-type(4) {
+  color: #F3CB61;
+  animation-delay: 0.8s;
+}
+
+.Region__percent {
+  color: white;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.is-globe-dragging .Globe {
+  cursor: grabbing;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  } 100% {
+    opacity: 1;
+  }
+}
