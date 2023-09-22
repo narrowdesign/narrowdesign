@@ -1,0 +1,32 @@
+.isActive {
+  opacity: 1;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: calc(29vw + 29vh);
+  height: calc(18vw + 18vh);
+  transform: translate(-50%, 50%);
+  backdrop-filter: blur(6px);
+  z-index: 0;
+  animation: fadein 3.8s ease-out forwards 0.2s;
+}
+
+@keyframes fadein {
+  0% {
+    transform: translate(-50%, 50%);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}

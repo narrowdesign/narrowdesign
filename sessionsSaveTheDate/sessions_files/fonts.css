@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "sohne-mono";
+  font-style: normal;
+  src: url(./sohne-light.woff2) format("woff2");
+  font-display: block;
+}
