@@ -50,7 +50,7 @@ function initCards() {
   const cards = document.querySelector('.cards')
 
   cardList.forEach((card, i) => {
-    card.style.transform =  `translate3d(-50%, -50%, calc(-${i * 200}px))`
+    card.style.transform =  `translate3d(-50%, -50%, calc(-${i * 300}px))`
     // card.style.filter = `blur(${i * 1}px)`;
   })
 
@@ -61,7 +61,7 @@ function initCards() {
     let deltaY = e?.deltaY || 0;
     scrollY += deltaY;
     cardList.forEach((card, i) => {
-      card.style.transform =  `translate3d(-50%, -50%, calc(${-i * 200 + scrollY}px)) rotateX(${(i - scrollY / 200) * 10}deg)`
+      card.style.transform =  `translate3d(-50%, -50%, calc(${-i * 300 + scrollY}px)) rotateX(${(i - scrollY / 300) * 30 - 20}deg)`
       // card.style.backgroundColor = `rgb(${Math.floor(255 - i * 10)},${Math.floor(255 - i * 10)},${Math.floor(255 - i * 10)})`
       
     })
