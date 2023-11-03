@@ -4,6 +4,14 @@ body {
   color: white;
   width: 100vw;
   height: 100vh;
+}
+
+.city {
+  margin: 0;
+  background: #00061C;
+  color: white;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
   perspective: 100vw;
   transform-style: preserve-3d;
@@ -15,6 +23,7 @@ body {
 }
 
 .container {
+  position: relative;
   width: 100%;
   height: 100vh;
   animation: slideIn 2s ease-in-out forwards;
@@ -58,20 +67,29 @@ body {
   left: 50%;
   top: 60%;
   width: 14%;
-  height: 14%;
   transform: translateX(-50%) translateY(-50%) translateZ(300px);
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 video {
   pointer-events: auto;
   cursor: pointer;
-  opacity: 0.5;
+  opacity: 0.8;
   transition: opacity 500ms;
 }
 
-video:hover {
+.left:hover video {
   opacity: 1;
+}
+
+.left:hover .logo {
+  filter: blur(0);
+}
+.right:hover .logo {
+  filter: blur(0);
+}
+.center:hover .logo {
+  filter: blur(0);
 }
 
 .left .videoContainer {
@@ -80,20 +98,57 @@ video:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-mask-image:url(images/screen1.svg);
+  -webkit-mask-image:url(images/left.svg);
   -webkit-mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
 }
 
-.left video {
+.left .videoContainer video {
   position: relative;
-  left: 0;
+  left: -2vw;
   top: 50%;
-  width: 35.34vw;
-  height: 18vw;
+  width: 40.34vw;
+  height: 20vw;
   object-fit: cover;
   transform: perspective(100vw) translateY(-100%) translateX(0%) rotateX(10deg) rotateY(50deg) rotateZ(12deg);
+}
+
+.left .videoContainer2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image:url(images/left2.svg);
+  -webkit-mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+}
+
+
+.left .videoContainer2 img {
+  position: relative;
+  left: -2vw;
+  top: 50%;
+  width: 40.34vw;
+  height: 20vw;
+  object-fit: cover;
+  transform: perspective(100vw) translateY(-40%) translateX(0%) rotateX(10deg) rotateY(50deg) rotateZ(12deg);
+}
+
+.logo {
+  filter: blur(4px);
+  transition: filter 500ms;
+  pointer-events: auto;
+}
+
+.left .logo {
+  position: absolute;
+  left: 22%;
+  top: 55%;
+  width: 17%;
+  transform: perspective(100vw) translateX(-20%) translateY(-50%) translateZ(300px) rotateY(42deg) rotateX(10deg) skewY(20deg);
 }
 
 .center {
@@ -114,10 +169,10 @@ video:hover {
 
 .center video {
   position: relative;
-  width: 6.88vw;
-  height: 4.0vw;
+  width: 16.7vw;
+  height: 11.2vw;
   object-fit: cover;
-  transform: perspective(100vw) translateX(calc(50vw + 20%)) translateY(calc(50vh - 37%)) skewY(-5.2deg);
+  transform: perspective(100vw) translateX(calc(50vw - 14%)) translateY(calc(50vh - 60%)) rotate(0) rotateY(343deg) rotateX(18deg) rotateZ(1deg) skewY(-10.5deg);
 }
 
 .right .videoContainer {
@@ -126,7 +181,7 @@ video:hover {
   top: 0;
   width: 100%;
   height: 100%;
-  -webkit-mask-image:url(images/screen3.svg);
+  -webkit-mask-image:url(images/right.svg);
   -webkit-mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: cover;
@@ -136,10 +191,18 @@ video:hover {
   position: relative;
   left: 50%;
   top: 50%;
-  width: 16.34vw;
-  height: 6vw;
+  width: 22.34vw;
+  height: 8.9vw;
   object-fit: cover;
-  transform: perspective(100vw) translateY(-210%) translateX(100%) rotateX(10deg) rotateY(-50deg) rotateZ(-10deg);
+  transform: perspective(100vw) translateY(-155%) translateX(75%) rotateX(10deg) rotateY(-50deg) skewY(-14deg);
+}
+
+.right .logo {
+  position: absolute;
+  right: 4%;
+  top: 40%;
+  width: 19%;
+  transform: perspective(100vw) translateX(-50%) translateY(-50%) translateZ(300px) rotateY(-40deg) skewY(-20deg);
 }
 
 .bg {
@@ -164,6 +227,55 @@ video:hover {
   }
 }
 
+.timeline {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 500vh;
+  top: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.cards {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 50vh;
+  left: 50%;
+  perspective: 100vw;
+  transform: perspective(100vw) rotateX(-20deg);
+  transform-style: preserve-3d;
+}
+
+.cards h1 {
+  font-family: monospace;
+  letter-spacing: 0.03rem;
+  font-size: 2rem;
+}
+
+.card {
+  min-width: 500px; 
+  max-width: 720px;
+  border-radius: 20px;
+  min-height: 300px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  overflow: hidden;
+/*   opacity: 0.8; */
+  background: white;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 30px #22111533;
+}
+.card img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 105%;
+  object-fit: cover;
+}
+
 .isWhiteRabbit .center {
   transition: transform 2s ease-in-out;
   transform: scale(2);
@@ -171,7 +283,7 @@ video:hover {
 
 .isWhiteRabbit .center video {
   transform-origin: 50% 50%;
-  transform: translateX(calc(50vw + -50%)) translateY(calc(50vh + -50%)) scale(4);
+  transform: translateX(calc(50vw + -50%)) translateY(calc(50vh + -50%)) scale(3);
   transition: transform 2000ms ease-in-out;
   opacity: 1;
 }
@@ -199,4 +311,10 @@ video:hover {
 
 .isWhiteRabbit {
   overflow: visible;
+}
+
+.isWhiteRabbit .cards {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s;
 }

@@ -23,7 +23,6 @@ function handleMouseMove(e) {
   const xDeg = (xPercent * 360 - 180) * -0.01
   const yDeg = (yPercent * 360 - 180) * -0.005
 
-  
   scene.style.transform = `rotateX(${-yDeg}deg) rotateY(${xDeg}deg)`
 }
 
@@ -45,3 +44,28 @@ let progress = 0;
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
+
+function initCards() {
+  const cardList = document.querySelectorAll('.card')
+  const cards = document.querySelector('.cards')
+
+  cardList.forEach((card, i) => {
+    card.style.transform =  `translate3d(-50%, -50%, calc(-${i * 200}px))`
+    // card.style.filter = `blur(${i * 1}px)`;
+  })
+
+  document.addEventListener('wheel', handleWheel)
+  let scrollY = -1000;
+  handleWheel()
+  function handleWheel(e) {
+    let deltaY = e?.deltaY || 0;
+    scrollY += deltaY;
+    cardList.forEach((card, i) => {
+      card.style.transform =  `translate3d(-50%, -50%, calc(${-i * 200 + scrollY}px)) rotateX(${(i - scrollY / 200) * 10}deg)`
+      // card.style.backgroundColor = `rgb(${Math.floor(255 - i * 10)},${Math.floor(255 - i * 10)},${Math.floor(255 - i * 10)})`
+      
+    })
+  }
+}
+
+initCards()
