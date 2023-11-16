@@ -74,7 +74,7 @@ body {
 video {
   pointer-events: auto;
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
   transition: opacity 500ms;
 }
 
@@ -231,10 +231,30 @@ video {
   left: 0;
   top: 0;
   width: 100%;
-  height: 500vh;
+  height: 1200vh;
   top: 0;
   position: relative;
   z-index: -1;
+}
+
+.timeline__title {
+  position: absolute;
+  left: 50%;
+  top: -400px;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: monospace;
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  color: #fff;
+  font-weight: 100;
+}
+
+.timelineItem {
+  position: absolute;
+  left: 360px;
+  width: calc(50vw - 440px);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .cards {
@@ -244,7 +264,7 @@ video {
   top: 50vh;
   left: 50%;
   perspective: 100vw;
-  transform: perspective(100vw) rotateX(-20deg);
+  transform: perspective(100vw);
   transform-style: preserve-3d;
 }
 
@@ -255,16 +275,15 @@ video {
 }
 
 .card {
-  min-width: 500px; 
-  max-width: 720px;
+  width: 500px; 
   border-radius: 20px;
-  min-height: 300px;
+  height: 400px;
   position: absolute;
   top: 0;
   left: 50%;
   overflow: hidden;
 /*   opacity: 0.8; */
-  background: white;
+  background: black;
   transform: translate(-50%, -50%);
   box-shadow: 0 3px 30px #22111533;
 }

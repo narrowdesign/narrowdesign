@@ -17,13 +17,10 @@ function handleMouseMove(e) {
   const width = window.innerWidth
   const height = window.innerHeight
 
-  const xPercent = x / width
-  const yPercent = y / height
+  const xPercent = x / width - 0.5;
+  const yPercent = y / height - 0.5;
 
-  const xDeg = (xPercent * 360 - 180) * -0.01
-  const yDeg = (yPercent * 360 - 180) * -0.005
-
-  scene.style.transform = `rotateX(${-yDeg}deg) rotateY(${xDeg}deg)`
+  scene.style.transform = `translate(${xPercent * -window.innerWidth / 10}px, ${yPercent * -window.innerHeight / 10}px)`
 }
 
 function handleScroll(e) {
@@ -51,18 +48,17 @@ function initCards() {
 
   cardList.forEach((card, i) => {
     card.style.transform =  `translate3d(-50%, -50%, calc(-${i * 300}px))`
-    // card.style.filter = `blur(${i * 1}px)`;
   })
 
   document.addEventListener('wheel', handleWheel)
-  let scrollY = -1000;
   handleWheel()
   function handleWheel(e) {
-    let deltaY = e?.deltaY || 0;
-    scrollY += deltaY;
+    const scrollY = window.scrollY;
     cardList.forEach((card, i) => {
-      card.style.transform =  `translate3d(-50%, -50%, calc(${-i * 300 + scrollY}px)) rotateX(${(i - scrollY / 300) * 30 - 20}deg)`
-      // card.style.backgroundColor = `rgb(${Math.floor(255 - i * 10)},${Math.floor(255 - i * 10)},${Math.floor(255 - i * 10)})`
+      const z = -i * 300 - 1000 + scrollY;
+      const y = Math.cos(Math.max(z, 0) * 0.004) * -300 + 300;
+      const rotX = (Math.cos(Math.max(z, 0) * 0.005) - 1) * 35;
+      card.style.transform =  `translate3d(-50%, calc(-50% + ${y}px), ${z}px) rotateX(${rotX}deg)`
       
     })
   }
