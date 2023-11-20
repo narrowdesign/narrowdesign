@@ -241,12 +241,31 @@ video {
   position: absolute;
   left: 50%;
   top: -400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   transform: translateX(-50%) translateY(-50%);
   font-family: monospace;
   font-size: 2rem;
   letter-spacing: 0.4rem;
   color: #fff;
   font-weight: 100;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  transition: transform 300ms;
+  text-align: center;
+}
+
+.timeline__dates {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  transition: transform 300ms;
+  white-space: nowrap;
 }
 
 .timelineItem {
@@ -276,23 +295,41 @@ video {
 
 .card {
   width: 500px; 
-  border-radius: 20px;
   height: 400px;
   position: absolute;
   top: 0;
   left: 50%;
-  overflow: hidden;
+  border-radius: 20px;
 /*   opacity: 0.8; */
   background: black;
   transform: translate(-50%, -50%);
-  box-shadow: 0 3px 30px #22111533;
 }
+
+.card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  border-radius: 20px;
+  height: 105%;
+  box-shadow: 0 3px 50px #99da;
+  transition: opacity 300ms;
+  opacity: 0;
+}
+
+.card.isActive::after {
+  opacity: 1;
+}
+
 .card img {
   display: block;
   position: relative;
   width: 100%;
   height: 105%;
   object-fit: cover;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .isWhiteRabbit .center {
