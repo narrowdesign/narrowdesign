@@ -4,6 +4,7 @@ body {
   color: white;
   width: 100vw;
   height: 100vh;
+  font-family: monospace;
 }
 
 .city {
@@ -238,16 +239,15 @@ video {
 }
 
 .timeline__title {
-  position: absolute;
+  position: sticky;
   left: 50%;
-  top: -400px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  transform: translateX(-50%) translateY(-50%);
   font-family: monospace;
-  font-size: 2rem;
+  font-size: 1rem;
   letter-spacing: 0.4rem;
   color: #fff;
   font-weight: 100;
@@ -269,11 +269,12 @@ video {
 }
 
 .timelineItem {
-  position: absolute;
-  left: 360px;
-  width: calc(50vw - 440px);
-  top: 50%;
-  transform: translateY(-50%);
+  position: sticky;
+  left: calc(50% + 400px);
+  width: calc(50vw - 480px);
+  top: 60px;
+  margin-top: -45px;
+  line-height: 1.5;
 }
 
 .cards {
@@ -316,6 +317,22 @@ video {
   box-shadow: 0 3px 50px #99da;
   transition: opacity 300ms;
   opacity: 0;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -130px;
+  height: 150px;
+  width: 1px;
+  background: #fff;
+  transform: scaleY(0);
+  transition: transform 800ms;
+}
+
+.card.isActive::before {
+  transform: scaleY(1);
 }
 
 .card.isActive::after {
