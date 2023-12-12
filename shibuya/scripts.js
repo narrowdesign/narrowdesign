@@ -21,6 +21,8 @@ function initCards() {
 
   let mouseX = 0;
   let mouseY = 0;
+  let currentX = 0;
+  let currentY = 0;
 
   let width = window.innerWidth
   let height = window.innerHeight
@@ -28,9 +30,29 @@ function initCards() {
   function handleMouseMove(e) {
     mouseX = e.clientX / width - 0.5;;
     mouseY = (e.clientY) / height - 0.5;
-
-    scene.style.transform = `translate(${mouseX * -width / 10}px, ${mouseY * -height / 10}px)`
     handleWheel()
+
+    // blur leftEl, centerEl, rightEl based on distance from mouseX
+    const leftDistance = mouseX + 0.25
+    const centerDistance = Math.abs(mouseX)
+    const rightDistance = (mouseX - 0.25) * -1
+    const maxBlur = 3;
+    const blurLeft = Math.min(maxBlur, Math.floor(leftDistance * 40) * 0.2)
+    const blurCenter = Math.min(maxBlur, Math.floor(centerDistance * 40) * 0.2)
+    const blurRight = Math.min(maxBlur, Math.floor(rightDistance * 40) * 0.2)
+    leftEl.style.filter = `blur(${blurLeft}px)`
+    centerEl.style.filter = `blur(${blurCenter}px)`
+    rightEl.style.filter = `blur(${blurRight}px)`
+  }
+
+  function animate() {
+    const targX = mouseX * -width / 10;
+    const targY = mouseY * -height / 10;
+    currentX += 0.05 * (targX - currentX);
+    currentY += 0.05 * (targY - currentY);
+
+    scene.style.transform = `translate(${Math.floor(currentX)}px, ${Math.floor(currentY)}px)`
+    requestAnimationFrame(animate)
   }
 
   function handleResize() {
@@ -80,6 +102,8 @@ function initCards() {
       }
     })
   }
+
+  animate()
 }
 
 initCards()
