@@ -128,12 +128,12 @@ video {
 
 .left .videoContainer video {
   position: relative;
-  left: -2vw;
+  left: -4vw;
   top: 50%;
-  width: 40.34vw;
-  height: 20vw;
+  width: 42.34vw;
+  height: 21vw;
   object-fit: cover;
-  transform: perspective(100vw) translateY(-100%) translateX(0%) rotateX(10deg) rotateY(50deg) rotateZ(12deg);
+  transform: perspective(100vw) translateY(-100%) translateX(0%) rotateX(10deg) rotateY(50deg) rotateZ(10deg);
 }
 
 .left .videoContainer2 {
@@ -177,10 +177,10 @@ video {
 
 .center video {
   position: relative;
-  width: 16.7vw;
-  height: 11.2vw;
+  width: 16.9vw;
+  height: 11.6vw;
   object-fit: cover;
-  transform: perspective(100vw) translateX(calc(50vw - 14%)) translateY(calc(50vh - 60%)) rotate(0) rotateY(343deg) rotateX(18deg) rotateZ(1deg) skewY(-10.5deg);
+  transform: perspective(100vw) translateX(calc(50vw - 15%)) translateY(calc(50vh - 59%)) rotate(0) rotateY(343deg) rotateX(18deg) rotateZ(1deg) skewY(-10.5deg);
 }
 
 .right .videoContainer {
@@ -202,7 +202,7 @@ video {
   width: 22.34vw;
   height: 8.9vw;
   object-fit: cover;
-  transform: perspective(100vw) translateY(-155%) translateX(75%) rotateX(10deg) rotateY(-50deg) skewY(-14deg);
+  transform: perspective(100vw) translateY(-156%) translateX(75%) rotateX(10deg) rotateY(-50deg) skewY(-14deg);
 }
 
 .right .logo {
