@@ -640,6 +640,7 @@ function init() {
     inspectStyleDisplayedTimeout: null,
     scrollTimeout: null,
     lastWheelTimestamp: 0,
+    lastDeltaY: 0,
     wheelRotation: 0,
     mouseStartX: windowState.centerX,
     mouseStartY: windowState.centerY,
@@ -925,7 +926,10 @@ function init() {
     e.stopPropagation();
     if (!userState.selectedElement || userState.isEditMode) return;
     displayScrollDisplay(e);
-    let delta = e.deltaY * 0.1;
+    const precisionMin = 0.1;
+    userState.lastDeltaY = e.deltaY;
+    const precision = precisionMin + Math.abs(e.deltaY * 0.01);
+    let delta = e.deltaY * precision;
     updateStyleProp(delta);
     return false;
   }
