@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My HTML Page</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      height: 5000px;
+    }
+    canvas {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+    <script>
+      const winState = {
+        totalScrollRange: document.documentElement.scrollHeight - window.innerHeight,
+        scaleScrollRange: 0,
+        rotationScrollRange: 0,
+      }
+      // Create a scene
+      const scene = new THREE.Scene();
+
+      // Create a camera
+      const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+      camera.position.z = 5;
+
+      // Create a renderer
+      const renderer = new THREE.WebGLRenderer({
+        antialiased: true
+      });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(window.devicePixelRatio);
+      
+      document.body.appendChild(renderer.domElement);
+      const sphere = new THREE.Group();
+
+      for (let i = 0; i < 6;i++) {
+        // create a taurus
+        const geometry = new THREE.TorusGeometry(1, 0.003, 16, 100);
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const torus = new THREE.Mesh(geometry, material);
+        torus.rotation.x = Math.PI * i / 6;
+        // torus.scale.set(1, 0.003, 1);
+        // rotate the torus to make it look like a sphere
+
+        sphere.add(torus);
+      }
+      scene.add(sphere);
+      sphere.rotation.z = -Math.PI / 2;
+      sphere.rotation.x = Math.PI / 2;
+      
+      function handleResize() {
+        winState.totalScrollRange = document.documentElement.scrollHeight - window.innerHeight;
+        winState.scaleScrollRange = [0, winState.totalScrollRange / 5];
+        winState.rotationScrollRange = [winState.scaleScrollRange[1], winState.totalScrollRange / 5];
+      }
+
+      // Create an animation loop
+      function animate() {
+        requestAnimationFrame(animate);
+        let scaleScrollProgress = Math.min(1, Math.max(0, (document.documentElement.scrollTop - winState.scaleScrollRange[0])) / winState.scaleScrollRange[1]);
+        let rotationScrollProgress = Math.min(1, Math.max(0, (document.documentElement.scrollTop - winState.rotationScrollRange[0])) / winState.rotationScrollRange[1]);
+
+        let rotY = -Math.PI / 2 + Math.PI * rotationScrollProgress;
+        sphere.children.forEach((circle, j) => {
+          circle.scale.set(1, 0, 1);
+          circle.rotation.y = rotationScrollProgress * Math.PI / 2;
+          if (j === 0) {
+            circle.scale.set(1, scaleScrollProgress, 1);
+          }
+          if (rotationScrollProgress > 0) {}
+        })
+        sphere.rotation.y = document.documentElement.scrollTop * 0.01;
+        // sphere.rotation.x = -Math.PI / 2 + Math.PI * rotationScrollProgress;
+        
+        // Render the scene
+        renderer.render(scene, camera);
+      }
+
+      // Start the animation loop
+      handleResize();
+      animate();
+      
+    </script>
+</body>
+</html>

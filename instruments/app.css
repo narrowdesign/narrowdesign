@@ -632,8 +632,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   border-bottom: 1px dotted;
 }
 
-body:not(.App--isInstrument) .AppDisplay,
-.AppDisplay {
+body:not(.App--isInstrument) .AppDisplay {
   display: none !important;
 }
 
