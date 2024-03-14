@@ -29,7 +29,6 @@ const GLOBE_SEGMENTS_MIN = 30;
 const GLOBE_FILL_OPACITY = 0.94;
 const GLOBE_OPACITY_INCREMENT = 0.005;
 const GLOBE_ROT_INCREMENT_START = 0.002;
-const GLOBE_ROT_INCREMENT_END = 0.0006;
 const MIN_ROT_X = Math.PI * -0.5;
 const MAX_ROT_X = Math.PI * 0.5;
 const SPIN_COEFFICIENT = 0.94;
@@ -38,8 +37,7 @@ const MOBILE_MAX_WIDTH = 512;
 const MAX_LINE_COUNT = 5;
 const LINE_INTERVAL = 1000;
 const LINE_LIFESPAN = 4000;
-const REGION_LIST = ['la','eu','ap','na'];
-const SESSIONS_REGION_LIST = ['xx', 'ae', 'vn', 'br', 'th', 'zm'];
+const SESSIONS_COUNTRY_LIST = ['br', 'jp', 'de', 'mx', 'ca', 'zm'];
 const ARC_TEXTURES = [
   'https://images.ctfassets.net/fzn2n1nzq965/21KQEBsC7QG4IYZV5RuhDz/d3180249af4082f42a22cb5f3ccc8e09/arc-texture-1.png',
   'https://images.ctfassets.net/fzn2n1nzq965/22Apsqcv7VIDzlCuSOEzPQ/2194c40aac8bced46d48582d5d712bf6/arc-texture-2.png',
@@ -48,10 +46,6 @@ const ARC_TEXTURES = [
 ];
 const DISC_TEXTURE =
   'https://images.ctfassets.net/fzn2n1nzq965/2wn0qc94lx6dbfTVt1vpuO/cf3e66080a3cddeb7275a8fefbca5134/disc_texture.png';
-
-const DOT_TEXTURE =
-  'https://images.ctfassets.net/fzn2n1nzq965/2x39cGwNIl9mLPo4i9KeQJ/2ce214b003a715a330f0c519a4eb32d8/dots.png';
-// 'https://images.ctfassets.net/fzn2n1nzq965/5SJq4UdRQcM9aIGVAXeXAT/719b380661ef915870ab57382573ed37/dots_uniform.png';
 
 export class Globe {
   eastCountryList = ['my', 'sg', 'au', 'nz', 'hk', 'jp', 'in'];
@@ -133,7 +127,7 @@ export class Globe {
   moveY = 0;
   tension = 1;
   globeRAF = false;
-  regionEls = document.querySelectorAll('.Region__btn');
+  countryEls = document.querySelectorAll('.Country__btn');
 
   initialized = false;
 
@@ -296,23 +290,7 @@ export class Globe {
       this.globeSegments,
     );
     this.globeFill = new Mesh(this.globeFillSphere, this.globeFillMaterial);
-
-    // const globeDotMaterial = new MeshLambertMaterial({
-    //   map: this.dotTexture,
-    //   transparent: true,
-    //   opacity: 0.5,
-    //   color: 0xa5abff,
-    // });
-
-    // const globeDotSphere = new SphereGeometry(
-    //   this.globeRadius + 0.1,
-    //   this.globeSegments,
-    //   this.globeSegments,
-    // );
-    // this.globeDots = new Mesh(globeDotSphere, globeDotMaterial);
-
     this.globeMap.add(this.globeFill);
-    // this.globeMap.add(this.globeDots);
   }
 
   addGlobeMap() {
@@ -588,22 +566,24 @@ export class Globe {
     window.addEventListener('touchmove', this.handleTouchMove);
     window.addEventListener('touchend', this.handleMouseUp);
     this.el.addEventListener('mousedown', this.handleMouseDown);
-    this.regionEls.forEach((btn, i) => {
+    this.countryEls.forEach((btn, i) => {
       btn.addEventListener('click', (e) => {
         this.isAutoRotating = false;
-        if (i === 0) { // nothing
-        } else if (i === 1) { // uae
+        // make an api call to a service on https://google.com/latlng that returns the lat/lng of any location I input so I can rotate to it
+        // look up any country by name or abbreviation
+        console.log(btn.innerText)
+        if (btn.innerText === "Mexico") {
           this.rotateGlobeTo(0.3, 0.7);
-        } else if (i === 2) { // asia
+        } else if (btn.innerText === "Canada") {
+          this.rotateGlobeTo(0.3, 0.7);
+        } else if (btn.innerText === "Brazil") { 
+          this.rotateGlobeTo(0.3, 0.7);
+        } else if (btn.innerText === "Japan") {
           this.rotateGlobeTo(-0.2, -0.6)
-        } else if (i === 3) { // brazil
+        } else if (btn.innerText === "Germany") {
           this.rotateGlobeTo(-0.3, 2.7)
-        } else if (i === 4) { // thai/ind/ind
-          this.rotateGlobeTo(-0.2, -0.45)
-        } else if (i === 5) { // africa
-          this.rotateGlobeTo(0.1, 1.2)
         }
-        this.activateRegion(i);
+        this.activateCountry(i);
       })
     })
   }
@@ -639,12 +619,12 @@ export class Globe {
       this.globeRotationIncrement;
   }
 
-  activateRegion(region) {
-    this.globeDots.activateCountry(SESSIONS_REGION_LIST[region]);
-    if (document.querySelector('.Region__btn--isActive')) {
-      document.querySelector('.Region__btn--isActive').classList.remove('Region__btn--isActive');
+  activateCountry(country) {
+    this.globeDots.activateCountry(SESSIONS_COUNTRY_LIST[country]);
+    if (document.querySelector('.Country__btn--isActive')) {
+      document.querySelector('.Country__btn--isActive').classList.remove('Country__btn--isActive');
     }
-    document.querySelectorAll('.Region__btn')[region].classList.add('Region__btn--isActive');
+    document.querySelectorAll('.Country__btn')[country].classList.add('Country__btn--isActive');
   }
 
   rotateGlobeTo(x, y) {

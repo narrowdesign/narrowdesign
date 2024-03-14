@@ -16,7 +16,7 @@ body {
   cursor: grab;
 }
 
-.Region__list {
+.Country__list {
   position: absolute;
   left: 0;
   top: 0;
@@ -24,7 +24,7 @@ body {
   grid-gap: 20px;
 }
 
-.Region__btn {
+.Country__btn {
   padding: 12px 30px 24px;
   background: #1E3859;
   border-radius: 6px;
@@ -36,32 +36,32 @@ body {
   animation: fade-in 1s forwards;
 }
 
-.Region__btn:hover,
-.Region__btn--isActive {
+.Country__btn:hover,
+.Country__btn--isActive {
   border: 2px solid;
 }
 
-.Region__btn:first-of-type {
+.Country__btn:first-of-type {
   color: #7777F7;
   animation-delay: 0.2s;
 }
 
-.Region__btn:nth-of-type(2) {
+.Country__btn:nth-of-type(2) {
   color: #67E1E2;
   animation-delay: 0.4s;
 }
 
-.Region__btn:nth-of-type(3) {
+.Country__btn:nth-of-type(3) {
   color: #EE7B77;
   animation-delay: 0.6s;
 }
 
-.Region__btn:nth-of-type(4) {
+.Country__btn:nth-of-type(4) {
   color: #F3CB61;
   animation-delay: 0.8s;
 }
 
-.Region__percent {
+.Country__percent {
   color: white;
   font-size: 5rem;
   font-weight: 600;

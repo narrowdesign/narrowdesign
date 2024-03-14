@@ -15,15 +15,14 @@ import {
 const DOT_W = 1.8;
 
 const COUNTRY_MAPPING = [
-  [0, 'cccccc', 'xx'],
-  [1, 'ff00ff', 'ae'],
-  [2, 'ffffff', 'vn'],
-  [3, 'ff0000', 'br'],
-  [4, '00ff00', 'th'],
-  [5, '0000ff', 'zm'],
+  [0, 'cc6666', 'br'],
+  [1, 'ffffff', 'jp'],
+  [2, 'ccc53', 'de'],
+  [3, 'ff9999', 'mx'],
+  [4, '66662a', 'ca'],
 ];
 
-const IMAGE_PATH = './img/map-sessions.png';
+const IMAGE_PATH = './img/map_colors_fill.png';
 
 function getImageData(loadedImage) {
   const imageW = loadedImage.width;
@@ -62,6 +61,9 @@ function getCountryId([r, g, b, _]) {
     .map((color) => color.toString(16).padStart(2, '0'))
     .join('');
   const cid = COUNTRY_MAPPING.find(([_, id]) => id === hex) || [0, hex, 'xx'];
+  if (cid[2] !== 'xx') {
+    console.log(cid)
+  }
   return cid;
 }
 
@@ -273,9 +275,11 @@ export class GlobeDots extends Group {
   }
 
   activateCountry(country) {
+    console.log(country)
     let countryValue = COUNTRY_MAPPING.findIndex(
       ([, , mappingCountry]) => country === mappingCountry,
     );
+    console.log(countryValue)
     // if (countryValue === this.material.uniforms.activeCountry.value) return;
     this.activationTime = performance.now();
     this.material.uniforms.prevCountry.value = this.material.uniforms.activeCountry.value;
