@@ -6,6 +6,18 @@ body {
   color: white;
 }
 
+.Prompt {
+  border: none;
+  background: #3f5177;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: fixed;
+  bottom: 30px;
+  transform: translateX(calc(50vw - 50%));
+}
+
 .Globe {
   position: relative;
   left: 0;

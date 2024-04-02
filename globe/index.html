@@ -36,6 +36,38 @@
       </div>
     </div>
   </div>
+  <form id="promptForm">
+    <input id="prompt" name="prompt" type="text" class="Prompt" placeholder="What would you like to see?">
+    <input type="submit" value="Submit">
+  </form>
+  
+  <div id="response"></div>
+  
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('promptForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+  
+      var prompt = document.getElementById('prompt').value;
+  
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', 'https://globe-prompt.vercel.app/prompt.js', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            var response = JSON.parse(xhr.responseText);
+            document.getElementById('response').innerHTML = '<p>' + response.completion + '</p>';
+          } else {
+            console.error('Request failed: ' + xhr.status);
+            document.getElementById('response').innerHTML = '<p>An error occurred. Please try again later.</p>';
+          }
+        }
+      };
+      xhr.send(JSON.stringify({ prompt: prompt }));
+    });
+  });
+  </script>
 </body>
 <script type="module" src="js/main.js"></script>
 </html>

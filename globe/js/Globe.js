@@ -37,7 +37,7 @@ const MOBILE_MAX_WIDTH = 512;
 const MAX_LINE_COUNT = 5;
 const LINE_INTERVAL = 1000;
 const LINE_LIFESPAN = 4000;
-const SESSIONS_COUNTRY_LIST = ['br', 'jp', 'de', 'mx', 'ca', 'zm'];
+const COUNTRY_LIST = ['br', 'jp', 'de', 'mx', 'ca', 'zm'];
 const ARC_TEXTURES = [
   'https://images.ctfassets.net/fzn2n1nzq965/21KQEBsC7QG4IYZV5RuhDz/d3180249af4082f42a22cb5f3ccc8e09/arc-texture-1.png',
   'https://images.ctfassets.net/fzn2n1nzq965/22Apsqcv7VIDzlCuSOEzPQ/2194c40aac8bced46d48582d5d712bf6/arc-texture-2.png',
@@ -571,7 +571,6 @@ export class Globe {
         this.isAutoRotating = false;
         // make an api call to a service on https://google.com/latlng that returns the lat/lng of any location I input so I can rotate to it
         // look up any country by name or abbreviation
-        console.log(btn.innerText)
         if (btn.innerText === "Mexico") {
           this.rotateGlobeTo(0.3, 0.7);
         } else if (btn.innerText === "Canada") {
@@ -620,7 +619,7 @@ export class Globe {
   }
 
   activateCountry(country) {
-    this.globeDots.activateCountry(SESSIONS_COUNTRY_LIST[country]);
+    this.globeDots.activateCountry(COUNTRY_LIST[country]);
     if (document.querySelector('.Country__btn--isActive')) {
       document.querySelector('.Country__btn--isActive').classList.remove('Country__btn--isActive');
     }
@@ -632,7 +631,7 @@ export class Globe {
     const startRotY = this.globeContainer.rotation.y;
     const startTime = performance.now();
     const adjustedRotY = this.resetRevolutions(y);
-    const duration = 4;
+    const duration = 1;
 
     clearInterval(this.globeRAF);
     this.globeRAF = setInterval(() => {

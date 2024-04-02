@@ -12,14 +12,14 @@ import {
   Vector3,
 } from "./lib/three.min.js";
 
-const DOT_W = 1.8;
+const DOT_W = 3.8;
 
 const COUNTRY_MAPPING = [
   [0, 'cc6666', 'br'],
-  [1, 'ffffff', 'jp'],
-  [2, 'ccc53', 'de'],
+  [1, '990000', 'jp'],
+  [2, '996600', 'de'],
   [3, 'ff9999', 'mx'],
-  [4, '66662a', 'ca'],
+  [4, '666633', 'ca'],
 ];
 
 const IMAGE_PATH = './img/map_colors_fill.png';
@@ -61,9 +61,6 @@ function getCountryId([r, g, b, _]) {
     .map((color) => color.toString(16).padStart(2, '0'))
     .join('');
   const cid = COUNTRY_MAPPING.find(([_, id]) => id === hex) || [0, hex, 'xx'];
-  if (cid[2] !== 'xx') {
-    console.log(cid)
-  }
   return cid;
 }
 
@@ -88,11 +85,11 @@ export class GlobeDots extends Group {
 
   mapLoaded(imageData) {
     const SCALAR_RADIUS = this.radius / 450;
-    const DOT_COUNT_MIN = 10000;
-    const DOT_COUNT = DOT_COUNT_MIN + Math.floor(70000 * (this.radius / 600));
+    const DOT_COUNT_MIN = 1000;
+    const DOT_COUNT = DOT_COUNT_MIN + Math.floor(20000 * (this.radius / 600));
     const TEXTURE_RADIUS = this.radius;
 
-    const dotShapeGeometry = new CircleGeometry(DOT_W * SCALAR_RADIUS, 5);
+    const dotShapeGeometry = new CircleGeometry(DOT_W * SCALAR_RADIUS, 15);
     const dotGeometry = new Geometry();
 
     const positions = []; // 3d coord on globe
@@ -234,7 +231,7 @@ export class GlobeDots extends Group {
           float b = 0.65;
           float dragDur = 1200.0;
           vec3 color = vec3(r, g, b);
-          float activePct = min(1., activeTime / 6000.);
+          float activePct = min(1., activeTime / 1000.);
 
           if (vCountryId == activeCountry) {
             color = vec3((1. - activePct) * r + activePct * .4, (1. - activePct) * g + activePct * .94, (1. - activePct) * b + activePct * 0.96);
@@ -275,11 +272,9 @@ export class GlobeDots extends Group {
   }
 
   activateCountry(country) {
-    console.log(country)
     let countryValue = COUNTRY_MAPPING.findIndex(
       ([, , mappingCountry]) => country === mappingCountry,
     );
-    console.log(countryValue)
     // if (countryValue === this.material.uniforms.activeCountry.value) return;
     this.activationTime = performance.now();
     this.material.uniforms.prevCountry.value = this.material.uniforms.activeCountry.value;
