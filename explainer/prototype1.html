@@ -15,6 +15,7 @@
   html {
     -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
+    background: rgb(229, 223, 219);
   }
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -23,11 +24,8 @@
     -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
     font-size: 18px;
-    font-weight: 100;
-  }
-  section {
-    padding: 60px;
-    width: 1000px;
+    font-weight: 300;
+    min-height: 10000px;
   }
 
   h1 {
@@ -82,47 +80,48 @@
   section {
     border-radius: 18px;
   }
-
-  .windowsContainer {
-    position: relative;
-    transform-style: preserve-3d;
-    perspective: 100vw;
-    margin: auto;
+  
+  .API {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: calc(100% - 50px);
+    background: rgb(29, 48, 69);
+    transform: translateZ(-80px);
+    padding: 50px;
+    filter: blur(50px);
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .windows {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    transform-style: preserve-3d;
-    height: 400px;
-  }
-
-  .window {
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .window--api {
-    background: rgb(29, 48, 69);
-    grid-row: 1;
-    grid-column: 1;
-    transform: translateZ(-80px);
   }
   
   .window--chat {
-    position: relative;
-    background: rgb(229, 223, 219);
-    grid-row: 1;
-    grid-column: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    border: 2px solid;
+    color: white;
+    transform: translateX(calc(50vw - 50%)) translateY(calc(50vh - 50%));
+    padding: 60px 80px;
+    pointer-events: none;
   }
 
   .message {
+    position: relative;
+  }
 
+  .message .icon {
+    position: absolute;
+    left: -36px;
+    top: -1px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: white;
+  }
+
+  .message .icon--ai {
+    background: orangered;
   }
 
   .code {
@@ -131,6 +130,7 @@
     align-items: flex-start;
     gap: 1px;
     color: white;
+    width: 500px;
   }
   .code span,
   .tooltip {
@@ -187,12 +187,12 @@
   }
 
   .prompt {
-    background: hsla(0,100%,100%,0.112);
-    padding: 14.77px;
+    background: hsla(100%,100%,100%,0.512);
+    padding: 14.77px 20px 16px;
     border-width: 0.66px;
     border-radius: 11.72px;
     color: rgb(150, 150, 150);
-    height: 49.6244px;
+    border: 1px solid;
   }
 
   .isActive {
@@ -202,69 +202,80 @@
 </style>
 </head>
 <body>
+  <section class="API">
+    <div class="code">
+      <span><pre>Behind every prompt is an API call like this one:</pre></span>
+      <br>
+      <span>const fs = require("fs");</span>
+      <span data-tooltip="Import the AI Model’s SDK module. Check your provider’s API docs.">const ModelSDK = require("modelSDK");</span>
+
+      <span data-tooltip="Create a new instance of the ModelSDK class">const modelSDK = new ModelSDK({</span>
+      <span data-tooltip="Pass in the API key"><pre>  apiKey: process.env.MODEL_API_KEY,</pre></span>
+      <span>});</span>
+
+      <span>const htmlContent = fs.readFileSync("index.html", "utf8");</span>
+
+      <span data-tooltip="Send a completion request to the chat endpoint">modelSDK.chat.completions.create({</span>
+      <span data-tooltip="Specify the model"><pre>  model: "model-name",</pre></span>
+      <span data-tooltip="Create an array of messages (prompt, response)."><pre>  messages: [</pre></span>
+      <span><pre>    {</pre></span>
+        <span data-tooltip="Set the role for the instructions."><pre>      role: "system",</pre></span>
+        <span data-tooltip="Natural language instructions for the LLM to perform on the content."><pre>      content: "You will be provided with an HTML file with English content,</pre></span>
+        <span data-tooltip="Natural language instructions for the LLM to perform on the content."><pre>                and your task is to translate only the content into Spanish and return valid HTML.",</pre></span>
+        <span><pre>    },</pre></span>   
+        <span><pre>    {</pre></span>
+          <span data-tooltip="Specify a role for the prompt."><pre>      role: "user",</pre></span>
+          <span data-tooltip="The content to be operated on."><pre>      content: htmlContent,</pre></span>
+          <span><pre>    },</pre></span>           
+      <span><pre>  ],</pre></span>
+      <span data-tooltip="0-1 randomness level. More randomness can be more creative and more incoherent."><pre>  temperature: 0.7,</pre></span>
+      <span data-tooltip="Max number of words in a single response."><pre>  max_tokens: 8192,</pre></span>
+      <span data-tooltip="Probability distribution of tokens?"><pre>  top_p: 1,</pre></span>
+      <span>}).then(response => {</span>
+      <span data-tooltip="You can do whatever you want with the response. The example here writes it to a file.">  const messageContent = response.choices[0].message.content;</span>
+      <span><pre>  fs.writeFileSync("index_es.html", messageContent, "utf8");</pre></span>
+
+      <span><pre>  console.log("Translation saved as index_es.html");</pre></span>
+      <span>}).catch(error => {</span>
+      <span><pre>  console.error(error);</pre></span>
+      <span>});</span>
+      
+      <div class="tooltip"></div>
+    </div>
+  </section>
   <div class="windowsContainer">
     <div class="windows">
-      <section class="window window--api">
-        <div class="code">
-          <span><pre>Behind every prompt is an API call like this one:</pre></span>
-          <span>const fs = require("fs");</span>
-          <span data-tooltip="Import the AI Model’s SDK module. Check your provider’s API docs.">const ModelSDK = require("modelSDK");</span>
-    
-          <span data-tooltip="Create a new instance of the ModelSDK class">const modelSDK = new ModelSDK({</span>
-          <span data-tooltip="Pass in the API key"><pre>  apiKey: process.env.MODEL_API_KEY,</pre></span>
-          <span>});</span>
-    
-          <span>const htmlContent = fs.readFileSync("index.html", "utf8");</span>
-    
-          <span data-tooltip="Send a completion request to the chat endpoint">modelSDK.chat.completions.create({</span>
-          <span data-tooltip="Specify the model"><pre>  model: "model-name",</pre></span>
-          <span data-tooltip="Create an array of messages (prompt, response)."><pre>  messages: [</pre></span>
-          <span><pre>    {</pre></span>
-            <span data-tooltip="Set the role for the instructions."><pre>      role: "system",</pre></span>
-            <span data-tooltip="Natural language instructions for the LLM to perform on the content."><pre>      content: "You will be provided with an HTML file with English content,</pre></span>
-            <span data-tooltip="Natural language instructions for the LLM to perform on the content."><pre>                and your task is to translate only the content into Spanish and return valid HTML.",</pre></span>
-            <span><pre>    },</pre></span>   
-            <span><pre>    {</pre></span>
-              <span data-tooltip="Specify a role for the prompt."><pre>      role: "user",</pre></span>
-              <span data-tooltip="The content to be operated on."><pre>      content: htmlContent,</pre></span>
-              <span><pre>    },</pre></span>           
-          <span><pre>  ],</pre></span>
-          <span data-tooltip="0-1 randomness level. More randomness can be more creative and more incoherent."><pre>  temperature: 0.7,</pre></span>
-          <span data-tooltip="Max number of words in a single response."><pre>  max_tokens: 8192,</pre></span>
-          <span data-tooltip="Probability distribution of tokens?"><pre>  top_p: 1,</pre></span>
-          <span>}).then(response => {</span>
-          <span data-tooltip="You can do whatever you want with the response. The example here writes it to a file.">  const messageContent = response.choices[0].message.content;</span>
-          <span><pre>  fs.writeFileSync("index_es.html", messageContent, "utf8");</pre></span>
-    
-          <span><pre>  console.log("Translation saved as index_es.html");</pre></span>
-          <span>}).catch(error => {</span>
-          <span><pre>  console.error(error);</pre></span>
-          <span>});</span>
-          
-          <div class="tooltip"></div>
-        </div>
-      </section>
       <section class="window window--chat">
-        <div class="message message--user"><div class="icon__user"></div>You probably recognize this interface?</div>
-        <div class="message message--ai"><div class="icon__ai"></div>Yes, this is an abstract representation of a text-based AI chat interface like ChatGPT, Claude, or Gemini.</div>
-        <div class="prompt">Type a message</div>
+        <div class="message message--user"><div class="icon icon--user"></div>You probably recognize this interface?</div>
+        <div class="message message--ai"><div class="icon icon--ai"></div>Yes, this is an abstract representation of a text-based AI chat interface like ChatGPT, Claude, or Gemini.</div>
+        <div class="prompt">Where you would type your prompt for the LLM</div>
       </section>
     </div>
   </div>
   <script>
+    const api = document.querySelector('.API');
+    const chat = document.querySelector('.window--chat');
     const tooltip = document.querySelector('.tooltip')
     const codeLines = document.querySelectorAll('.code span[data-tooltip]');
     codeLines.forEach((line, i) => {
       line.addEventListener('mouseenter', (e) => {
         tooltip.classList.add('isActive')
         tooltip.innerHTML = line.dataset.tooltip;
-        tooltip.style.top = `${line.getBoundingClientRect().top + window.scrollY - 26}px`;
-        tooltip.style.left = `${line.getBoundingClientRect().left - 25}px`;
+        tooltip.style.top = `${line.getBoundingClientRect().top - 46}px`;
+        tooltip.style.left = `${line.getBoundingClientRect().left - 45}px`;
       })
       line.addEventListener('mouseleave', () => {
         tooltip.classList.remove('isActive')
       })
     })
+    window.addEventListener('scroll', handleScroll)
+
+    function handleScroll() {
+      const apiBlur = Math.max(0, Math.min(50, 50 - window.scrollY / 10))
+      api.style.filter = `blur(${apiBlur}px)`
+      const chatBlur = Math.min(50, window.scrollY / 10)
+      chat.style.filter = `blur(${chatBlur}px)`
+    }
   </script>
 </body>
 </html>
