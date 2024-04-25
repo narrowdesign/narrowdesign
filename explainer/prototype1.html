@@ -84,7 +84,7 @@
       }
 
       .begin {
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-direction: column;
         gap: 60px;
@@ -94,6 +94,10 @@
         padding: 60px 80px;
         pointer-events: none;
         line-height: 1.6;
+      }
+
+      .scroll {
+        color: #fe7547;
       }
 
       .API {
@@ -110,7 +114,8 @@
       }
 
       .window--chat {
-        position: fixed;
+        position: absolute;
+        top: 500px;
         display: flex;
         flex-direction: column;
         gap: 60px;
@@ -137,7 +142,7 @@
       }
 
       .message .icon--ai {
-        background: orangered;
+        background: #fe7547;
       }
 
       .code {
@@ -267,6 +272,16 @@
         box-sizing: border-box;
       }
 
+      .behindBlock__label {
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        transform: translateX(calc(-100% - 20px));
+        padding-top: 14px;
+        width: 500px;
+        text-align: right;
+      }
+
       .messageBlock__label {
         position: absolute;
         color: #68b34a;
@@ -329,6 +344,11 @@
           >
         </div>
         <br />
+        <div class="behindBlock__label">
+          <div class="">
+            Behind every prompt is an API call made of two parts
+          </div>
+        </div>
         <div class="messageBlock">
           <div class="messageBlock__label">
             <div class="messageBlock__body">A message to the AI model</div>
@@ -426,8 +446,8 @@
     <section class="begin">
       Before you can program using AI, you’ll need to know how to program.
       <br />
-      <br />Scroll if you already know how to program. <br /><br />If not, learn
-      to program.
+      <span class="scroll">Scroll if you already know how to program.</span>If
+      not, learn to program.
     </section>
     <script>
       const begin = document.querySelector(".begin");
