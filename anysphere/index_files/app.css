@@ -1,0 +1,720 @@
+html {
+  overscroll-behavior-x: contain;
+  overflow-x: hidden;
+  overflow: visible;
+  background: white;
+  font-family: "system-ui";
+  -webkit-font-smoothing: antialiased;
+  --base-font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  overscroll-behavior-x: contain;
+  overflow-x: hidden;
+  --after-element-opacity: 0;
+  --background: hsla(360, 100%, 100%, 1);
+  --color: hsla(360, 100%, 0%, 1);
+  --border-color: hsla(360, 100%, 0%, 1);
+  background: var(--background-linear-gradient, var(--background));
+  background-image: "";
+  border-color: var(--border-color);
+  border-width: 0vw;
+  border-style: solid;
+  color: var(--color);
+  font-size: var(--base-font-size);
+  line-height: 1;
+  margin: 0vw;
+  min-height: 100vh;
+  padding: 0vw;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+blockquote,
+button,
+canvas,
+.container,
+.div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.image,
+.svg,
+p,
+input,
+textarea,
+code {
+  --background: transparent;
+  --filter: 0vw;
+  --backdrop-filter: 0vw;
+  --box-shadow: var(--color) 0vw 0vw 0vw 0vw;
+  --color: inherit;
+  --border-color: var(--color);
+  --text-shadow: var(--color) 0vw 0vw 0vw;
+  --transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+
+  align-self: stretch;
+  background-image: "";
+  border-width: 0vw;
+  border-style: solid;
+  color: var(--color);
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0vw;
+  padding: 0vw;
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.App--isInstrument iframe {
+  pointer-events: none;
+}
+
+.App--isAnimating iframe {
+  pointer-events: auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+.container {
+  --background: transparent;
+  align-self: center;
+  column-gap: 2vw;
+  display: grid;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-auto-flow: column;
+  padding-top: 3.5vw;
+  padding-right: 3.5vw;
+  padding-bottom: 3.5vw;
+  padding-left: 3.5vw;
+  row-gap: 2vw;
+}
+
+.image {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  --color: var(--background);
+  --background: var(--color);
+  outline: none;
+}
+
+/* APP ELEMENTS */
+
+.AppDisplay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 1000000000;
+  font-size: 15px;
+  font-weight: 500;
+  --app-shadow: hsla(0, 100%, 9.8%, 0.42) 4.2px 10.2px 38px 0px;
+  --app-background-color: hsla(0, 100%, 99%, 1);
+  --app-color: #050202;
+  color: var(--app-color);
+  transition: 300ms transform;
+}
+
+.AppDisplay__search,
+.AppDisplay__classList,
+.AppDisplay__linkInput {
+  position: fixed;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid #dcc;
+  color: var(--app-color);
+  background: var(--app-background-color);
+  padding: 12px 16px;
+  pointer-events: none;
+  opacity: 0;
+  transition: 300ms opacity;
+  backdrop-filter: blur(20px);
+  box-shadow: var(--app-shadow);
+  z-index: 2;
+  font-weight: 400;
+  font-family: "system-ui";
+  --webkit-font-smoothing: antialiased;
+  font-size: 15.5px;
+}
+
+.AppDisplay__classList,
+.AppDisplay__linkInput {
+  min-width: 330px;
+}
+
+.App--isSearchMode .AppDisplay__search,
+.App--isClassListMode .AppDisplay__classList,
+.App--isLinkInputMode .AppDisplay__linkInput {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.AppGridDisplay {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  pointer-events: none !important;
+  z-index: 999;
+}
+
+.AppGridDisplay__line {
+  position: absolute;
+  opacity: 0.1;
+  border-right: 1px solid var(--color);
+  border-left: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+  border-top: 1px solid var(--color);
+  pointer-events: none !important;
+}
+
+/* APP STATES */
+
+.App--isVisualMode .AppGridDisplay__line {
+  position: absolute;
+  opacity: 0.1;
+  background: var(--color);
+  border-right: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+}
+
+body:not(.App--isEditMode) .AppElement--isSelected {
+  pointer-events: none;
+}
+
+body:not(.App--isEditMode) .AppElement--isSelected * {
+  pointer-events: auto;
+}
+
+.AppElement--isSelected:not(body)::after,
+.AppElement--isMultiSelected:not(body)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0.4;
+  background: radial-gradient(circle at 50% -50%, #0ff, transparent 70%),
+    radial-gradient(circle at -50% 100%, #ff0, transparent 70%),
+    radial-gradient(circle at 150% 100%, #f0f, transparent 70%);
+  animation: pulse 300ms forwards;
+}
+
+.App--isVisualMode .AppElement--isSelected::before,
+.App--isVisualMode .AppElement--isMultiSelected::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--color:before,
+.App--isVisualMode .AppElement--isSelected.AppElement--background-color:before {
+  color: transparent;
+  background-color: transparent;
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--font-size:before {
+  width: 2px;
+  border-left: 1px solid var(--color);
+  top: var(--padding-top);
+  height: var(--font-size);
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--line-height:before {
+  height: calc(var(--line-height) * var(--font-size));
+  width: 10px;
+  margin-left: -10px;
+  top: var(--padding-top);
+  border-right: 1px solid var(--color);
+  border-top: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+  background: transparent;
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--margin-top:before {
+  bottom: auto;
+  height: var(--margin-top);
+  margin-top: calc(var(--margin-top) * -1);
+  border-bottom: 1px solid var(--color);
+  background: linear-gradient(transparent, var(--color));
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--margin-right:before {
+  left: auto;
+  right: calc(var(--margin-right) * -1);
+  width: var(--margin-right);
+  background: linear-gradient(90deg, var(--color), transparent);
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--margin-bottom:before {
+  top: auto;
+  height: var(--margin-bottom);
+  margin-bottom: calc(var(--margin-bottom) * -1);
+  background: linear-gradient(var(--color), transparent);
+  border-top: 1px solid var(--color);
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--margin-left:before {
+  right: auto;
+  width: var(--margin-left);
+  margin-left: calc(var(--margin-left) * -1);
+  border-right: 1px solid var(--color);
+  background: linear-gradient(90deg, transparent, var(--color));
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--padding-top:before {
+  height: var(--padding-top);
+  bottom: auto;
+  background: linear-gradient(var(--color), transparent);
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--padding-right:before {
+  width: var(--padding-right);
+  left: auto;
+  background: linear-gradient(90deg, transparent, var(--color));
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--padding-bottom:before {
+  height: var(--padding-bottom);
+  top: auto;
+  background: linear-gradient(transparent, var(--color));
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--padding-left:before {
+  width: var(--padding-left);
+  right: auto;
+  background: linear-gradient(90deg, var(--color), transparent);
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--width:before {
+  border-right: 1px solid var(--color);
+  border-left: 1px solid var(--color);
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--height:before {
+  border-top: 1px solid var(--color);
+  border-bottom: 1px solid var(--color);
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--border-radius:before {
+  background: transparent;
+}
+
+.App--isVisualMode .AppElement--isSelected.AppElement--letter-spacing:before {
+  border-left: var(--letter-spacing) solid var(--color);
+}
+
+.App--isXrayMode {
+  --after-element-opacity: 0.08;
+}
+
+.App--isXrayMode .AppGridDisplay,
+.App--isGridActive .AppGridDisplay {
+  display: block;
+}
+
+.App--isEditMode,
+.App--isScrollMode,
+.App--isInactive,
+.App--isAnimating {
+  overflow: visible;
+}
+
+.AppStyleDisplay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 15px 12px 14px;
+  transform-origin: 50% 50%;
+  pointer-events: none;
+  border-radius: 4px;
+  transition: transform 300ms, opacity 500ms, height 300ms;
+  opacity: 0.9;
+  display: grid;
+  border-radius: 11.2px;
+  padding: 0px;
+  gap: 0px;
+  grid-area: 3 / 1 / 4 / 2;
+  width: auto;
+  justify-self: flex-start;
+  z-index: 2;
+}
+
+.AppStyleDisplay:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  top: -3px;
+  width: 7px;
+  height: 7px;
+  background: var(--app-background-color);
+  z-index: 6;
+}
+
+.AppStyleDisplay__prop {
+  padding: 12px 18px 12px 18px;
+  border-radius: 8.4px;
+  grid-area: 1 / 1 / 2 / 2;
+  align-self: center;
+  background: var(--app-background-color);
+  box-shadow: var(--app-shadow);
+  z-index: 5;
+}
+
+.AppStyleDisplay__value {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  display: none;
+  padding: 12px 12px 12px 11px;
+  background-color: hsla(0, 100%, 95.2%, 1);
+  border-radius: 6.8px;
+  margin: 4px;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.AppStyleDisplay__enumContainer {
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 39px;
+  height: 120px;
+  overflow: hidden;
+  padding: 4px;
+  border-radius: 16px;
+  z-index: 4;
+  opacity: 0;
+  transition: 200ms opacity;
+  background: var(--app-background-color);
+  box-shadow: var(--app-shadow);
+}
+
+.AppStyleDisplay__enumList {
+  position: relative;
+  top: 22px;
+  transition: 300ms transform ease-out;
+  padding: 0;
+}
+
+.AppStyleDisplay__enum {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.AppStyleDisplay__enum::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  box-shadow: hsla(0, 100%, 9.8%, 0.2) 0px 0px 0px 0px;
+  transition: box-shadow 300ms;
+}
+
+.AppStyleDisplay__enum--isActive::before {
+  box-shadow: var(--app-shadow);
+}
+
+.AppStyleDisplay__elementsUnderCursorContainer {
+  position: absolute;
+  text-align: center;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 39px;
+  overflow: hidden;
+  padding: 4px;
+  border-radius: 16px;
+  z-index: 4;
+  opacity: 0;
+  transition: 200ms opacity;
+  background: var(--app-background-color);
+  box-shadow: var(--app-shadow);
+}
+
+.AppStyleDisplay__elementsUnderCursorList {
+  position: relative;
+  top: 22px;
+  transition: 300ms transform ease-out;
+  padding: 0;
+}
+
+.AppStyleDisplay__elementsUnderCursor {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.AppStyleDisplay__elementsUnderCursor::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  box-shadow: hsla(0, 100%, 9.8%, 0.2) 0px 0px 0px 0px;
+  transition: box-shadow 300ms;
+}
+
+.AppStyleDisplay__enum--isActive::before {
+  box-shadow: var(--app-shadow);
+}
+
+.AppStyleDisplay__inspectStyleContainer {
+  position: absolute;
+  text-align: left;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 44px;
+  padding: 4px;
+  border-radius: 16px;
+  z-index: 1;
+  opacity: 0;
+  transition: 200ms opacity;
+  background: var(--app-background-color);
+  box-shadow: var(--app-shadow);
+  max-width: 550px;
+}
+
+.AppStyleDisplay__inspectStyleList {
+  position: relative;
+  transition: 300ms transform ease-out;
+  padding: 0;
+}
+
+.AppStyleDisplay__inspectStyleProp {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 6px 24px;
+  display: flex;
+  line-height: 1.3;
+}
+
+.AppStyleDisplay__inspectStylePropKey {
+  color: red;
+  white-space: nowrap;
+}
+
+.AppStyleDisplay__inspectStylePropValue {
+  margin-left: 8px;
+}
+
+.AppStyleDisplay__inspectStyleProp::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  box-shadow: hsla(0, 100%, 9.8%, 0.2) 0px 0px 0px 0px;
+  transition: box-shadow 300ms;
+}
+
+.AppStyleDisplay__inspectStyleProp--isActive::before {
+  box-shadow: var(--app-shadow);
+}
+
+.AppKeyDisplay {
+  position: absolute;
+  display: flex;
+  gap: 4px;
+  bottom: 75px;
+  transform: translateX(-50%);
+  left: 50%;
+  font-weight: 500;
+  letter-spacing: 2px;
+  transition: opacity 20ms;
+  border-radius: 4px;
+  padding: 12px 12px 12px 15px;
+  background: var(--app-background-color);
+  /* border: 1px solid; */
+  opacity: 0;
+  box-shadow: var(--app-shadow);
+}
+
+.AppScrollDisplay {
+  position: absolute;
+  bottom: 77px;
+  width: 35px;
+  height: 35px;
+  border: 4.5px dotted #6a6666;
+  transform: translateX(-50%);
+  left: calc(50%);
+  border-radius: 100%;
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.AppStyleDisplay__element {
+  position: absolute;
+  left: 18px;
+  bottom: 4px;
+  font-size: 10px;
+  opacity: 0.5;
+  color: black;
+  display: none;
+}
+
+.AppStyleDisplay__channel {
+  position: absolute;
+  margin: auto;
+  top: calc(100% - 8px);
+  width: 100%;
+  left: 0;
+
+  padding: 16px 8px 10px;
+  text-align: center;
+  border-radius: 8px;
+  /* height: 100%; */
+  background: #efefef;
+}
+
+.AppStyleDisplay__value--isSelected {
+  border-bottom: 1px dotted;
+}
+
+body:not(.App--isInstrument) .AppDisplay {
+  display: none !important;
+}
+
+.App--isScrolling .AppScrollDisplay {
+  opacity: 1;
+}
+
+.App--isEnumDisplayed .AppStyleDisplay__enumContainer {
+  opacity: 1;
+}
+
+.App--isElementsUnderCursorListDisplayed
+  .AppStyleDisplay__elementsUnderCursorContainer {
+  opacity: 1;
+}
+
+.App--isInspectStyleDisplayed .AppStyleDisplay__inspectStyleContainer {
+  opacity: 1;
+}
+
+.App--isKeyDisplayed .AppKeyDisplay {
+  opacity: 1;
+  animation: keypress 200ms forwards;
+}
+
+.App--isChanging .AppStyleDisplay {
+  opacity: 1;
+}
+
+.App--isXrayMode *:not([class^="App"]):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color, #ffffff);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: var(--after-element-opacity);
+  z-index: 1000000;
+}
+
+.App--isXrayMode.App--isVisualMode *:not([class^="App"]):after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--color, #ffffff);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0.04;
+}
+
+.App--isPropChannelDisplayed .AppDisplay {
+  transform: translateY(-30px);
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    background-position: 100% 100%, 100% -100%, -100% -100%;
+    opacity: var(--after-element-opacity);
+  }
+}
+
+@keyframes keypress {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  20% {
+    transform: translateX(-50%) scale(0.8);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
