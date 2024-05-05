@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <style>
+  html {
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+    -webkit-scroll-behavior: smooth;
+    scroll-behavior: smooth;
+  }
+  section {
+    padding: 60px;
+    min-height: 100vh;
+  }
+  section:nth-of-type(2n) {
+    background: black;
+    color: white;
+  }
+  h1 {
+    font-size: 100px;
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 30px;
+    font-weight: 300;
+    border-bottom: 1px dotted;
+    padding-bottom: 40px;
+  }
+  img {
+    max-width: 50vw;
+  }
+  .columns {
+    display: flex;
+    gap: 40px;
+  }
+  .column {
+    flex-basis: 33.333%;
+  }
+  .definition {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted;
+  }
+  .definition:hover .definitionWindow {
+    opacity: 1;
+  }
+  .definitionWindow {
+    left: 0;
+    top: 0;
+    position: absolute;
+    font-size: 20px;
+    width: 400px;
+    background: white;
+    color: black;
+    border: 1px solid;
+    padding: 10px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  a {
+    color: inherit;
+  }
+  
+</style>
+</head>
+<body>
+  <section>
+    <h3>Before you can program using AI, you’ll need to know how to program. If you already know, <a href="#gpt">proceed</a>.</h3>
+    <p>If not, <a href="#">learn to program.</a></p>
+  </section>
+  <section id="gpt">
+    <h1>You’re probably familiar with this:</h1>
+    <img src="./img/gpt.png" alt="chat gpt">
+    <h3>ChatGPT, and models like it, are really just a web browser talking to a language model.</h3>
+    <h3>Instead of typing into the web interface, you can interact with it <a href="#API">programmatically.</a></h3>
+    <p>Because every interaction with ChatGPT is <span class="definition">idempotent<span class="definitionWindow">After each prompt and response, it forgets everything. You end up back in the state you were in before you interacted with it.</span></span>, you have to send it all previous chats every time or it will not “remember” what was said.</p>
+  </section>
+  <section id="API">
+    <h1>Here’s what a prompt looks like as an API call</h1>
+    <pre>
+      const fs = require("fs");
+      const OpenAI = require("openai");
+      
+      const openai = new OpenAI({
+        apiKey: process.env.OPENAI_API_KEY,
+      });
+      
+      // Read the contents of the HTML file
+      const htmlContent = fs.readFileSync("index.html", "utf8");
+      
+      openai.chat.completions.create({
+        model: "gpt-4",
+        messages: [
+          {
+            role: "system",
+            content: "You will be provided with an HTML file with English content,
+                      and your task is to translate only the content into Spanish and return valid HTML.",
+          },
+          {
+            role: "user",
+            content: htmlContent,
+          },
+        ],
+        temperature: 0.7,
+        max_tokens: 8192,
+        top_p: 1,
+      }).then(response => {
+        const messageContent = response.choices[0].message.content;
+        // Save the translated content to index_es.html
+        fs.writeFileSync("index_es.html", messageContent, "utf8");
+        
+        console.log("Translation saved as index_es.html");
+      }).catch(error => {
+        console.error(error);
+      });
+      
+    </pre>
+  </section>
+  <section>
+    
+    <h1>Things you can build</h1>
+    <h2>Translation</h2>
+    <p>Pass strings from one language (human or computer) and the model returns the text translated to whatever language you request.</p>
+    <h2>Extraction</h2>
+    <p>Take a really long text and pull out specific information from it (names, concepts, insights)</p>
+    <h2>Summarization</h2>
+    <p>Process human-readable unstructured data (papers, essays, articles, books) and make it computer/program-readable</p>
+    <h2>Generation</h2>
+    <p>Write responses, draw charts, enumerate possibilities, suggest further transformations to text or code.</p>
+    <h2>Classification</h2>
+    <p>Group things by any criteria you specify or let the model decide what an appropriate set is based on the information you send it.</p>
+    <h2>Matching/scoring</h2>
+    <p>?</p>
+    <h2>(Bonus) Storage/retrieval</h2>
+    <p>Plug in a retrieval system where you can store transformed information.</p>
+  </section>
+  <section>
+    <h1>Agents</h1>
+    <h2>The model can call itself with information it just produced.</h2>
+    <p>The model can break a big task down into smaller tasks and attempt to perform them.</p>
+  </section>
+  <section>
+    <div>Next steps</div>
+    <div>Resources</div>
+  </section>
+</body>
+</html>
