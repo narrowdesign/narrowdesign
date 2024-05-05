@@ -4,9 +4,17 @@ const messagesRef = document.querySelectorAll(".Message__content");
 const bodyRef = document.querySelector("body");
 
 window.addEventListener("scroll", handleScroll);
+window.addEventListener("mousemove", handleMouseMove);
+
+function handleMouseMove(e) {
+  const mouseX = e.clientX / window.innerWidth - 0.5;
+  const mouseY = e.clientY / window.innerHeight - 0.5;
+  const gradientRotation = 180 + mouseX * 90 + mouseY * 90;
+  bodyRef.style.setProperty("--gradient-rotation", `${gradientRotation}deg`);
+}
 function handleScroll(e) {
   const scroll = window.scrollY;
-  const coverRotationX = Math.min(180, scroll / 10);
+  const coverRotationX = Math.max(0.1, Math.min(180, scroll / 10));
   const colorLightness = 15 + (scroll / 1000) * 35;
   const coverAccentColorLightness = 54 + (scroll / 1000) * 35;
   const codeApiColorLightness = Math.min(76, 40 + (scroll / 1000) * 35);

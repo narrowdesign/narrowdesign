@@ -13,6 +13,7 @@ body {
   --background-color-light: #dbdad9;
   --background-color-dark: #9f9f9f;
   --accent-color: hsl(18, 88%, 54%);
+  --gradient-rotation: 120deg;
   --sans-serif: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
     "Arial", sans-serif;
   --monospace: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
@@ -49,7 +50,7 @@ p {
   justify-content: center;
   align-items: flex-start;
   background: linear-gradient(
-    120deg,
+    var(--gradient-rotation),
     var(--background-color-light),
     var(--background-color-dark)
   );
@@ -58,7 +59,11 @@ p {
 .Opening {
   position: relative;
   transform: translateY(calc(50vh - 50%));
-  background: linear-gradient(120deg, var(--color-light), var(--color-dark));
+  background: linear-gradient(
+    var(--gradient-rotation),
+    var(--color-light),
+    var(--color-dark)
+  );
   max-width: 100%;
   width: 900px;
   border-radius: 18px;
@@ -104,7 +109,7 @@ p {
   border-left-color: var(--cover-border-color-light);
   padding: 30px 30px 10px;
   background: linear-gradient(
-    120deg,
+    var(--gradient-rotation),
     var(--cover-background-color-light),
     var(--cover-background-color-dark)
   );
@@ -114,28 +119,39 @@ p {
   transform-style: preserve-3d;
 }
 
-.Cover::after {
-  content: "";
+.Cover__edges {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 16px;
-  background: var(--color-dark);
-  transform: translateZ(-2px);
+  transform-style: preserve-3d;
 }
 
-.Cover::before {
-  content: "";
+.Cover__edge {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   border-radius: 16px;
-  background: var(--color-dark);
+  background: var(--color-light);
+  transform: translateZ(-1px);
+  backface-visibility: visible !important;
+}
+
+.Cover__edge:nth-of-type(2) {
+  background: var(--cover-border-color-light);
+  background: var(--color-light);
+  transform: translateZ(-2px);
+}
+.Cover__edge:nth-of-type(3) {
+  transform: translateZ(-3px);
+  background: var(--cover-border-color-dark);
+}
+.Cover__edge:nth-of-type(4) {
   transform: translateZ(-4px);
+  background: var(--color-light);
 }
 
 .Cover *,
@@ -162,9 +178,13 @@ p {
   border-bottom-color: var(--cover-border-color-dark);
   border-top-color: var(--cover-border-color-light);
   border-left-color: var(--cover-border-color-light);
-  transform: rotateX(180deg) translateZ(4px);
+  transform: rotateX(180deg) translateZ(5px);
   transform-style: preserve-3d;
-  background: linear-gradient(120deg, var(--accent-color), hsl(20, 85%, 40%));
+  background: linear-gradient(
+    var(--gradient-rotation),
+    var(--accent-color),
+    hsl(20, 85%, 40%)
+  );
 }
 
 .Cover__title {
@@ -182,9 +202,8 @@ p {
   transform-style: preserve-3d;
 }
 
-.Cover__titleTop::after,
-.Cover__titleTop::before {
-  content: "";
+.Cover__titleTopLine,
+.Cover__titleTopLineShadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -194,7 +213,7 @@ p {
   transform: translateZ(var(--cover-z));
 }
 
-.Cover__titleTop::before {
+.Cover__titleTopLineShadow {
   filter: blur(var(--cover-shadow-blur));
   opacity: var(--cover-shadow-opacity);
   transform: translateY(var(--cover-shadow-y)) translateZ(0);
@@ -231,9 +250,8 @@ p {
   transform-style: preserve-3d;
 }
 
-.Message__icon::after,
-.Message__icon::before {
-  content: "";
+.Message__iconEdge,
+.Message__iconShadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -247,7 +265,7 @@ p {
   opacity: var(--cover-shadow-opacity);
 }
 
-.Message__icon::before {
+.Message__iconEdge {
   transform: translateZ(-1.5px);
   filter: blur(0px);
 }
@@ -279,8 +297,7 @@ p {
   transform-style: preserve-3d;
 }
 
-.Message__htmlBox::after {
-  content: "";
+.Message__htmlBoxShadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -294,8 +311,7 @@ p {
   opacity: var(--cover-shadow-opacity);
 }
 
-.Message__htmlBox::before {
-  content: "";
+.Message__htmlBoxEdge {
   position: absolute;
   top: -2px;
   left: -2px;
@@ -318,8 +334,7 @@ p {
   transform-style: preserve-3d;
 }
 
-.Message__htmlBoxTitle::after {
-  content: "";
+.Message__htmlBoxTitleShadow {
   position: absolute;
   top: 0;
   left: 0;
