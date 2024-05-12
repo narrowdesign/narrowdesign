@@ -9,35 +9,92 @@
   <body>
     <div class="Container">
       <div class="Opening">
+        <div class="Model">The Model</div>
         <div class="Code--api">
-          <pre>
-            <pre>
-const fs = require("fs");
-const OpenAI = require("openai");
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-const htmlContent = fs.readFileSync("index.html", "utf8");
-
-openai.chat.completions.create({
-  model: "gpt-4",
-  messages: [
-    {
-      role: "system",
-      content: "You will be provided HTML code with English
-                content, and your task is to translate only the
-                content into Spanish and return valid HTML.",
-    },
-    {
-      role: "user",
-      content: htmlContent,
-    },
-  ],
-  temperature: 0.7,
-  max_tokens: 8192,
-  top_p: 1,
-})
-          </pre>
+          <div class="Code__inactive">
+            const fs = require("fs");
+            <br />
+            const OpenAI = require("openai");
+            <br />
+            const openai = new OpenAI({
+            <nobr>apiKey: process.env.OPENAI_API_KEY,</nobr> });
+            <br />
+            htmlContent = fs.readFileSync("index.html", "utf8");
+          </div>
+          openai.chat.completions.create({
+          <div class="Code__apiCall">
+            <div
+              class="Code__block"
+              data-indent="1"
+              data-tooltip="Specify the model"
+            >
+              model: "gpt-4",
+            </div>
+            <div
+              class="Code__block"
+              data-indent="1"
+              data-tooltip="Create an array of messages (prompt, response)."
+            >
+              messages: <br /><span class="" data-indent="1">[</span>
+              <br />
+              <span class="" data-indent="2">{</span>
+              <br />
+              <div
+                class="Code__block--child"
+                data-indent="3"
+                data-tooltip="Set the role for the instructions."
+              >
+                role: "system",
+              </div>
+              <br />
+              <div
+                class="Code__block--child"
+                data-indent="3"
+                data-tooltip="Natural language instructions for the LLM to perform on the content."
+              >
+                content: "You will be provided HTML code with English content,
+                and your task is to translate only the content into Spanish and
+                return valid HTML.",
+              </div>
+              <span class="" data-indent="2">}</span>, {
+              <br />
+              <div
+                class="Code__block--child"
+                data-indent="3"
+                data-tooltip="Specify a role for the prompt."
+              >
+                role: "user",
+              </div>
+              <br />
+              <div
+                class="Code__block--child"
+                data-indent="3"
+                data-tooltip="The content to be operated on."
+              >
+                content: htmlContent,
+              </div>
+              <br />
+              <span class="" data-indent="2">},</span>
+              <br />
+              <span class="" data-indent="1">],</span>
+            </div>
+          </div>
+          <div
+            class="Code__block"
+            data-indent="1"
+            data-tooltip="Parameters to tweak how the model carries out its prediction."
+          >
+            temperature: 0.7,
+            <br />
+            max_tokens: 8192,
+            <br />
+            top_p: 1,
+          </div>
+          <br />
+          })
+          <div class="Code__send">
+            <span class="u_pink">></span> Send API call
+          </div>
         </div>
         <div class="Cover">
           <div class="Cover__edges">
@@ -46,9 +103,7 @@ openai.chat.completions.create({
             <div class="Cover__edge"></div>
             <div class="Cover__edge"></div>
           </div>
-          <div class="Cover__back">
-            BEHIND EVERY PROMPT IS AN API CALL
-          </div>
+          <div class="Cover__back">BEHIND EVERY PROMPT IS AN API CALL</div>
           <div class="Cover__title">
             <div class="Cover__titleTop">
               <div class="Cover__titleTopLine"></div>
@@ -108,19 +163,20 @@ openai.chat.completions.create({
       &lt;h1&gt;Probablemente sepas qué es esto.&lt;/h1&gt;
       ...
     &lt;/body&gt;
-  &lt;/html&gt;
-                </pre
+  &lt;/html&gt;</pre
                   >
                 </div>
               </div>
             </div>
-
-            <div class="Scroll">SCROLL TO UNCOVER</div>
+            <div class="Message__input">
+              Scroll or click to look under the hood.
+            </div>
           </div>
         </div>
       </div>
       <div class="Noise"></div>
     </div>
+    <div class="Tooltip"></div>
     <script src="script.js"></script>
   </body>
 </html>

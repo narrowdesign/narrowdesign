@@ -2,6 +2,65 @@ const coverRef = document.querySelector(".Cover");
 const codeApiRef = document.querySelector(".Code--api");
 const messagesRef = document.querySelectorAll(".Message__content");
 const bodyRef = document.querySelector("body");
+const codeBlockChildren = document.querySelectorAll(".Code__block--child");
+const messageInputRef = document.querySelector(".Message__input");
+
+const tooltip = document.querySelector(".Tooltip");
+const codeLines = document.querySelectorAll(".Code--api div[data-tooltip]");
+const sendAPIRef = document.querySelector(".Code__send");
+
+window.addEventListener("click", () => {
+  bodyRef.classList.remove("isTooltipActive");
+  codeApiRef.classList.remove("isChildActive");
+  codeLines.forEach((line, i) => {
+    line.classList.remove("isActive");
+  });
+});
+
+messageInputRef.addEventListener("click", handleUncover);
+sendAPIRef.addEventListener("click", sendAPICall);
+
+function handleUncover(e) {
+  e.stopPropagation();
+  window.scrollTo({
+    top: 1200,
+    behavior: "smooth",
+  });
+  setTimeout(() => {
+    activateTooltip(codeLines[0]);
+  }, 1000);
+}
+
+function sendAPICall(e) {
+  bodyRef.classList.add("isSending");
+}
+
+function activateTooltip(line) {
+  line.classList.add("isActive");
+  codeApiRef.classList.add("isChildActive");
+  tooltip.innerHTML = line.dataset.tooltip;
+  bodyRef.classList.add("isTooltipActive");
+  const indent = line.dataset.indent * 20 - 10;
+  tooltip.style.transform = `translate(calc(-100% + ${indent}px), ${
+    line.getBoundingClientRect().top - 10
+  }px)`;
+  let color = getComputedStyle(line).backgroundColor;
+  color = color.replace(/[^,]+(?=\))/, "1");
+  tooltip.style.backgroundColor = color;
+
+  codeLines.forEach((codeLine) => {
+    if (line !== codeLine) {
+      codeLine.classList.remove("isActive");
+    }
+  });
+}
+
+codeLines.forEach((line, i) => {
+  line.addEventListener("click", (e) => {
+    e.stopPropagation();
+    activateTooltip(line);
+  });
+});
 
 window.addEventListener("scroll", handleScroll);
 window.addEventListener("mousemove", handleMouseMove);
