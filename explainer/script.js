@@ -4,6 +4,7 @@ const messagesRef = document.querySelectorAll(".Message__content");
 const bodyRef = document.querySelector("body");
 const codeBlockChildren = document.querySelectorAll(".Code__block--child");
 const messageInputRef = document.querySelector(".Message__input");
+const coverBackRef = document.querySelector(".Cover__back");
 
 const tooltip = document.querySelector(".Tooltip");
 const codeLines = document.querySelectorAll(".Code--api div[data-tooltip]");
@@ -33,6 +34,7 @@ function handleUncover(e) {
 
 function sendAPICall(e) {
   bodyRef.classList.add("isSending");
+  coverBackRef.innerHTML = "MEANWHILE, AT THE MODEL...";
 }
 
 function activateTooltip(line) {

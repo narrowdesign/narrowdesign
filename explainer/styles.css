@@ -111,6 +111,41 @@ p {
   opacity: 0;
   transform: translateY(100px);
   transition: transform 0.4s ease-in, opacity 0.4s ease-in;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.Model__window {
+  border: 1px solid;
+}
+
+.Model__code {
+  padding: 4px;
+  background: #f6b290;
+  color: var(--color-dark);
+}
+
+.Model__output pre {
+  padding: 4px 6px;
+  background: #f6b290;
+  color: var(--color-dark);
+  font-family: var(--monospace);
+}
+
+.Model__params {
+  display: flex;
+  border-bottom: 1px solid;
+  justify-content: space-between;
+}
+
+.Model__params--right {
+  display: flex;
+}
+
+.Model__param {
+  border-left: 1px solid;
+  padding: 4px 6px;
 }
 
 .Code__inactive {

@@ -9,7 +9,40 @@
   <body>
     <div class="Container">
       <div class="Opening">
-        <div class="Model">The Model</div>
+        <div class="Model">
+          <div class="Model__window">
+            <div class="Model__params">
+              <div class="Model__param">GPT-4</div>
+              <div class="Model__params--right">
+                <div class="Model__param">temperature: 0.7</div>
+                <div class="Model__param">max_tokens: 8192</div>
+                <div class="Model__param">top_p: 1</div>
+              </div>
+            </div>
+            <div class="Model__code">
+              &lt;system&gt; You will be provided HTML code with English
+              content, and your task is to translate only the content into
+              Spanish and return valid
+              HTML&lt;html&gt;&lt;head&gt;&lt;title&gt;How to program with AI
+              explanation page&lt;/title&gt;&lt;/head&gt;&lt;body&gt;
+              &lt;h1&gt;You probably know what this
+              is&lt;/h1&gt;...&lt;/body&gt;&lt;/html&gt;
+            </div>
+          </div>
+          <div class="Model__output">
+            <pre>
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Cómo programar con explicación de inteligencia artificial&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Probablemente sepas qué es esto.&lt;/h1&gt;
+    ...
+  &lt;/body&gt;
+&lt;/html&gt;</pre
+            >
+          </div>
+        </div>
         <div class="Code--api">
           <div class="Code__inactive">
             const fs = require("fs");
