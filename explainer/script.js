@@ -41,9 +41,15 @@ function activateTooltip(line) {
   tooltip.innerHTML = line.dataset.tooltip;
   bodyRef.classList.add("isTooltipActive");
   const indent = line.dataset.indent * 20 - 10;
-  tooltip.style.transform = `translate(calc(-100% + ${indent}px), ${
-    line.getBoundingClientRect().top - 10
-  }px)`;
+  if (window.innerWidth > 1360) {
+    tooltip.style.transform = `translate(calc(-100% + ${indent}px), ${
+      line.getBoundingClientRect().top - 10
+    }px)`;
+  } else {
+    tooltip.style.transform = `translate(${
+      line.getBoundingClientRect().left + 10
+    }px, calc(${line.getBoundingClientRect().bottom + 5}px))`;
+  }
   let color = getComputedStyle(line).backgroundColor;
   color = color.replace(/[^,]+(?=\))/, "1");
   tooltip.style.backgroundColor = color;

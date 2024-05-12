@@ -330,8 +330,7 @@ body.isSending .Model {
 .Tooltip {
   position: fixed;
   top: 0;
-  left: calc((100vw - 880px) / 2);
-  transform: translateX(-100%) translateY(200px);
+  left: 0;
   width: 300px;
   padding: 10px 20px;
   background: hsl(209, 43%, 10%);
@@ -341,21 +340,35 @@ body.isSending .Model {
   border-bottom: 4px solid;
 }
 
-body.isTooltipActive .Tooltip {
-  opacity: 0.9;
-}
-
 .Tooltip::after {
   /* arrow */
   content: "";
   position: absolute;
-  top: 18px;
-  left: calc(100% - 16px);
-  margin-top: -10px;
+  top: 0;
+  left: 20px;
   width: 20px;
   height: 20px;
+  margin-top: -5px;
   transform: rotate(45deg);
   background: inherit;
+  z-index: -1;
+}
+
+@media (min-width: 1360px) {
+  .Tooltip {
+    left: calc((100vw - 880px) / 2);
+    transform: translateX(-100%) translateY(200px);
+  }
+
+  .Tooltip::after {
+    top: 18px;
+    left: calc(100% - 16px);
+    margin-top: -10px;
+  }
+}
+
+body.isTooltipActive .Tooltip {
+  opacity: 0.9;
 }
 
 .Messages {
