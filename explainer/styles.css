@@ -27,13 +27,16 @@ p {
   font-family: var(--sans-serif);
 }
 
-*[data-indent="1"] {
+*[data-indent="1"],
+.u_indent1 {
   margin-left: 20px;
 }
-*[data-indent="2"] {
+*[data-indent="2"],
+.u_indent2 {
   margin-left: 40px;
 }
-*[data-indent="3"] {
+*[data-indent="3"],
+.u_indent3 {
   margin-left: 60px;
 }
 
@@ -113,7 +116,7 @@ p {
   transition: transform 0.4s ease-out, opacity 0.4s ease-out;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
 
 .Model__window {
@@ -122,13 +125,13 @@ p {
 
 .Model__code {
   padding: 4px;
-  background: #f6b290;
+  background: #dbaa92;
   color: var(--color-dark);
 }
 
-.Model__output pre {
+.Model__output {
   padding: 4px 6px;
-  background: #f6b290;
+  background: #dbaa92;
   color: var(--color-dark);
   font-family: var(--monospace);
 }
@@ -334,7 +337,8 @@ p {
   padding-top: 3px;
 }
 
-.Code__send {
+.Code__send,
+.Model__return {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -347,7 +351,8 @@ p {
   cursor: pointer;
 }
 
-.Code__send:hover {
+.Code__send:hover,
+.Model__return:hover {
   outline: 1px solid;
 }
 

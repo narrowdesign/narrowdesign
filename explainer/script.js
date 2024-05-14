@@ -6,20 +6,71 @@ const codeBlockChildren = document.querySelectorAll(".Code__block--child");
 const messageInputRef = document.querySelector(".Message__input");
 const coverBackRef = document.querySelector(".Cover__back");
 
+const htmlBoxTextRef = document.querySelector(".Message__htmlBoxText");
+const modelOutputRef = document.querySelector(".Model__output");
+
 const tooltip = document.querySelector(".Tooltip");
 const codeLines = document.querySelectorAll(".Code--api div[data-tooltip]");
 const sendAPIRef = document.querySelector(".Code__send");
+const returnOutputRef = document.querySelector(".Model__return");
+
+let isActivated = false;
+
+const htmlTranslated = [
+  "&lt;html&gt;",
+  "&lt;head&gt;",
+  "&lt;title&gt;Cómo programar con explicación de inteligencia artificial&lt;/title&gt;",
+  "&lt;/head&gt;",
+  "&lt;body&gt;",
+  "&lt;h1&gt;Probablemente sepas qué es esto.&lt;/h1&gt;",
+  "&lt;/body&gt;",
+  "&lt;/html&gt;",
+];
+
+function typeText(element, text, index = 0) {
+  if (index < text.length) {
+    const char = text[index];
+    // Check if the character is &lt; or &gt;
+    if (char === "&") {
+      // Combine the next 3 characters to check if it's &lt; or &gt;
+      const specialChar = text.substr(index, 4);
+      if (specialChar === "&lt;" || specialChar === "&gt;") {
+        // If it's &lt; or &gt;, type them as one character
+        element.innerHTML += specialChar;
+        // Increment index by 3 to skip the next 3 characters
+        setTimeout(() => typeText(element, text, index + 4), 50);
+        return;
+      }
+    }
+    // Type normal character
+    element.innerHTML += char;
+    setTimeout(() => typeText(element, text, index + 1), 50);
+  }
+}
+
+// Loop through each line of text and type it into the htmlBoxTextRef element
+let typeTimeAcc = 0;
+htmlTranslated.forEach((line, index) => {
+  const lineElement = document.createElement("div");
+  if (index === 1 || index === 3 || index === 4 || index === 6) {
+    lineElement.classList.add("u_indent1");
+  } else if (index === 2 || index === 5) {
+    lineElement.classList.add("u_indent2");
+  }
+  htmlBoxTextRef.appendChild(lineElement);
+  setTimeout(() => {
+    typeText(lineElement, line);
+  }, typeTimeAcc);
+  typeTimeAcc += line.length * 20;
+});
 
 window.addEventListener("click", () => {
-  bodyRef.classList.remove("isTooltipActive");
-  codeApiRef.classList.remove("isChildActive");
-  codeLines.forEach((line, i) => {
-    line.classList.remove("isActive");
-  });
+  deactivateTooltip();
 });
 
 messageInputRef.addEventListener("click", handleUncover);
 sendAPIRef.addEventListener("click", sendAPICall);
+returnOutputRef.addEventListener("click", returnOutputCall);
 
 function handleUncover(e) {
   e.stopPropagation();
@@ -27,14 +78,31 @@ function handleUncover(e) {
     top: 1200,
     behavior: "smooth",
   });
-  setTimeout(() => {
-    activateTooltip(codeLines[0]);
-  }, 1000);
 }
 
 function sendAPICall(e) {
   bodyRef.classList.add("isSending");
   coverBackRef.innerHTML = "MEANWHILE, AT THE MODEL...";
+
+  let typeTimeAcc = 0;
+  htmlTranslated.forEach((line, index) => {
+    const lineElement = document.createElement("div");
+    if (index === 1 || index === 3 || index === 4 || index === 6) {
+      lineElement.classList.add("u_indent1");
+    } else if (index === 2 || index === 5) {
+      lineElement.classList.add("u_indent2");
+    }
+    modelOutputRef.appendChild(lineElement);
+    setTimeout(() => {
+      typeText(lineElement, line);
+    }, typeTimeAcc);
+    typeTimeAcc += line.length * 20;
+  });
+}
+
+function returnOutputCall(e) {
+  bodyRef.classList.remove("isSending");
+  coverBackRef.innerHTML = "BACK IN OUR CODE, WE CAN USE THE RESPONSE.";
 }
 
 function activateTooltip(line) {
@@ -60,6 +128,14 @@ function activateTooltip(line) {
     if (line !== codeLine) {
       codeLine.classList.remove("isActive");
     }
+  });
+}
+
+function deactivateTooltip() {
+  bodyRef.classList.remove("isTooltipActive");
+  codeApiRef.classList.remove("isChildActive");
+  codeLines.forEach((line, i) => {
+    line.classList.remove("isActive");
   });
 }
 
@@ -115,4 +191,11 @@ function handleScroll(e) {
     "--code-color",
     `hsl(20, 85%, ${codeApiColorLightness}%)`
   );
+
+  if (scroll > 1000 && !isActivated) {
+    isActivated = true;
+    activateTooltip(codeLines[0]);
+  } else if (scroll < 1000) {
+    deactivateTooltip();
+  }
 }
