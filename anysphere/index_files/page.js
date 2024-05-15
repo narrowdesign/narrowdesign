@@ -2,16 +2,14 @@ class PageScript {
   constructor() {
     this.winH = window.innerHeight;
     this.scrollY = 0;
+    this.careersTop = 0;
+    this.blogTop = 0;
 
     this.titleMenuItems = document.querySelectorAll(".titleMenu__title");
     document.addEventListener("wheel", this.handleWheel);
     document.addEventListener("scroll", this.handleScroll);
-    setTops();
-    window.addEventListener("resize", () => {
-      setTops();
-    });
 
-    function setTops() {
+    const setTops = () => {
       this.careersTop =
         document.querySelector(".careers__copy").offsetTop -
         window.innerHeight * 0.4 +
@@ -20,7 +18,11 @@ class PageScript {
         document.querySelector(".blog__copy").offsetTop -
         window.innerHeight * 0.4 +
         146;
-    }
+    };
+    setTops();
+    window.addEventListener("resize", () => {
+      setTops();
+    });
 
     this.titleMenuItems[0].addEventListener("click", () => {
       // smooth scroll to 0, 0
