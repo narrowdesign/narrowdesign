@@ -4,7 +4,7 @@ const messagesRef = document.querySelectorAll(".Message__content");
 const bodyRef = document.querySelector("body");
 const codeBlockChildren = document.querySelectorAll(".Code__block--child");
 const messageInputRef = document.querySelector(".Message__input");
-const coverBackRef = document.querySelector(".Cover__back");
+const coverBackRef = document.querySelector(".Cover__backTitle");
 
 const htmlBoxTextRef = document.querySelector(".Message__htmlBoxText");
 const modelOutputRef = document.querySelector(".Model__output");
