@@ -311,7 +311,7 @@ p {
   color: black;
 }
 
-.Cover__backListItem--active {
+.Cover__backListItem.isActive {
   color: white;
   border-bottom: 1px solid white;
   padding-bottom: 10px;

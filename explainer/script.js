@@ -5,6 +5,7 @@ const bodyRef = document.querySelector("body");
 const codeBlockChildren = document.querySelectorAll(".Code__block--child");
 const messageInputRef = document.querySelector(".Message__input");
 const coverBackRef = document.querySelector(".Cover__backTitle");
+const coverBackListItemsRef = document.querySelectorAll(".Cover__backListItem");
 
 const htmlBoxTextRef = document.querySelector(".Message__htmlBoxText");
 const modelOutputRef = document.querySelector(".Model__output");
@@ -83,6 +84,8 @@ function handleUncover(e) {
 function sendAPICall(e) {
   bodyRef.classList.add("isSending");
   coverBackRef.innerHTML = "MEANWHILE, AT THE MODEL...";
+  coverBackListItemsRef[1].classList.remove("isActive");
+  coverBackListItemsRef[2].classList.add("isActive");
 
   let typeTimeAcc = 0;
   htmlTranslated.forEach((line, index) => {
@@ -101,8 +104,11 @@ function sendAPICall(e) {
 }
 
 function returnOutputCall(e) {
+  coverBackListItemsRef[2].classList.remove("isActive");
+  coverBackListItemsRef[3].classList.add("isActive");
   bodyRef.classList.remove("isSending");
-  coverBackRef.innerHTML = "BACK IN OUR CODE, WE CAN USE THE RESPONSE.";
+  coverBackRef.innerHTML =
+    "BACK IN OUR CODE, WE CAN USE THE RESPONSE IN A NEW MESSAGE.";
 }
 
 function activateTooltip(line) {
@@ -195,6 +201,10 @@ function handleScroll(e) {
   if (scroll > 1000 && !isActivated) {
     isActivated = true;
     activateTooltip(codeLines[0]);
+    coverBackListItemsRef.forEach((item) => {
+      item.classList.remove("isActive");
+    });
+    coverBackListItemsRef[1].classList.add("isActive");
   } else if (scroll < 1000) {
     deactivateTooltip();
   }
