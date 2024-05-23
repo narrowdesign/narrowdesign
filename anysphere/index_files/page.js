@@ -1,13 +1,22 @@
 class PageScript {
   constructor() {
+    this.winW = window.innerWidth;
     this.winH = window.innerHeight;
     this.scrollY = 0;
     this.careersTop = 0;
     this.blogTop = 0;
+    this.sphereInitialized = false;
+    this.mouseX = 0;
+    this.mouseY = 0;
+    this.mouseVX = 0;
+    this.mouseVY = 0;
+    this.sphereCount = 0;
+    this.sphereMaxCount = 1000;
 
     this.titleMenuItems = document.querySelectorAll(".titleMenu__title");
     document.addEventListener("wheel", this.handleWheel);
     document.addEventListener("scroll", this.handleScroll);
+    document.addEventListener("mousemove", this.handleMouseMove);
 
     const setTops = () => {
       this.careersTop =
@@ -48,6 +57,17 @@ class PageScript {
     });
   }
 
+  handleMouseMove = (e) => {
+    this.mouseX = e.clientX / window.innerWidth - 0.5;
+    this.mouseY = e.clientY / window.innerHeight - 0.5;
+    this.mouseVX = Math.abs(e.movementX / window.innerWidth);
+    this.mouseVY = Math.abs(e.movementY / window.innerHeight);
+    if (!this.sphereInitialized) {
+      this.sphereInitialized = true;
+      this.createSphere();
+    }
+  };
+
   handleScroll = (e) => {
     if (window.scrollY > this.careersTop - 150) {
       this.titleMenuItems[0].classList.remove("isActive");
@@ -79,6 +99,44 @@ class PageScript {
 
     // set the new background color
     document.body.style.backgroundColor = `hsl(${hue}, ${sat}%, 19%)`;
+  };
+
+  // create a 2d canvas element and draw a circle on it
+  createSphere = () => {
+    const canvas = document.createElement("canvas");
+    canvas.width = this.winW;
+    canvas.height = this.winH;
+    const ctx = canvas.getContext("2d");
+    document.body.appendChild(canvas);
+
+    const draw = () => {
+      ctx.fillStyle = "rgba(0, 0, 0, 0.009)";
+      ctx.rect(0, 0, this.winW, this.winH);
+      ctx.fill();
+      ctx.beginPath();
+      ctx.lineWidth = 2;
+      // set the color based on mouse velocity
+      ctx.fillStyle = `rgba(${
+        20 + Math.floor((Math.sin(performance.now() * 0.0004) + 1) * 40)
+      }, 20, ${
+        20 + Math.floor((Math.cos(performance.now() * 0.00033) + 1) * 40)
+      }, 1)`;
+      ctx.arc(
+        this.mouseX * this.winW + this.winW / 2,
+        this.mouseY * this.winH + this.winH / 2,
+        (Math.sin(performance.now() * 0.001) + 1) * 100 + 50,
+        0,
+        Math.PI * 2
+      );
+      ctx.stroke();
+      ctx.fill();
+    };
+
+    const update = () => {
+      draw();
+      requestAnimationFrame(update);
+    };
+    update();
   };
 }
 
