@@ -12,6 +12,7 @@ class PageScript {
     this.mouseVY = 0;
     this.sphereCount = 0;
     this.sphereMaxCount = 1000;
+    this.tick = 0;
 
     this.titleMenuItems = document.querySelectorAll(".titleMenu__title");
     document.addEventListener("wheel", this.handleWheel);
@@ -55,6 +56,7 @@ class PageScript {
         behavior: "smooth",
       });
     });
+    this.createSphere();
   }
 
   handleMouseMove = (e) => {
@@ -62,10 +64,6 @@ class PageScript {
     this.mouseY = e.clientY / window.innerHeight - 0.5;
     this.mouseVX = Math.abs(e.movementX / window.innerWidth);
     this.mouseVY = Math.abs(e.movementY / window.innerHeight);
-    if (!this.sphereInitialized) {
-      this.sphereInitialized = true;
-      this.createSphere();
-    }
   };
 
   handleScroll = (e) => {
@@ -117,20 +115,17 @@ class PageScript {
       ctx.rect(0, 0, this.winW, this.winH);
       ctx.fill();
       ctx.beginPath();
-      ctx.lineWidth = (Math.sin(performance.now() * 0.001) + 1) * 2 + 2;
+      ctx.lineWidth = (Math.sin(this.tick * 0.01) + 1) * 2 + 1;
       // set the color based on mouse velocity
       ctx.fillStyle = `rgba(${
-        20 + Math.floor((Math.sin(performance.now() * 0.0008) + 1) * 40)
-      }, ${
-        20 + Math.floor((Math.sin(performance.now() * 0.00047) + 1) * 40)
-      }, ${
-        20 +
-        Math.floor((Math.sin((performance.now() + 100) * 0.00067) + 1) * 40)
+        20 + Math.floor((Math.sin(this.tick * 0.008) + 1) * 40)
+      }, ${20 + Math.floor((Math.sin(this.tick * 0.0047) + 1) * 40)}, ${
+        20 + Math.floor((Math.sin((this.tick + 100) * 0.0067) + 1) * 40)
       }, 1)`;
       ctx.arc(
         x,
         y,
-        (Math.sin(performance.now() * 0.001) + 1) * 100 + 20,
+        (Math.sin(this.tick * 0.01) + 1) * 100 + 20,
         0,
         Math.PI * 2
       );
@@ -139,6 +134,7 @@ class PageScript {
     };
 
     const update = () => {
+      this.tick++;
       draw();
       requestAnimationFrame(update);
     };
