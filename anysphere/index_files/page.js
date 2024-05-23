@@ -110,21 +110,27 @@ class PageScript {
     document.body.appendChild(canvas);
 
     const draw = () => {
-      ctx.fillStyle = "rgba(0, 0, 0, 0.009)";
+      const x = this.mouseX * this.winW + this.winW / 2;
+      const y = this.mouseY * this.winH + this.winH / 2;
+
+      ctx.fillStyle = "rgba(0, 0, 0, 0)";
       ctx.rect(0, 0, this.winW, this.winH);
       ctx.fill();
       ctx.beginPath();
-      ctx.lineWidth = 2;
+      ctx.lineWidth = (Math.sin(performance.now() * 0.001) + 1) * 2 + 2;
       // set the color based on mouse velocity
       ctx.fillStyle = `rgba(${
-        20 + Math.floor((Math.sin(performance.now() * 0.0004) + 1) * 40)
-      }, 20, ${
-        20 + Math.floor((Math.cos(performance.now() * 0.00033) + 1) * 40)
+        20 + Math.floor((Math.sin(performance.now() * 0.0008) + 1) * 40)
+      }, ${
+        20 + Math.floor((Math.sin(performance.now() * 0.00047) + 1) * 40)
+      }, ${
+        20 +
+        Math.floor((Math.sin((performance.now() + 100) * 0.00067) + 1) * 40)
       }, 1)`;
       ctx.arc(
-        this.mouseX * this.winW + this.winW / 2,
-        this.mouseY * this.winH + this.winH / 2,
-        (Math.sin(performance.now() * 0.001) + 1) * 100 + 50,
+        x,
+        y,
+        (Math.sin(performance.now() * 0.001) + 1) * 100 + 20,
         0,
         Math.PI * 2
       );
