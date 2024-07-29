@@ -1,12 +1,11 @@
-
 html {
   overscroll-behavior-x: contain;
   overflow-x: hidden;
   overflow: visible;
   background: white;
-  font-family: 'system-ui';  
+  font-family: "system-ui";
   -webkit-font-smoothing: antialiased;
-  --base-font-size: 18px;
+  --base-font-size: 1vw;
   scroll-behavior: smooth;
 }
 
@@ -19,11 +18,11 @@ body {
   overscroll-behavior-x: contain;
   overflow-x: hidden;
   --after-element-opacity: 0;
-  --background: hsla(360,100%,100%,1);
-  --color: hsla(360,100%,0%,1);
-  --border-color: hsla(360,100%,0%,1);
+  --background: hsla(360, 100%, 100%, 1);
+  --color: hsla(360, 100%, 0%, 1);
+  --border-color: hsla(360, 100%, 0%, 1);
   background: var(--background-linear-gradient, var(--background));
-  background-image: '';
+  background-image: "";
   border-color: var(--border-color);
   border-width: 0vw;
   border-style: solid;
@@ -35,7 +34,9 @@ body {
   padding: 0vw;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   user-select: none;
 }
@@ -65,10 +66,11 @@ code {
   --color: inherit;
   --border-color: var(--color);
   --text-shadow: var(--color) 0vw 0vw 0vw;
-  --transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  --transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
 
   align-self: stretch;
-  background-image: '';
+  background-image: "";
   border-width: 0vw;
   border-style: solid;
   color: var(--color);
@@ -111,7 +113,7 @@ iframe {
   padding-top: 3.5vw;
   padding-right: 3.5vw;
   padding-bottom: 3.5vw;
-  padding-left: 3.5vw; 
+  padding-left: 3.5vw;
   row-gap: 2vw;
 }
 
@@ -139,8 +141,8 @@ button {
   z-index: 1000000000;
   font-size: 15px;
   font-weight: 500;
-  --app-shadow: hsla(0,100%,9.8%,0.42) 4.2px 10.2px 38px 0px;
-  --app-background-color: hsla(0,100%,99%,1);
+  --app-shadow: hsla(0, 100%, 9.8%, 0.42) 4.2px 10.2px 38px 0px;
+  --app-background-color: hsla(0, 100%, 99%, 1);
   --app-color: #050202;
   color: var(--app-color);
   transition: 300ms transform;
@@ -166,7 +168,7 @@ button {
   box-shadow: var(--app-shadow);
   z-index: 2;
   font-weight: 400;
-  font-family: 'system-ui';
+  font-family: "system-ui";
   --webkit-font-smoothing: antialiased;
   font-size: 15.5px;
 }
@@ -179,7 +181,7 @@ button {
 .App--isSearchMode .AppDisplay__search,
 .App--isClassListMode .AppDisplay__classList,
 .App--isLinkInputMode .AppDisplay__linkInput {
-  opacity: 1; 
+  opacity: 1;
   pointer-events: auto;
 }
 
@@ -196,7 +198,7 @@ button {
   position: absolute;
   opacity: 0.1;
   border-right: 1px solid var(--color);
-  border-left: 1px solid var(--color);   
+  border-left: 1px solid var(--color);
   border-bottom: 1px solid var(--color);
   border-top: 1px solid var(--color);
   pointer-events: none !important;
@@ -222,7 +224,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 
 .AppElement--isSelected:not(body)::after,
 .AppElement--isMultiSelected:not(body)::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -232,13 +234,15 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   bottom: 0;
   pointer-events: none;
   opacity: 0.4;
-  background: radial-gradient(circle at 50% -50%, #0ff, transparent 70%), radial-gradient(circle at -50% 100%, #ff0, transparent 70%), radial-gradient(circle at 150% 100%, #f0f, transparent 70%);
+  background: radial-gradient(circle at 50% -50%, #0ff, transparent 70%),
+    radial-gradient(circle at -50% 100%, #ff0, transparent 70%),
+    radial-gradient(circle at 150% 100%, #f0f, transparent 70%);
   animation: pulse 300ms forwards;
 }
 
 .App--isVisualMode .AppElement--isSelected::before,
 .App--isVisualMode .AppElement--isMultiSelected::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -251,7 +255,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 }
 
 .App--isVisualMode .AppElement--isSelected.AppElement--color:before,
-.App--isVisualMode .AppElement--isSelected.AppElement--background-color:before{
+.App--isVisualMode .AppElement--isSelected.AppElement--background-color:before {
   color: transparent;
   background-color: transparent;
 }
@@ -278,7 +282,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   bottom: auto;
   height: var(--margin-top);
   margin-top: calc(var(--margin-top) * -1);
-  border-bottom: 1px solid var(--color); 
+  border-bottom: 1px solid var(--color);
   background: linear-gradient(transparent, var(--color));
 }
 
@@ -294,7 +298,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   height: var(--margin-bottom);
   margin-bottom: calc(var(--margin-bottom) * -1);
   background: linear-gradient(var(--color), transparent);
-  border-top: 1px solid var(--color); 
+  border-top: 1px solid var(--color);
 }
 
 .App--isVisualMode .AppElement--isSelected.AppElement--margin-left:before {
@@ -331,12 +335,12 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 
 .App--isVisualMode .AppElement--isSelected.AppElement--width:before {
   border-right: 1px solid var(--color);
-  border-left: 1px solid var(--color);  
+  border-left: 1px solid var(--color);
 }
 
 .App--isVisualMode .AppElement--isSelected.AppElement--height:before {
   border-top: 1px solid var(--color);
-  border-bottom: 1px solid var(--color);  
+  border-bottom: 1px solid var(--color);
 }
 
 .App--isVisualMode .AppElement--isSelected.AppElement--border-radius:before {
@@ -374,18 +378,18 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   border-radius: 4px;
   transition: transform 300ms, opacity 500ms, height 300ms;
   opacity: 0.9;
-  display: grid; 
-  border-radius: 11.2px; 
-  padding: 0px; 
-  gap: 0px; 
+  display: grid;
+  border-radius: 11.2px;
+  padding: 0px;
+  gap: 0px;
   grid-area: 3 / 1 / 4 / 2;
   width: auto;
-  justify-self: flex-start; 
+  justify-self: flex-start;
   z-index: 2;
 }
 
 .AppStyleDisplay:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
@@ -398,8 +402,8 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 
 .AppStyleDisplay__prop {
   padding: 12px 18px 12px 18px;
-  border-radius: 8.4px; 
-  grid-area: 1 / 1 / 2 / 2; 
+  border-radius: 8.4px;
+  grid-area: 1 / 1 / 2 / 2;
   align-self: center;
   background: var(--app-background-color);
   box-shadow: var(--app-shadow);
@@ -411,10 +415,10 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   flex-direction: column;
   gap: 4px;
   display: none;
-  padding: 12px 12px 12px 11px; 
-  background-color: hsla(0,100%,95.2%,1); 
-  border-radius: 6.8px; 
-  margin: 4px; 
+  padding: 12px 12px 12px 11px;
+  background-color: hsla(0, 100%, 95.2%, 1);
+  border-radius: 6.8px;
+  margin: 4px;
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -451,7 +455,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 }
 
 .AppStyleDisplay__enum::before {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   width: 100%;
@@ -459,7 +463,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   left: 0;
   top: 0;
   border-radius: 12px;
-  box-shadow: hsla(0,100%,9.8%,0.2) 0px 0px 0px 0px;
+  box-shadow: hsla(0, 100%, 9.8%, 0.2) 0px 0px 0px 0px;
   transition: box-shadow 300ms;
 }
 
@@ -499,7 +503,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 }
 
 .AppStyleDisplay__elementsUnderCursor::before {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   width: 100%;
@@ -507,14 +511,13 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   left: 0;
   top: 0;
   border-radius: 12px;
-  box-shadow: hsla(0,100%,9.8%,0.2) 0px 0px 0px 0px;
+  box-shadow: hsla(0, 100%, 9.8%, 0.2) 0px 0px 0px 0px;
   transition: box-shadow 300ms;
 }
 
 .AppStyleDisplay__enum--isActive::before {
   box-shadow: var(--app-shadow);
 }
-
 
 .AppStyleDisplay__inspectStyleContainer {
   position: absolute;
@@ -557,7 +560,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
 }
 
 .AppStyleDisplay__inspectStyleProp::before {
-  content: '';
+  content: "";
   z-index: -1;
   position: absolute;
   width: 100%;
@@ -565,7 +568,7 @@ body:not(.App--isEditMode) .AppElement--isSelected * {
   left: 0;
   top: 0;
   border-radius: 12px;
-  box-shadow: hsla(0,100%,9.8%,0.2) 0px 0px 0px 0px;
+  box-shadow: hsla(0, 100%, 9.8%, 0.2) 0px 0px 0px 0px;
   transition: box-shadow 300ms;
 }
 
@@ -644,7 +647,8 @@ body:not(.App--isInstrument) .AppDisplay {
   opacity: 1;
 }
 
-.App--isElementsUnderCursorListDisplayed .AppStyleDisplay__elementsUnderCursorContainer {
+.App--isElementsUnderCursorListDisplayed
+  .AppStyleDisplay__elementsUnderCursorContainer {
   opacity: 1;
 }
 
@@ -661,8 +665,8 @@ body:not(.App--isInstrument) .AppDisplay {
   opacity: 1;
 }
 
-.App--isXrayMode *:not([class^='App']):after {
-  content: '';
+.App--isXrayMode *:not([class^="App"]):after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -676,8 +680,8 @@ body:not(.App--isInstrument) .AppDisplay {
   z-index: 1000000;
 }
 
-.App--isXrayMode.App--isVisualMode *:not([class^='App']):after {
-  content: '';
+.App--isXrayMode.App--isVisualMode *:not([class^="App"]):after {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -690,7 +694,7 @@ body:not(.App--isInstrument) .AppDisplay {
   opacity: 0.04;
 }
 
-.App--isPropChannelDisplayed  .AppDisplay {
+.App--isPropChannelDisplayed .AppDisplay {
   transform: translateY(-30px);
 }
 
@@ -698,8 +702,7 @@ body:not(.App--isInstrument) .AppDisplay {
   0% {
     opacity: 1;
   }
-  100%
-  {
+  100% {
     background-position: 100% 100%, 100% -100%, -100% -100%;
     opacity: var(--after-element-opacity);
   }
@@ -707,10 +710,12 @@ body:not(.App--isInstrument) .AppDisplay {
 
 @keyframes keypress {
   0% {
-    transform: translateX(-50%) scale(1)
-  } 20% {
+    transform: translateX(-50%) scale(1);
+  }
+  20% {
     transform: translateX(-50%) scale(0.8);
-  } 100% {
+  }
+  100% {
     transform: translateX(-50%) scale(1);
   }
 }
