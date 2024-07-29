@@ -1,25160 +1,8045 @@
 const recording = [
+  ["select", 1],
+  ["style", 1, "font-size", "4vw"],
+  ["new", "1", 1],
+  ["select", 2],
+  ["style", 2, "grid-row-start", 1],
+  ["style", 2, "grid-row-end", 1],
+  ["select", 2],
+  ["type", 2, ""],
+  ["type", 2, "T"],
+  ["type", 2, "Th"],
+  ["type", 2, "Thi"],
+  ["type", 2, "This"],
+  ["type", 2, "This&nbsp;"],
+  ["type", 2, "This i"],
+  ["type", 2, "This is"],
+  ["type", 2, "This is&nbsp;"],
+  ["type", 2, "This is n"],
+  ["type", 2, "This is not"],
+  ["type", 2, "This is not&nbsp;"],
+  ["type", 2, "This is not a"],
+  ["type", 2, "This is not a&nbsp;"],
+  ["type", 2, "This is not a s"],
+  ["type", 2, "This is not a st"],
+  ["type", 2, "This is not a sto"],
+  ["type", 2, "This is not a stor"],
+  ["type", 2, "This is not a story"],
+  ["type", 2, "This is not a story&nbsp;"],
+  ["type", 2, "This is not a story a"],
+  ["type", 2, "This is not a story ab"],
+  ["type", 2, "This is not a story abo"],
+  ["type", 2, "This is not a story abou"],
+  ["type", 2, "This is not a story about"],
+  ["type", 2, "This is not a story about&nbsp;"],
+  ["type", 2, "This is not a story about a"],
+  ["type", 2, "This is not a story about a&nbsp;"],
+  ["type", 2, "This is not a story about a m"],
+  ["type", 2, "This is not a story about a mu"],
+  ["type", 2, "This is not a story about a mur"],
+  ["type", 2, "This is not a story about a murd"],
+  ["type", 2, "This is not a story about a murder"],
+  ["type", 2, "This is not a story about a murder."],
+  ["type", 2, "This is not a story about t murder."],
+  ["type", 2, "This is not a story about th murder."],
+  ["type", 2, "This is not a story about the murder."],
+  ["type", 2, "This is not a story about the murder ."],
+  ["type", 2, "This is not a story about the murder of."],
+  ["type", 2, "This is not a story about the murder of ."],
+  ["type", 2, "This is not a story about the murder of a."],
+  ["type", 2, "This is not a story about the murder of an."],
+  ["type", 2, "This is not a story about the murder of an ."],
+  ["type", 2, "This is not a story about the murder of an i."],
+  ["type", 2, "This is not a story about the murder of an in."],
+  ["type", 2, "This is not a story about the murder of an i."],
+  ["type", 2, "This is not a story about the murder of an ."],
+  ["type", 2, "This is not a story about the murder of an u."],
+  ["type", 2, "This is not a story about the murder of an un."],
+  ["type", 2, "This is not a story about the murder of an unk."],
+  ["type", 2, "This is not a story about the murder of an unkn."],
+  ["type", 2, "This is not a story about the murder of an unkno."],
+  ["type", 2, "This is not a story about the murder of an unknow."],
+  ["type", 2, "This is not a story about the murder of an unknown."],
+  ["type", 2, "This is not a story about the murder of an unknown ."],
+  ["type", 2, "This is not a story about the murder of an unknown g."],
+  ["type", 2, "This is not a story about the murder of an unknown ge."],
+  ["type", 2, "This is not a story about the murder of an unknown gen."],
+  ["type", 2, "This is not a story about the murder of an unknown geni."],
+  ["type", 2, "This is not a story about the murder of an unknown geniu."],
+  ["type", 2, "This is not a story about the murder of an unknown genius."],
+  ["type", 2, "B the murder of an unknown genius."],
+  ["type", 2, "Bu the murder of an unknown genius."],
+  ["type", 2, "But the murder of an unknown genius."],
+  ["type", 2, "But&nbsp; the murder of an unknown genius."],
+  ["type", 2, "But i the murder of an unknown genius."],
+  ["type", 2, "But it&nbsp; the murder of an unknown genius."],
+  ["type", 2, "But it i the murder of an unknown genius."],
+  ["type", 2, "But it in the murder of an unknown genius."],
+  ["type", 2, "But it inv the murder of an unknown genius."],
+  ["type", 2, "But it invo the murder of an unknown genius."],
+  ["type", 2, "But it invol the murder of an unknown genius."],
+  ["type", 2, "But it involv the murder of an unknown genius."],
+  ["type", 2, "But it involve the murder of an unknown genius."],
+  ["type", 2, "But it involves the murder of an unknown genius."],
+  ["type", 2, "But it involves the murder of an unknown genius.&nbsp;"],
+  ["type", 2, "But it involves the murder of an unknown genius.&nbsp;&nbsp;"],
+  ["type", 2, "But it involves the murder of an unknown genius.&nbsp; &nbsp;"],
+  [
+    "type",
+    2,
+    "But it involves the murder of an unknown genius.&nbsp; &nbsp;&nbsp;",
+  ],
+  ["style", 2, "border-top-width", "0.0027500000000000003vw"],
+  ["style", 2, "border-bottom-width", "0.0027500000000000003vw"],
+  ["style", 2, "border-right-width", "0.0027500000000000003vw"],
+  ["style", 2, "border-left-width", "0.0027500000000000003vw"],
+  ["style", 2, "border-top-width", "0.00875vw"],
+  ["style", 2, "border-bottom-width", "0.00875vw"],
+  ["style", 2, "border-right-width", "0.00875vw"],
+  ["style", 2, "border-left-width", "0.00875vw"],
+  ["style", 2, "border-top-width", "0.018500000000000003vw"],
+  ["style", 2, "border-bottom-width", "0.018500000000000003vw"],
+  ["style", 2, "border-right-width", "0.018500000000000003vw"],
+  ["style", 2, "border-left-width", "0.018500000000000003vw"],
+  ["style", 2, "border-top-width", "0.021249999999999998vw"],
+  ["style", 2, "border-bottom-width", "0.021249999999999998vw"],
+  ["style", 2, "border-right-width", "0.021249999999999998vw"],
+  ["style", 2, "border-left-width", "0.021249999999999998vw"],
+  ["style", 2, "border-top-width", "0.035250000000000004vw"],
+  ["style", 2, "border-bottom-width", "0.035250000000000004vw"],
+  ["style", 2, "border-right-width", "0.035250000000000004vw"],
+  ["style", 2, "border-left-width", "0.035250000000000004vw"],
+  ["style", 2, "border-top-width", "0.045vw"],
+  ["style", 2, "border-bottom-width", "0.045vw"],
+  ["style", 2, "border-right-width", "0.045vw"],
+  ["style", 2, "border-left-width", "0.045vw"],
+  ["style", 2, "border-top-width", "0.05475vw"],
+  ["style", 2, "border-bottom-width", "0.05475vw"],
+  ["style", 2, "border-right-width", "0.05475vw"],
+  ["style", 2, "border-left-width", "0.05475vw"],
+  ["style", 2, "border-top-width", "0.06875vw"],
+  ["style", 2, "border-bottom-width", "0.06875vw"],
+  ["style", 2, "border-right-width", "0.06875vw"],
+  ["style", 2, "border-left-width", "0.06875vw"],
+  ["style", 2, "border-top-width", "0.08275vw"],
+  ["style", 2, "border-bottom-width", "0.08275vw"],
+  ["style", 2, "border-right-width", "0.08275vw"],
+  ["style", 2, "border-left-width", "0.08275vw"],
+  ["style", 2, "border-top-width", "0.09675vw"],
+  ["style", 2, "border-bottom-width", "0.09675vw"],
+  ["style", 2, "border-right-width", "0.09675vw"],
+  ["style", 2, "border-left-width", "0.09675vw"],
+  ["style", 2, "border-top-width", "0.11075vw"],
+  ["style", 2, "border-bottom-width", "0.11075vw"],
+  ["style", 2, "border-right-width", "0.11075vw"],
+  ["style", 2, "border-left-width", "0.11075vw"],
+  ["style", 2, "border-top-width", "0.12475vw"],
+  ["style", 2, "border-bottom-width", "0.12475vw"],
+  ["style", 2, "border-right-width", "0.12475vw"],
+  ["style", 2, "border-left-width", "0.12475vw"],
+  ["style", 2, "border-top-width", "0.13875vw"],
+  ["style", 2, "border-bottom-width", "0.13875vw"],
+  ["style", 2, "border-right-width", "0.13875vw"],
+  ["style", 2, "border-left-width", "0.13875vw"],
+  ["style", 2, "border-top-width", "0.14850000000000002vw"],
+  ["style", 2, "border-bottom-width", "0.14850000000000002vw"],
+  ["style", 2, "border-right-width", "0.14850000000000002vw"],
+  ["style", 2, "border-left-width", "0.14850000000000002vw"],
+  ["style", 2, "border-top-width", "0.1625vw"],
+  ["style", 2, "border-bottom-width", "0.1625vw"],
+  ["style", 2, "border-right-width", "0.1625vw"],
+  ["style", 2, "border-left-width", "0.1625vw"],
+  ["style", 2, "border-top-width", "0.1685vw"],
+  ["style", 2, "border-bottom-width", "0.1685vw"],
+  ["style", 2, "border-right-width", "0.1685vw"],
+  ["style", 2, "border-left-width", "0.1685vw"],
+  ["style", 2, "border-top-width", "0.18250000000000002vw"],
+  ["style", 2, "border-bottom-width", "0.18250000000000002vw"],
+  ["style", 2, "border-right-width", "0.18250000000000002vw"],
+  ["style", 2, "border-left-width", "0.18250000000000002vw"],
+  ["style", 2, "border-top-width", "0.19225vw"],
+  ["style", 2, "border-bottom-width", "0.19225vw"],
+  ["style", 2, "border-right-width", "0.19225vw"],
+  ["style", 2, "border-left-width", "0.19225vw"],
+  ["style", 2, "border-top-width", "0.202vw"],
+  ["style", 2, "border-bottom-width", "0.202vw"],
+  ["style", 2, "border-right-width", "0.202vw"],
+  ["style", 2, "border-left-width", "0.202vw"],
+  ["style", 2, "border-top-width", "0.20800000000000002vw"],
+  ["style", 2, "border-bottom-width", "0.20800000000000002vw"],
+  ["style", 2, "border-right-width", "0.20800000000000002vw"],
+  ["style", 2, "border-left-width", "0.20800000000000002vw"],
+  ["style", 2, "border-top-width", "0.222vw"],
+  ["style", 2, "border-bottom-width", "0.222vw"],
+  ["style", 2, "border-right-width", "0.222vw"],
+  ["style", 2, "border-left-width", "0.222vw"],
+  ["style", 2, "border-top-width", "0.23175vw"],
+  ["style", 2, "border-bottom-width", "0.23175vw"],
+  ["style", 2, "border-right-width", "0.23175vw"],
+  ["style", 2, "border-left-width", "0.23175vw"],
+  ["style", 2, "border-top-width", "0.24575000000000002vw"],
+  ["style", 2, "border-bottom-width", "0.24575000000000002vw"],
+  ["style", 2, "border-right-width", "0.24575000000000002vw"],
+  ["style", 2, "border-left-width", "0.24575000000000002vw"],
+  ["style", 2, "border-top-width", "0.2485vw"],
+  ["style", 2, "border-bottom-width", "0.2485vw"],
+  ["style", 2, "border-right-width", "0.2485vw"],
+  ["style", 2, "border-left-width", "0.2485vw"],
+  ["style", 2, "border-top-width", "0.25825vw"],
+  ["style", 2, "border-bottom-width", "0.25825vw"],
+  ["style", 2, "border-right-width", "0.25825vw"],
+  ["style", 2, "border-left-width", "0.25825vw"],
+  ["style", 2, "border-top-width", "0.26425vw"],
+  ["style", 2, "border-bottom-width", "0.26425vw"],
+  ["style", 2, "border-right-width", "0.26425vw"],
+  ["style", 2, "border-left-width", "0.26425vw"],
+  ["style", 2, "border-top-width", "0.27825vw"],
+  ["style", 2, "border-bottom-width", "0.27825vw"],
+  ["style", 2, "border-right-width", "0.27825vw"],
+  ["style", 2, "border-left-width", "0.27825vw"],
+  ["style", 2, "border-top-width", "0.28425vw"],
+  ["style", 2, "border-bottom-width", "0.28425vw"],
+  ["style", 2, "border-right-width", "0.28425vw"],
+  ["style", 2, "border-left-width", "0.28425vw"],
+  ["style", 2, "border-top-width", "0.294vw"],
+  ["style", 2, "border-bottom-width", "0.294vw"],
+  ["style", 2, "border-right-width", "0.294vw"],
+  ["style", 2, "border-left-width", "0.294vw"],
+  ["style", 2, "border-top-width", "0.29674999999999996vw"],
+  ["style", 2, "border-bottom-width", "0.29674999999999996vw"],
+  ["style", 2, "border-right-width", "0.29674999999999996vw"],
+  ["style", 2, "border-left-width", "0.29674999999999996vw"],
+  ["style", 2, "border-top-width", "0.31075vw"],
+  ["style", 2, "border-bottom-width", "0.31075vw"],
+  ["style", 2, "border-right-width", "0.31075vw"],
+  ["style", 2, "border-left-width", "0.31075vw"],
+  ["style", 2, "border-top-width", "0.31675000000000003vw"],
+  ["style", 2, "border-bottom-width", "0.31675000000000003vw"],
+  ["style", 2, "border-right-width", "0.31675000000000003vw"],
+  ["style", 2, "border-left-width", "0.31675000000000003vw"],
+  ["style", 2, "border-top-width", "0.31949999999999995vw"],
+  ["style", 2, "border-bottom-width", "0.31949999999999995vw"],
+  ["style", 2, "border-right-width", "0.31949999999999995vw"],
+  ["style", 2, "border-left-width", "0.31949999999999995vw"],
+  ["style", 2, "border-top-width", "0.32925vw"],
+  ["style", 2, "border-bottom-width", "0.32925vw"],
+  ["style", 2, "border-right-width", "0.32925vw"],
+  ["style", 2, "border-left-width", "0.32925vw"],
+  ["style", 2, "border-top-width", "0.33899999999999997vw"],
+  ["style", 2, "border-bottom-width", "0.33899999999999997vw"],
+  ["style", 2, "border-right-width", "0.33899999999999997vw"],
+  ["style", 2, "border-left-width", "0.33899999999999997vw"],
+  ["style", 2, "border-top-width", "0.34875vw"],
+  ["style", 2, "border-bottom-width", "0.34875vw"],
+  ["style", 2, "border-right-width", "0.34875vw"],
+  ["style", 2, "border-left-width", "0.34875vw"],
+  ["style", 2, "border-top-width", "0.35475vw"],
+  ["style", 2, "border-bottom-width", "0.35475vw"],
+  ["style", 2, "border-right-width", "0.35475vw"],
+  ["style", 2, "border-left-width", "0.35475vw"],
+  ["style", 2, "border-top-width", "0.36075vw"],
+  ["style", 2, "border-bottom-width", "0.36075vw"],
+  ["style", 2, "border-right-width", "0.36075vw"],
+  ["style", 2, "border-left-width", "0.36075vw"],
+  ["style", 2, "border-top-width", "0.36675vw"],
+  ["style", 2, "border-bottom-width", "0.36675vw"],
+  ["style", 2, "border-right-width", "0.36675vw"],
+  ["style", 2, "border-left-width", "0.36675vw"],
+  ["style", 2, "border-top-width", "0.37275vw"],
+  ["style", 2, "border-bottom-width", "0.37275vw"],
+  ["style", 2, "border-right-width", "0.37275vw"],
+  ["style", 2, "border-left-width", "0.37275vw"],
+  ["style", 2, "border-top-width", "0.3825vw"],
+  ["style", 2, "border-bottom-width", "0.3825vw"],
+  ["style", 2, "border-right-width", "0.3825vw"],
+  ["style", 2, "border-left-width", "0.3825vw"],
+  ["style", 2, "border-top-width", "0.39225vw"],
+  ["style", 2, "border-bottom-width", "0.39225vw"],
+  ["style", 2, "border-right-width", "0.39225vw"],
+  ["style", 2, "border-left-width", "0.39225vw"],
+  ["style", 2, "border-top-width", "0.39499999999999996vw"],
+  ["style", 2, "border-bottom-width", "0.39499999999999996vw"],
+  ["style", 2, "border-right-width", "0.39499999999999996vw"],
+  ["style", 2, "border-left-width", "0.39499999999999996vw"],
+  ["style", 2, "border-top-width", "0.401vw"],
+  ["style", 2, "border-bottom-width", "0.401vw"],
+  ["style", 2, "border-right-width", "0.401vw"],
+  ["style", 2, "border-left-width", "0.401vw"],
+  ["style", 2, "border-top-width", "0.41075vw"],
+  ["style", 2, "border-bottom-width", "0.41075vw"],
+  ["style", 2, "border-right-width", "0.41075vw"],
+  ["style", 2, "border-left-width", "0.41075vw"],
+  ["style", 2, "border-top-width", "0.4205vw"],
+  ["style", 2, "border-bottom-width", "0.4205vw"],
+  ["style", 2, "border-right-width", "0.4205vw"],
+  ["style", 2, "border-left-width", "0.4205vw"],
+  ["style", 2, "border-top-width", "0.4265vw"],
+  ["style", 2, "border-bottom-width", "0.4265vw"],
+  ["style", 2, "border-right-width", "0.4265vw"],
+  ["style", 2, "border-left-width", "0.4265vw"],
+  ["style", 2, "border-top-width", "0.4405vw"],
+  ["style", 2, "border-bottom-width", "0.4405vw"],
+  ["style", 2, "border-right-width", "0.4405vw"],
+  ["style", 2, "border-left-width", "0.4405vw"],
+  ["style", 2, "border-top-width", "0.4465vw"],
+  ["style", 2, "border-bottom-width", "0.4465vw"],
+  ["style", 2, "border-right-width", "0.4465vw"],
+  ["style", 2, "border-left-width", "0.4465vw"],
+  ["style", 2, "border-top-width", "0.45625vw"],
+  ["style", 2, "border-bottom-width", "0.45625vw"],
+  ["style", 2, "border-right-width", "0.45625vw"],
+  ["style", 2, "border-left-width", "0.45625vw"],
+  ["style", 2, "border-top-width", "0.46599999999999997vw"],
+  ["style", 2, "border-bottom-width", "0.46599999999999997vw"],
+  ["style", 2, "border-right-width", "0.46599999999999997vw"],
+  ["style", 2, "border-left-width", "0.46599999999999997vw"],
+  ["style", 2, "border-top-width", "0.47200000000000003vw"],
+  ["style", 2, "border-bottom-width", "0.47200000000000003vw"],
+  ["style", 2, "border-right-width", "0.47200000000000003vw"],
+  ["style", 2, "border-left-width", "0.47200000000000003vw"],
+  ["style", 2, "border-top-width", "0.478vw"],
+  ["style", 2, "border-bottom-width", "0.478vw"],
+  ["style", 2, "border-right-width", "0.478vw"],
+  ["style", 2, "border-left-width", "0.478vw"],
+  ["style", 2, "border-top-width", "0.48774999999999996vw"],
+  ["style", 2, "border-bottom-width", "0.48774999999999996vw"],
+  ["style", 2, "border-right-width", "0.48774999999999996vw"],
+  ["style", 2, "border-left-width", "0.48774999999999996vw"],
+  ["style", 2, "border-top-width", "0.4905vw"],
+  ["style", 2, "border-bottom-width", "0.4905vw"],
+  ["style", 2, "border-right-width", "0.4905vw"],
+  ["style", 2, "border-left-width", "0.4905vw"],
+  ["style", 2, "border-top-width", "0.4965vw"],
+  ["style", 2, "border-bottom-width", "0.4965vw"],
+  ["style", 2, "border-right-width", "0.4965vw"],
+  ["style", 2, "border-left-width", "0.4965vw"],
+  ["style", 2, "border-top-width", "0.49924999999999997vw"],
+  ["style", 2, "border-bottom-width", "0.49924999999999997vw"],
+  ["style", 2, "border-right-width", "0.49924999999999997vw"],
+  ["style", 2, "border-left-width", "0.49924999999999997vw"],
+  ["style", 2, "border-top-width", "0.502vw"],
+  ["style", 2, "border-bottom-width", "0.502vw"],
+  ["style", 2, "border-right-width", "0.502vw"],
+  ["style", 2, "border-left-width", "0.502vw"],
+  ["style", 2, "border-top-width", "0.508vw"],
+  ["style", 2, "border-bottom-width", "0.508vw"],
+  ["style", 2, "border-right-width", "0.508vw"],
+  ["style", 2, "border-left-width", "0.508vw"],
+  ["style", 2, "border-top-width", "0.51075vw"],
+  ["style", 2, "border-bottom-width", "0.51075vw"],
+  ["style", 2, "border-right-width", "0.51075vw"],
+  ["style", 2, "border-left-width", "0.51075vw"],
+  ["style", 2, "border-top-width", "0.5135000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.5135000000000001vw"],
+  ["style", 2, "border-right-width", "0.5135000000000001vw"],
+  ["style", 2, "border-left-width", "0.5135000000000001vw"],
+  ["style", 2, "border-top-width", "0.51625vw"],
+  ["style", 2, "border-bottom-width", "0.51625vw"],
+  ["style", 2, "border-right-width", "0.51625vw"],
+  ["style", 2, "border-left-width", "0.51625vw"],
+  ["style", 2, "border-top-width", "0.519vw"],
+  ["style", 2, "border-bottom-width", "0.519vw"],
+  ["style", 2, "border-right-width", "0.519vw"],
+  ["style", 2, "border-left-width", "0.519vw"],
+  ["style", 2, "border-top-width", "0.52175vw"],
+  ["style", 2, "border-bottom-width", "0.52175vw"],
+  ["style", 2, "border-right-width", "0.52175vw"],
+  ["style", 2, "border-left-width", "0.52175vw"],
+  ["style", 2, "border-top-width", "0.5245000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.5245000000000001vw"],
+  ["style", 2, "border-right-width", "0.5245000000000001vw"],
+  ["style", 2, "border-left-width", "0.5245000000000001vw"],
+  ["style", 2, "border-top-width", "0.5305vw"],
+  ["style", 2, "border-bottom-width", "0.5305vw"],
+  ["style", 2, "border-right-width", "0.5305vw"],
+  ["style", 2, "border-left-width", "0.5305vw"],
+  ["style", 2, "border-top-width", "0.5365vw"],
+  ["style", 2, "border-bottom-width", "0.5365vw"],
+  ["style", 2, "border-right-width", "0.5365vw"],
+  ["style", 2, "border-left-width", "0.5365vw"],
+  ["style", 2, "border-top-width", "0.53925vw"],
+  ["style", 2, "border-bottom-width", "0.53925vw"],
+  ["style", 2, "border-right-width", "0.53925vw"],
+  ["style", 2, "border-left-width", "0.53925vw"],
+  ["style", 2, "border-top-width", "0.542vw"],
+  ["style", 2, "border-bottom-width", "0.542vw"],
+  ["style", 2, "border-right-width", "0.542vw"],
+  ["style", 2, "border-left-width", "0.542vw"],
+  ["style", 2, "border-top-width", "0.548vw"],
+  ["style", 2, "border-bottom-width", "0.548vw"],
+  ["style", 2, "border-right-width", "0.548vw"],
+  ["style", 2, "border-left-width", "0.548vw"],
+  ["style", 2, "border-top-width", "0.5507500000000001vw"],
+  ["style", 2, "border-bottom-width", "0.5507500000000001vw"],
+  ["style", 2, "border-right-width", "0.5507500000000001vw"],
+  ["style", 2, "border-left-width", "0.5507500000000001vw"],
+  ["style", 2, "border-top-width", "0.5535vw"],
+  ["style", 2, "border-bottom-width", "0.5535vw"],
+  ["style", 2, "border-right-width", "0.5535vw"],
+  ["style", 2, "border-left-width", "0.5535vw"],
+  ["style", 2, "border-top-width", "0.55625vw"],
+  ["style", 2, "border-bottom-width", "0.55625vw"],
+  ["style", 2, "border-right-width", "0.55625vw"],
+  ["style", 2, "border-left-width", "0.55625vw"],
+  ["style", 2, "border-top-width", "0.56225vw"],
+  ["style", 2, "border-bottom-width", "0.56225vw"],
+  ["style", 2, "border-right-width", "0.56225vw"],
+  ["style", 2, "border-left-width", "0.56225vw"],
+  ["style", 2, "border-top-width", "0.5650000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.5650000000000001vw"],
+  ["style", 2, "border-right-width", "0.5650000000000001vw"],
+  ["style", 2, "border-left-width", "0.5650000000000001vw"],
+  ["style", 2, "border-top-width", "0.57475vw"],
+  ["style", 2, "border-bottom-width", "0.57475vw"],
+  ["style", 2, "border-right-width", "0.57475vw"],
+  ["style", 2, "border-left-width", "0.57475vw"],
+  ["style", 2, "border-top-width", "0.5845vw"],
+  ["style", 2, "border-bottom-width", "0.5845vw"],
+  ["style", 2, "border-right-width", "0.5845vw"],
+  ["style", 2, "border-left-width", "0.5845vw"],
+  ["style", 2, "border-top-width", "0.5942500000000001vw"],
+  ["style", 2, "border-bottom-width", "0.5942500000000001vw"],
+  ["style", 2, "border-right-width", "0.5942500000000001vw"],
+  ["style", 2, "border-left-width", "0.5942500000000001vw"],
+  ["style", 2, "border-top-width", "0.60025vw"],
+  ["style", 2, "border-bottom-width", "0.60025vw"],
+  ["style", 2, "border-right-width", "0.60025vw"],
+  ["style", 2, "border-left-width", "0.60025vw"],
+  ["style", 2, "border-top-width", "0.61vw"],
+  ["style", 2, "border-bottom-width", "0.61vw"],
+  ["style", 2, "border-right-width", "0.61vw"],
+  ["style", 2, "border-left-width", "0.61vw"],
+  ["style", 2, "border-top-width", "0.616vw"],
+  ["style", 2, "border-bottom-width", "0.616vw"],
+  ["style", 2, "border-right-width", "0.616vw"],
+  ["style", 2, "border-left-width", "0.616vw"],
+  ["style", 2, "border-top-width", "0.62575vw"],
+  ["style", 2, "border-bottom-width", "0.62575vw"],
+  ["style", 2, "border-right-width", "0.62575vw"],
+  ["style", 2, "border-left-width", "0.62575vw"],
+  ["style", 2, "border-top-width", "0.6355000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.6355000000000001vw"],
+  ["style", 2, "border-right-width", "0.6355000000000001vw"],
+  ["style", 2, "border-left-width", "0.6355000000000001vw"],
+  ["style", 2, "border-top-width", "0.6415vw"],
+  ["style", 2, "border-bottom-width", "0.6415vw"],
+  ["style", 2, "border-right-width", "0.6415vw"],
+  ["style", 2, "border-left-width", "0.6415vw"],
+  ["style", 2, "border-top-width", "0.65125vw"],
+  ["style", 2, "border-bottom-width", "0.65125vw"],
+  ["style", 2, "border-right-width", "0.65125vw"],
+  ["style", 2, "border-left-width", "0.65125vw"],
+  ["style", 2, "border-top-width", "0.661vw"],
+  ["style", 2, "border-bottom-width", "0.661vw"],
+  ["style", 2, "border-right-width", "0.661vw"],
+  ["style", 2, "border-left-width", "0.661vw"],
+  ["style", 2, "border-top-width", "0.675vw"],
+  ["style", 2, "border-bottom-width", "0.675vw"],
+  ["style", 2, "border-right-width", "0.675vw"],
+  ["style", 2, "border-left-width", "0.675vw"],
+  ["style", 2, "border-top-width", "0.6777500000000001vw"],
+  ["style", 2, "border-bottom-width", "0.6777500000000001vw"],
+  ["style", 2, "border-right-width", "0.6777500000000001vw"],
+  ["style", 2, "border-left-width", "0.6777500000000001vw"],
+  ["style", 2, "border-top-width", "0.6875vw"],
+  ["style", 2, "border-bottom-width", "0.6875vw"],
+  ["style", 2, "border-right-width", "0.6875vw"],
+  ["style", 2, "border-left-width", "0.6875vw"],
+  ["style", 2, "border-top-width", "0.7015vw"],
+  ["style", 2, "border-bottom-width", "0.7015vw"],
+  ["style", 2, "border-right-width", "0.7015vw"],
+  ["style", 2, "border-left-width", "0.7015vw"],
+  ["style", 2, "border-top-width", "0.70425vw"],
+  ["style", 2, "border-bottom-width", "0.70425vw"],
+  ["style", 2, "border-right-width", "0.70425vw"],
+  ["style", 2, "border-left-width", "0.70425vw"],
+  ["style", 2, "border-top-width", "0.7230000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.7230000000000001vw"],
+  ["style", 2, "border-right-width", "0.7230000000000001vw"],
+  ["style", 2, "border-left-width", "0.7230000000000001vw"],
+  ["style", 2, "border-top-width", "0.72575vw"],
+  ["style", 2, "border-bottom-width", "0.72575vw"],
+  ["style", 2, "border-right-width", "0.72575vw"],
+  ["style", 2, "border-left-width", "0.72575vw"],
+  ["style", 2, "border-top-width", "0.7355vw"],
+  ["style", 2, "border-bottom-width", "0.7355vw"],
+  ["style", 2, "border-right-width", "0.7355vw"],
+  ["style", 2, "border-left-width", "0.7355vw"],
+  ["style", 2, "border-top-width", "0.7495vw"],
+  ["style", 2, "border-bottom-width", "0.7495vw"],
+  ["style", 2, "border-right-width", "0.7495vw"],
+  ["style", 2, "border-left-width", "0.7495vw"],
+  ["style", 2, "border-top-width", "0.7735000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.7735000000000001vw"],
+  ["style", 2, "border-right-width", "0.7735000000000001vw"],
+  ["style", 2, "border-left-width", "0.7735000000000001vw"],
+  ["style", 2, "border-top-width", "0.78325vw"],
+  ["style", 2, "border-bottom-width", "0.78325vw"],
+  ["style", 2, "border-right-width", "0.78325vw"],
+  ["style", 2, "border-left-width", "0.78325vw"],
+  ["style", 2, "border-top-width", "0.78925vw"],
+  ["style", 2, "border-bottom-width", "0.78925vw"],
+  ["style", 2, "border-right-width", "0.78925vw"],
+  ["style", 2, "border-left-width", "0.78925vw"],
+  ["style", 2, "border-top-width", "0.799vw"],
+  ["style", 2, "border-bottom-width", "0.799vw"],
+  ["style", 2, "border-right-width", "0.799vw"],
+  ["style", 2, "border-left-width", "0.799vw"],
+  ["style", 2, "border-top-width", "0.805vw"],
+  ["style", 2, "border-bottom-width", "0.805vw"],
+  ["style", 2, "border-right-width", "0.805vw"],
+  ["style", 2, "border-left-width", "0.805vw"],
+  ["style", 2, "border-top-width", "0.8190000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.8190000000000001vw"],
+  ["style", 2, "border-right-width", "0.8190000000000001vw"],
+  ["style", 2, "border-left-width", "0.8190000000000001vw"],
+  ["style", 2, "border-top-width", "0.825vw"],
+  ["style", 2, "border-bottom-width", "0.825vw"],
+  ["style", 2, "border-right-width", "0.825vw"],
+  ["style", 2, "border-left-width", "0.825vw"],
+  ["style", 2, "border-top-width", "0.83475vw"],
+  ["style", 2, "border-bottom-width", "0.83475vw"],
+  ["style", 2, "border-right-width", "0.83475vw"],
+  ["style", 2, "border-left-width", "0.83475vw"],
+  ["style", 2, "border-top-width", "0.8375vw"],
+  ["style", 2, "border-bottom-width", "0.8375vw"],
+  ["style", 2, "border-right-width", "0.8375vw"],
+  ["style", 2, "border-left-width", "0.8375vw"],
+  ["style", 2, "border-top-width", "0.8435vw"],
+  ["style", 2, "border-bottom-width", "0.8435vw"],
+  ["style", 2, "border-right-width", "0.8435vw"],
+  ["style", 2, "border-left-width", "0.8435vw"],
+  ["style", 2, "border-top-width", "0.8495vw"],
+  ["style", 2, "border-bottom-width", "0.8495vw"],
+  ["style", 2, "border-right-width", "0.8495vw"],
+  ["style", 2, "border-left-width", "0.8495vw"],
+  ["style", 2, "border-top-width", "0.8555vw"],
+  ["style", 2, "border-bottom-width", "0.8555vw"],
+  ["style", 2, "border-right-width", "0.8555vw"],
+  ["style", 2, "border-left-width", "0.8555vw"],
+  ["style", 2, "border-top-width", "0.8615vw"],
+  ["style", 2, "border-bottom-width", "0.8615vw"],
+  ["style", 2, "border-right-width", "0.8615vw"],
+  ["style", 2, "border-left-width", "0.8615vw"],
+  ["style", 2, "border-top-width", "0.8642500000000001vw"],
+  ["style", 2, "border-bottom-width", "0.8642500000000001vw"],
+  ["style", 2, "border-right-width", "0.8642500000000001vw"],
+  ["style", 2, "border-left-width", "0.8642500000000001vw"],
+  ["style", 2, "border-top-width", "0.87025vw"],
+  ["style", 2, "border-bottom-width", "0.87025vw"],
+  ["style", 2, "border-right-width", "0.87025vw"],
+  ["style", 2, "border-left-width", "0.87025vw"],
+  ["style", 2, "border-top-width", "0.87625vw"],
+  ["style", 2, "border-bottom-width", "0.87625vw"],
+  ["style", 2, "border-right-width", "0.87625vw"],
+  ["style", 2, "border-left-width", "0.87625vw"],
+  ["style", 2, "border-top-width", "0.879vw"],
+  ["style", 2, "border-bottom-width", "0.879vw"],
+  ["style", 2, "border-right-width", "0.879vw"],
+  ["style", 2, "border-left-width", "0.879vw"],
+  ["style", 2, "border-top-width", "0.88175vw"],
+  ["style", 2, "border-bottom-width", "0.88175vw"],
+  ["style", 2, "border-right-width", "0.88175vw"],
+  ["style", 2, "border-left-width", "0.88175vw"],
+  ["style", 2, "border-top-width", "0.879vw"],
+  ["style", 2, "border-bottom-width", "0.879vw"],
+  ["style", 2, "border-right-width", "0.879vw"],
+  ["style", 2, "border-left-width", "0.879vw"],
+  ["style", 2, "border-top-width", "0.87625vw"],
+  ["style", 2, "border-bottom-width", "0.87625vw"],
+  ["style", 2, "border-right-width", "0.87625vw"],
+  ["style", 2, "border-left-width", "0.87625vw"],
+  ["style", 2, "border-top-width", "0.8734999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.8734999999999999vw"],
+  ["style", 2, "border-right-width", "0.8734999999999999vw"],
+  ["style", 2, "border-left-width", "0.8734999999999999vw"],
+  ["style", 2, "border-top-width", "0.87075vw"],
+  ["style", 2, "border-bottom-width", "0.87075vw"],
+  ["style", 2, "border-right-width", "0.87075vw"],
+  ["style", 2, "border-left-width", "0.87075vw"],
+  ["style", 2, "border-top-width", "0.868vw"],
+  ["style", 2, "border-bottom-width", "0.868vw"],
+  ["style", 2, "border-right-width", "0.868vw"],
+  ["style", 2, "border-left-width", "0.868vw"],
+  ["style", 2, "border-top-width", "0.86525vw"],
+  ["style", 2, "border-bottom-width", "0.86525vw"],
+  ["style", 2, "border-right-width", "0.86525vw"],
+  ["style", 2, "border-left-width", "0.86525vw"],
+  ["style", 2, "border-top-width", "0.85925vw"],
+  ["style", 2, "border-bottom-width", "0.85925vw"],
+  ["style", 2, "border-right-width", "0.85925vw"],
+  ["style", 2, "border-left-width", "0.85925vw"],
+  ["style", 2, "border-top-width", "0.8564999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.8564999999999999vw"],
+  ["style", 2, "border-right-width", "0.8564999999999999vw"],
+  ["style", 2, "border-left-width", "0.8564999999999999vw"],
+  ["style", 2, "border-top-width", "0.85375vw"],
+  ["style", 2, "border-bottom-width", "0.85375vw"],
+  ["style", 2, "border-right-width", "0.85375vw"],
+  ["style", 2, "border-left-width", "0.85375vw"],
+  ["style", 2, "border-top-width", "0.851vw"],
+  ["style", 2, "border-bottom-width", "0.851vw"],
+  ["style", 2, "border-right-width", "0.851vw"],
+  ["style", 2, "border-left-width", "0.851vw"],
+  ["style", 2, "border-top-width", "0.845vw"],
+  ["style", 2, "border-bottom-width", "0.845vw"],
+  ["style", 2, "border-right-width", "0.845vw"],
+  ["style", 2, "border-left-width", "0.845vw"],
+  ["style", 2, "border-top-width", "0.8422499999999999vw"],
+  ["style", 2, "border-bottom-width", "0.8422499999999999vw"],
+  ["style", 2, "border-right-width", "0.8422499999999999vw"],
+  ["style", 2, "border-left-width", "0.8422499999999999vw"],
+  ["style", 2, "border-top-width", "0.8395vw"],
+  ["style", 2, "border-bottom-width", "0.8395vw"],
+  ["style", 2, "border-right-width", "0.8395vw"],
+  ["style", 2, "border-left-width", "0.8395vw"],
+  ["style", 2, "border-top-width", "0.83675vw"],
+  ["style", 2, "border-bottom-width", "0.83675vw"],
+  ["style", 2, "border-right-width", "0.83675vw"],
+  ["style", 2, "border-left-width", "0.83675vw"],
+  ["style", 2, "border-top-width", "0.834vw"],
+  ["style", 2, "border-bottom-width", "0.834vw"],
+  ["style", 2, "border-right-width", "0.834vw"],
+  ["style", 2, "border-left-width", "0.834vw"],
+  ["style", 2, "border-top-width", "0.8312499999999999vw"],
+  ["style", 2, "border-bottom-width", "0.8312499999999999vw"],
+  ["style", 2, "border-right-width", "0.8312499999999999vw"],
+  ["style", 2, "border-left-width", "0.8312499999999999vw"],
+  ["style", 2, "border-top-width", "0.82525vw"],
+  ["style", 2, "border-bottom-width", "0.82525vw"],
+  ["style", 2, "border-right-width", "0.82525vw"],
+  ["style", 2, "border-left-width", "0.82525vw"],
+  ["style", 2, "border-top-width", "0.81925vw"],
+  ["style", 2, "border-bottom-width", "0.81925vw"],
+  ["style", 2, "border-right-width", "0.81925vw"],
+  ["style", 2, "border-left-width", "0.81925vw"],
+  ["style", 2, "border-top-width", "0.8165vw"],
+  ["style", 2, "border-bottom-width", "0.8165vw"],
+  ["style", 2, "border-right-width", "0.8165vw"],
+  ["style", 2, "border-left-width", "0.8165vw"],
+  ["style", 2, "border-top-width", "0.81375vw"],
+  ["style", 2, "border-bottom-width", "0.81375vw"],
+  ["style", 2, "border-right-width", "0.81375vw"],
+  ["style", 2, "border-left-width", "0.81375vw"],
+  ["style", 2, "border-top-width", "0.8109999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.8109999999999999vw"],
+  ["style", 2, "border-right-width", "0.8109999999999999vw"],
+  ["style", 2, "border-left-width", "0.8109999999999999vw"],
+  ["style", 2, "border-top-width", "0.80825vw"],
+  ["style", 2, "border-bottom-width", "0.80825vw"],
+  ["style", 2, "border-right-width", "0.80825vw"],
+  ["style", 2, "border-left-width", "0.80825vw"],
+  ["style", 2, "border-top-width", "0.8055vw"],
+  ["style", 2, "border-bottom-width", "0.8055vw"],
+  ["style", 2, "border-right-width", "0.8055vw"],
+  ["style", 2, "border-left-width", "0.8055vw"],
+  ["style", 2, "border-top-width", "0.80275vw"],
+  ["style", 2, "border-bottom-width", "0.80275vw"],
+  ["style", 2, "border-right-width", "0.80275vw"],
+  ["style", 2, "border-left-width", "0.80275vw"],
+  ["style", 2, "border-top-width", "0.7999999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.7999999999999999vw"],
+  ["style", 2, "border-right-width", "0.7999999999999999vw"],
+  ["style", 2, "border-left-width", "0.7999999999999999vw"],
+  ["style", 2, "border-top-width", "0.79725vw"],
+  ["style", 2, "border-bottom-width", "0.79725vw"],
+  ["style", 2, "border-right-width", "0.79725vw"],
+  ["style", 2, "border-left-width", "0.79725vw"],
+  ["style", 2, "border-top-width", "0.7945vw"],
+  ["style", 2, "border-bottom-width", "0.7945vw"],
+  ["style", 2, "border-right-width", "0.7945vw"],
+  ["style", 2, "border-left-width", "0.7945vw"],
+  ["style", 2, "border-top-width", "0.79175vw"],
+  ["style", 2, "border-bottom-width", "0.79175vw"],
+  ["style", 2, "border-right-width", "0.79175vw"],
+  ["style", 2, "border-left-width", "0.79175vw"],
+  ["style", 2, "border-top-width", "0.7889999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.7889999999999999vw"],
+  ["style", 2, "border-right-width", "0.7889999999999999vw"],
+  ["style", 2, "border-left-width", "0.7889999999999999vw"],
+  ["style", 2, "border-top-width", "0.783vw"],
+  ["style", 2, "border-bottom-width", "0.783vw"],
+  ["style", 2, "border-right-width", "0.783vw"],
+  ["style", 2, "border-left-width", "0.783vw"],
+  ["style", 2, "border-top-width", "0.777vw"],
+  ["style", 2, "border-bottom-width", "0.777vw"],
+  ["style", 2, "border-right-width", "0.777vw"],
+  ["style", 2, "border-left-width", "0.777vw"],
+  ["style", 2, "border-top-width", "0.75825vw"],
+  ["style", 2, "border-bottom-width", "0.75825vw"],
+  ["style", 2, "border-right-width", "0.75825vw"],
+  ["style", 2, "border-left-width", "0.75825vw"],
+  ["style", 2, "border-top-width", "0.7484999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.7484999999999999vw"],
+  ["style", 2, "border-right-width", "0.7484999999999999vw"],
+  ["style", 2, "border-left-width", "0.7484999999999999vw"],
+  ["style", 2, "border-top-width", "0.73875vw"],
+  ["style", 2, "border-bottom-width", "0.73875vw"],
+  ["style", 2, "border-right-width", "0.73875vw"],
+  ["style", 2, "border-left-width", "0.73875vw"],
+  ["style", 2, "border-top-width", "0.72475vw"],
+  ["style", 2, "border-bottom-width", "0.72475vw"],
+  ["style", 2, "border-right-width", "0.72475vw"],
+  ["style", 2, "border-left-width", "0.72475vw"],
+  ["style", 2, "border-top-width", "0.722vw"],
+  ["style", 2, "border-bottom-width", "0.722vw"],
+  ["style", 2, "border-right-width", "0.722vw"],
+  ["style", 2, "border-left-width", "0.722vw"],
+  ["style", 2, "border-top-width", "0.7032499999999999vw"],
+  ["style", 2, "border-bottom-width", "0.7032499999999999vw"],
+  ["style", 2, "border-right-width", "0.7032499999999999vw"],
+  ["style", 2, "border-left-width", "0.7032499999999999vw"],
+  ["style", 2, "border-top-width", "0.69725vw"],
+  ["style", 2, "border-bottom-width", "0.69725vw"],
+  ["style", 2, "border-right-width", "0.69725vw"],
+  ["style", 2, "border-left-width", "0.69725vw"],
+  ["style", 2, "border-top-width", "0.6945vw"],
+  ["style", 2, "border-bottom-width", "0.6945vw"],
+  ["style", 2, "border-right-width", "0.6945vw"],
+  ["style", 2, "border-left-width", "0.6945vw"],
+  ["style", 2, "border-top-width", "0.68475vw"],
+  ["style", 2, "border-bottom-width", "0.68475vw"],
+  ["style", 2, "border-right-width", "0.68475vw"],
+  ["style", 2, "border-left-width", "0.68475vw"],
+  ["style", 2, "border-top-width", "0.67875vw"],
+  ["style", 2, "border-bottom-width", "0.67875vw"],
+  ["style", 2, "border-right-width", "0.67875vw"],
+  ["style", 2, "border-left-width", "0.67875vw"],
+  ["style", 2, "border-top-width", "0.67275vw"],
+  ["style", 2, "border-bottom-width", "0.67275vw"],
+  ["style", 2, "border-right-width", "0.67275vw"],
+  ["style", 2, "border-left-width", "0.67275vw"],
+  ["style", 2, "border-top-width", "0.6699999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.6699999999999999vw"],
+  ["style", 2, "border-right-width", "0.6699999999999999vw"],
+  ["style", 2, "border-left-width", "0.6699999999999999vw"],
+  ["style", 2, "border-top-width", "0.664vw"],
+  ["style", 2, "border-bottom-width", "0.664vw"],
+  ["style", 2, "border-right-width", "0.664vw"],
+  ["style", 2, "border-left-width", "0.664vw"],
+  ["style", 2, "border-top-width", "0.6667500000000001vw"],
+  ["style", 2, "border-bottom-width", "0.6667500000000001vw"],
+  ["style", 2, "border-right-width", "0.6667500000000001vw"],
+  ["style", 2, "border-left-width", "0.6667500000000001vw"],
+  ["style", 2, "border-top-width", "0.6695vw"],
+  ["style", 2, "border-bottom-width", "0.6695vw"],
+  ["style", 2, "border-right-width", "0.6695vw"],
+  ["style", 2, "border-left-width", "0.6695vw"],
+  ["style", 2, "border-top-width", "0.6755vw"],
+  ["style", 2, "border-bottom-width", "0.6755vw"],
+  ["style", 2, "border-right-width", "0.6755vw"],
+  ["style", 2, "border-left-width", "0.6755vw"],
+  ["style", 2, "border-top-width", "0.67825vw"],
+  ["style", 2, "border-bottom-width", "0.67825vw"],
+  ["style", 2, "border-right-width", "0.67825vw"],
+  ["style", 2, "border-left-width", "0.67825vw"],
+  ["style", 2, "border-top-width", "0.68425vw"],
+  ["style", 2, "border-bottom-width", "0.68425vw"],
+  ["style", 2, "border-right-width", "0.68425vw"],
+  ["style", 2, "border-left-width", "0.68425vw"],
+  ["style", 2, "border-top-width", "0.69025vw"],
+  ["style", 2, "border-bottom-width", "0.69025vw"],
+  ["style", 2, "border-right-width", "0.69025vw"],
+  ["style", 2, "border-left-width", "0.69025vw"],
+  ["style", 2, "border-top-width", "0.69625vw"],
+  ["style", 2, "border-bottom-width", "0.69625vw"],
+  ["style", 2, "border-right-width", "0.69625vw"],
+  ["style", 2, "border-left-width", "0.69625vw"],
+  ["style", 2, "border-top-width", "0.70225vw"],
+  ["style", 2, "border-bottom-width", "0.70225vw"],
+  ["style", 2, "border-right-width", "0.70225vw"],
+  ["style", 2, "border-left-width", "0.70225vw"],
+  ["style", 2, "border-top-width", "0.7050000000000001vw"],
+  ["style", 2, "border-bottom-width", "0.7050000000000001vw"],
+  ["style", 2, "border-right-width", "0.7050000000000001vw"],
+  ["style", 2, "border-left-width", "0.7050000000000001vw"],
+  ["style", 2, "border-top-width", "0.71475vw"],
+  ["style", 2, "border-bottom-width", "0.71475vw"],
+  ["style", 2, "border-right-width", "0.71475vw"],
+  ["style", 2, "border-left-width", "0.71475vw"],
+  ["style", 2, "border-top-width", "0.7175vw"],
+  ["style", 2, "border-bottom-width", "0.7175vw"],
+  ["style", 2, "border-right-width", "0.7175vw"],
+  ["style", 2, "border-left-width", "0.7175vw"],
+  ["style", 2, "border-top-width", "0.7202500000000001vw"],
+  ["style", 2, "border-bottom-width", "0.7202500000000001vw"],
+  ["style", 2, "border-right-width", "0.7202500000000001vw"],
+  ["style", 2, "border-left-width", "0.7202500000000001vw"],
+  ["style", 2, "border-top-width", "0.723vw"],
+  ["style", 2, "border-bottom-width", "0.723vw"],
+  ["style", 2, "border-right-width", "0.723vw"],
+  ["style", 2, "border-left-width", "0.723vw"],
+  ["style", 2, "border-top-width", "0.72575vw"],
+  ["style", 2, "border-bottom-width", "0.72575vw"],
+  ["style", 2, "border-right-width", "0.72575vw"],
+  ["style", 2, "border-left-width", "0.72575vw"],
+  ["style", 2, "border-top-width", "0.7285vw"],
+  ["style", 2, "border-bottom-width", "0.7285vw"],
+  ["style", 2, "border-right-width", "0.7285vw"],
+  ["style", 2, "border-left-width", "0.7285vw"],
+  ["style", 2, "border-top-width", "0.7312500000000001vw"],
+  ["style", 2, "border-bottom-width", "0.7312500000000001vw"],
+  ["style", 2, "border-right-width", "0.7312500000000001vw"],
+  ["style", 2, "border-left-width", "0.7312500000000001vw"],
+  ["style", 2, "border-top-width", "0.734vw"],
+  ["style", 2, "border-bottom-width", "0.734vw"],
+  ["style", 2, "border-right-width", "0.734vw"],
+  ["style", 2, "border-left-width", "0.734vw"],
+  ["style", 2, "border-top-width", "0.73125vw"],
+  ["style", 2, "border-bottom-width", "0.73125vw"],
+  ["style", 2, "border-right-width", "0.73125vw"],
+  ["style", 2, "border-left-width", "0.73125vw"],
+  ["style", 2, "border-top-width", "0.7284999999999999vw"],
+  ["style", 2, "border-bottom-width", "0.7284999999999999vw"],
+  ["style", 2, "border-right-width", "0.7284999999999999vw"],
+  ["style", 2, "border-left-width", "0.7284999999999999vw"],
+  ["style", 2, "border-top-width", "0.72575vw"],
+  ["style", 2, "border-bottom-width", "0.72575vw"],
+  ["style", 2, "border-right-width", "0.72575vw"],
+  ["style", 2, "border-left-width", "0.72575vw"],
+  ["style", 2, "padding-top", "0.0055000000000000005vw"],
+  ["style", 2, "padding-bottom", "0.0055000000000000005vw"],
+  ["style", 2, "padding-right", "0.0055000000000000005vw"],
+  ["style", 2, "padding-left", "0.0055000000000000005vw"],
+  ["style", 2, "padding-top", "0.025vw"],
+  ["style", 2, "padding-bottom", "0.025vw"],
+  ["style", 2, "padding-right", "0.025vw"],
+  ["style", 2, "padding-left", "0.025vw"],
+  ["style", 2, "padding-top", "0.053000000000000005vw"],
+  ["style", 2, "padding-bottom", "0.053000000000000005vw"],
+  ["style", 2, "padding-right", "0.053000000000000005vw"],
+  ["style", 2, "padding-left", "0.053000000000000005vw"],
+  ["style", 2, "padding-top", "0.07250000000000001vw"],
+  ["style", 2, "padding-bottom", "0.07250000000000001vw"],
+  ["style", 2, "padding-right", "0.07250000000000001vw"],
+  ["style", 2, "padding-left", "0.07250000000000001vw"],
+  ["style", 2, "padding-top", "0.11vw"],
+  ["style", 2, "padding-bottom", "0.11vw"],
+  ["style", 2, "padding-right", "0.11vw"],
+  ["style", 2, "padding-left", "0.11vw"],
+  ["style", 2, "padding-top", "0.158vw"],
+  ["style", 2, "padding-bottom", "0.158vw"],
+  ["style", 2, "padding-right", "0.158vw"],
+  ["style", 2, "padding-left", "0.158vw"],
+  ["style", 2, "padding-top", "0.20600000000000002vw"],
+  ["style", 2, "padding-bottom", "0.20600000000000002vw"],
+  ["style", 2, "padding-right", "0.20600000000000002vw"],
+  ["style", 2, "padding-left", "0.20600000000000002vw"],
+  ["style", 2, "padding-top", "0.22549999999999998vw"],
+  ["style", 2, "padding-bottom", "0.22549999999999998vw"],
+  ["style", 2, "padding-right", "0.22549999999999998vw"],
+  ["style", 2, "padding-left", "0.22549999999999998vw"],
+  ["style", 2, "padding-top", "0.2975vw"],
+  ["style", 2, "padding-bottom", "0.2975vw"],
+  ["style", 2, "padding-right", "0.2975vw"],
+  ["style", 2, "padding-left", "0.2975vw"],
+  ["style", 2, "padding-top", "0.317vw"],
+  ["style", 2, "padding-bottom", "0.317vw"],
+  ["style", 2, "padding-right", "0.317vw"],
+  ["style", 2, "padding-left", "0.317vw"],
+  ["style", 2, "padding-top", "0.34500000000000003vw"],
+  ["style", 2, "padding-bottom", "0.34500000000000003vw"],
+  ["style", 2, "padding-right", "0.34500000000000003vw"],
+  ["style", 2, "padding-left", "0.34500000000000003vw"],
+  ["style", 2, "padding-top", "0.373vw"],
+  ["style", 2, "padding-bottom", "0.373vw"],
+  ["style", 2, "padding-right", "0.373vw"],
+  ["style", 2, "padding-left", "0.373vw"],
+  ["style", 2, "padding-top", "0.4325vw"],
+  ["style", 2, "padding-bottom", "0.4325vw"],
+  ["style", 2, "padding-right", "0.4325vw"],
+  ["style", 2, "padding-left", "0.4325vw"],
+  ["style", 2, "padding-top", "0.4445vw"],
+  ["style", 2, "padding-bottom", "0.4445vw"],
+  ["style", 2, "padding-right", "0.4445vw"],
+  ["style", 2, "padding-left", "0.4445vw"],
+  ["style", 2, "padding-top", "0.504vw"],
+  ["style", 2, "padding-bottom", "0.504vw"],
+  ["style", 2, "padding-right", "0.504vw"],
+  ["style", 2, "padding-left", "0.504vw"],
+  ["style", 2, "padding-top", "0.552vw"],
+  ["style", 2, "padding-bottom", "0.552vw"],
+  ["style", 2, "padding-right", "0.552vw"],
+  ["style", 2, "padding-left", "0.552vw"],
+  ["style", 2, "padding-top", "0.6375000000000001vw"],
+  ["style", 2, "padding-bottom", "0.6375000000000001vw"],
+  ["style", 2, "padding-right", "0.6375000000000001vw"],
+  ["style", 2, "padding-left", "0.6375000000000001vw"],
+  ["style", 2, "padding-top", "0.6655vw"],
+  ["style", 2, "padding-bottom", "0.6655vw"],
+  ["style", 2, "padding-right", "0.6655vw"],
+  ["style", 2, "padding-left", "0.6655vw"],
+  ["style", 2, "padding-top", "0.725vw"],
+  ["style", 2, "padding-bottom", "0.725vw"],
+  ["style", 2, "padding-right", "0.725vw"],
+  ["style", 2, "padding-left", "0.725vw"],
+  ["style", 2, "padding-top", "0.7845vw"],
+  ["style", 2, "padding-bottom", "0.7845vw"],
+  ["style", 2, "padding-right", "0.7845vw"],
+  ["style", 2, "padding-left", "0.7845vw"],
+  ["style", 2, "padding-top", "0.822vw"],
+  ["style", 2, "padding-bottom", "0.822vw"],
+  ["style", 2, "padding-right", "0.822vw"],
+  ["style", 2, "padding-left", "0.822vw"],
+  ["style", 2, "padding-top", "0.8594999999999999vw"],
+  ["style", 2, "padding-bottom", "0.8594999999999999vw"],
+  ["style", 2, "padding-right", "0.8594999999999999vw"],
+  ["style", 2, "padding-left", "0.8594999999999999vw"],
+  ["style", 2, "padding-top", "0.897vw"],
+  ["style", 2, "padding-bottom", "0.897vw"],
+  ["style", 2, "padding-right", "0.897vw"],
+  ["style", 2, "padding-left", "0.897vw"],
+  ["style", 2, "padding-top", "0.925vw"],
+  ["style", 2, "padding-bottom", "0.925vw"],
+  ["style", 2, "padding-right", "0.925vw"],
+  ["style", 2, "padding-left", "0.925vw"],
+  ["style", 2, "padding-top", "0.9530000000000001vw"],
+  ["style", 2, "padding-bottom", "0.9530000000000001vw"],
+  ["style", 2, "padding-right", "0.9530000000000001vw"],
+  ["style", 2, "padding-left", "0.9530000000000001vw"],
+  ["style", 2, "padding-top", "0.9904999999999999vw"],
+  ["style", 2, "padding-bottom", "0.9904999999999999vw"],
+  ["style", 2, "padding-right", "0.9904999999999999vw"],
+  ["style", 2, "padding-left", "0.9904999999999999vw"],
+  ["style", 2, "padding-top", "1.0025vw"],
+  ["style", 2, "padding-bottom", "1.0025vw"],
+  ["style", 2, "padding-right", "1.0025vw"],
+  ["style", 2, "padding-left", "1.0025vw"],
+  ["style", 2, "padding-top", "1.04vw"],
+  ["style", 2, "padding-bottom", "1.04vw"],
+  ["style", 2, "padding-right", "1.04vw"],
+  ["style", 2, "padding-left", "1.04vw"],
+  ["style", 2, "padding-top", "1.068vw"],
+  ["style", 2, "padding-bottom", "1.068vw"],
+  ["style", 2, "padding-right", "1.068vw"],
+  ["style", 2, "padding-left", "1.068vw"],
+  ["style", 2, "padding-top", "1.0875000000000001vw"],
+  ["style", 2, "padding-bottom", "1.0875000000000001vw"],
+  ["style", 2, "padding-right", "1.0875000000000001vw"],
+  ["style", 2, "padding-left", "1.0875000000000001vw"],
+  ["style", 2, "padding-top", "1.107vw"],
+  ["style", 2, "padding-bottom", "1.107vw"],
+  ["style", 2, "padding-right", "1.107vw"],
+  ["style", 2, "padding-left", "1.107vw"],
+  ["style", 2, "padding-top", "1.1265vw"],
+  ["style", 2, "padding-bottom", "1.1265vw"],
+  ["style", 2, "padding-right", "1.1265vw"],
+  ["style", 2, "padding-left", "1.1265vw"],
+  ["style", 2, "padding-top", "1.1545vw"],
+  ["style", 2, "padding-bottom", "1.1545vw"],
+  ["style", 2, "padding-right", "1.1545vw"],
+  ["style", 2, "padding-left", "1.1545vw"],
+  ["style", 2, "padding-top", "1.1825vw"],
+  ["style", 2, "padding-bottom", "1.1825vw"],
+  ["style", 2, "padding-right", "1.1825vw"],
+  ["style", 2, "padding-left", "1.1825vw"],
+  ["style", 2, "padding-top", "1.2105000000000001vw"],
+  ["style", 2, "padding-bottom", "1.2105000000000001vw"],
+  ["style", 2, "padding-right", "1.2105000000000001vw"],
+  ["style", 2, "padding-left", "1.2105000000000001vw"],
+  ["style", 2, "padding-top", "1.248vw"],
+  ["style", 2, "padding-bottom", "1.248vw"],
+  ["style", 2, "padding-right", "1.248vw"],
+  ["style", 2, "padding-left", "1.248vw"],
+  ["style", 2, "padding-top", "1.276vw"],
+  ["style", 2, "padding-bottom", "1.276vw"],
+  ["style", 2, "padding-right", "1.276vw"],
+  ["style", 2, "padding-left", "1.276vw"],
+  ["style", 2, "padding-top", "1.2955vw"],
+  ["style", 2, "padding-bottom", "1.2955vw"],
+  ["style", 2, "padding-right", "1.2955vw"],
+  ["style", 2, "padding-left", "1.2955vw"],
+  ["style", 2, "padding-top", "1.3150000000000002vw"],
+  ["style", 2, "padding-bottom", "1.3150000000000002vw"],
+  ["style", 2, "padding-right", "1.3150000000000002vw"],
+  ["style", 2, "padding-left", "1.3150000000000002vw"],
+  ["style", 2, "padding-top", "1.3345vw"],
+  ["style", 2, "padding-bottom", "1.3345vw"],
+  ["style", 2, "padding-right", "1.3345vw"],
+  ["style", 2, "padding-left", "1.3345vw"],
+  ["style", 2, "padding-top", "1.354vw"],
+  ["style", 2, "padding-bottom", "1.354vw"],
+  ["style", 2, "padding-right", "1.354vw"],
+  ["style", 2, "padding-left", "1.354vw"],
+  ["style", 2, "padding-top", "1.3735000000000002vw"],
+  ["style", 2, "padding-bottom", "1.3735000000000002vw"],
+  ["style", 2, "padding-right", "1.3735000000000002vw"],
+  ["style", 2, "padding-left", "1.3735000000000002vw"],
+  ["style", 2, "padding-top", "1.393vw"],
+  ["style", 2, "padding-bottom", "1.393vw"],
+  ["style", 2, "padding-right", "1.393vw"],
+  ["style", 2, "padding-left", "1.393vw"],
+  ["style", 2, "padding-top", "1.3985vw"],
+  ["style", 2, "padding-bottom", "1.3985vw"],
+  ["style", 2, "padding-right", "1.3985vw"],
+  ["style", 2, "padding-left", "1.3985vw"],
+  ["style", 2, "padding-top", "1.4180000000000001vw"],
+  ["style", 2, "padding-bottom", "1.4180000000000001vw"],
+  ["style", 2, "padding-right", "1.4180000000000001vw"],
+  ["style", 2, "padding-left", "1.4180000000000001vw"],
+  ["style", 2, "padding-top", "1.43vw"],
+  ["style", 2, "padding-bottom", "1.43vw"],
+  ["style", 2, "padding-right", "1.43vw"],
+  ["style", 2, "padding-left", "1.43vw"],
+  ["style", 2, "padding-top", "1.442vw"],
+  ["style", 2, "padding-bottom", "1.442vw"],
+  ["style", 2, "padding-right", "1.442vw"],
+  ["style", 2, "padding-left", "1.442vw"],
+  ["style", 2, "padding-top", "1.454vw"],
+  ["style", 2, "padding-bottom", "1.454vw"],
+  ["style", 2, "padding-right", "1.454vw"],
+  ["style", 2, "padding-left", "1.454vw"],
+  ["style", 2, "padding-top", "1.466vw"],
+  ["style", 2, "padding-bottom", "1.466vw"],
+  ["style", 2, "padding-right", "1.466vw"],
+  ["style", 2, "padding-left", "1.466vw"],
+  ["style", 2, "padding-top", "1.478vw"],
+  ["style", 2, "padding-bottom", "1.478vw"],
+  ["style", 2, "padding-right", "1.478vw"],
+  ["style", 2, "padding-left", "1.478vw"],
+  ["style", 2, "padding-top", "1.49vw"],
+  ["style", 2, "padding-bottom", "1.49vw"],
+  ["style", 2, "padding-right", "1.49vw"],
+  ["style", 2, "padding-left", "1.49vw"],
+  ["style", 2, "padding-top", "1.502vw"],
+  ["style", 2, "padding-bottom", "1.502vw"],
+  ["style", 2, "padding-right", "1.502vw"],
+  ["style", 2, "padding-left", "1.502vw"],
+  ["style", 2, "padding-top", "1.5075vw"],
+  ["style", 2, "padding-bottom", "1.5075vw"],
+  ["style", 2, "padding-right", "1.5075vw"],
+  ["style", 2, "padding-left", "1.5075vw"],
+  ["style", 2, "padding-top", "1.5195vw"],
+  ["style", 2, "padding-bottom", "1.5195vw"],
+  ["style", 2, "padding-right", "1.5195vw"],
+  ["style", 2, "padding-left", "1.5195vw"],
+  ["style", 2, "padding-top", "1.5315vw"],
+  ["style", 2, "padding-bottom", "1.5315vw"],
+  ["style", 2, "padding-right", "1.5315vw"],
+  ["style", 2, "padding-left", "1.5315vw"],
+  ["style", 2, "padding-top", "1.5370000000000001vw"],
+  ["style", 2, "padding-bottom", "1.5370000000000001vw"],
+  ["style", 2, "padding-right", "1.5370000000000001vw"],
+  ["style", 2, "padding-left", "1.5370000000000001vw"],
+  ["style", 2, "padding-top", "1.5565vw"],
+  ["style", 2, "padding-bottom", "1.5565vw"],
+  ["style", 2, "padding-right", "1.5565vw"],
+  ["style", 2, "padding-left", "1.5565vw"],
+  ["style", 2, "padding-top", "1.5685vw"],
+  ["style", 2, "padding-bottom", "1.5685vw"],
+  ["style", 2, "padding-right", "1.5685vw"],
+  ["style", 2, "padding-left", "1.5685vw"],
+  ["style", 2, "padding-top", "1.5805vw"],
+  ["style", 2, "padding-bottom", "1.5805vw"],
+  ["style", 2, "padding-right", "1.5805vw"],
+  ["style", 2, "padding-left", "1.5805vw"],
+  ["style", 2, "padding-top", "1.5925vw"],
+  ["style", 2, "padding-bottom", "1.5925vw"],
+  ["style", 2, "padding-right", "1.5925vw"],
+  ["style", 2, "padding-left", "1.5925vw"],
+  ["style", 2, "padding-top", "1.587vw"],
+  ["style", 2, "padding-bottom", "1.587vw"],
+  ["style", 2, "padding-right", "1.587vw"],
+  ["style", 2, "padding-left", "1.587vw"],
+  ["style", 2, "padding-top", "1.5815vw"],
+  ["style", 2, "padding-bottom", "1.5815vw"],
+  ["style", 2, "padding-right", "1.5815vw"],
+  ["style", 2, "padding-left", "1.5815vw"],
+  ["style", 2, "padding-top", "1.5759999999999998vw"],
+  ["style", 2, "padding-bottom", "1.5759999999999998vw"],
+  ["style", 2, "padding-right", "1.5759999999999998vw"],
+  ["style", 2, "padding-left", "1.5759999999999998vw"],
+  ["style", 2, "padding-top", "1.564vw"],
+  ["style", 2, "padding-bottom", "1.564vw"],
+  ["style", 2, "padding-right", "1.564vw"],
+  ["style", 2, "padding-left", "1.564vw"],
+  ["style", 2, "padding-top", "1.552vw"],
+  ["style", 2, "padding-bottom", "1.552vw"],
+  ["style", 2, "padding-right", "1.552vw"],
+  ["style", 2, "padding-left", "1.552vw"],
+  ["style", 2, "padding-top", "1.5465vw"],
+  ["style", 2, "padding-bottom", "1.5465vw"],
+  ["style", 2, "padding-right", "1.5465vw"],
+  ["style", 2, "padding-left", "1.5465vw"],
+  ["style", 2, "padding-top", "1.541vw"],
+  ["style", 2, "padding-bottom", "1.541vw"],
+  ["style", 2, "padding-right", "1.541vw"],
+  ["style", 2, "padding-left", "1.541vw"],
+  ["style", 2, "padding-top", "1.5354999999999999vw"],
+  ["style", 2, "padding-bottom", "1.5354999999999999vw"],
+  ["style", 2, "padding-right", "1.5354999999999999vw"],
+  ["style", 2, "padding-left", "1.5354999999999999vw"],
+  ["style", 2, "padding-top", "1.5235vw"],
+  ["style", 2, "padding-bottom", "1.5235vw"],
+  ["style", 2, "padding-right", "1.5235vw"],
+  ["style", 2, "padding-left", "1.5235vw"],
+  ["style", 2, "padding-top", "1.518vw"],
+  ["style", 2, "padding-bottom", "1.518vw"],
+  ["style", 2, "padding-right", "1.518vw"],
+  ["style", 2, "padding-left", "1.518vw"],
+  ["style", 2, "padding-top", "1.5125vw"],
+  ["style", 2, "padding-bottom", "1.5125vw"],
+  ["style", 2, "padding-right", "1.5125vw"],
+  ["style", 2, "padding-left", "1.5125vw"],
+  ["style", 2, "font-weight", "401.1"],
+  ["style", 2, "font-weight", "403.4"],
+  ["style", 2, "font-weight", "407.15"],
+  ["style", 2, "font-weight", "412.6"],
+  ["style", 2, "font-weight", "414.9"],
+  ["style", 2, "font-weight", "417.15"],
+  ["style", 2, "font-weight", "422.6"],
+  ["style", 2, "font-weight", "428.1"],
+  ["style", 2, "font-weight", "433.6"],
+  ["style", 2, "font-weight", "441"],
+  ["style", 2, "font-weight", "444.9"],
+  ["style", 2, "font-weight", "448.65"],
+  ["style", 2, "font-weight", "454.1"],
+  ["style", 2, "font-weight", "456.4"],
+  ["style", 2, "font-weight", "463.75"],
+  ["style", 2, "font-weight", "466.15"],
+  ["style", 2, "font-weight", "469.9"],
+  ["style", 2, "font-weight", "475.35"],
+  ["style", 2, "font-weight", "479.15"],
+  ["style", 2, "font-weight", "482.9"],
+  ["style", 2, "font-weight", "486.65"],
+  ["style", 2, "font-weight", "490.4"],
+  ["style", 2, "font-weight", "491.35"],
+  ["style", 2, "font-weight", "493.65"],
+  ["style", 2, "font-weight", "494.6"],
+  ["style", 2, "font-weight", "496.9"],
+  ["style", 2, "font-weight", "499.15"],
+  ["style", 2, "font-weight", "501.4"],
+  ["style", 2, "font-weight", "505.15"],
+  ["style", 2, "font-weight", "506.1"],
+  ["style", 2, "font-weight", "508.4"],
+  ["style", 2, "font-weight", "510.65"],
+  ["style", 2, "font-weight", "512.9"],
+  ["style", 2, "font-weight", "513.85"],
+  ["style", 2, "font-weight", "516.15"],
+  ["style", 2, "font-weight", "518.4"],
+  ["style", 2, "font-weight", "522.15"],
+  ["style", 2, "font-weight", "524.4"],
+  ["style", 2, "font-weight", "528.15"],
+  ["style", 2, "font-weight", "529.1"],
+  ["style", 2, "font-weight", "531.4"],
+  ["style", 2, "font-weight", "535.15"],
+  ["style", 2, "font-weight", "537.4"],
+  ["style", 2, "font-weight", "538.35"],
+  ["style", 2, "font-weight", "542.15"],
+  ["style", 2, "font-weight", "543.1"],
+  ["style", 2, "font-weight", "545.4"],
+  ["style", 2, "font-weight", "547.65"],
+  ["style", 2, "font-weight", "553.1"],
+  ["style", 2, "font-weight", "554.1"],
+  ["style", 2, "font-weight", "555.1"],
+  ["style", 2, "font-weight", "557.4"],
+  ["style", 2, "font-weight", "558.35"],
+  ["style", 2, "font-weight", "560.65"],
+  ["style", 2, "font-weight", "561.6"],
+  ["style", 2, "font-weight", "562.6"],
+  ["style", 2, "font-weight", "563.6"],
+  ["style", 2, "font-weight", "564.6"],
+  ["style", 2, "font-weight", "566.9"],
+  ["style", 2, "font-weight", "569.15"],
+  ["style", 2, "font-weight", "570.1"],
+  ["style", 2, "font-weight", "571.1"],
+  ["style", 2, "font-weight", "569.9"],
+  ["style", 2, "font-weight", "567.35"],
+  ["style", 2, "font-weight", "566.15"],
+  ["style", 2, "font-weight", "564.9"],
+  ["style", 2, "font-weight", "563.65"],
+  ["style", 2, "font-weight", "561.1"],
+  ["style", 2, "font-weight", "557.1"],
+  ["style", 2, "font-weight", "555.9"],
+  ["style", 2, "font-weight", "554.65"],
+  ["style", 2, "font-weight", "553.4"],
+  ["style", 2, "font-weight", "552.15"],
+  ["style", 2, "font-weight", "549.6"],
+  ["style", 2, "font-weight", "548.4"],
+  ["style", 2, "font-weight", "545.85"],
+  ["style", 2, "font-weight", "543.35"],
+  ["style", 2, "font-weight", "540.85"],
+  ["style", 2, "font-weight", "539.65"],
+  ["style", 2, "font-weight", "538.4"],
+  ["style", 2, "font-weight", "535.85"],
+  ["style", 2, "font-weight", "534.65"],
+  ["style", 2, "font-weight", "533.4"],
+  ["style", 2, "font-weight", "530.85"],
+  ["style", 2, "font-weight", "528.35"],
+  ["style", 2, "font-weight", "525.85"],
+  ["style", 2, "font-weight", "523.35"],
+  ["style", 2, "font-weight", "522.15"],
+  ["style", 2, "font-weight", "519.6"],
+  ["style", 2, "font-weight", "518.4"],
+  ["style", 2, "font-weight", "517.15"],
+  ["style", 2, "font-weight", "513.1"],
+  ["style", 2, "font-weight", "507.4"],
+  ["style", 2, "font-weight", "506.15"],
+  ["style", 2, "font-weight", "504.9"],
+  ["style", 2, "font-weight", "503.65"],
+  ["style", 2, "font-weight", "501.1"],
+  ["style", 2, "font-weight", "499.9"],
+  ["style", 2, "font-weight", "498.65"],
+  ["style", 2, "font-weight", "496.1"],
+  ["style", 2, "font-weight", "493.6"],
+  ["style", 2, "font-weight", "491.1"],
+  ["style", 2, "font-weight", "489.9"],
+  ["style", 2, "font-weight", "488.65"],
+  ["style", 2, "font-weight", "486.1"],
+  ["style", 2, "font-weight", "484.9"],
+  ["style", 2, "font-weight", "483.65"],
+  ["style", 2, "font-weight", "482.4"],
+  ["style", 2, "font-weight", "481.15"],
+  ["style", 2, "font-weight", "479.9"],
+  ["style", 2, "font-weight", "478.65"],
+  ["style", 2, "font-weight", "477.4"],
+  ["style", 2, "font-weight", "474.85"],
+  ["style", 2, "font-weight", "473.65"],
+  ["style", 2, "font-weight", "472.4"],
+  ["style", 2, "font-weight", "471.15"],
+  ["style", 2, "font-weight", "468.6"],
+  ["style", 2, "font-weight", "466.1"],
+  ["style", 2, "font-weight", "464.9"],
+  ["style", 2, "font-weight", "463.65"],
+  ["style", 2, "font-weight", "462.4"],
+  ["style", 2, "font-weight", "461.15"],
+  ["style", 2, "font-weight", "459.9"],
+  ["style", 2, "font-weight", "458.65"],
+  ["style", 2, "font-weight", "457.4"],
+  ["style", 2, "font-weight", "456.15"],
+  ["style", 2, "font-weight", "456"],
+  ["style", 2, "font-weight", "457.1"],
+  ["style", 2, "font-weight", "458.1"],
+  ["style", 2, "font-weight", "459.1"],
+  ["style", 2, "font-weight", "460.1"],
+  ["style", 2, "font-weight", "461.1"],
+  ["style", 2, "font-weight", "462.1"],
+  ["style", 2, "font-weight", "463.1"],
+  ["style", 2, "font-weight", "464.1"],
+  ["style", 2, "font-weight", "466.4"],
+  ["style", 2, "font-weight", "467.35"],
+  ["style", 2, "font-weight", "468.35"],
+  ["style", 2, "font-weight", "469.35"],
+  ["style", 2, "font-weight", "471.65"],
+  ["style", 2, "font-weight", "472.6"],
+  ["style", 2, "font-weight", "474.9"],
+  ["style", 2, "font-weight", "477.15"],
+  ["style", 2, "font-weight", "478.1"],
+  ["style", 2, "font-weight", "479.1"],
+  ["style", 2, "font-weight", "480.1"],
+  ["style", 2, "font-weight", "481.1"],
+  ["style", 2, "font-weight", "482.1"],
+  ["style", 2, "font-weight", "483.1"],
+  ["style", 2, "font-weight", "484.1"],
+  ["style", 2, "font-weight", "484"],
+  ["style", 2, "font-weight", "485.1"],
+  ["style", 2, "font-weight", "486.1"],
+  ["style", 2, "font-weight", "487.1"],
+  ["style", 2, "font-weight", "488.1"],
+  ["style", 2, "font-weight", "489.1"],
+  ["style", 2, "font-weight", "490.1"],
+  ["style", 2, "font-weight", "491.1"],
+  ["style", 2, "font-weight", "492.1"],
+  ["style", 2, "font-weight", "492"],
+  ["style", 2, "font-weight", "493.1"],
+  ["style", 2, "font-weight", "494.1"],
+  ["style", 2, "font-weight", "495.1"],
+  ["style", 2, "font-weight", "495"],
+  ["style", 2, "font-family", "Fraunces"],
+  ["style", 2, "font-family", "Inter"],
+  ["style", 2, "font-family", "EB Garamond"],
+  ["style", 2, "letter-spacing", "-0.0012000000000000003em"],
+  ["style", 2, "letter-spacing", "-0.004em"],
+  ["style", 2, "letter-spacing", "-0.00595em"],
+  ["style", 2, "letter-spacing", "-0.007150000000000001em"],
+  ["style", 2, "letter-spacing", "-0.0091em"],
+  ["style", 2, "letter-spacing", "-0.0119em"],
+  ["style", 2, "letter-spacing", "-0.013850000000000001em"],
+  ["style", 2, "letter-spacing", "-0.01505em"],
+  ["style", 2, "letter-spacing", "-0.01625em"],
+  ["style", 2, "letter-spacing", "-0.01745em"],
+  ["style", 2, "letter-spacing", "-0.018em"],
+  ["style", 2, "letter-spacing", "-0.018549999999999997em"],
+  ["style", 2, "letter-spacing", "-0.0191em"],
+  ["style", 2, "letter-spacing", "-0.019649999999999997em"],
+  ["style", 2, "letter-spacing", "-0.0202em"],
+  ["style", 2, "letter-spacing", "-0.020749999999999998em"],
+  ["style", 2, "letter-spacing", "-0.0213em"],
+  ["style", 2, "letter-spacing", "-0.021849999999999998em"],
+  ["style", 2, "letter-spacing", "-0.0224em"],
+  ["style", 2, "letter-spacing", "-0.022949999999999998em"],
+  ["style", 2, "letter-spacing", "-0.0235em"],
+  ["style", 2, "letter-spacing", "-0.02405em"],
+  ["style", 2, "letter-spacing", "-0.024599999999999997em"],
+  ["style", 2, "letter-spacing", "-0.02515em"],
+  ["style", 2, "letter-spacing", "-0.02635em"],
+  ["style", 2, "letter-spacing", "-0.027549999999999998em"],
+  ["style", 2, "letter-spacing", "-0.0281em"],
+  ["style", 2, "letter-spacing", "-0.0293em"],
+  ["style", 2, "letter-spacing", "-0.0305em"],
+  ["style", 2, "letter-spacing", "-0.031049999999999998em"],
+  ["style", 2, "letter-spacing", "-0.0316em"],
+  ["style", 2, "letter-spacing", "-0.032150000000000005em"],
+  ["style", 2, "letter-spacing", "-0.0327em"],
+  ["style", 2, "letter-spacing", "-0.03325em"],
+  ["style", 2, "letter-spacing", "-0.033800000000000004em"],
+  ["style", 2, "letter-spacing", "-0.033249999999999995em"],
+  ["style", 2, "letter-spacing", "-0.0327em"],
+  ["style", 2, "letter-spacing", "-0.0315em"],
+  ["style", 2, "letter-spacing", "-0.030950000000000002em"],
+  ["style", 2, "letter-spacing", "-0.0304em"],
+  ["style", 2, "letter-spacing", "-0.02985em"],
+  ["style", 2, "letter-spacing", "-0.029300000000000003em"],
+  ["style", 2, "letter-spacing", "-0.0281em"],
+  ["style", 2, "letter-spacing", "-0.0269em"],
+  ["style", 2, "letter-spacing", "-0.026350000000000002em"],
+  ["style", 2, "letter-spacing", "-0.0258em"],
+  ["style", 2, "letter-spacing", "-0.02525em"],
+  ["style", 2, "letter-spacing", "-0.024700000000000003em"],
+  ["style", 2, "letter-spacing", "-0.02415em"],
+  ["style", 2, "letter-spacing", "-0.02295em"],
+  ["style", 2, "letter-spacing", "-0.021750000000000002em"],
+  ["style", 2, "letter-spacing", "-0.02055em"],
+  ["style", 2, "letter-spacing", "-0.02em"],
+  ["style", 2, "letter-spacing", "-0.019450000000000002em"],
+  ["style", 2, "letter-spacing", "-0.0189em"],
+  ["style", 2, "letter-spacing", "-0.0177em"],
+  ["style", 2, "letter-spacing", "-0.017150000000000002em"],
+  ["style", 2, "letter-spacing", "-0.0166em"],
+  ["style", 2, "letter-spacing", "-0.01715em"],
+  ["style", 2, "letter-spacing", "-0.017699999999999997em"],
+  ["style", 2, "letter-spacing", "-0.01825em"],
+  ["style", 2, "letter-spacing", "-0.018799999999999997em"],
+  ["style", 2, "letter-spacing", "-0.02em"],
+  ["style", 2, "letter-spacing", "-0.02055em"],
+  ["style", 2, "letter-spacing", "-0.021099999999999997em"],
+  ["style", 2, "line-height", "0.9989"],
+  ["style", 2, "line-height", "0.9965004629629629"],
+  ["style", 2, "line-height", "0.9941002893518519"],
+  ["style", 2, "line-height", "0.9917001157407407"],
+  ["style", 2, "line-height", "0.9905999421296297"],
+  ["style", 2, "line-height", "0.9895004050925924"],
+  ["style", 2, "line-height", "0.9871008680555555"],
+  ["style", 2, "line-height", "0.9860006944444443"],
+  ["style", 2, "line-height", "0.9849011574074074"],
+  ["style", 2, "line-height", "0.9825016203703705"],
+  ["style", 2, "line-height", "0.9814014467592592"],
+  ["style", 2, "line-height", "0.9790019097222222"],
+  ["style", 2, "line-height", "0.977901736111111"],
+  ["style", 2, "line-height", "0.9768021990740741"],
+  ["style", 2, "line-height", "0.9757026620370369"],
+  ["style", 2, "line-height", "0.973303125"],
+  ["style", 2, "line-height", "0.9722029513888888"],
+  ["style", 2, "line-height", "0.9711034143518519"],
+  ["style", 2, "line-height", "0.9687038773148147"],
+  ["style", 2, "line-height", "0.9663037037037037"],
+  ["style", 2, "line-height", "0.9652035300925924"],
+  ["style", 2, "line-height", "0.9641039930555555"],
+  ["style", 2, "line-height", "0.9617044560185186"],
+  ["style", 2, "line-height", "0.9606042824074074"],
+  ["style", 2, "line-height", "0.9595047453703704"],
+  ["style", 2, "line-height", "0.9584052083333332"],
+  ["style", 2, "line-height", "0.9573056712962963"],
+  ["style", 2, "line-height", "0.9562061342592592"],
+  ["style", 2, "line-height", "0.9551065972222222"],
+  ["style", 2, "line-height", "0.9540070601851851"],
+  ["style", 2, "line-height", "0.9529075231481481"],
+  ["style", 2, "line-height", "0.951807986111111"],
+  ["style", 2, "line-height", "0.9494084490740741"],
+  ["style", 2, "line-height", "0.9483082754629628"],
+  ["style", 2, "line-height", "0.9472087384259259"],
+  ["style", 2, "line-height", "0.944809201388889"],
+  ["style", 2, "line-height", "0.9437090277777778"],
+  ["style", 2, "line-height", "0.9426094907407407"],
+  ["style", 2, "line-height", "0.9415099537037036"],
+  ["style", 2, "line-height", "0.9404104166666667"],
+  ["style", 2, "line-height", "0.9393108796296296"],
+  ["style", 2, "line-height", "0.9382113425925926"],
+  ["style", 2, "line-height", "0.9371118055555554"],
+  ["style", 2, "line-height", "0.9360122685185185"],
+  ["style", 2, "line-height", "0.9349127314814814"],
+  ["style", 2, "line-height", "0.9310131944444444"],
+  ["style", 2, "line-height", "0.9299127314814815"],
+  ["style", 2, "line-height", "0.9288131944444443"],
+  ["style", 2, "line-height", "0.9249136574074074"],
+  ["style", 2, "line-height", "0.9238131944444444"],
+  ["style", 2, "line-height", "0.9227136574074073"],
+  ["style", 2, "line-height", "0.9216141203703703"],
+  ["style", 2, "line-height", "0.9205145833333332"],
+  ["style", 2, "line-height", "0.9194150462962962"],
+  ["style", 2, "line-height", "0.9170155092592592"],
+  ["style", 2, "line-height", "0.9159153356481481"],
+  ["style", 2, "line-height", "0.9135157986111111"],
+  ["style", 2, "line-height", "0.912415625"],
+  ["style", 2, "line-height", "0.910016087962963"],
+  ["style", 2, "line-height", "0.9089159143518518"],
+  ["style", 2, "line-height", "0.9065163773148148"],
+  ["style", 2, "line-height", "0.9041162037037037"],
+  ["style", 2, "line-height", "0.9030160300925926"],
+  ["style", 2, "line-height", "0.9006164930555556"],
+  ["style", 2, "line-height", "0.8982163194444444"],
+  ["style", 2, "line-height", "0.8971161458333332"],
+  ["style", 2, "line-height", "0.8960166087962962"],
+  ["style", 2, "line-height", "0.8921170717592591"],
+  ["style", 2, "line-height", "0.8910166087962963"],
+  ["style", 2, "line-height", "0.8871170717592591"],
+  ["style", 2, "line-height", "0.8847166087962963"],
+  ["style", 2, "line-height", "0.8808164351851852"],
+  ["style", 2, "line-height", "0.8784159722222222"],
+  ["style", 2, "line-height", "0.876015798611111"],
+  ["style", 2, "line-height", "0.8736156249999999"],
+  ["style", 2, "line-height", "0.8697154513888888"],
+  ["style", 2, "line-height", "0.8658149884259259"],
+  ["style", 2, "line-height", "0.8647145254629629"],
+  ["style", 2, "line-height", "0.8591149884259258"],
+  ["style", 2, "line-height", "0.8580145833333332"],
+  ["style", 2, "line-height", "0.8524150462962962"],
+  ["style", 2, "line-height", "0.8485146412037037"],
+  ["style", 2, "line-height", "0.8474141782407406"],
+  ["style", 2, "line-height", "0.8463146412037037"],
+  ["style", 2, "line-height", "0.8439151041666667"],
+  ["style", 2, "line-height", "0.8428149305555556"],
+  ["style", 2, "line-height", "0.8404153935185186"],
+  ["style", 2, "line-height", "0.8393152199074074"],
+  ["style", 2, "line-height", "0.8382156828703703"],
+  ["style", 2, "line-height", "0.8371161458333333"],
+  ["style", 2, "line-height", "0.8360166087962962"],
+  ["style", 2, "line-height", "0.8349170717592592"],
+  ["style", 2, "line-height", "0.8310175347222222"],
+  ["style", 2, "line-height", "0.8299170717592592"],
+  ["style", 2, "line-height", "0.8275175347222222"],
+  ["style", 2, "line-height", "0.8264173611111111"],
+  ["style", 2, "line-height", "0.8240178240740741"],
+  ["style", 2, "line-height", "0.822917650462963"],
+  ["style", 2, "line-height", "0.8218181134259258"],
+  ["style", 2, "line-height", "0.8207185763888888"],
+  ["style", 2, "line-height", "0.8196190393518518"],
+  ["style", 2, "line-height", "0.8172195023148148"],
+  ["style", 2, "line-height", "0.8161193287037036"],
+  ["style", 2, "line-height", "0.8150197916666667"],
+  ["style", 2, "line-height", "0.8150202546296296"],
+  ["style", 2, "line-height", "0.8139202546296296"],
+  ["style", 2, "line-height", "0.8150207175925925"],
+  ["style", 2, "line-height", "0.8150202546296296"],
+  ["style", 2, "line-height", "0.8174202546296295"],
+  ["style", 2, "line-height", "0.8185204282407407"],
+  ["style", 2, "line-height", "0.8196199652777777"],
+  ["style", 2, "line-height", "0.8207195023148147"],
+  ["style", 2, "line-height", "0.8218190393518517"],
+  ["style", 2, "line-height", "0.8229185763888888"],
+  ["style", 2, "line-height", "0.8240181134259258"],
+  ["style", 2, "line-height", "0.8251176504629629"],
+  ["style", 2, "line-height", "0.8262171875"],
+  ["style", 2, "line-height", "0.827316724537037"],
+  ["style", 2, "line-height", "0.828416261574074"],
+  ["style", 2, "line-height", "0.829515798611111"],
+  [
+    "type",
+    2,
+    "But it involves the murder of an unknown genius.&nbsp; &nbsp;&nbsp;",
+  ],
+  ["type", 2, "But it involves the murder of an unknown genius.&nbsp; &nbsp;"],
+  ["type", 2, "But it involves the murder of an unknown genius.&nbsp;&nbsp;"],
+  ["type", 2, "But it involves the murder of an unknown genius.&nbsp;"],
+  ["type", 2, "But it involves the murder of an unknown genius."],
+  ["type", 2, "B unknown genius."],
+  ["type", 2, "Be unknown genius."],
+  ["type", 2, "Ben unknown genius."],
+  ["type", 2, "Ben&nbsp; unknown genius."],
+  ["type", 2, "Ben G unknown genius."],
+  ["type", 2, "Ben Gu unknown genius."],
+  ["type", 2, "Ben Gur unknown genius."],
+  ["type", 2, "Ben Gurl unknown genius."],
+  ["type", 2, "Ben Gurle unknown genius."],
+  ["type", 2, "Ben Gurley unknown genius."],
+  ["type", 2, "Benj Gurley unknown genius."],
+  ["type", 2, "Benja Gurley unknown genius."],
+  ["type", 2, "Benjam Gurley unknown genius."],
+  ["type", 2, "Benjami Gurley unknown genius."],
+  ["type", 2, "Benjamin Gurley unknown genius."],
+  ["type", 2, "Benjamin Gurley&nbsp; unknown genius."],
+  ["type", 2, "Benjamin Gurley w unknown genius."],
+  ["type", 2, "Benjamin Gurley wa unknown genius."],
+  ["type", 2, "Benjamin Gurley was unknown genius."],
+  ["type", 2, "Benjamin Gurley was&nbsp; unknown genius."],
+  ["type", 2, "Benjamin Gurley was t unknown genius."],
+  ["type", 2, "Benjamin Gurley was th unknown genius."],
+  ["type", 2, "Benjamin Gurley was the unknown genius."],
+  ["type", 2, "Benjamin Gurley ."],
+  ["type", 2, "Benjamin Gurley."],
+  ["type", 2, "Benjamin Gurley, ."],
+  ["type", 2, "Benjamin Gurley,."],
+  ["type", 2, "Benjamin Gurley."],
+  ["type", 2, "Benjamin Gurley ."],
+  ["type", 2, "Benjamin Gurley n."],
+  ["type", 2, "Benjamin Gurley no."],
+  ["type", 2, "Benjamin Gurley not."],
+  ["type", 2, "Benjamin Gurley not ."],
+  ["type", 2, "Benjamin Gurley not o."],
+  ["type", 2, "Benjamin Gurley not on."],
+  ["type", 2, "Benjamin Gurley not onl."],
+  ["type", 2, "Benjamin Gurley not only."],
+  ["type", 2, "Benjamin Gurley not only ."],
+  ["type", 2, "Benjamin Gurley not only d."],
+  ["type", 2, "Benjamin Gurley not only de."],
+  ["type", 2, "Benjamin Gurley not only des."],
+  ["type", 2, "Benjamin Gurley not only desi."],
+  ["type", 2, "Benjamin Gurley not only desig."],
+  ["type", 2, "Benjamin Gurley not only design."],
+  ["type", 2, "Benjamin Gurley not only designe."],
+  ["type", 2, "Benjamin Gurley not only designed."],
+  ["type", 2, "Benjamin Gurley not only designed, ."],
+  ["type", 2, "Benjamin Gurley not only designed, b."],
+  ["type", 2, "Benjamin Gurley not only designed, bu."],
+  ["type", 2, "Benjamin Gurley not only designed, but."],
+  ["type", 2, "Benjamin Gurley not only designed, but ."],
+  ["type", 2, "Benjamin Gurley not only designed, but w."],
+  ["type", 2, "Benjamin Gurley not only designed, but wr."],
+  ["type", 2, "Benjamin Gurley not only designed, but wro."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote ."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote t."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote th."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the ."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the s."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the so."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the sof."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the soft."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the softw."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the softwa."],
+  ["type", 2, "Benjamin Gurley not only designed, but wrote the software."],
+  ["type", 2, "Benjamin Gurley not only designed , but wrote the software."],
+  ["type", 2, "Benjamin Gurley not only designed t, but wrote the software."],
+  ["type", 2, "Benjamin Gurley not only designed th, but wrote the software."],
+  ["type", 2, "Benjamin Gurley not only designed the, but wrote the software."],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the , but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the h, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the ha, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the haa, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the ha, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the har, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hard, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardw, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardwa, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, f.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, fo.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for t.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for th.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the P.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PD.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-1 .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-1 (.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-1 .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PD.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the P.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the P.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Pr.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Pro.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Prog.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Progra.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Program.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programm.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programma.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmab.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmabl.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable D.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Da.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Dat.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data P.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Pr.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Pro.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Proc.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Proce.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Proces.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Process.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Processo.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the Programmable Data Processor.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the P.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PD.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, but wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not only designed the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not onlydesigned the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not onldesigned the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not ondesigned the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not odesigned the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley not designed the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley notdesigned the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley nodesigned the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley ndesigned the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware, he wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware a the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware an the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and&nbsp; the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and w the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wr the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wro the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software, for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 i.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3..",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 .",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 m.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 mo.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 mon.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 mont.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 month.",
+  ],
+  [
+    "type",
+    2,
+    "Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  [
+    "type",
+    2,
+    "IBenjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  [
+    "type",
+    2,
+    "In Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  [
+    "type",
+    2,
+    "In 1Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  [
+    "type",
+    2,
+    "In 19Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  [
+    "type",
+    2,
+    "In 195Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  [
+    "type",
+    2,
+    "In 1959Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  [
+    "type",
+    2,
+    "In 1959, Benjamin Gurley designed the hardware and wrote the software for the PDP-1 in 3.5 months.",
+  ],
+  ["type", 2, "The PDP-1 in 3.5 months."],
+  ["type", 2, "The PDP-1 ."],
+  ["type", 2, "The PDP-1 w."],
+  ["type", 2, "The PDP-1 wa."],
+  ["type", 2, "The PDP-1 was."],
+  ["type", 2, "The PDP-1 was ."],
+  ["type", 2, "The PDP-1 was t."],
+  ["type", 2, "The PDP-1 was the."],
+  ["type", 2, "The PDP-1 was the ."],
+  ["type", 2, "The PDP-1 was the f."],
+  ["type", 2, "The PDP-1 was the fi."],
+  ["type", 2, "The PDP-1 was the fir."],
+  ["type", 2, "The PDP-1 was the firs."],
+  ["type", 2, "The PDP-1 was the first."],
+  ["type", 2, "The PDP-1 was the first ."],
+  ["type", 2, "The PDP-1 was the first m."],
+  ["type", 2, "The PDP-1 was the first mi."],
+  ["type", 2, "The PDP-1 was the first min."],
+  ["type", 2, "The PDP-1 was the first mini."],
+  ["type", 2, "The PDP-1 was the first mini-."],
+  ["type", 2, "The PDP-1 was the first mini-c."],
+  ["type", 2, "The PDP-1 was the first mini-co."],
+  ["type", 2, "The PDP-1 was the first mini-com."],
+  ["type", 2, "The PDP-1 was the first mini-comp."],
+  ["type", 2, "The PDP-1 was the first mini-comput."],
+  ["type", 2, "The PDP-1 was the first mini-computer."],
+  ["type", 2, "The PDP-1 was the first mi."],
+  ["type", 2, "The PDP-1 was the first m."],
+  ["type", 2, "The PDP-1 was the first ."],
+  ["type", 2, "The PDP-1 was the first."],
+  ["type", 2, "The PDP-1 was the first ."],
+  ["type", 2, "The PDP-1 was the first p."],
+  ["type", 2, "The PDP-1 was the first pow."],
+  ["type", 2, "The PDP-1 was the first powe."],
+  ["type", 2, "The PDP-1 was the first power."],
+  ["type", 2, "The PDP-1 was the first powerf."],
+  ["type", 2, "The PDP-1 was the first powerfu."],
+  ["type", 2, "The PDP-1 was the first powerful."],
+  ["type", 2, "The PDP-1 was the first powerful ."],
+  ["type", 2, "The PDP-1 was the first powerful co."],
+  ["type", 2, "The PDP-1 was the first powerful com."],
+  ["type", 2, "The PDP-1 was the first powerful comp."],
+  ["type", 2, "The PDP-1 was the first powerful comput."],
+  ["type", 2, "The PDP-1 was the first powerful computer."],
+  ["type", 2, "The PDP-1 was the first powerful computer ."],
+  ["type", 2, "The PDP-1 was the first powerful computer t."],
+  ["type", 2, "The PDP-1 was the first powerful computer tha."],
+  ["type", 2, "The PDP-1 was the first powerful computer that."],
+  ["type", 2, "The PDP-1 was the first powerful computer that ."],
+  ["type", 2, "The PDP-1 was the first powerful computer that d."],
+  ["type", 2, "The PDP-1 was the first powerful computer that di."],
+  ["type", 2, "The PDP-1 was the first powerful computer that did."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t ."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t f."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t fi."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t fil."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t fill."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t fill ."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t fill a."],
+  ["type", 2, "The PDP-1 was the first powerful computer that didn’t fill a ."],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first powerful computer that didn’t fill a w.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first powerful computer that didn’t fill a wa.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first powerful computer that didn’t fill a ware.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first powerful computer that didn’t fill a wareh.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first powerful computer that didn’t fill a wareho.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first powerful computer that didn’t fill a warehous.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first powerful computer that didn’t fill a warehouse.",
+  ],
+  ["type", 2, "The PDP-1 was 1."],
+  ["type", 2, "The PDP-1 was 10."],
+  ["type", 2, "The PDP-1 was 10x."],
+  ["type", 2, "The PDP-1 was 10x ."],
+  ["type", 2, "The PDP-1 was 10x f."],
+  ["type", 2, "The PDP-1 was 10x fa."],
+  ["type", 2, "The PDP-1 was 10x fas."],
+  ["type", 2, "The PDP-1 was 10x fast."],
+  ["type", 2, "The PDP-1 was 10x faster."],
+  ["type", 2, "The PDP-1 was 100x faster."],
+  ["type", 2, "The PDP-1 was 1000x faster."],
+  ["type", 2, "The PDP-1 was 1000x faster ."],
+  ["type", 2, "The PDP-1 was 1000x faster t."],
+  ["type", 2, "The PDP-1 was 1000x faster tha."],
+  ["type", 2, "The PDP-1 was 1000x faster than."],
+  ["type", 2, "The PDP-1 was 1000x faster than ."],
+  ["type", 2, "The PDP-1 was 1000x faster than a."],
+  ["type", 2, "The PDP-1 was 1000x faster than a ."],
+  ["type", 2, "The PDP-1 was 1000x faster than a c."],
+  ["type", 2, "The PDP-1 was 1000x faster than a co."],
+  ["type", 2, "The PDP-1 was 1000x faster than a com."],
+  ["type", 2, "The PDP-1 was 1000x faster than a comp."],
+  ["type", 2, "The PDP-1 was 1000x faster than a comput."],
+  ["type", 2, "The PDP-1 was 1000x faster than a compute."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer ."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer t."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer tha."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that ."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that c."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that co."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that cos."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that cost."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that cost ."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that cost."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that coste."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that costed."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that costed ."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that costed t."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that costed tw."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that costed twi."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that costed twice."],
+  ["type", 2, "The PDP-1 was 1000x faster than a computer that costed twice ."],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice a.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as .",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as m.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as mu.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as muc.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much .",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much a.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much an.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and .",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and w.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and wa.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was .",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was m.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was ma.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was man.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was ma.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was m.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was mu.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was much.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was much .",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was much la.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was much lar.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was much larg.",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was 1000x faster than a computer that costed twice as much and was much larger.",
+  ],
+  ["type", 2, "The PDP-1 was t."],
+  ["type", 2, "The PDP-1 was th."],
+  ["type", 2, "The PDP-1 was the."],
+  ["type", 2, "The PDP-1 was the ."],
+  ["type", 2, "The PDP-1 was the f."],
+  ["type", 2, "The PDP-1 was the fi."],
+  ["type", 2, "The PDP-1 was the fir."],
+  ["type", 2, "The PDP-1 was the first."],
+  ["type", 2, "The PDP-1 was the first ."],
+  ["type", 2, "The PDP-1 was the first c."],
+  ["type", 2, "The PDP-1 was the first co."],
+  ["type", 2, "The PDP-1 was the first com."],
+  ["type", 2, "The PDP-1 was the first comp."],
+  ["type", 2, "The PDP-1 was the first comput."],
+  ["type", 2, "The PDP-1 was the first computer."],
+  ["type", 2, "The PDP-1 was the first computer ."],
+  ["type", 2, "The PDP-1 was the first computer to."],
+  ["type", 2, "The PDP-1 was the first computer to ."],
+  ["type", 2, "The PDP-1 was the first computer to ha."],
+  ["type", 2, "The PDP-1 was the first computer to have."],
+  ["type", 2, "The PDP-1 was the first computer to have ."],
+  ["type", 2, "The PDP-1 was the first computer to have a."],
+  ["type", 2, "The PDP-1 was the first computer to have a ."],
+  ["type", 2, "The PDP-1 was the first computer to have a v."],
+  ["type", 2, "The PDP-1 was the first computer to have a vid."],
+  ["type", 2, "The PDP-1 was the first computer to have a vide."],
+  ["type", 2, "The PDP-1 was the first computer to have a video."],
+  ["type", 2, "The PDP-1 was the first computer to have a video ."],
+  ["type", 2, "The PDP-1 was the first computer to have a video g."],
+  ["type", 2, "The PDP-1 was the first computer to have a video ga."],
+  ["type", 2, "The PDP-1 was the first computer to have a video gam."],
+  ["type", 2, "The PDP-1 was the first computer to have a video game."],
+  ["type", 2, "The PDP-1 was the first computer to have a video game.&nbsp;"],
+  ["type", 2, "The PDP-1 was the first computer to have a video game. T"],
+  ["type", 2, "The PDP-1 was the first computer to have a video game. Th"],
+  ["type", 2, "The PDP-1 was the first computer to have a video game. The"],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The&nbsp;",
+  ],
+  ["type", 2, "The PDP-1 was the first computer to have a video game. The v"],
+  ["type", 2, "The PDP-1 was the first computer to have a video game. The vi"],
+  ["type", 2, "The PDP-1 was the first computer to have a video game. The vid"],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The vide",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video ga",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video gam",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game w",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game wa",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was ca",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was cal",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was calle",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called S",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called Sp",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called S",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SP",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SPA",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SPAC",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SPACE",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SPACEW",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SPACEWA",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SPACEWAR",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was dthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was dethe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was devethe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was develthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was develothe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developethe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developedthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed athe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed atthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Dthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Dithe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digithe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digigthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digitthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digitathe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digitalthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Ethe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Eqthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equithe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipmthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipmethe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipmenthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipmentthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Cthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Cothe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corpthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp.the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. Ithe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. Itthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. It the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. It wthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. It wathe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. It wasthe first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Corp. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Cor. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment Co. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital Equipment C. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital EqC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at Digital EC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at DigitalEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at DigitaEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at DigitEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at DigiEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at DigEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at DiEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DECThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC wThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC waThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC wasThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was aThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was anThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an oThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an ouThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgroThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowthThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth oThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth ofThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of MThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of MIThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of MITThe PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of MIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of tMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of thMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of theMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the MIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the LMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the LiMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the LinMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the LincMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the LincoMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the LincolMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln MIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LabMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaboMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaborMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaboraMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaboratMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaboratoMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaboratorMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln LaboratoryMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln Laboratory MIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln Laboratory aMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln Laboratory atMIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  [
+    "type",
+    2,
+    "DEC was an outgrowth of the Lincoln Laboratory at MIT. The PDP-1 was developed at DEC. It was the first computer to have a video game. The video game was called SPACEWAR!",
+  ],
+  ["type", 2, "T"],
+  ["type", 2, "Th"],
+  ["type", 2, "The"],
+  ["type", 2, "The&nbsp;"],
+  ["type", 2, "The L"],
+  ["type", 2, "The Li"],
+  ["type", 2, "The Lin"],
+  ["type", 2, "The Linc"],
+  ["type", 2, "The Linco"],
+  ["type", 2, "The Lincol"],
+  ["type", 2, "The Lincoln&nbsp;"],
+  ["type", 2, "The Lincoln L"],
+  ["type", 2, "The Lincoln La"],
+  ["type", 2, "The Lincoln Lab"],
+  ["type", 2, "The Lincoln Labo"],
+  ["type", 2, "The Lincoln Labor"],
+  ["type", 2, "The Lincoln Labora"],
+  ["type", 2, "The Lincoln Laborat"],
+  ["type", 2, "The Lincoln Laborato"],
+  ["type", 2, "The Lincoln Laborator"],
+  ["type", 2, "The Lincoln Laboratory"],
+  ["type", 2, "The Lincoln Laboratory&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory a"],
+  ["type", 2, "The Lincoln Laboratory at"],
+  ["type", 2, "The Lincoln Laboratory at&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at M"],
+  ["type", 2, "The Lincoln Laboratory at MI"],
+  ["type", 2, "The Lincoln Laboratory at MIT"],
+  ["type", 2, "The Lincoln Laboratory at MIT&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT w"],
+  ["type", 2, "The Lincoln Laboratory at MIT wa"],
+  ["type", 2, "The Lincoln Laboratory at MIT was"],
+  ["type", 2, "The Lincoln Laboratory at MIT was&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a to"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-s"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-se"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-sec"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-secr"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-secre"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-secret"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a top-secret&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a to"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a t"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was a"],
+  ["type", 2, "The Lincoln Laboratory at MIT was&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was"],
+  ["type", 2, "The Lincoln Laboratory at MIT wa"],
+  ["type", 2, "The Lincoln Laboratory at MIT w"],
+  ["type", 2, "The Lincoln Laboratory at MIT wo"],
+  ["type", 2, "The Lincoln Laboratory at MIT wor"],
+  ["type", 2, "The Lincoln Laboratory at MIT work"],
+  ["type", 2, "The Lincoln Laboratory at MIT worke"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked o"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on c"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on cl"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on cla"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on clas"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on class"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classi"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classif"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classifi"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classifie"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified co"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified com"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified comp"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified comput"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified computer"],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer&nbsp;",
+  ],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified computer p"],
+  ["type", 2, "The Lincoln Laboratory at MIT worked on classified computer pr"],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer pro",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer proje",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projec",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer project",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects f",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects fo",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for t",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for th",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the U",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US A",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Ai",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Air",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Air&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Air F",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Air Fo",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Air For",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Air Force",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT worked on classified computer projects for the US Air Force.",
+  ],
+  ["type", 2, "The Lincoln Laboratory at MIT w."],
+  ["type", 2, "The Lincoln Laboratory at MIT wa."],
+  ["type", 2, "The Lincoln Laboratory at MIT was."],
+  ["type", 2, "The Lincoln Laboratory at MIT was ."],
+  ["type", 2, "The Lincoln Laboratory at MIT was f."],
+  ["type", 2, "The Lincoln Laboratory at MIT was fu."],
+  ["type", 2, "The Lincoln Laboratory at MIT was fun."],
+  ["type", 2, "The Lincoln Laboratory at MIT was fund."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funde."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded ."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded b."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by A."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by AR."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARP."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARP."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by AR."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by A."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Ad."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Adv."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Adva."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advan."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advance."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced ."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced R."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced Re."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced Rese."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced Resea."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced Resear."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced Researc."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced Research."],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research .",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research P.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Pr.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Pro.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Proj.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Proje.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projec.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Project.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects .",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects A.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Ag.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Age.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Agen.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Agenc.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Agency.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Agenc.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Agen.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Age.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects Ag.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research Projects A.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by Advanced Research PA.",
+  ],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by Advanced RPA."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by A RPA."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA."],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA.&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. T"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. Th"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. The"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. The&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. The"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. They"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. They&nbsp;"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. They d"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. They de"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. They deve"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. They devel"],
+  ["type", 2, "The Lincoln Laboratory at MIT was funded by ARPA. They develo"],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They develope",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed t",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed tw",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two co",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two com",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two comp",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two comput",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computer",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers t",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers the",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers ther",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there,&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, t",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, th",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the T",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 a",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 an",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and t",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and th",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the T",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the TX",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the TX-",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the TX-0",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the TX-",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the TX-2",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. They developed two computers there, the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. B the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Be the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Ben the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Ben&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Ben the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benja the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjam the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjami the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin G the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gu the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gur the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurl the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurle the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley d the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley de the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley des the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley desi the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley desig the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley design the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designe the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed t the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed th the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the l the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the li the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the lig the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the ligh the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light p the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pe the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen a the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen an the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and t the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and th the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the C the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CR the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT m the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT mo the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT mon the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT mont the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monto the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT mont the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT mon the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT moni the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monit the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monito the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monitor the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monitor&nbsp; the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monitor f the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monitor fo the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. Benjamin Gurley designed the light pen and the CRT monitor for the TX-0 and the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "The Lincoln Laboratory at MIT was funded by ARPA. he TX-0 and the TX-2.",
+  ],
+  ["type", 2, "he TX-0 and the TX-2."],
+  ["type", 2, "The TX-0 and the TX-2."],
+  ["type", 2, "The TX-0 and theTX-2."],
+  ["type", 2, "The TX-0 and thTX-2."],
+  ["type", 2, "The TX-0 and tTX-2."],
+  ["type", 2, "The TX-0 and TX-2."],
+  ["type", 2, "The TX-0 andTX-2."],
+  ["type", 2, "The TX-0 anTX-2."],
+  ["type", 2, "The TX-0 aTX-2."],
+  ["type", 2, "The TX-0 TX-2."],
+  ["type", 2, "The TX-0TX-2."],
+  ["type", 2, "The TX-TX-2."],
+  ["type", 2, "The TXTX-2."],
+  ["type", 2, "The TTX-2."],
+  ["type", 2, "The TX-2."],
+  ["type", 2, "The TX-2 ."],
+  ["type", 2, "The TX-2 w."],
+  ["type", 2, "The TX-2 wa."],
+  ["type", 2, "The TX-2 was."],
+  ["type", 2, "The TX-2 was ."],
+  ["type", 2, "The TX-2 was us."],
+  ["type", 2, "The TX-2 was use."],
+  ["type", 2, "The TX-2 was used."],
+  ["type", 2, "The TX-2 was used ."],
+  ["type", 2, "The TX-2 was used by."],
+  ["type", 2, "The TX-2 was used by ."],
+  ["type", 2, "The TX-2 was used by I."],
+  ["type", 2, "The TX-2 was used by Iv."],
+  ["type", 2, "The TX-2 was used by Iva."],
+  ["type", 2, "The TX-2 was used by Ivan ."],
+  ["type", 2, "The TX-2 was used by Ivan S."],
+  ["type", 2, "The TX-2 was used by Ivan Su."],
+  ["type", 2, "The TX-2 was used by Ivan Sut."],
+  ["type", 2, "The TX-2 was used by Ivan Suthe."],
+  ["type", 2, "The TX-2 was used by Ivan Suther."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherl."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherla."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherlan."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to c."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to cre."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to crea."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to creat."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to creat ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to creat."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create S."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sk."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Ske."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sket."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketc."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketch."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketchpa."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketchpad."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketchpad, ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketchpad, t."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketchpad, th."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland to create Sketchpad, the."],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the w.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the wo.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the w.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the f.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the fi.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the fir.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the firs.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first d.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first de.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first des.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first desi.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first desig.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design p.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design pr.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design pro.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design prog.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design progr.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design progra.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first design program.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first codesign program.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first comdesign program.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first compdesign program.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first compudesign program.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first computdesign program.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first computerdesign program.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland to create Sketchpad, the first computer design program.",
+  ],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, w."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, wh."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who t."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who ta."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who tau."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taug."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taugh."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught t."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught th."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught the."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught the ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught the fo."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught the fou."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught the found."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught the founder."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who taught the founders."],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of P.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pi.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pix.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixa.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, A.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, At.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Ata.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atar.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, A.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Ad.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Ado.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adob.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, N.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Ne.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Net.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Nets.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netsca.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscap.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, a.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, an.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and C.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Ch.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chu.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuc.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck-.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck-E.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck-E-.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck-E.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E. .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E. C.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E. Ch.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E. Che.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E. Chee.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E. Chees.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who taught the founders of Pixar, Atari, Adobe, Netscape, and Chuck E. Cheese.",
+  ],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who d."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who de."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who dev."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who deve."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who devel."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who develo."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who develop."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who develope."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed t."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed the."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed the ."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed the f."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed the fi."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed the fir."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed the firs."],
+  ["type", 2, "The TX-2 was used by Ivan Sutherland, who developed the first."],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first V.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR .",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR he.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR hea.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR head.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR heads.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR headse.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was used by Ivan Sutherland, who developed the first VR headset.",
+  ],
+  ["type", 2, "The TX-2 was n."],
+  ["type", 2, "The TX-2 was not."],
+  ["type", 2, "The TX-2 was not ."],
+  ["type", 2, "The TX-2 was not."],
+  ["type", 2, "The TX-2 was no."],
+  ["type", 2, "The TX-2 was n."],
+  ["type", 2, "The TX-2 was ."],
+  ["type", 2, "The TX-2 was a."],
+  ["type", 2, "The TX-2 was a ."],
+  ["type", 2, "The TX-2 was a to."],
+  ["type", 2, "The TX-2 was a top."],
+  ["type", 2, "The TX-2 was a to."],
+  ["type", 2, "The TX-2 was a t."],
+  ["type", 2, "The TX-2 was a ."],
+  ["type", 2, "The TX-2 was a m."],
+  ["type", 2, "The TX-2 was a mi."],
+  ["type", 2, "The TX-2 was a mil."],
+  ["type", 2, "The TX-2 was a mili."],
+  ["type", 2, "The TX-2 was a milia."],
+  ["type", 2, "The TX-2 was a mili."],
+  ["type", 2, "The TX-2 was a milit."],
+  ["type", 2, "The TX-2 was a milita."],
+  ["type", 2, "The TX-2 was a militar."],
+  ["type", 2, "The TX-2 was a military."],
+  ["type", 2, "The TX-2 was a military ."],
+  ["type", 2, "The TX-2 was a military c."],
+  ["type", 2, "The TX-2 was a military co."],
+  ["type", 2, "The TX-2 was a military com."],
+  ["type", 2, "The TX-2 was a military comp."],
+  ["type", 2, "The TX-2 was a military comput."],
+  ["type", 2, "The TX-2 was a military computer."],
+  ["type", 2, "The TX-2 was a military computer, ."],
+  ["type", 2, "The TX-2 was a military computer, s."],
+  ["type", 2, "The TX-2 was a military computer, so."],
+  ["type", 2, "The TX-2 was a military computer, so ."],
+  ["type", 2, "The TX-2 was a military computer, so w."],
+  ["type", 2, "The TX-2 was a military computer, so wa."],
+  ["type", 2, "The TX-2 was a military computer, so was."],
+  ["type", 2, "The TX-2 was a military computer, so wasn."],
+  ["type", 2, "The TX-2 was a military computer, so wasn’."],
+  ["type", 2, "The TX-2 was a military computer, so wasn’t ."],
+  ["type", 2, "The TX-2 was a military computer, so wasn’t."],
+  ["type", 2, "The TX-2 was a military computer, so wasn’."],
+  ["type", 2, "The TX-2 was a military computer, so wasn."],
+  ["type", 2, "The TX-2 was a military computer, so was."],
+  ["type", 2, "The TX-2 was a military computer, so wa."],
+  ["type", 2, "The TX-2 was a military computer, so w."],
+  ["type", 2, "The TX-2 was a military computer, so ."],
+  ["type", 2, "The TX-2 was a military computer, so c."],
+  ["type", 2, "The TX-2 was a military computer, so co."],
+  ["type", 2, "The TX-2 was a military computer, so cou."],
+  ["type", 2, "The TX-2 was a military computer, so coul."],
+  ["type", 2, "The TX-2 was a military computer, so could."],
+  ["type", 2, "The TX-2 was a military computer, so couldn."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t ."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t b."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be ."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be c."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be co."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be com."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be comme."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be commer."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be commerc."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be commerci."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be commercia."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be commercial."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be commerciali."],
+  ["type", 2, "The TX-2 was a military computer, so couldn’t be commercializ."],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialize.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized.",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized.&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. S",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So D",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DE",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC w",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC wa",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was s",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was st",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was star",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was start",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was starte",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started i",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in or",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in ord",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to c",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to co",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to com",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to comme",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commer",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commerc",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commerci",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercia",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercial",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commerciali",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercializ",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize t",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the t",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the te",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the tec",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the tech",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the techn",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the techno",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the technol",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the technolo",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the technolog",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the technology",
+  ],
+  [
+    "type",
+    2,
+    "The TX-2 was a military computer, so couldn’t be commercialized. So DEC was started in order to commercialize the technology.",
+  ],
+  ["type", 2, "DEC was started in order to commercialize the technology."],
+  ["type", 2, "DEC was started in order to commercialize the technology ."],
+  ["type", 2, "DEC was started in order to commercialize the technology i."],
+  ["type", 2, "DEC was started in order to commercialize the technology in."],
+  ["type", 2, "DEC was started in order to commercialize the technology in ."],
+  ["type", 2, "DEC was started in order to commercialize the technology in t."],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in th.",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the.",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the .",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the T.",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX.",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-.",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2.",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2.&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. S",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Si",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Sinc",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since m",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since mu",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of t",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the&nbsp;",
+  ],
+  [
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the te",
+  ],
   [
-      "select",
-      0
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the tec",
   ],
   [
-      "select",
-      1
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the tech",
   ],
   [
-      "new",
-      "1",
-      1
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the techn",
   ],
   [
-      "select",
-      1
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the techno",
   ],
   [
-      "style",
-      1,
-      "grid-row-start",
-      1
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technol",
   ],
   [
-      "style",
-      1,
-      "grid-row-end",
-      1
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technolo",
   ],
   [
-      "select",
-      1
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technolog",
   ],
   [
-      "type",
-      1,
-      ""
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology",
   ],
   [
-      "type",
-      1,
-      "H"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology&nbsp;",
   ],
   [
-      "type",
-      1,
-      "He"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology e",
   ],
   [
-      "type",
-      1,
-      "Hey"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology ex",
   ],
   [
-      "type",
-      1,
-      "Hey&nbsp;"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology exi",
   ],
   [
-      "type",
-      1,
-      "Hey D"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology exis",
   ],
   [
-      "type",
-      1,
-      "Hey De"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology exist",
   ],
   [
-      "type",
-      1,
-      "Hey Dev"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existe",
   ],
   [
-      "type",
-      1,
-      "Hey Devi"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed",
   ],
   [
-      "type",
-      1,
-      "Hey Devin"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed,&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "18.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, B",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "19.599999999999998px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Be",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "20px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Ben",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "22.8px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benj",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "26.400000000000002px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benja",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "33px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjam",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "36.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjami",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "40.6px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "44.4px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "47.8px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin G",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "49px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gu",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "51.4px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gur",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "57px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurl",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "57.8px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurle",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "62.199999999999996px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "63.6px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "64.8px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley w",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "66.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley wa",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "67.4px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "70.60000000000001px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "74.39999999999999px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was a",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "78.4px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was ab",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "82.60000000000001px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was abl",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "87px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "91.4px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "96.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able t",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "101.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "106px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to c",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "110.6px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to crea",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "114.8px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "119px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "123.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create t",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "127.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create th",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "131px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "134.8px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the P",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "138.20000000000002px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PD",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "141.6px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "145px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "148px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "151px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "153.6px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 i",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "156.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "158.79999999999998px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "161.4px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "163.6px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "165.79999999999998px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5&nbsp;",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "168px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5 m",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "170px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5 mo",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "172px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5 mon",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "174px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5 mont",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "175.8px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5 month",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "177.60000000000002px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5 months",
   ],
   [
-      "style",
-      1,
-      "font-size",
-      "179.2px"
+    "type",
+    2,
+    "DEC was started in order to commercialize the technology in the TX-2. Since much of the technology existed, Benjamin Gurley was able to create the PDP-1 in 3.5 months.",
   ],
+  ["type", 2, "Benjamin Gurley was able to create the PDP-1 in 3.5 months."],
+  ["type", 2, "Benjamin Gurley."],
+  ["type", 2, "IBenjamin Gurley."],
+  ["type", 2, "InBenjamin Gurley."],
+  ["type", 2, "In Benjamin Gurley."],
+  ["type", 2, "In 1Benjamin Gurley."],
+  ["type", 2, "In 19Benjamin Gurley."],
+  ["type", 2, "In 196Benjamin Gurley."],
+  ["type", 2, "In 1963Benjamin Gurley."],
+  ["type", 2, "In 1963 Benjamin Gurley."],
+  ["type", 2, "In 1963 Benjamin Gurley ."],
+  ["type", 2, "In 1963 Benjamin Gurley q."],
+  ["type", 2, "In 1963 Benjamin Gurley qu."],
+  ["type", 2, "In 1963 Benjamin Gurley qui."],
+  ["type", 2, "In 1963 Benjamin Gurley quit."],
+  ["type", 2, "In 1963 Benjamin Gurley quit ."],
+  ["type", 2, "In 1963 Benjamin Gurley quit D."],
+  ["type", 2, "In 1963 Benjamin Gurley quit DE."],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC.&nbsp;"],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC. I"],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC. In&nbsp;"],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC. In"],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC. I"],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC.&nbsp;"],
+  ["type", 2, "In 1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In N1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In No1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In Nov1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In Nove1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In Novem1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In Novemb1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In November1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In November 1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In November of1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In November of 1963 Benjamin Gurley quit DEC."],
+  ["type", 2, "In November of 1963 Benjamin Gurley ."],
+  ["type", 2, "In November of 1963 Benjamin Gurley w."],
+  ["type", 2, "In November of 1963 Benjamin Gurley wa."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was ."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was h."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was ha."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was hav."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was havi."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having ."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having d."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having di."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having din."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinne."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner ."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner w."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner wi."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner with."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner with ."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner with h."],
+  ["type", 2, "In November of 1963 Benjamin Gurley was having dinner with hi."],
   [
-      "style",
-      1,
-      "font-size",
-      "180.79999999999998px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,99.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his w.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,99%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wi.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,98.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,97%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,94.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife a.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,91.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife an.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,90%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,88.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,87%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,85.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 c.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,84.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 ch.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,84%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 chi.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,83%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 chil.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,82.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 child.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,81.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 childre.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,81.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,80.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,80.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children w.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,79.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children wh.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,79.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children whe.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,79%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,78.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,78%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,77.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,76.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a s.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,76.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sn.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,76%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sni.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,75.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a snip.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,75.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,74.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,74%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper s.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,73.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper sh.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,72.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper sho.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,72%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,71.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,71.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot h.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,70.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot hi.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,70.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,70%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him .",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,69.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him t.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,69.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him th.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,69.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him thr.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,69.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him thro.",
   ],
   [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,69%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him throu.",
   ],
   [
-      "select",
-      2
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him throug.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,100%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,99.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through .",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,99.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through t.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,98%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through th.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,96%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,93.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the .",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,90.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the he.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,88.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the hea.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,87.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,84%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head .",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,80.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head wi.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,76.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,73.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with .",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,70%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,68%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a .",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,65.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a s.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,63%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a si.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,61.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a sig.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,59.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a si.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,58.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a sin.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,57.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a sing.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,56.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a singl.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,55.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,54.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single .",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,53.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single b.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,53.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bu.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,52.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bul.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,52.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bull.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,52.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bulle.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,52%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet.",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,51.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet.&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,51.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. Y",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,51.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,51%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You w",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,50.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You wo",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,50.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,50.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You wonÆ",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,50%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You wonÆt",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,49.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You wonÆt&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,48.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You wonÆt",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,48.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You wonÆ",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,47.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,46.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,45.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,44.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,43%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t f",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,41.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t fi",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,39%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t fin",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,37.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,35%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,33%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find m",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,31%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find mor",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,29%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,27.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,26.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more t",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,25.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more th",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,23.2%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more tha",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,18.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,16%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,13.4%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than th",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,10.8%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than thi",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,7.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,4.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this&nbsp;",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,1.6%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on",
   ],
   [
-      "style",
-      2,
-      "--background-color",
-      "hsla(0,100%,0%,1)"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on&nbsp;",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-1.4000000000000001px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on th",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-2.8px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-4.2px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the&nbsp;",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-5.6000000000000005px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the i",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-6.8px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the in",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-8px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the int",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-9.2px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the inter",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-10.2px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the interne",
   ],
   [
-      "style",
-      2,
-      "right",
-      "-11.2px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "0px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet.&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "0.2px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. B",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "2.2px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. Bu",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "2.6px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "4.800000000000001px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "8.4px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But t",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "9.200000000000001px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But the",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "11.799999999999999px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But ther",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "17px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "19.8px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "25.6px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there i",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "26.200000000000003px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there is",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "33.6px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there is&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "35.2px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there is m",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "39px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there is mor",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "43.4px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there is more",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "47px"
+    "type",
+    2,
+    "In November of 1963 Benjamin Gurley was having dinner with his wife and 7 children when a sniper shot him through the head with a single bullet. You won’t find more than this on the internet. But there is more.",
   ],
+  ["type", 2, "But there is more."],
+  ["type", 2, "But there is more.&nbsp;"],
+  ["type", 2, "But there is more. S"],
+  ["type", 2, "But there is more. So"],
+  ["type", 2, "But there is more. So&nbsp;"],
+  ["type", 2, "But there is more. So m"],
+  ["type", 2, "But there is more. So mu"],
+  ["type", 2, "But there is more. So muc"],
+  ["type", 2, "But there is more. So much"],
+  ["type", 2, "But there is more. So much&nbsp;"],
+  ["type", 2, "But there is more. So much m"],
+  ["type", 2, "But there is more. So much mor"],
+  ["type", 2, "But there is more. So much more"],
+  ["type", 2, "But there is more. So much more."],
+  ["type", 2, "But there is more. So much more.&nbsp;"],
+  ["type", 2, "T"],
+  ["type", 2, "Th"],
+  ["type", 2, "The"],
+  ["type", 2, "There"],
+  ["type", 2, "There&nbsp;"],
+  ["type", 2, "There i"],
+  ["type", 2, "There is"],
+  ["type", 2, "There is&nbsp;"],
+  ["type", 2, "There is th"],
+  ["type", 2, "There is the"],
+  ["type", 2, "There is the&nbsp;"],
+  ["type", 2, "There is the s"],
+  ["type", 2, "There is the su"],
+  ["type", 2, "There is the sus"],
+  ["type", 2, "There is the susp"],
+  ["type", 2, "There is the suspe"],
+  ["type", 2, "There is the suspec"],
+  ["type", 2, "There is the suspecte"],
+  ["type", 2, "There is the suspected"],
+  ["type", 2, "There is the suspected&nbsp;"],
+  ["type", 2, "There is the suspected s"],
+  ["type", 2, "There is the suspected sh"],
+  ["type", 2, "There is the suspected sho"],
+  ["type", 2, "There is the suspected shoo"],
+  ["type", 2, "There is the suspected shoot"],
+  ["type", 2, "There is the suspected shooter"],
+  ["type", 2, "There is the suspected shooter,&nbsp;"],
+  ["type", 2, "There is the suspected shooter, a"],
+  ["type", 2, "There is the suspected shooter, a&nbsp;"],
+  ["type", 2, "There is the suspected shooter, a D"],
+  ["type", 2, "There is the suspected shooter, a De"],
+  ["type", 2, "There is the suspected shooter, a Des"],
+  ["type", 2, "There is the suspected shooter, a Desi"],
+  ["type", 2, "There is the suspected shooter, a Desig"],
+  ["type", 2, "There is the suspected shooter, a Design&nbsp;"],
+  ["type", 2, "There is the suspected shooter, a Design E"],
+  ["type", 2, "There is the suspected shooter, a Design En"],
+  ["type", 2, "There is the suspected shooter, a Design Eng"],
+  ["type", 2, "There is the suspected shooter, a Design Engi"],
+  ["type", 2, "There is the suspected shooter, a Design Engin"],
+  ["type", 2, "There is the suspected shooter, a Design Engine"],
+  ["type", 2, "There is the suspected shooter, a Design Enginee"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer&nbsp;"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer w"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer wh"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who&nbsp;"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who a"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who al"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who als"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who also"],
   [
-      "style",
-      2,
-      "border-radius",
-      "51px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also&nbsp;",
   ],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who also w"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who also wo"],
+  ["type", 2, "There is the suspected shooter, a Design Engineer who also wor"],
   [
-      "style",
-      2,
-      "border-radius",
-      "55px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also work",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "59px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worke",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "61px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "64.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "65.4px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked a",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "67px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "68px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "69.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at D",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "72.60000000000001px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DE",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "76.6px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "80.8px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC a",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "85.39999999999999px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "90.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "95px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and b",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "100.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and be",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "105.4px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and bef",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "110.60000000000001px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and befo",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "115.6px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "120.19999999999999px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "124.8px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before t",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "129.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before tha",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "133.39999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "137.20000000000002px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that,&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "141px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, L",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "144.8px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Li",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "148.4px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lin",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "151.8px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Linc",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "155.20000000000002px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Linco",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "158.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincol",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "161.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "164.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "166.79999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln L",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "169.4px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln La",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "172px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "174.4px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab&nbsp;",
   ],
   [
-      "style",
-      2,
-      "border-radius",
-      "176.6px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab a",
   ],
   [
-      "style",
-      2,
-      "left",
-      "11.6px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab at",
   ],
   [
-      "style",
-      2,
-      "left",
-      "12.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab at&nbsp;",
   ],
   [
-      "style",
-      2,
-      "left",
-      "12.799999999999999px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab at M",
   ],
   [
-      "style",
-      2,
-      "left",
-      "13.4px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab at MI",
   ],
   [
-      "style",
-      2,
-      "left",
-      "14.200000000000001px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab at MIT",
   ],
   [
-      "style",
-      2,
-      "left",
-      "15.2px"
+    "type",
+    2,
+    "There is the suspected shooter, a Design Engineer who also worked at DEC and before that, Lincoln Lab at MIT.",
   ],
+  ["type", 2, "There is the suspected shooter ."],
+  ["type", 2, "There is the suspected shooter w."],
+  ["type", 2, "There is the suspected shooter wh."],
+  ["type", 2, "There is the suspected shooter who."],
+  ["type", 2, "There is the suspected shooter who, ."],
+  ["type", 2, "There is the suspected shooter who, t."],
+  ["type", 2, "There is the suspected shooter who, th."],
+  ["type", 2, "There is the suspected shooter who, tho."],
+  ["type", 2, "There is the suspected shooter who, thou."],
+  ["type", 2, "There is the suspected shooter who, thoug."],
+  ["type", 2, "There is the suspected shooter who, though."],
+  ["type", 2, "There is the suspected shooter who, though ."],
+  ["type", 2, "There is the suspected shooter who, though s."],
+  ["type", 2, "There is the suspected shooter who, though st."],
+  ["type", 2, "There is the suspected shooter who, though sti."],
+  ["type", 2, "There is the suspected shooter who, though stil."],
+  ["type", 2, "There is the suspected shooter who, though still."],
+  ["type", 2, "There is the suspected shooter who, though still ."],
+  ["type", 2, "There is the suspected shooter who, though still e."],
+  ["type", 2, "There is the suspected shooter who, though still em."],
+  ["type", 2, "There is the suspected shooter who, though still emp."],
+  ["type", 2, "There is the suspected shooter who, though still empl."],
+  ["type", 2, "There is the suspected shooter who, though still emplo."],
+  ["type", 2, "There is the suspected shooter who, though still employ."],
+  ["type", 2, "There is the suspected shooter who, though still employe."],
+  ["type", 2, "There is the suspected shooter who, though still employed."],
+  ["type", 2, "There is the suspected shooter who, though still employed ."],
+  ["type", 2, "There is the suspected shooter who, though still employed a."],
+  ["type", 2, "There is the suspected shooter who, though still employed at."],
+  ["type", 2, "There is the suspected shooter who, though still employed at ."],
   [
-      "style",
-      2,
-      "left",
-      "16.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at D.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "17.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DE.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "17.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "19.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC .",
   ],
   [
-      "style",
-      2,
-      "left",
-      "19.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC a.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "20.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "20.599999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at .",
   ],
   [
-      "style",
-      2,
-      "left",
-      "21.200000000000003px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at t.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "21.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "22.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the .",
   ],
   [
-      "style",
-      2,
-      "left",
-      "22.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the t.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "23.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the ti.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "23.599999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "24px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time .",
   ],
   [
-      "style",
-      2,
-      "left",
-      "24.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of.",
   ],
   [
-      "style",
-      2,
-      "left",
-      "24.799999999999997px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of .",
   ],
   [
-      "style",
-      2,
-      "left",
-      "25.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of t.",
   ],
   [
-      "style",
-      2,
-      "left",
-      ""
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of th.",
   ],
   [
-      "select",
-      1
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "0.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "2.8000000000000003px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the m.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "3px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the mu.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "4.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the m.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "7.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "11.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the a.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "14.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the as.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "17.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the ass.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "21px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assa.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "24.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assas.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "27.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assass.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "30.599999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassi.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "33.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassin.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "36.800000000000004px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassina.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "40.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassinati.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "41.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "43.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "45px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, w.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "46.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, wa.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "49.400000000000006px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "53px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "57px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was d.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "61.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was de.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "65.60000000000001px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was dee.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "70px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deeme.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "74.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "79.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "84.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed c.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "89.19999999999999px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed cr.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "93.60000000000001px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed cri.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "97.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed crim.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "102px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed crimi.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "105.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed crimin.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "109.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed crimina.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "113.39999999999999px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminal.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "117px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminall.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "120.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "123.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "126.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally i.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "129.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally in.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "132.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally ins.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "135px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insa.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "137.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insan.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "140.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "142.39999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "144.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane a.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "146.79999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "149px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "151px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and u.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "153px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and un.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "154.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unf.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "156.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfi.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "158px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "159.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "161.2px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "162.79999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "164.20000000000002px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to s.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "165.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to st.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "167px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to sta.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "168.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stan.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "169.6px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "170.79999999999998px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "171.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand d.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "172.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "173.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand t.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "174.8px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand tr.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "175.60000000000002px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand tri.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "176.4px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand tria.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "177.20000000000002px"
+    "type",
+    2,
+    "There is the suspected shooter who, though still employed at DEC at the time of the assassination, was deemed criminally insane and unfit to stand trial.",
   ],
+  ["type", 2, "There is the la."],
+  ["type", 2, "There is the lar."],
+  ["type", 2, "There is the large."],
+  ["type", 2, "There is the larges."],
+  ["type", 2, "There is the largest."],
+  ["type", 2, "There is the largest ."],
+  ["type", 2, "There is the largest I."],
+  ["type", 2, "There is the largest In."],
+  ["type", 2, "There is the largest Int."],
+  ["type", 2, "There is the largest Inte."],
+  ["type", 2, "There is the largest Intel."],
+  ["type", 2, "There is the largest Intell."],
+  ["type", 2, "There is the largest Intelle."],
+  ["type", 2, "There is the largest Intellec."],
+  ["type", 2, "There is the largest Intellect."],
+  ["type", 2, "There is the largest Intellectu."],
+  ["type", 2, "There is the largest Intellectua."],
+  ["type", 2, "There is the largest Intellectual."],
+  ["type", 2, "There is the largest Intellectual ."],
+  ["type", 2, "There is the largest Intellectual P."],
+  ["type", 2, "There is the largest Intellectual Pr."],
+  ["type", 2, "There is the largest Intellectual Pro."],
+  ["type", 2, "There is the largest Intellectual Prop."],
+  ["type", 2, "There is the largest Intellectual Proper."],
+  ["type", 2, "There is the largest Intellectual Propert."],
+  ["type", 2, "There is the largest Intellectual Property."],
+  ["type", 2, "There is the largest Intellectual Property ."],
+  ["type", 2, "There is the largest Intellectual Property s."],
+  ["type", 2, "There is the largest Intellectual Property se."],
+  ["type", 2, "There is the largest Intellectual Property set."],
+  ["type", 2, "There is the largest Intellectual Property sett."],
+  ["type", 2, "There is the largest Intellectual Property settl."],
+  ["type", 2, "There is the largest Intellectual Property settle."],
+  ["type", 2, "There is the largest Intellectual Property settleme."],
+  ["type", 2, "There is the largest Intellectual Property settlemen."],
+  ["type", 2, "There is the largest Intellectual Property settlement."],
+  ["type", 2, "There is the largest Intellectual Property settlement ."],
+  ["type", 2, "There is the largest Intellectual Property settlement i."],
+  ["type", 2, "There is the largest Intellectual Property settlement in."],
+  ["type", 2, "There is the largest Intellectual Property settlement in ."],
+  ["type", 2, "There is the largest Intellectual Property settlement in h."],
+  ["type", 2, "There is the largest Intellectual Property settlement in hi."],
+  ["type", 2, "There is the largest Intellectual Property settlement in his."],
+  ["type", 2, "There is the largest Intellectual Property settlement in hist."],
   [
-      "style",
-      1,
-      "border-radius",
-      "178px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in histo.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "178.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in histor.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "179.60000000000002px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "180.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "180.79999999999998px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history t.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "181.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "182px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "182.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to t.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "183.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to tha.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "183.79999999999998px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "184.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that .",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "185px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that p.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "185.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that po.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "186.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that poi.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "186.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that poin.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "187px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point.",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "187.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point.&nbsp;",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "187.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. I",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "188.20000000000002px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IB",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "188.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "189px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM&nbsp;",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "189.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM a",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "189.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM ag",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "190.20000000000002px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agr",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "190.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agre",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "191px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agree",
   ],
   [
-      "style",
-      1,
-      "border-radius",
-      "191.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "0.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "0.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "0.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "0.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to p",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "0.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pa",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "0.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "0.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "0.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay M",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "1px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MI",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "1px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "1px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "1px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "1.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $1",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "1.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "1.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "1.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "2.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M f",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "2.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M fo",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "2.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "2.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "3.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for t",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "3.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for the",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "3.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for the&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "3.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for te",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "4.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for tec",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "4.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for tech",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "4.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for techn",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "4.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for techno",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technol",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technolo",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technolog",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology us",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology use",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "8.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "8.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used i",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "8.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "8.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "11px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in t",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "11px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in th",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "11px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "11px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "16px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the c",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "16px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the co",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "16px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the com",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "16px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the comp",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "18.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the comput",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "18.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computer",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "18.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "18.4px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "22px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers a",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "22px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "22px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "22px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at L",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "25.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Li",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "25.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lin",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "25.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Linc",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "25.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Linco",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "29.200000000000003px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lincol",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "29.200000000000003px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lincoln",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "29.200000000000003px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lincoln&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "29.200000000000003px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lincoln L",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "32.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lincoln La",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "32.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lincoln Lab",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "32.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology used in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "32.6px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology s in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "35.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology st in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "35.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology sto in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "35.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stol in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "35.2px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stole in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "36.400000000000006px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stolen in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "36.400000000000006px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stolen&nbsp; in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "36.400000000000006px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stolen f in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "36.400000000000006px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stolen fro in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "37.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stolen from in the computers at Lincoln Lab.",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "37.8px"
+    "type",
+    2,
+    "There is the largest Intellectual Property settlement in history to that point. IBM agreed to pay MIT $14M for technology stolen from the computers at Lincoln Lab.",
   ],
+  ["type", 2, "There is G"],
+  ["type", 2, "There is Gu"],
+  ["type", 2, "There is Gur"],
+  ["type", 2, "There is Gurle"],
+  ["type", 2, "There is Gurley"],
+  ["type", 2, "There is Gurley’"],
+  ["type", 2, "There is Gurley’s"],
+  ["type", 2, "There is Gurley’s&nbsp;"],
+  ["type", 2, "There is Gurley’s p"],
+  ["type", 2, "There is Gurley’s po"],
+  ["type", 2, "There is Gurley’s pot"],
+  ["type", 2, "There is Gurley’s pote"],
+  ["type", 2, "There is Gurley’s poten"],
+  ["type", 2, "There is Gurley’s potent"],
+  ["type", 2, "There is Gurley’s potenti"],
+  ["type", 2, "There is Gurley’s potentil"],
+  ["type", 2, "There is Gurley’s potenti"],
+  ["type", 2, "There is Gurley’s potentia"],
+  ["type", 2, "There is Gurley’s potential"],
+  ["type", 2, "There is Gurley’s potential.&nbsp;"],
+  ["type", 2, "There is Gurley’s potential. W"],
+  ["type", 2, "There is Gurley’s potential. Wh"],
+  ["type", 2, "There is Gurley’s potential. Wha"],
+  ["type", 2, "There is Gurley’s potential. What"],
+  ["type", 2, "There is Gurley’s potential. What&nbsp;"],
+  ["type", 2, "There is Gurley’s potential. What w"],
+  ["type", 2, "There is Gurley’s potential. What wou"],
+  ["type", 2, "There is Gurley’s potential. What woul"],
+  ["type", 2, "There is Gurley’s potential. What would&nbsp;"],
+  ["type", 2, "There is Gurley’s potential. What would he"],
+  ["type", 2, "There is Gurley’s potential. What would he&nbsp;"],
+  ["type", 2, "There is Gurley’s potential. What would he ha"],
+  ["type", 2, "There is Gurley’s potential. What would he have"],
+  ["type", 2, "There is Gurley’s potential. What would he have&nbsp;"],
+  ["type", 2, "There is Gurley’s potential. What would he have d"],
+  ["type", 2, "There is Gurley’s potential. What would he have do"],
+  ["type", 2, "There is Gurley’s potential. What would he have done"],
+  ["type", 2, "There is Gurley’s potential. What would he have done?"],
+  ["type", 2, "There is Gurley’s potential. What would he have done?&nbsp;"],
+  ["type", 2, "There is Gurley’s potential. What would he have done? H"],
+  ["type", 2, "There is Gurley’s potential. What would he have done? He"],
+  ["type", 2, "There is Gurley’s potential. What would he have done? He&nbsp;"],
+  ["type", 2, "There is Gurley’s potential. What would he have done? He w"],
+  ["type", 2, "There is Gurley’s potential. What would he have done? He wa"],
   [
-      "style",
-      1,
-      "padding-right",
-      "37.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was&nbsp;",
   ],
+  ["type", 2, "There is Gurley’s potential. What would he have done? He was w"],
   [
-      "style",
-      1,
-      "padding-left",
-      "37.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was wo",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "41.599999999999994px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was work",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "41.599999999999994px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was workin",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "41.599999999999994px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "41.599999999999994px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "46.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "46.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "46.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on p",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "46.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pi",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "51.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pio",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "51.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pion",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "51.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pione",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "51.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pionee",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "56.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneer",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "56.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneeri",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "56.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "56.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "61.800000000000004px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering A",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "61.800000000000004px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "61.800000000000004px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "61.800000000000004px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI p",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "73px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI pr",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "73px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI pro",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "73px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI proje",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "73px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projec",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "79px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI project",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "79px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "79px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "79px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects f",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "84.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects fo",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "84.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "84.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "84.6px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "90px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "90px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a ma",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "90px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "90px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "95.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man wh",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "95.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "95.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who S",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "95.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who St",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "100.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Ste",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "100.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Step",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "100.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Steph",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "100.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephe",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "105.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "105.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "105.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen W",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "105.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wo",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "110.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wol",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "110.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolf",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "110.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfr",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "110.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfra",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "114.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "114.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "114.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram d",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "114.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram de",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "119px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram des",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "119px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram desc",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "119px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram descr",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "119px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram descri",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "123.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram describ",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "123.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram describe",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "123.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "123.2px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "127.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described a",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "127.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "127.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "127.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as ha",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "131.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as hav",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "131.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as havi",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "131.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as havin",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "131.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "135.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "135.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “π",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "135.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "135.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “A",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An i",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An il",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "142.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An ils",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "142.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An il",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "142.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An i",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "142.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An is",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "142.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An isl",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "142.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An isla",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "142.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An islan",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "142.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "141.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "141.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island w",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "141.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island wi",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "141.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "141.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "141.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "141.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "141.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a b",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "140.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "140.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a B",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "140.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bo",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "140.39999999999998px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bon",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "140.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "140.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "140.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond v",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "140.20000000000002px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond vi",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond vil",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond vill",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villa",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "139px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villai",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "137.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "137.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain la",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "137.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lai",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "137.4px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "135px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair&nbsp;",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "135px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair v",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "135px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair vi",
   ],
   [
-      "style",
-      1,
-      "padding-left",
-      "135px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair vib",
   ],
   [
-      "style",
-      1,
-      "padding-top",
-      "131.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair vibe",
   ],
   [
-      "style",
-      1,
-      "padding-bottom",
-      "131.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair vibe.",
   ],
   [
-      "style",
-      1,
-      "padding-right",
-      "131.8px"
+    "type",
+    2,
+    "There is Gurley’s potential. What would he have done? He was working on pioneering AI projects for a man who Stephen Wolfram described as having “An island with a Bond villain lair vibe.”",
   ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "131.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "130px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "130px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "130px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "130px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "127.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "127.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "127.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "127.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "125.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "125.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "125.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "125.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "122.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "122.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "122.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "122.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "120.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "120.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "120.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "120.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "118.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "118.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "118.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "118.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "116.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "116.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "116.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "116.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "115px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "115px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "115px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "115px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "114px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "114px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "114px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "114px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "112.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "112.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "112.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "112.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "110.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "110.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "110.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "110.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "103.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "103.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "103.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "103.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "100.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "100.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "100.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "100.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "96.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "96.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "96.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "96.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "92.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "92.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "92.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "92.60000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "88.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "88.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "88.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "88.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "84px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "84px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "84px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "84px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "79.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "79.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "79.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "79.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "75.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "75.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "75.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "75.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "71.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "71.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "71.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "71.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "68px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "68px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "68px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "68px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "64.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "64.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "64.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "64.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "61.199999999999996px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "61.199999999999996px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "61.199999999999996px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "61.199999999999996px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "57.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "57.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "57.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "57.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "54.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "54.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "54.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "54.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "51.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "51.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "51.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "51.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "48.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "48.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "48.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "48.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "49px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "49px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "49px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "49px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "49.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "49.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "49.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "49.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "50.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "50.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "50.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "50.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "51.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "51.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "51.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "51.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "53.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "53.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "53.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "53.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "55px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "55px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "55px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "55px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "56.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "56.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "56.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "56.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "59.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "59.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "59.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "59.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "61.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "61.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "61.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "61.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "62.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "62.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "62.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "62.800000000000004px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "64px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "64px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "64px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "64px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "67.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "67.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "67.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "67.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "69.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "69.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "69.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "69.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "71.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "71.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "71.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "71.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "73.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "73.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "73.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "73.6px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "75.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "75.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "75.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "75.19999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "76.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "76.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "76.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "76.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "77.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "77.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "77.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "77.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "78.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "78.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "78.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "78.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "78.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "78.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "78.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "78.8px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "79.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "79.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "79.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "79.39999999999999px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "79.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "79.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "79.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "79.80000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "80px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "80px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "80px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "80px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "80.2px"
-  ],
-  [
-      "style",
-      1,
-      "padding-top",
-      "80.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-bottom",
-      "80.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-right",
-      "80.4px"
-  ],
-  [
-      "style",
-      1,
-      "padding-left",
-      "80.4px"
-  ],
-  [
-      "select",
-      2
-  ],
-  [
-      "select",
-      1
-  ],
-  [
-      "new",
-      "1",
-      2
-  ],
-  [
-      "select",
-      2
-  ],
-  [
-      "style",
-      2,
-      "grid-row-start",
-      2
-  ],
-  [
-      "style",
-      2,
-      "grid-row-end",
-      2
-  ],
-  [
-      "select",
-      2
-  ],
-  [
-      "type",
-      2,
-      ""
-  ],
-  [
-      "type",
-      2,
-      "c"
-  ],
-  [
-      "type",
-      2,
-      ""
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,0.2%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,1.2%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,3.4%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,5.2%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,10.4%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,15%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,23.4%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,39.8%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,57.4%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,68.8%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,87.4%,1)"
-  ],
-  [
-      "style",
-      2,
-      "--color",
-      "hsla(0,100%,100%,1)"
-  ],
-  [
-      "type",
-      2,
-      ""
-  ],
-  [
-      "type",
-      2,
-      "W"
-  ],
-  [
-      "type",
-      2,
-      "Wh"
-  ],
-  [
-      "type",
-      2,
-      "Wha"
-  ],
-  [
-      "type",
-      2,
-      "What"
-  ],
-  [
-      "type",
-      2,
-      "What&nbsp;"
-  ],
-  [
-      "type",
-      2,
-      "What i"
-  ],
-  [
-      "type",
-      2,
-      "What it"
-  ],
-  [
-      "type",
-      2,
-      "What i"
-  ],
-  [
-      "type",
-      2,
-      "What if"
-  ],
-  [
-      "type",
-      2,
-      "What if&nbsp;"
-  ],
-  [
-      "type",
-      2,
-      "What if s"
-  ],
-  [
-      "type",
-      2,
-      "What if se"
-  ],
-  [
-      "type",
-      2,
-      "What if sen"
-  ],
-  [
-      "type",
-      2,
-      "What if send"
-  ],
-  [
-      "type",
-      2,
-      "What if sendi"
-  ],
-  [
-      "type",
-      2,
-      "What if sendin"
-  ],
-  [
-      "type",
-      2,
-      "What if sending"
-  ],
-  [
-      "type",
-      2,
-      "What if sending&nbsp;"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a&nbsp;"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a me"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a mes"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a mess"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a messag"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message&nbsp;"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message w"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message wa"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was&nbsp;"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was th"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this&nbsp;"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this c"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this co"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this com"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this comp"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this compl"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this complic"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this complica"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this complicate"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this complicated"
-  ],
-  [
-      "type",
-      2,
-      "What if sending a message was this complicated?"
-  ],
-  [
-      "style",
-      2,
-      "text-align",
-      "left"
-  ],
-  [
-      "style",
-      2,
-      "text-align",
-      "center"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "18.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "19.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "23.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "23.8px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "26.400000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "29px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "33.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "36.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "41.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "44.400000000000006px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "46.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "50.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "53.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "55.8px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "58px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "60.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "62.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "66.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "71px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "76.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "81.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "87px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "92.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "98.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "109.80000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "115.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "125.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "130.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "140px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "144.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "148.39999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "152.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "156.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "160.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "164.20000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "167.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "171px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "174px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "177px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "176.8px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "176px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "174px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "172.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "171px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "169.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "168.20000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "166.79999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "165.60000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "163.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "161.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "160px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "158.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "156.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "155.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "154px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "152.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "151.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "150px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "148.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "146.39999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "144.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "142.79999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "141px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "138.8px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "136.60000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "134.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "132.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "130.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "128.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "127px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "125.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "123.80000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "122.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "120.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "120.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "117.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "116.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "114px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "109px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "106.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "106px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "105px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "104.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "103.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "102.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "102.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "101.80000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "101.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "101.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "100.4px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "99px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "98px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "97.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "94.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "92.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "89.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "86.8px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "86.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "83.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "81.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "80.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "79.8px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "79.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "79.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "78.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "78.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "78.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "77.8px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "77.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "77.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "77.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "77px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "76.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "76.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "76.2px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "76px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "75.6px"
-  ],
-  [
-      "style",
-      2,
-      "font-size",
-      "75.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "font-family",
-      "Fraunces"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "3.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "3.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "3.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "3.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "4.800000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "4.800000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "4.800000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "4.800000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "6.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "6.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "6.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "6.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "8.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "8.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "8.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "8.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "10.799999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "10.799999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "10.799999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "10.799999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "16.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "16.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "16.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "16.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "22.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "22.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "22.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "22.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "24.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "24.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "24.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "24.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "27px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "27px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "27px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "27px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "28.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "28.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "28.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "28.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "30px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "30px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "30px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "30px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "30.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "30.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "30.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "30.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "32px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "32px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "32px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "32px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "34.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "34.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "34.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "34.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "40.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "40.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "40.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "40.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "43.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "43.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "43.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "43.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "47.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "47.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "47.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "47.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "50.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "50.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "50.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "50.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "54.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "54.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "54.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "54.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "58.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "58.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "58.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "58.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "62.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "62.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "62.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "62.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "66px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "66px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "66px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "66px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "69.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "69.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "69.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "69.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "73px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "73px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "73px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "73px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "76px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "76px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "76px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "76px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "79px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "79px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "79px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "79px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "82px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "82px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "82px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "82px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "85px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "85px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "85px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "85px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "87.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "87.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "87.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "87.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "90.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "90.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "90.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "90.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "93px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "93px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "93px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "93px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "95.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "95.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "95.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "95.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "97.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "97.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "97.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "97.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "99.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "99.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "99.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "99.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "101.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "101.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "101.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "101.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "103.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "103.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "103.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "103.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "105.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "105.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "105.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "105.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "107.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "107.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "107.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "107.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "109.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "109.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "109.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "109.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "111px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "111px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "111px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "111px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "112.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "112.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "112.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "112.6px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "114.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "114.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "114.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "114.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "115.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "115.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "115.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "115.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "117.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "117.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "117.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "117.2px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "118.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "118.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "118.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "118.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "120px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "120px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "120px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "120px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "121.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "121.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "121.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "121.4px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "122.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "122.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "122.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "122.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "123.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "123.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "123.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "123.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "124.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "124.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "124.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "124.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "125.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "125.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "125.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "125.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-top",
-      "126.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-bottom",
-      "126.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-right",
-      "126.8px"
-  ],
-  [
-      "style",
-      2,
-      "padding-left",
-      "126.8px"
-  ],
-  [
-      "new",
-      "i",
-      3,
-      "https://images.unsplash.com/photo-1522120691812-dcdfb625f397?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8dGV4dCBtZXNzYWdlfHx8fHx8MTY4OTAwNjY4Mw&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-  ],
-  [
-      "select",
-      3
-  ],
-  [
-      "style",
-      3,
-      "grid-row-start",
-      3
-  ],
-  [
-      "style",
-      3,
-      "grid-row-end",
-      3
-  ],
-  [
-      "select",
-      3
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "1.4000000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "1.4000000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "1.4000000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "1.4000000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "4.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "4.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "4.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "4.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "7px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "7px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "7px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "7px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "12.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "12.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "12.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "12.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "15px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "15px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "15px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "15px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "26.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "26.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "26.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "26.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "27.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "27.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "27.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "27.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "30px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "30px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "30px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "30px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "35.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "35.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "35.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "35.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "38px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "38px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "38px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "38px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "39.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "39.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "39.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "39.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "41px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "41px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "41px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "41px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "42.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "42.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "42.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "42.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "43.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "43.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "43.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "43.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "44.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "44.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "44.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "44.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "44.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "44.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "44.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "44.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "46.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "46.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "46.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "46.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "47.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "47.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "47.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "47.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "47.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "47.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "47.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "47.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "48.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "48.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "48.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "48.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "49px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "49px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "49px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "49px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "49.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "49.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "49.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "49.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "51px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "51px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "51px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "51px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "55px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "55px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "55px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "55px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "56.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "56.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "56.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "56.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "57.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "57.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "57.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "57.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "61px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "61px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "61px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "61px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "62.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "62.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "62.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "62.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "64.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "64.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "64.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "64.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "65.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "65.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "65.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "65.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "67.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "67.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "67.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "67.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "68.60000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "68.60000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "68.60000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "68.60000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "71.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "71.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "71.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "71.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "72.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "72.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "72.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "72.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "73.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "73.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "73.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "73.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "74.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "74.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "74.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "74.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "75.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "75.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "75.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "75.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "76.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "76.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "76.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "76.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "77.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "77.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "77.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "77.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "78.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "78.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "78.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "78.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "79px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "79px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "79px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "79px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "79.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "79.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "79.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "79.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "80.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "80.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "80.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "80.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "81.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "81.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "81.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "81.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "82.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "82.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "82.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "82.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "83.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "83.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "83.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "83.39999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "84px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "84px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "84px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "84px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "83.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "83.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "83.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "83.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "82.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "81.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "81.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "81.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "81.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "80.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "80.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "80.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "80.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "77.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "77.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "77.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "77.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "76px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "76px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "76px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "76px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "73.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "73.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "73.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "73.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "70px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "68.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "68.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "68.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "68.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "66.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "66.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "66.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "66.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "64.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "64.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "64.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "64.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "63.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "63.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "63.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "63.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "61.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "61.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "61.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "61.800000000000004px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "60.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "60.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "60.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "60.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "60.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "60.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "60.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "60.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "59.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "58.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "58.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "58.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "58.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "57.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "57.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "57.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "57.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "56.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "56.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "56.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "56.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "55.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "55.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "55.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "55.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "55.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "55.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "55.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "55.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "53.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "52.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "50.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "50.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "50.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "50.400000000000006px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "48.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "48.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "48.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "48.199999999999996px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "46px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "41.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "41.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "41.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "41.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "39px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "39px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "39px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "39px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "36.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "36.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "36.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "36.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "33.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "31px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "31px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "31px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "31px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "28.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "28.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "28.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "28.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "26px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "26px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "26px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "26px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "23.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "23.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "23.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "23.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "21.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "21.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "21.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "21.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "19.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "19.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "19.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "19.400000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "17.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "17.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "17.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "17.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "15.399999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "15.399999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "15.399999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "15.399999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "13.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "13.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "13.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "13.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "12px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "12px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "12px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "12px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "10.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "8.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "8.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "8.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "8.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "7.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "7.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "7.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "7.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "5.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "5.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "5.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "5.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "4.3999999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "4.3999999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "4.3999999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "4.3999999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "3px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "3.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "3.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "3.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "3.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "3.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "3.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "3.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "3.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "3.8000000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "3.8000000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "3.8000000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "3.8000000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "4.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "4.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "4.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "4.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "5px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "5px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "5px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "5px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "5.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "5.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "5.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "5.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "6.199999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "6.199999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "6.199999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "6.199999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "6.6000000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "6.6000000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "6.6000000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "6.6000000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "7.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "7.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "7.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "7.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "8.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "8.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "8.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "8.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "9.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "9.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "9.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "9.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "10.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "10.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "10.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "10.200000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "11.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "11.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "11.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "11.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "12.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "12.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "12.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "12.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "12.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "12.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "12.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "12.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "13.600000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "13.600000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "13.600000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "13.600000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "14px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "14px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "14px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "14px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "14.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "14.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "14.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "14.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "14.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "14.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "14.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "14.799999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "15.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "15.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "15.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "15.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "15.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "15.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "15.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "15.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "16.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "16.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "16.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "16.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "16.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "16.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "16.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "16.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "17px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "17px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "17px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "17px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "17.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "17.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "17.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "17.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "17.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "17.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "17.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "17.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "18px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "18px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "18px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "18px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "18.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "18.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "18.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "18.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "18.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "18.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "18.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "18.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "19.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "19.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "19.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "19.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "19.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "19.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "19.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "19.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "20.200000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "20.200000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "20.200000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "20.200000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "21px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "21px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "21px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "21px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "21.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "21.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "21.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "21.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "22px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "22px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "22px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "22px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "22.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "22.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "22.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "22.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "22.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "23px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "23px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "23px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "23px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "23.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "23.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "23.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "23.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "23.799999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "23.799999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "23.799999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "23.799999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "24.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "24.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "24.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "24.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "24.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "24.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "24.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "24.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "24.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "24.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "24.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "24.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-top-width",
-      "24.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-bottom-width",
-      "24.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-right-width",
-      "24.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-left-width",
-      "24.6px"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,0.2%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,1.2%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,1.4%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,3%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,6%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,7.2%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,9.8%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,12.6%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,16%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,19.6%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,23.6%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,31.8%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,33.8%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,42.4%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,44.2%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,50.2%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,56.2%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,65.6%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,75.8%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,86.6%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,97.2%,1)"
-  ],
-  [
-      "style",
-      3,
-      "--border-color",
-      "hsla(0,100%,100%,1)"
-  ],
-  [
-      "style",
-      3,
-      "right",
-      "0.2px"
-  ],
-  [
-      "style",
-      3,
-      "right",
-      "0.4px"
-  ],
-  [
-      "style",
-      3,
-      "right",
-      "0.6000000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "0.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "0.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "0.6000000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "4.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "7.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "10.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "13.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "16.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "19.799999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "22.200000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "23.599999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "30px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "35.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "39.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "46.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "55px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "64px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "73.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "83px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "92.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "102px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "111.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "121.19999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "130.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "139.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "147.79999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "156px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "164.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "172.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "180.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "187.39999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "194.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "201.79999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "208.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "214.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "221.20000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "227.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "233.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "238.79999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "244.20000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "249.39999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "254.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "259.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "264.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "269px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "273.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "277.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "281.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "285.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "289.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "292.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "296.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "299.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "302.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "305.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "308.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "311.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "314px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "316.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "319.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "321.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "323.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "325.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "328px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "330px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "332px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "333.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "335.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "337px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "338.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "340.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "341.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "343.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "344.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "346px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "347.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "348.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "349.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "350.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "351.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "352.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "353.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "354.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "355.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "356.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "357px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "357.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "358.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "359.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "359.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "360.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "361px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "361.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "362.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "362.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "363.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "364px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "364.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "365.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "365.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "366px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "366.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "366.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "367.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "367.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "368px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "368.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "368.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "369.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "369.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "370px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "370.6px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "371px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "371.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "371.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "372.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "372.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "372.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "372.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "373px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "373.2px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "373.4px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "373.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "373.8px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "374px"
-  ],
-  [
-      "style",
-      3,
-      "border-radius",
-      "374.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "200.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "201.39999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "203px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "206.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "210.39999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "214.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "221.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "228px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "233.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "243px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "254.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "264px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "271.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "285.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "300.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "315.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "330.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "344.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "358.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "372px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "384.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "396.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "408.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "420.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "432.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "443.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "454.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "465.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "476.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "486.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "497.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "507.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "517px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "526.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "535.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "544.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "553.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "562.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "570.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "578.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "586.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "594.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "601.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "608.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "615.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "622.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "628.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "635px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "641px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "647px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "652.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "658px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "663.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "668.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "673.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "677.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "682.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "686.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "691px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "695.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "699px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "702.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "706.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "709.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "713.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "716.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "719.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "722.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "725.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "727.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "730.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "732.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "735px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "737.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "739.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "741.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "743.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "745.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "746.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "748.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "750px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "751.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "752px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "753px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "754.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "757px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "759.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "764.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "771.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "779.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "788px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "793.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "808.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "815.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "819.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "833px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "847.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "862.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "878px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "893px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "907.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "921.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "935.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "947.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "960.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "972.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "984.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "996.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1007.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1019.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1030.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1041.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1052px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1062.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1072.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1082.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1092px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1101.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1110.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1119.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1128.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1137.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1145.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1153.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1161.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1169px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1176.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1183.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1190.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1196.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1203px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1209.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1215.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1221.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1226.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1232px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1237.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1242.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1247px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1251.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1256px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1260.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1264.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1268.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1272.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1276px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1279.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1282.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1286.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1289.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1292.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1295.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1297.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1300.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1303px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1305.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1307.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1309.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1312px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1314px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1316px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1317.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1319.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1321.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1322.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1324.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1326px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1327.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1328.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1330.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1331.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1332.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1334px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1335px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1336px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1337px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1338px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1338.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1339.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1339.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1340.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1341px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1342.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1344.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1347.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1347.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1353.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1358px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1361.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1370px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1372px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1376.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1379.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1383.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1386.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1393.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1410px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1418.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1427px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1435.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1444.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1452.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1461px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1469.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1477.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1484.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1492px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1499.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1506px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1512.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1519.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1525.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1531.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1537.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1543px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1548.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1554px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1559.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1564.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1568.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1573.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1577.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1582px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1586.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1590px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1593.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1597.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1600.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1604px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1607px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1610px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1613px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1615.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1618.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1621px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1623.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1625.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1627.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1630px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1632px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1634px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1635.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1637.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1639px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1640.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1642.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1643.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1645.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1646.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1648px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1649.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1650.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1651.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1652.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1653.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1654.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1655.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1656.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1657.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1658.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1659.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1660px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1660.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1661.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1662.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1662.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1663.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1664px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1664.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1665.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1665.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1666.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1667px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1667.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1668.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1668.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1669.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1668.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1668px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1667.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1666.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1664.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1661.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1659.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1654.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1649px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1642.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1637.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1632.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1623.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1613.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1603.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1593.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1582.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1573px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1562.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1553px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1543.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1534px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1525px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1516px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1507.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1498.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1490.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1482.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1474.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1467.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1460px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1453.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1446.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1440px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1433.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1427.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1421.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1416.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1410.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1405.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1400.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1395.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1390.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1385.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1381.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1377.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1373px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1369.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1365.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1361.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1358.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1354.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1351.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1348.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1345.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1343.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1340.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1338px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1335.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1333.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1331px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1328.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1326.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1324.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1322.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1320.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1319px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1317.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1315.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1314.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1312.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1311.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1309.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1308.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1307px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1305.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1304.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1303.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1302.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1301.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1300.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1299.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1299px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1298.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1297.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1296.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1295.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1295.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1294.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1294px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1293.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1292.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1292.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1291.6000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1291px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1290.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1289.8000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1289.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1288.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1288.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1288px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1287.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1287.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1286.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1286.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1286px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1285.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1285.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1284.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1284.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1284.1999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1283.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1283.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1283px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1282.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1282.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1282.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1282px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1281.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1281.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1281.3999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "1281.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "199.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "199.60000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "199.79999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "201.60000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "203.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "204.39999999999998px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "206.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "212.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "217px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "221.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "227.20000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "233px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "238px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "246.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "266.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "276.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "286.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "296px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "305.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "315.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "324.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "334px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "343px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "351.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "360.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "368.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "376.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "384px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "391.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "398.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "405.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "412.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "418.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "425.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "431.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "437.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "442.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "448.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "453.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "458.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "463.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "468.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "473.20000000000005px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "477.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "481.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "486px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "489.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "493.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "497.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "500.79999999999995px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "504.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "507.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "510.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "513.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "516.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "519.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "521.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "524.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "526.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "528.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "530.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "532.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "534.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "536.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "538.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "540px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "541.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "543.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "544.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "546.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "547.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "549px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "550.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "551.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "552.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "553.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "554.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "555.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "556.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "557.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "558.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "559.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "560.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "561px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "561.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "562.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "563.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "563.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "564.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "565px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "565.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "566.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "566.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "567.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "568px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "568.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "568.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "569.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "569.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "570px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "570.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "571.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "573px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "574.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "576px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "578px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "580.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "583.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "585.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "588.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "590.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "592.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "595.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "596.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "598.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "600px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "602.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "609.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "613.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "617px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "621px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "625.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "629.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "633.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "638px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "641.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "645.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "649px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "652.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "655.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "658.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "661.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "664.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "667.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "670px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "672.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "675px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "677.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "679.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "681.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "683.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "685.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "687.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "689.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "690.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "692.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "694px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "695.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "697px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "698.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "699.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "701.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "702.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "703.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "704.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "705.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "706.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "707.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "708.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "709.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "710px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "710.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "711.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "712.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "713.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "713.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "714.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "715px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "715.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "716.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "716.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "717.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "718px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "718.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "719.2px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "719.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "720.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "720.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "721.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "721.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "722px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "722.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "722.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "723.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "723.6px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "724px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "724.4px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "724.8px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "725px"
-  ],
-  [
-      "style",
-      3,
-      "height",
-      "724.8px"
-  ],
-  [
-      "style",
-      3,
-      "grid-column-start",
-      "2"
-  ],
-  [
-      "style",
-      3,
-      "grid-column-end",
-      "3"
-  ],
-  [
-      "style",
-      3,
-      "grid-row-start",
-      "2"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      ""
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "200.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "201.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "203.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "208.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "213.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "214.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "219.20000000000002px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "224.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "235.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "241px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "244px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "248.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "253px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "256.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "264px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "272.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "281.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "290.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "300px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "309.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "318.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "327.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "336.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "345.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "354px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "362.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "370.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "377.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "385.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "392.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "399.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "406.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "412.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "419px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "425px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "430.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "436.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "442px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "447.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "452.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "457.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "462.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "467px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "471.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "475.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "479.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "483.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "487.40000000000003px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "491.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "494.59999999999997px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "498px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "501.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "504.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "507.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "510px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "512.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "515.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "517.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "520px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "522.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "524.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "526.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "528.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "530.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "532.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "533.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "535.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "537px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "537.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "537.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "538.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "539.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "541.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "543px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "550.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "556px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "558px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "561.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "562.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "567.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "570px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "573.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "578.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "584.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "591.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "599px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "606.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "614.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "621.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "629.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "637px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "644.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "652.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "659px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "665.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "672.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "679px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "685px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "690.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "696.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "702px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "707.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "712.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "717.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "722.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "726.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "731.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "735.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "739.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "743.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "747.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "751.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "754.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "758.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "761.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "764.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "767.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "770.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "772.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "775.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "778px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "780.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "782.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "784.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "786.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "788.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "790.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "792.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "793.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "795.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "797px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "798.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "800px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "801.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "802.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "804.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "805.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "806.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "807.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "808.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "809.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "810.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "811.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "812.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "813.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "814.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "815.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "816px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "816.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "817.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "818px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "818.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "819.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "819.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "820.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "820.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "819.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "818.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "818.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "815.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "814px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "811.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "811.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "806.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "804px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "802.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "800.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "798px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "795.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "792.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "788.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "784.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "780.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "775.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "771.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "766.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "761.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "756.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "752px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "747.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "743.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "739.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "735.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "731.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "727.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "724.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "720.8000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "717.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "714.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "711.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "708.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "706.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "703.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "701px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "698.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "696.5999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "694.4px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "692.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "690.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "688.2px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "686.4000000000001px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "684.8px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "683.1999999999999px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "681.6px"
-  ],
-  [
-      "style",
-      3,
-      "width",
-      "680px"
-  ],
-  [
-      "select",
-      4
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,0%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,0.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,1.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,1.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,3.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,5.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,8.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,9.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,12.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,17.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,22.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,24.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,31%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,32.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,36.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,39.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,42.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,45.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,48.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,51%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,53%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,53.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,55%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,56.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,57.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,59.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,61.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,64.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,68%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,71.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,74.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,78.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,82.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,86%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,89.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,93.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,97.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,100%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,99.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,98.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,98.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,96.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,93.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,92%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,90.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,86.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,82%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,81%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,76.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,75.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,71.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,69%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,67%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,65%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,62.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,61%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,60.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,58%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,56.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,55%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,53.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,53.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,51.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,51.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,49.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,49%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,48.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,47.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,47%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,46.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,45.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,45.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,44.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,44%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,43.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,43%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,42.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,41.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,41.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,40.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,40%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,39.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,38.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,38.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,37.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,36.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,36.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,34.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,34.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,33.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,33.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,32.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,32.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,32%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,31.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,31.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,31%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,30.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,30.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,29.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,29.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,29.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,29%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,28.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,28.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,28%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,27.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,27%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,26.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,26.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,25.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,24.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,24.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,23.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,23.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,22.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,22%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,21.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,20.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,20%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,19.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,19.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,18.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,18.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,18.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,18%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,17.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,17.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,17.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,17.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,17.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,18%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,18.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,18.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,19.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,19.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,19.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,20.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,20.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,21.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,22%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,22.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,23.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,24%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,24.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,25.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,25.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,26.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,26.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,27%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,27.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,27.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,28.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,29.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,30.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,30.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,31.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,32%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,32.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,32.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,33.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,33.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,34%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,34.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,34.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,34.6%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,34.8%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,35%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,35.2%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(0.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(1.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(2.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(3.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(4.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(6.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(7.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(8.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(13,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(16.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(19.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(23.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(28.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(32.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(37.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(41.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(49,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(52.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(57,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(61.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(64.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(67.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(70.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(72.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(74.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(80.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(94.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(102.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(109.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(117,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(124.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(132.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(140,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(147.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(154.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(161.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(168,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(174.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(180.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(186.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(191.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(197.4,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(202.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(208,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(213,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(217.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(222.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(226.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(231,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(235.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(239.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(243,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(246.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(250.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(253.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(256.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(259.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(262.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(265.6,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(268.2,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(270.8,100%,35.4%,1)"
-  ],
-  [
-      "style",
-      4,
-      "--background-color",
-      "hsla(273.4,100%,35.4%,1)"
-  ],
-  [
-      "select",
-      3
-  ],
-  [
-      "style",
-      3,
-      "mix-blend-mode",
-      "luminosity"
-  ],
-  [
-      "style",
-      3,
-      "mix-blend-mode",
-      "color"
-  ],
-  [
-      "style",
-      3,
-      "mix-blend-mode",
-      "saturation"
-  ],
-  [
-      "style",
-      3,
-      "mix-blend-mode",
-      "hue"
-  ],
-  [
-      "style",
-      3,
-      "mix-blend-mode",
-      "exclusion"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.010000000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.04000000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.09000000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.13vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.16vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.19vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.25vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.3vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.31vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.32vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.34vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.36000000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.38000000000000006vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.4000000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.4100000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.4300000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.4500000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.47000000000000014vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.48000000000000015vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.49000000000000016vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5000000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5100000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5200000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5300000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5500000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5600000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5800000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.6000000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.6200000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.6500000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.6800000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.7100000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.7300000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.7600000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.7800000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8000000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8200000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8400000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8600000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8800000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.9000000000000005vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8900000000000005vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8800000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8700000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8500000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8200000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.8100000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.7600000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.7200000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.6900000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.6500000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.6100000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5800000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5500000000000002vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.5200000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.4800000000000001vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.44000000000000006vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.41000000000000003vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.37vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.33999999999999997vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.31999999999999995vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.29999999999999993vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.2699999999999999vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.2499999999999999vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.22999999999999987vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.20999999999999985vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.18999999999999984vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.16999999999999982vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.1499999999999998vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.1399999999999998vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.11999999999999979vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.10999999999999979vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.08999999999999979vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.06999999999999978vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.04999999999999978vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.029999999999999777vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.009999999999999773vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.019999999999999775vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.029999999999999777vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.03999999999999978vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.04999999999999978vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.05999999999999978vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.06999999999999978vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.0799999999999998vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.0899999999999998vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.09999999999999981vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.10999999999999982vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.11999999999999983vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.12999999999999984vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.13999999999999985vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.14999999999999986vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.15999999999999986vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.16999999999999987vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.1899999999999999vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.2099999999999999vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.22999999999999993vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.24999999999999994vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.26999999999999996vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.29vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.3vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.31vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.32vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.33vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.34vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.36000000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.38000000000000006vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.37000000000000005vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.36000000000000004vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.34vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.33vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.31vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.29vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.26999999999999996vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.24999999999999994vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.22999999999999993vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.2099999999999999vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.1899999999999999vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.16999999999999987vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.14999999999999986vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.13999999999999985vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.12999999999999984vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.11999999999999983vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.10999999999999982vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.09999999999999981vw"
-  ],
-  [
-      "style",
-      3,
-      "--blur",
-      "0.0899999999999998vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 0.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 1.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 2.5999999999999996px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 3.8px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 5.199999999999999px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 7px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 7.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 8px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 8.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 9.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 9.8px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 10.200000000000001px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 10.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 11px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 11.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 11.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 11.799999999999999px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 12px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 12.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 12.8px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 13.200000000000001px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 13.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 14px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 14.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 14.399999999999999px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 14.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 14.799999999999999px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 15px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 15.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 15.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 16px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 16.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 16.799999999999997px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 17.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 17.8px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 18.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 18.599999999999998px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 19px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 19.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 20px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 20.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 20.799999999999997px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 21.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 21.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 21.799999999999997px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 0.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 0.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 1.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 2.4000000000000004px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 3.5999999999999996px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 4.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 6.199999999999999px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 8px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 9.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 11.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 13.600000000000001px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 16.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 18.400000000000002px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 19.599999999999998px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 20.400000000000002px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 22.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 24.599999999999998px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 26.200000000000003px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 28px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 29.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 30.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 31.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 32.199999999999996px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 33px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 33.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 34.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 34.800000000000004px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 35.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 36px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 36.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 37.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 37.800000000000004px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 38.199999999999996px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 38.800000000000004px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 39px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 39.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 39.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 39.800000000000004px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 40.199999999999996px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 40.400000000000006px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 40.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 0.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 1.4px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 3.8px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 8.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 12.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 15.399999999999999px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 17.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 23.200000000000003px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 33px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 38.4px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 45.199999999999996px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 53px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 62.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 65.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 67.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 71.19999999999999px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 81px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 104px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 115.8px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 127.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 139.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 150.39999999999998px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 161.20000000000002px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 171.79999999999998px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 182.20000000000002px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 192.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 202.4px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 212.20000000000002px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 221.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 230.79999999999998px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 239.8px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 248.8px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 257.40000000000003px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 265.59999999999997px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 273.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 281.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 296.40000000000003px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 303.59999999999997px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 310.40000000000003px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 317.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 330px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 341.8px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 347.40000000000003px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 358px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 363px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 372.4px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 377px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 381.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 389.4px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 397px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 404px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 407.4px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 413.4px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 419px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 424.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 428.8px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 433.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 437.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 440.8px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 442.40000000000003px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 445.59999999999997px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 448.6px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 451.40000000000003px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 454px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(360,100%,0%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,0%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,0.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,0.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,1.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,1.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,2.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,2.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,3%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,4.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,7.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,11.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,16.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,25.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,30.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,38.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,39.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,50.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,56.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,59.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,63.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,66%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,67.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,68.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,69.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,69.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,70.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,70.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,70.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,71%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,70.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,70.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,70.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,70.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,69.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,69%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,67.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,66%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,64.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,64.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,62.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,60%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,58.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,57.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,55.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,55.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,53.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,55%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,55.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,55.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,55%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,54.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,52.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,52.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,50%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,48.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,47%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,45.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,44.4%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,43.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,42.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,41.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,41%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,40.6%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,39.8%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "hsla(0,100%,39.2%,1) 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "style",
-      3,
-      "--box-shadow",
-      "NaNpx 22.2px 41.2px 455.2px 0vw"
-  ],
-  [
-      "select",
-      1
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,0.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,3.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,4.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,9%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,14.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,20.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,34.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,49%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,67.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,83.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,98.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--color",
-      "hsla(0,100%,100%,1)"
-  ],
-  [
-      "style",
-      1,
-      "bottom",
-      "0.2px"
-  ],
-  [
-      "style",
-      1,
-      "bottom",
-      "0.4px"
-  ],
-  [
-      "style",
-      1,
-      "bottom",
-      "0.6000000000000001px"
-  ],
-  [
-      "style",
-      1,
-      "bottom",
-      "0.8px"
-  ],
-  [
-      "style",
-      1,
-      "bottom",
-      "1px"
-  ],
-  [
-      "style",
-      1,
-      "bottom",
-      "1.2px"
-  ],
-  [
-      "style",
-      1,
-      "bottom",
-      "1.4px"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,68.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,65.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,64.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,58.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,57.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,55%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,48%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,45.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,44%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,43.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,41%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,37.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,33.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,28.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,23.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,18.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,13.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,2.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,0%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,0.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,1.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,2.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,6.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,9.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,11%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,20%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,28.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,35.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,44%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,64%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,77%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,90.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,100%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,99.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,98.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,98.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,95.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,92.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,87.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,83%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,77%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,72.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,67.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,62.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,58.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,55.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,43.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,35.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,26%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,17%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,7.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,0%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,0.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,0.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,0.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,1%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,1.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,1.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,2.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,2.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,2.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,3%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,3.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,3.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,4.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,4.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,4.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,4.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,5.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,5.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,6.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,7.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,7.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,9.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,11.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,14.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,17.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,19.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,23.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,32.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,36.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,40.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,45.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,47.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,49.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,50.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,53%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,53.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,52.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,52.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,50.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,50%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,49.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,49.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,48.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,48.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,48.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,48.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,48.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,49%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,49.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,49.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,50.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,50.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,51.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,52.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,52.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,52.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,53%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,53.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,53.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,54.2%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,54.6%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,55%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,55.4%,1)"
-  ],
-  [
-      "style",
-      1,
-      "--background-color",
-      "hsla(0,100%,55.8%,1)"
-  ],
-  [
-      "style",
-      1,
-      "mix-blend-mode",
-      "multiply"
-  ],
-  [
-      "style",
-      1,
-      "mix-blend-mode",
-      "screen"
-  ],
-  [
-      "style",
-      1,
-      "mix-blend-mode",
-      "overlay"
-  ],
-  [
-      "style",
-      1,
-      "mix-blend-mode",
-      "darken"
-  ],
-  [
-      "style",
-      1,
-      "mix-blend-mode",
-      "lighten"
-  ],
-  [
-      "style",
-      1,
-      "mix-blend-mode",
-      "color-dodge"
-  ],
-  [
-      "select",
-      2
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "1.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "1.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "1.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "1.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "2.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "2.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "2.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "2.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "4.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "4.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "4.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "4.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "6px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "6px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "6px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "6px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "7.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "9.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "9.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "9.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "9.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "11.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "11.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "11.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "11.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "13.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "13.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "13.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "13.200000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "15px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "15.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "15.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "15.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "15.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "16.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "16.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "17px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "17px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "17px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "17px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "17.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "17.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "17.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "17.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "18.200000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "18.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "19px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "19px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "19px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "19px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "19.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "19.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "19.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "19.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "19.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "19.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "19.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "19.799999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "20.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "20.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "20.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "20.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "20.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "20.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "20.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "20.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "20.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "20.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "21px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "21px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "21px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "21px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "21.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "21.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "21.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "21.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "21.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "21.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "21.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "21.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "21.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-top-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-bottom-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-right-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-left-width",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "0.6000000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "2.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "5px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "7.800000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "10.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "12px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "13.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "18px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "20.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "22.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "25px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "26px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "29.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "30.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "32.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "34.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "35.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "37.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "39px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "40.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "41.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "43.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "46.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "49px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "51.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "54.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "57.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "60.400000000000006px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "63.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "67.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "70.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "73.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "76.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "78.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "81.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "83.80000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "86px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "88.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "90.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "92.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "94.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "96.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "98.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "100.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "101.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "103.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "105px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "106.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "108px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "109.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "110.80000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "112px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "113.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "114.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "115.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "116.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "117.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "118.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "119px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "119.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "120.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "121.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "122.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "123px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "123.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "124.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "125px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "125.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "126.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "126.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "127.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "128px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "128.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "129.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "129.79999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "130.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "130.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "131.20000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "131.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "132px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "132.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "132.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "133.20000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "133.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "134px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "134.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "134.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "135px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "135.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "135.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "136.20000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "136.79999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "139px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "140.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "144px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "145px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "152px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "157.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "167.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "184.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "191.60000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "194.79999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "215px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "228.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "241px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "254px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "267px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "279.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "292.40000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "304.59999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "316.20000000000005px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "327.59999999999997px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "338.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "349.40000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "360px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "370.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "380.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "390.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "399.79999999999995px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "409.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "418.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "427.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "436.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "445px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "453.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "461.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "469.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "476.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "484px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "490.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "497.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "504.40000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "510.79999999999995px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "516.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "522.5999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "528.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "533.8000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "539.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "544.4000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "549.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "554px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "558.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "563px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "567.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "571.4000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "575.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "579.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "583px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "586.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "589.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "593.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "596.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "599.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "602.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "604.8000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "607.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "609.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "612px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "614.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "616.4000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "618.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "620.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "622.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "624.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "626.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "627.8000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "629.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "631px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "632.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "634px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "635.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "636.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "638.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "639.4000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "640.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "641.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "642.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "643.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "644.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "645.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "646.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "647px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "647.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "648.5999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "649.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "650px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "650.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "651.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "651.8000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "652.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "653px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "653.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "654.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "654.8000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "655.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "656px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "656.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "656.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "657.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "657.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "658px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "658.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "658.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "659.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "659.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "660px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "660.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "660.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "661.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "661.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "662px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "662.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "662.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "663px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "663.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "663.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "664.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "664.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "665px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "665.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "665.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "666px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "666.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "666.4000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "666.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "666.8000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "667px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "667.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "667.4000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "667.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "667.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "666.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "664.8000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "663.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "662.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "656.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "649.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "640.1999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "621.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "613px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "592.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "572px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "551.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "532.5999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "514.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "496.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "480.40000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "464.79999999999995px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "449.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "434.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "419.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "405.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "391.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "377.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "364px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "350.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "337.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "325px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "312.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "300.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "288px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "276px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "264.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "252.79999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "241.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "230.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "219.79999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "209.60000000000002px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "199.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "189.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "179.39999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "170px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "160.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "151.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "142.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "133.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "125.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "117.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "109.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "101.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "94px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "86.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "80px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "73.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "67px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "60.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "54.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "48.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "43px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "37.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "32.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "27.000000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "22px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "17.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "12.599999999999998px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "8.399999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "4.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "0px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "0.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "0.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "0.6000000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "0.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "1px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "1.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "1.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "1.5999999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "1.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "2.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "2.4000000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "2.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "2.8000000000000003px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "3px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "3.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "3.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "5.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "6.6000000000000005px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "9px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "12.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "19px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "21.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "24.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "25.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "33.2px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "36.400000000000006px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "38.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "40px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "40.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "40.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "41.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "41.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "42.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "44.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "46.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "49.199999999999996px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "51.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "54px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "56.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "59.800000000000004px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "62.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "65.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "68.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "71px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "73.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "76.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "78.4px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "80.60000000000001px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "82.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "84.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "86.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "88.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "90.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "92.39999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "94px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "95.6px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "97.19999999999999px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "98.8px"
-  ],
-  [
-      "style",
-      2,
-      "border-radius",
-      "100.2px"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 0.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 1.2px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 2.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 3.5999999999999996px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 4.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 5.800000000000001px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 7.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 9.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 10.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 12px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 12.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 13.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 14.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 15px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 15.6px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.4px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.799999999999997px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 0vw 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 0.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 0.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 1.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 1.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 3.4000000000000004px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 5px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 8.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 9.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 11.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 13.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 16.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 17.799999999999997px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 21.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 23.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 25.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 26.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 28.400000000000002px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 29.599999999999998px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 30px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 30.8px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 31.400000000000002px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 32px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 32.2px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 32.800000000000004px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 33.199999999999996px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 33.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.4px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 0vw 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 0.2px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 1.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 2.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 7.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 8.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 12.2px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 15.799999999999999px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 19.400000000000002px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 23px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 26.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 29.400000000000002px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 31.599999999999998px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 35.800000000000004px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 36.199999999999996px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 38.400000000000006px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 39.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 40.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 41px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 42.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 43.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 44.800000000000004px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 45.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 46.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 47.599999999999994px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 48.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 49.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 49.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 50.599999999999994px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 50.800000000000004px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 51.199999999999996px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 51.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 52px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 52.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 52.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 53.199999999999996px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 53.400000000000006px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 53.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 53.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 53.800000000000004px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 54px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 54.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 54.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 55px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 55.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 55.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 56.199999999999996px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 56.800000000000004px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 57.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 58px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 58.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 59px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 59.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 60px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 60.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 60.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 61.199999999999996px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 61.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 62px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 62.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 62.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 63.199999999999996px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 63.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 64px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 64.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 64.80000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 65.2px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 65.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 66px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 66.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 67px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 67.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 67.80000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 68px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 68.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 68.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 69.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 70.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 72.39999999999999px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 74.80000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 77.39999999999999px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 80.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 83.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 86.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 90.2px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 93.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 96px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 99px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 101.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 103.80000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 105px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 106.6px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 107.39999999999999px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 108.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 110.19999999999999px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 110.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 111.19999999999999px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 111.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 111.8px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 112px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 112.2px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 112.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 113px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 113.4px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,100%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,99.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,98%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,95.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,90.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,86.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,81.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,76.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,72.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,66.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,64%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,60.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,57.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,55.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,53%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,51%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,49.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,48.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,46.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,45.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,44.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,43.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,42.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,42.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,41.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,41%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,40.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,40.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,39.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,39.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,39%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,38.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,39%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,39.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,39.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,40%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,40.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,40.6%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,40.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,41.2%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,41.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,41.8%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,42%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ],
-  [
-      "style",
-      2,
-      "--box-shadow",
-      "hsla(0,100%,42.4%,1) 16.8px 34.6px 113.60000000000001px 0vw"
-  ]
-]
+];
