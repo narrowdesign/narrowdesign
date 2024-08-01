@@ -164,13 +164,13 @@ function init() {
       min: 0,
       increment: 0.5,
       axis: "all",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     bf: {
       name: "--backdrop-filter",
       min: 0,
       increment: 0.1,
-      initialValue: "0vw",
+      initialValue: "0vmax",
       isVariable: true,
     },
     bw: {
@@ -178,13 +178,13 @@ function init() {
       min: 0,
       increment: 0.5,
       axis: "all",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     bb: {
       name: "border-bottom-width",
       min: 0,
       increment: 0.5,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     dc: {
       name: [
@@ -200,13 +200,13 @@ function init() {
       name: "border-left-width",
       min: 0,
       increment: 0.5,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     br: {
       name: "border-right-width",
       min: 0,
       increment: 0.5,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     bp: {
       name: "background-repeat",
@@ -222,25 +222,25 @@ function init() {
       name: "border-top-width",
       min: 0,
       increment: 0.5,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     bx: {
       name: "border-width",
       min: 0,
       increment: 0.5,
       axis: "x",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     by: {
       name: "border-width",
       min: 0,
       increment: 0.5,
       axis: "y",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     sh: {
       name: ["--box-shadow", "--box-shadow", "--box-shadow", "--box-shadow"],
-      initialValue: `var(--color) 0vw 0vw 0vw 0vw`,
+      initialValue: `var(--color) 0vmax 0vmax 0vmax 0vmax`,
       isVariable: true,
     },
     lg: {
@@ -263,7 +263,7 @@ function init() {
       name: "border-radius",
       min: 0,
       max: 10000,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     bs: {
       name: "border-style",
@@ -296,7 +296,7 @@ function init() {
       name: "column-gap",
       min: 0,
       showsGrid: true,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     d: {
       name: "display",
@@ -306,7 +306,7 @@ function init() {
       name: "--filter",
       min: 0,
       increment: 0.1,
-      initialValue: "0vw",
+      initialValue: "0vmax",
       isVariable: true,
     },
     fd: {
@@ -351,7 +351,7 @@ function init() {
       name: "gap",
       min: 0,
       showsGrid: true,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     ce: {
       name: "grid-column-end",
@@ -407,7 +407,7 @@ function init() {
     },
     l: {
       name: "left",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     lh: {
       name: "line-height",
@@ -422,32 +422,32 @@ function init() {
     m: {
       name: "margin",
       axis: "all",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     mb: {
       name: "margin-bottom",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     ml: {
       name: "margin-left",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     mr: {
       name: "margin-right",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     mt: {
       name: "margin-top",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     mx: {
       name: "margin",
-      initialValue: "0vw",
+      initialValue: "0vmax",
       axis: "x",
     },
     my: {
       name: "margin",
-      initialValue: "0vw",
+      initialValue: "0vmax",
       axis: "y",
     },
     mw: {
@@ -491,7 +491,7 @@ function init() {
       name: "padding",
       min: 0,
       axis: "all",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     po: {
       name: "position",
@@ -500,33 +500,33 @@ function init() {
     pb: {
       name: "padding-bottom",
       min: 0,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     pl: {
       name: "padding-left",
       min: 0,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     pr: {
       name: "padding-right",
       min: 0,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     pt: {
       name: "padding-top",
       min: 0,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     px: {
       name: "padding",
       min: 0,
-      initialValue: "0vw",
+      initialValue: "0vmax",
       axis: "x",
     },
     py: {
       name: "padding",
       min: 0,
-      initialValue: "0vw",
+      initialValue: "0vmax",
       axis: "y",
     },
     r: {
@@ -542,7 +542,7 @@ function init() {
       name: "row-gap",
       min: 0,
       showsGrid: true,
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     a: {
       name: "text-align",
@@ -554,7 +554,7 @@ function init() {
     },
     ts: {
       name: ["--text-shadow", "--text-shadow", "--text-shadow"],
-      initialValue: `var(--color) 0vw 0vw 0vw`,
+      initialValue: `var(--color) 0vmax 0vmax 0vmax`,
       isVariable: true,
     },
     tt: {
@@ -563,7 +563,7 @@ function init() {
     },
     t: {
       name: "top",
-      initialValue: "0vw",
+      initialValue: "0vmax",
     },
     tr: {
       name: [
@@ -577,7 +577,7 @@ function init() {
         "--transform",
         "--transform",
       ],
-      initialValue: `translateX(0vw) translateY(0vw) translateZ(0vw) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg)`,
+      initialValue: `translateX(0vmax) translateY(0vmax) translateZ(0vmax) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg)`,
       isVariable: true,
     },
     ty: {
@@ -731,6 +731,7 @@ function init() {
         createNewElement(step[1], elements[step[2]], null, step[3]);
       } else if (step[0] === "select") {
         if (step[1] !== -1) {
+          console.log(recording[i]);
           setSelectedElement(elements[step[1]]);
         }
       } else if (step[0] === "multi-select") {
@@ -785,6 +786,17 @@ function init() {
         deleteElement(elements[step[1]], step[2]);
       } else if (step[0] === "duplicate") {
         duplicateElement(elements[step[1]], elements[step[2]], step[3]);
+      } else if (step[0] === "link") {
+        const linkElement = document.createElement("a");
+        linkElement.setAttribute("href", step[2]);
+        const targetElement = elements[step[1]];
+        targetElement.parentNode.insertBefore(linkElement, targetElement);
+        linkElement.appendChild(targetElement);
+        linkElement.style.gridRow = targetElement.style.gridRow;
+        linkElement.style.gridColumn = targetElement.style.gridColumn;
+        if (!elements.includes(linkElement)) {
+          elements.push(linkElement);
+        }
       }
       redrawGrid();
       stepIndex++;
@@ -802,6 +814,7 @@ function init() {
   function addToRecording(newStep) {
     if (userState.isUndoing || userState.isRewinding) return;
     const prevStep = recording[recording.length - 1];
+    newStep.push(performance.now());
     let push = false;
     if (prevStep) {
       prevStep.forEach((val, i) => {
@@ -1213,10 +1226,11 @@ function init() {
 
   function handleLinkInputEnterKeyPress() {
     const container = userState.selectedElement.parentElement;
+    const url = linkInputEl.value;
     if (userState.selectedElement.tagName === "A") {
-      userState.selectedElement.setAttribute("href", linkInputEl.value);
+      userState.selectedElement.setAttribute("href", url);
 
-      if (linkInputEl.value === "") {
+      if (url === "") {
         userState.selectedElement.children.forEach((child) => {
           userState.selectedElement.insertBefore(
             child,
@@ -1226,30 +1240,46 @@ function init() {
         userState.selectedElement.remove();
       }
       // TODO: add link on playback, add to undo stack, create new link element like others
-      addToRecording([
-        "link",
-        elements.indexOf(userState.selectedElement),
-        userState.selectedElement.getAttribute("href"),
-      ]);
+      if (userState.isRecording) {
+        addToRecording([
+          "link",
+          elements.indexOf(userState.selectedElement),
+          userState.selectedElement.getAttribute("href"),
+        ]);
+      }
     } else if (container) {
       if (container.tagName !== "A") {
         const linkEl = document.createElement("a");
-        linkEl.setAttribute("href", linkInputEl.value);
+        linkEl.setAttribute("href", url);
         linkEl.appendChild(userState.selectedElement);
         container.appendChild(linkEl);
+        linkEl.style.gridRow = userState.selectedElement.style.gridRow;
+        linkEl.style.gridColumn = userState.selectedElement.style.gridColumn;
         if (elements.indexOf(linkEl) === -1) {
           elements.push(linkEl);
+          addToRecording([
+            "link",
+            elements.indexOf(userState.selectedElement),
+            url,
+          ]);
         }
       } else {
-        container.setAttribute("href", linkInputEl.value);
+        container.setAttribute("href", url);
       }
     } else {
       const linkEl = document.createElement("a");
-      linkEl.setAttribute("href", linkInputEl.value);
+      linkEl.setAttribute("href", url);
       linkEl.appendChild(userState.selectedElement);
+      linkEl.style.gridRow = userState.selectedElement.style.gridRow;
+      linkEl.style.gridColumn = userState.selectedElement.style.gridColumn;
       document.body.appendChild(linkEl);
       if (elements.indexOf(linkEl) === -1) {
         elements.push(linkEl);
+        addToRecording([
+          "link",
+          elements.indexOf(userState.selectedElement),
+          url,
+        ]);
       }
     }
     exitLinkInputMode();
@@ -1676,7 +1706,7 @@ function init() {
       val = val[0] || "";
     }
     if (propName === "font-size" && propValue === "") {
-      val = "1vw";
+      val = "1vmax";
     } else if (
       (propName.includes("padding") ||
         propName.includes("margin") ||
@@ -1684,7 +1714,7 @@ function init() {
         (propName.includes("border") && propName.includes("width"))) &&
       propValue === ""
     ) {
-      val = "0vw";
+      val = "0vmax";
     } else if (propName === "width" && propValue === "") {
       val = "100%";
     } else if (propName === "height" && propValue === "") {
@@ -1710,7 +1740,7 @@ function init() {
     } else if (propName === "z-index" && val === "auto") {
       val = "0";
     } else if (propName === "perspective" && val === "none") {
-      (val = "100"), (unit = "vw");
+      (val = "100"), (unit = "vmax");
     }
     let newVal;
     if (propName === "--box-shadow" || propName === "--text-shadow") {
@@ -2334,9 +2364,7 @@ function init() {
         imgElement.style.backgroundImage = `url(${searchTerm})`;
         recording[recording.length - 2].push(searchTerm);
       } else {
-        fetch(
-          `${"https://source.unsplash.com/random/1600xauto/?"}${searchTerm}`
-        )
+        fetch(`${"https://loremflickr.com/1000/1000/"}${searchTerm}`)
           .then((response) => {
             if (elements.includes(imgElement)) {
               const url = response.url;
@@ -2565,7 +2593,7 @@ function init() {
     const val = `${getComputedStyle(userState.selectedElement)
       .getPropertyValue(`${userState.activePropName}`)
       .trim()}`;
-    const unit = "vw";
+    const unit = "vmax";
     const color = val.substring(0, val.indexOf(")") + 1);
     const props = [color, ...val.substring(val.indexOf(")") + 2).split(" ")];
 

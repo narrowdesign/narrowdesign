@@ -5,7 +5,7 @@ html {
   background: white;
   font-family: "system-ui";
   -webkit-font-smoothing: antialiased;
-  --base-font-size: 1vw;
+  --base-font-size: 1vmax;
   scroll-behavior: smooth;
 }
 
@@ -214,7 +214,8 @@ button {
   border-bottom: 1px solid var(--color);
 }
 
-body:not(.App--isEditMode) .AppElement--isSelected {
+body:not(.App--isEditMode)&&body:not(.App--isAnimating)
+  .AppElement--isSelected {
   pointer-events: none;
 }
 
