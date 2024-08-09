@@ -72,65 +72,6 @@ function init() {
   bodyEl.classList.add("App--isInstrument");
   bodyEl.classList.add("App--isXrayMode");
 
-  /* TODO add threejs primitives
-  const keyToNew3d = {
-    s: THREE.SphereGeometry(0.5, 50, 50),
-    b: THREE.BoxGeometry(1, 1, 1),
-    p: THREE.PlaneGeometry(2, 2),
-    c: THREE.CircleGeometry(0.5, 50),
-    t: THREE.TorusGeometry(0.5, 0.2, 16, 100),
-    cy: THREE.CylinderGeometry(0.5, 0.5, 1, 50),
-    ih: THREE.IcosahedronGeometry(0.5, 0),
-    oh: THREE.OctahedronGeometry(0.5, 0),
-    th: THREE.TetrahedronGeometry(0.5, 0),
-    dd: THREE.DodecahedronGeometry(0.5, 0),
-    ph: THREE.PolyhedronGeometry([
-      { x: -1, y: 0, z: 1 },
-      { x: 1, y: 0, z: 1 },
-      { x: -1, y: 0, z: -1 },
-      { x: 1, y: 0, z: -1 },
-      { x: 0, y: 1, z: 0 }
-    ], [
-      [ 0, 1, 4 ],
-      [ 1, 2, 4 ],
-      [ 2, 3, 4 ],
-      [ 3, 0, 4 ],
-      [ 1, 0, 3 ],
-      [ 2, 1, 3 ]
-    ], 0.5),
-    la: THREE.LatheGeometry(
-      [
-        { x: 0, y: 0, z: 0 },
-        { x: 1, y: 0, z: 0 },
-        { x: 1, y: 1, z: 0 },
-        { x: 0, y: 1, z: 0 }
-      ],
-      100
-    ),
-    ex: THREE.ExtrudeGeometry(
-      new THREE.Shape([
-        { x: 0, y: 0 },
-        { x: 1, y: 0 },
-        { x: 1, y: 1 },
-        { x: 0, y: 1 }
-      ]),
-      {
-        amount: 1,
-        bevelEnabled: true,
-        bevelSegments: 2,
-        steps: 2,
-        bevelSize: 0.1,
-        bevelThickness: 0.1
-      }
-    ),
-    al: THREE.AmbientLight( 0x404040 ), // soft white light
-    dl: THREE.DirectionalLight( 0xffffff, 0.5 ), // white light shining from a specific direction
-    pl: THREE.PointLight( 0xff0000, 1, 100 ), // red light at a specific point
-    sl: THREE.SpotLight( 0x00ff00, 1, 100, Math.PI/3, 10 ), // green light shining from a specific point in a specific direction
-    hl: THREE.HemisphereLight( 0x0000ff, 0x00ff00, 0.6 ),
-  }
-  */
-
   const keyToShiftPropIndex = ["!", "@", "#", "$"];
   const keyToProp = {
     as: {
@@ -644,6 +585,7 @@ function init() {
     hasFontsLoaded: false,
     isAltKey: false,
     isAnimating: false,
+    isScrollytelling: false,
     isClassListMode: false,
     isLinkInputMode: false,
     isDragging: false,
@@ -670,6 +612,7 @@ function init() {
     mouseX: windowState.centerX,
     mouseY: windowState.centerY,
     searchTimeout: null,
+    recordingStepIndex: 0,
     styleDisplayTimeout: null,
     touchStartY: windowState.centerY,
     undoStack: [],
@@ -714,24 +657,25 @@ function init() {
 
   if (recording.length > 0) {
     userState.isAnimating = true;
+    // userState.isScrollytelling = true;
     animateRecording(0);
     bodyEl.classList.add("App--isAnimating");
   } else {
     userState.isRecording = true;
   }
 
-  function animateRecording(i, then) {
-    const now = performance.now();
-    const elapsed = now - then;
-    let stepIndex = i;
+  function animateRecording(i, deltaY = 0) {
+    const step = recording[userState.recordingStepIndex];
+    const previousTime =
+      userState.recordingStepIndex > 0
+        ? recording[userState.recordingStepIndex - 1][4]
+        : recording[userState.recordingStepIndex][4];
     if (!checkIfPaused()) {
-      const step = recording[i];
-      const nextStep = recording[i + 1];
+      const nextStep = recording[userState.recordingStepIndex + 1];
       if (step[0] === "new") {
         createNewElement(step[1], elements[step[2]], null, step[3]);
       } else if (step[0] === "select") {
         if (step[1] !== -1) {
-          console.log(recording[i]);
           setSelectedElement(elements[step[1]]);
         }
       } else if (step[0] === "multi-select") {
@@ -746,19 +690,19 @@ function init() {
         setStyleProperty(elements[step[1]], step[2], step[3]);
         if (
           propName.includes("-top") &&
-          typeof recording[stepIndex + 1][2] === "string" &&
-          typeof recording[stepIndex + 2][2] === "string" &&
-          typeof recording[stepIndex + 3][2] === "string" &&
-          recording[stepIndex + 1][2].includes("-bottom") &&
-          recording[stepIndex + 2][2].includes("-right") &&
-          recording[stepIndex + 3][2].includes("-left")
+          typeof recording[userState.recordingStepIndex + 1][2] === "string" &&
+          typeof recording[userState.recordingStepIndex + 2][2] === "string" &&
+          typeof recording[userState.recordingStepIndex + 3][2] === "string" &&
+          recording[userState.recordingStepIndex + 1][2].includes("-bottom") &&
+          recording[userState.recordingStepIndex + 2][2].includes("-right") &&
+          recording[userState.recordingStepIndex + 3][2].includes("-left")
         ) {
           for (let s = 0; s < 3; s++) {
-            stepIndex++;
+            userState.recordingStepIndex++;
             setStyleProperty(
-              elements[recording[stepIndex][1]],
-              recording[stepIndex][2],
-              recording[stepIndex][3]
+              elements[recording[userState.recordingStepIndex][1]],
+              recording[userState.recordingStepIndex][2],
+              recording[userState.recordingStepIndex][3]
             );
           }
         }
@@ -799,11 +743,19 @@ function init() {
         }
       }
       redrawGrid();
-      stepIndex++;
+      if (deltaY < 0) {
+        userState.recordingStepIndex--;
+      } else {
+        userState.recordingStepIndex++;
+      }
     }
-    if (stepIndex < recording.length && userState.isAnimating) {
+    if (
+      userState.recordingStepIndex < recording.length &&
+      userState.isAnimating &&
+      !userState.isScrollytelling
+    ) {
       requestAnimationFrame(() => {
-        animateRecording(stepIndex, now);
+        animateRecording(userState.recordingStepIndex);
       });
     } else {
       userState.isAnimating = false;
@@ -814,7 +766,6 @@ function init() {
   function addToRecording(newStep) {
     if (userState.isUndoing || userState.isRewinding) return;
     const prevStep = recording[recording.length - 1];
-    newStep.push(performance.now());
     let push = false;
     if (prevStep) {
       prevStep.forEach((val, i) => {
@@ -823,6 +774,8 @@ function init() {
     } else {
       push = true;
     }
+    newStep[4] = performance.now();
+    console.log(newStep);
     if (push) {
       recording.push(newStep);
     }
@@ -851,7 +804,7 @@ function init() {
     const delay = text.substring(text.length - 6) === "&nbsp;" ? 100 : 40;
     setTimeout(() => {
       userState.isTypingDelay = false;
-    }, Math.random() * 40 + delay);
+    }, Math.random() * 30 + delay);
   }
 
   // APP DISPLAY FUNCTIONS
@@ -972,6 +925,8 @@ function init() {
 
   function handleWheel(e) {
     if (userState.activeProp.increment === 1) return;
+    if (userState.isScrollytelling)
+      animateRecording(userState.recordingStepIndex, e.deltaY);
     if (userState.isAnimating) return;
     if (userState.isScrollMode) {
       userState.isInertiaScrolling = true;
